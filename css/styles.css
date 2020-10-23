@@ -1,6 +1,113 @@
-body {
-  background-color: aquamarine; }
+:root {
+  --max-width: 1270px;
+  --min-width: 320px;
+  --header-height: 4rem; }
+  @media screen and (min-width: 1600px) {
+    :root {
+      --header-height: 4.5rem; } }
 
-h1,
-h2 {
-  text-align: center; }
+:root {
+  --body-font-family: 'Open Sans', sans-serif;
+  --h-font-family: 'News Cycle', sans-serif; }
+
+:root {
+  --body-font-size: .9rem;
+  --small-font-size: .75rem;
+  --h1-font-size: 2rem; }
+  @media screen and (min-width: 960px) {
+    :root {
+      --body-font-size: 1rem;
+      --small-font-size: .8rem;
+      --h1-font-size: 2.5rem; } }
+
+:root {
+  --cursor-button: default; }
+  @media screen and (min-width: 960px) {
+    :root {
+      --cursor-button: pointer; } }
+
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size); }
+
+a {
+  outline: none;
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--h-font-family); }
+
+h1 {
+  font-size: var(--h1-font-size); }
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  cursor: var(--cursor-button); }
+  button:focus {
+    outline: none; }
+  button::-moz-focus-inner {
+    border: 0; }
+
+.container,
+.main-layout {
+  display: grid;
+  grid-row-gap: .5rem; }
+
+.main-layout {
+  padding: 3rem;
+  text-align: center;
+  background-color: lightpink; }
+
+.main-header {
+  text-align: center;
+  height: var(--header-height);
+  line-height: var(--header-height);
+  background-color: yellowgreen; }
+
+.main-nav {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  background-color: lightseagreen; }
+
+.section-one,
+.section-two,
+.section-three {
+  padding: 1rem;
+  background-color: orange; }
+
+.aside {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  background-color: crimson; }
+
+.footer {
+  background-color: lightsteelblue;
+  text-align: center;
+  padding: 1rem; }

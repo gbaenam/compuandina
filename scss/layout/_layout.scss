@@ -1,0 +1,17 @@
+// Layout general de la página.
+
+.container,
+.main-layout {
+    display: grid;
+    grid-row-gap: .5rem;
+}
+
+.main-layout {
+    padding: 3rem;
+    text-align: center;
+    background-color: lightpink;
+}
+
+
+
+

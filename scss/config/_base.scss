@@ -1,0 +1,55 @@
+// Inicialización de los estílos básicos del proyecto.
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
+    // display: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--h-font-family);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    cursor: var(--cursor-button);
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
+
+
+

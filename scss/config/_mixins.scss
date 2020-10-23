@@ -1,0 +1,14 @@
+
+// Mixin para los breakpoints.
+@mixin from($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        @media screen and (min-width: map-get($map: $breakpoints, $key: $breakpoint )) {
+            @content;
+        }
+    } @else if type-of($value: $breakpoint) == number and unit($breakpoint) == 'px' {
+        @media screen and (min-width: $breakpoint) {
+            @content;
+        }
+    }
+}
+
