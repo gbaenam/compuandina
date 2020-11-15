@@ -1,12 +1,150 @@
-// Cabecera principal de la página
 
+// Variables locales
 .main-header {
-    text-align: center;
-    height: var(--header-height);
-    line-height: var(--header-height);
-    background-color: yellowgreen;
+
+    /*-------------- header -------------*/
+    --background-color-header: #fff;
+    /*-----------------------------------*/
+
+    /*----------- logo-link ------------*/
+    --margin-right-logo-link: .3125rem;
+    /*----------------------------------*/
+
+    /*------- logo -------*/
+    --width-logo: 2.7rem;
+    /*--------------------*/
+
+    /*------------- title -----------------*/
+    --font-size-title: 1.3rem;
+    --font-family-title: 'Cinzel', serif;
+    /*-------------------------------------*/
+
+    /*------- title-link  -----------*/
+    --color-title-link:  #1c689d;
+    /*-------------------------------*/
+
+
+    // Wide 360px
+    @include from(360px) {
+        --font-size-title: 1.4rem;
+    }
+
+
+    // Wide 540px
+    @include from(540px) {
+        --font-size-title: 1.5rem;
+    }
+
+
+    // Wide 640px
+    @include from(medium) {
+        --width-logo: 3.3rem;
+    }
+
+
+    // Wide 1024px
+    @include from(large) {
+
+        /*-------------- header -------------*/
+        // z-index: var(--z-normal);
+        /*-----------------------------------*/
+
+
+        /*------- logo-link -------*/
+        --padding-logo-link: .25rem;
+        --margin-right-logo-link: 0;
+        /*-------------------------*/
+
+
+        /*------- logo -------*/
+        --width-logo: 3.7rem;
+        /*--------------------*/
+
+
+        /*--------- title ---------*/
+        --font-size-title: 1.6rem;
+        /*-------------------------*/
+
+
+        /*---------- title-link  --------------*/
+        --padding-title-link: .625rem .3125rem;
+        /*-------------------------------------*/
+
+
+        /*-------- title-link-hover  --------*/
+        --color-title-link-hover: #000080;
+        /*-----------------------------------*/
+    }
+
+
+    // Wide 1600px
+    @include from(zlarge) {
+        --width-logo: 4rem;
+        --font-size-title: 1.5rem;
+    }
 }
 
+.main-header {
+    // Referencia para las unidades em
+    // de main-header__title y main-menu__link
+    font-size: 1rem;
+}
 
+.main-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: var(--z-fixed);
+    height: var(--height-header);
+    border-bottom: 1px solid lightgray;
+    background-color: var(--background-color-header);
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-link {
+        padding: var(--padding-logo-link);
+        margin-right: var(--margin-right-logo-link);
+    }
+
+    &__logo-link,
+    &__title-link {
+        border: var(--border-link);
+        border-radius: var(--border-radius-link);
+
+        &:focus {
+            border-color: var(--border-color-link-focus);
+        }
+
+        &:active {
+            border-color: var(--border-color-link-active);
+        }
+    }
+
+    &__logo {
+        height: auto;
+        width: var(--width-logo);
+        cursor: var(--cursor-button);
+    }
+
+    &__title {
+        font-weight: 600;
+        margin-right: auto;
+        font-size: var(--font-size-title);
+        font-family: var(--font-family-title);
+    }
+
+    &__title-link {
+        cursor: var(--cursor-button);
+        color: var(--color-title-link);
+        padding: var(--padding-title-link);
+
+        &:hover {
+            color: var(--color-title-link-hover);
+        }
+    }
+}
 
 

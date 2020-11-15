@@ -9,10 +9,19 @@
     <link rel="stylesheet" href="css/styles.css" />
 
     <!-- body-font-family -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap"
-        rel="stylesheet" />
+    <!-- main-menu__link font-family -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet" />
     <!-- h-font-family -->
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- title and subtitle font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- main-menu__link font-family -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Amaranth:400,700&display=swap" rel="stylesheet"> -->
+
 </head>
 
 <body>
@@ -20,12 +29,34 @@
     <div class="container">
         <!-- Cabecera de la página. -->
         <header class="main-header">
-            <h1>HEADER</h1>
+            <div class="main-header__container main-header__layout">
+                <!-- Logo Visión Vida y Poder -->
+                <a href="#" class="main-header__logo-link"><img src="img/logos/icon.png" alt="" class="main-header__logo"></a>
+                <!-- Título del Sitio Web -->
+                <h1 class="main-header__title"><a href="#" class="main-header__title-link">CompuAndina</a></h1>
+                <!-- Burguer button -->
+                <div role="button" aria-pressed="false" class="burguer-button">
+                    <div class="burguer-button__line"></div>
+                </div>
+                <!-- Menú principal de navegación. -->
+                <nav class="main-nav" id="main-nav">
+                    <!-- Lista de navegación principal. -->
+                    <ul class="main-menu">
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Energ&iacute;a</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Software</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Conectividad</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Almacenamiento</a></li>
+                        <li class="main-menu__item"><a href="#" class="main-menu__link">Sector Corporativo</a></li>
+                        <!-- <li class="main-menu__item"><a href="#" class="main-menu__link">Ofrendas</a></li> -->
+                    </ul>
+                    <!-- Barra de ayuda (help bar) -->
+                    <div class="help-bar" id="help-bar">
+                        <button class="help-bar__button"><img src="img/icons/checkin-mobl.svg" alt="" class="help-bar__icon-checkin" id="checkin"></button>
+                        <button class="help-bar__button"><img src="img/icons/contact-mobl.svg" alt="" class="help-bar__icon-contact" id="contact"></button>
+                    </div>
+                </nav>
+            </div>
         </header>
-        <!-- Menú principal de navegación. -->
-        <nav class="main-nav">
-            <h1>NAV</h1>
-        </nav>
         <!-- Contenido principal de la página. -->
         <main class="main main-layout">
             <h1>MAIN</h1>
@@ -39,6 +70,10 @@
 
             <section class="section-three">
                 <h1>Section Three</h1>
+            </section>
+
+            <section class="section-four">
+                <h1>Section Four</h1>
             </section>
         </main>
         <!-- Barra lateral - contenido relacionado. -->

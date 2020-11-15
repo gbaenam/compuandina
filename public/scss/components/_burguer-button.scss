@@ -1,0 +1,68 @@
+
+// Variables locales
+.burguer-button {
+    --color-line-inner: #094293;
+    --display-button: visibility;
+
+    @include from(large) {
+        --display-button: none;
+    }
+}
+
+.burguer-button {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    // background-color: pink;
+    cursor: var(--cursor-button);
+    display: var(--display-button);
+
+    &__line,
+    &__line::before,
+    &__line::after {
+        width: 100%;
+        height: .25rem;
+        position: absolute;
+        border-radius: 1.25rem;
+        background-color: var(--color-line-inner);
+        transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.45s;
+    }
+
+    &__line {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__line::before,
+    &__line::after {
+        content: '';
+        right: 0;
+    }
+
+    &__line::before {
+        top: -200%;
+    }
+
+    &__line::after {
+        top: 200%;
+    }
+}
+
+.cruz {
+    transform: rotateZ(45deg);
+    top: 43%;
+
+    &::before {
+        transform: rotateZ(90deg);
+    }
+
+    &::before,
+    &::after {
+        top: 0;
+    }
+}
+
+
+
+
+
