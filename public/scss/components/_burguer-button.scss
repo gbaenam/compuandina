@@ -1,7 +1,6 @@
-
+/*---------------- BURGUER BUTTON ------------------*/
 // Variables locales
 .burguer-button {
-    --color-line-inner: #094293;
     --display-button: visibility;
 
     @include from(large) {
@@ -24,8 +23,8 @@
         height: .25rem;
         position: absolute;
         border-radius: 1.25rem;
-        background-color: var(--color-line-inner);
-        transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.45s;
+        background-color: var(--color-togle-button);
+        // transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.45s;
     }
 
     &__line {

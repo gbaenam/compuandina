@@ -7,45 +7,69 @@
 
 body {
     margin: 0;
-    font-family: var(--font-family-body);
-    font-size: var(--font-size-body);
-    // display: none;
-}
+    color: var(--color-body);
+    line-height: var(--line-height-body);
+    background-color: var(--background-color-body);
 
-// Reset <a>
-a {
-    outline: none;
-    text-decoration: none;
+    font: {
+        size: var(--font-size-body);
+        weight: var(--font-weight-body);
+        family: var(--font-family-body);
+    }
 }
 
 // Reset <img>
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
+    max-width: 100%;
 }
 
 // Reset general etiquetas <h>
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: var(--font-family-h);
 }
 
-// Reset <h1>
-h1 {
-    font-size: var(--font-size-h1);
+// h1 {
+
+// }
+
+// h2 {
+
+// }
+
+// h3 {
+//     font-family: var(--font-family-footer);
+// }
+
+// Reset <p>
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+// Reset <a>
+a {
+    text-decoration: none;
+}
+
+a,
+i,
+button {
+    outline: none;
+    cursor: var(--cursor-button);
 }
 
 // Reset <button>
 button {
     padding: 0;
     border: none;
-    outline: none;
-    background: none;
+    background: transparent;
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
-    cursor: var(--cursor-button);
 
     &:focus {
         outline: none;
@@ -56,6 +80,11 @@ button {
     }
 }
 
+// Reset small
+small {
+    font-size: var(--font-size-small);
+}
+
 // Reset <ul>
 ul {
     margin-top: 0;
@@ -63,7 +92,4 @@ ul {
     margin-bottom: 0;
     list-style: none;
 }
-
-
-
 

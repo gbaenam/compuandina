@@ -1,19 +1,5 @@
-// Contenido principal de la página.
-
 .main {
-    margin-top: var(--height-header);
-
-    min-width: 320px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-[class*="section-"] {
-    padding: .6rem;
-    background-color: orange;
-}
-
-.section-four {
-    background-color: limegreen;
-}
-
-

@@ -1,0 +1,20 @@
+.line-break412::before,
+.line-break1200::before {
+    display: block;
+    content: "";
+}
+
+.line-break412::before {
+
+    @include from(412px) {
+        display: inline;
+    }
+}
+
+.line-break1200::before {
+
+    @include from(1200px) {
+        display: inline;
+    }
+}
+

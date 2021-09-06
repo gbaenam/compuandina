@@ -12,3 +12,16 @@
     }
 }
 
+// Mixin para vídeo.
+@mixin ratio($w,$h) {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat($w,1fr);
+    grid-template-rows: repeat($h,1fr);
+
+    &::before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+}

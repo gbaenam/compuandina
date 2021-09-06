@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CompuAndina S.A.S.</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <script src="https://kit.fontawesome.com/6e25ca12b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- body-font-family -->
-    <!-- main-menu__link font-family -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet" />
-    <!-- h-font-family -->
-    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet" />
-    <!-- title and subtitle font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- main-menu__link font-family -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font body -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Font body-alt -->
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Amaranth:400,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
 
+
+
+    <!-- Font h1 - h2 y footer -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font h1-alt -->
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font banner-title -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Contenedor general del proyecto. -->
     <div class="container">
-        <!-- Cabecera de la página. -->
-        <header class="main-header">
+        <!-- Main header -->
+        <header class="main-header" id="main-header">
             <div class="main-header__container main-header__layout">
-                <!-- Logo Visión Vida y Poder -->
-                <a href="#" class="main-header__logo-link"><img src="img/logos/icon.png" alt="" class="main-header__logo"></a>
-                <!-- Título del Sitio Web -->
-                <h1 class="main-header__title"><a href="#" class="main-header__title-link">CompuAndina</a></h1>
-                <!-- Burguer button -->
+                <!-- Logo del Sitio Web -->
+                <a class="main-header__link-logo" href="#"><img class="main-header__logo" src="img/logos/logo.svg" alt="Logo principal"></a>
+                <!-- Nombre del Sitio Web -->
+                <h1 class="main-header__title"><a class="main-header__title-link" href="#">Mi Sitio Web</a></h1>
+                <!-- Botón de hamburguesa -->
                 <div role="button" aria-pressed="false" class="burguer-button">
                     <div class="burguer-button__line"></div>
                 </div>
-                <!-- Menú principal de navegación. -->
+                <!-- Menú principal de navegación -->
                 <nav class="main-nav" id="main-nav">
-                    <!-- Lista de navegación principal. -->
-                    <ul class="main-menu">
-                        <li class="main-menu__item"><a href="#" class="main-menu__link">Energ&iacute;a</a></li>
-                        <li class="main-menu__item"><a href="#" class="main-menu__link">Software</a></li>
-                        <li class="main-menu__item"><a href="#" class="main-menu__link">Conectividad</a></li>
-                        <li class="main-menu__item"><a href="#" class="main-menu__link">Almacenamiento</a></li>
-                        <li class="main-menu__item"><a href="#" class="main-menu__link">Sector Corporativo</a></li>
-                        <!-- <li class="main-menu__item"><a href="#" class="main-menu__link">Ofrendas</a></li> -->
+                    <!-- Lista de navegación principal -->
+                    <ul class="main-nav__menu">
+                        <li class="main-nav__item"><a class="main-nav__link" href="link.html">About us</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Products</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Demo</a></li>
+                        <!-- <li class="main-nav__item"><a class="main-nav__link" href="#"></a>Contact</li> -->
                     </ul>
-                    <!-- Barra de ayuda (help bar) -->
+                    <!-- Barra de ayuda - help-bar -->
                     <div class="help-bar" id="help-bar">
-                        <button class="help-bar__button"><img src="img/icons/checkin-mobl.svg" alt="" class="help-bar__icon-checkin" id="checkin"></button>
-                        <button class="help-bar__button"><img src="img/icons/contact-mobl.svg" alt="" class="help-bar__icon-contact" id="contact"></button>
+                        <button class="help-bar__button">
+                            <img class="help-bar__icon" src="img/icons/checkin-mobl.svg" alt="" id="checkin">
+                        </button>
+                        <button class="help-bar__button" >
+                            <img class="help-bar__icon" src="img/icons/contact-mobl.svg" alt="" id="contact">
+                        </button>
+                    </div>
+                    <div class="social-bar" id="social-bar">
+                        <div class="social-bar__wrapper social-bar-layout" id="social-bar-wrapper">
+                            <div class="social-bar__icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
         </header>
-        <!-- Contenido principal de la página. -->
-        <main class="main main-layout">
-            <h1>MAIN</h1>
-            <section class="section-one">
-                <h1>Section One</h1>
-            </section>
-
-            <section class="section-two">
-                <h1>Section Two</h1>
-            </section>
-
-            <section class="section-three">
-                <h1>Section Three</h1>
-            </section>
-
-            <section class="section-four">
-                <h1>Section Four</h1>
-            </section>
+        <main class="main" id="main">
+            <h1 class="main__title">MAIN</h1>
         </main>
-        <!-- Barra lateral - contenido relacionado. -->
-        <aside class="aside">
-            <h1>ASIDE</h1>
-        </aside>
-        <!-- Pie de página principal de la página. -->
-        <footer class="footer">
-            <h1>FOOTER</h1>
+        <footer class="main-footer" id="main-footer">
+            <div class="main-footer__development">
+                <div class="main-footer__wrapper main-footer-layout">
+                    <p><small>Developed by CompuAndina S.A.S.</small></p>
+                    <p><small>Design and Development<span class="line-break412"></span> of Accessible Websites</small></p>
+                    <p><small>COPYRIGHT &copy; 2014 - 2021<br>All rights reserved</small></p>
+                    <div class="main-footer__country">
+                        <img src="img/flags/colombia-min.jpg" alt="Bandera de la rep&uacute;blica de Colombia">
+                        <span>Colombia</span>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <script src="js/scripts.js"></script>
     </div>
-
-
-    <!-- Script Local -->
-    <script src="js/scripts.js"></script>
 </body>
-
 </html>

@@ -1,102 +1,20 @@
-
-// Variables locales
+/* ------------------ HEADER ---------------------- */
 .main-header {
-
-    /*-------------- header -------------*/
-    --background-color-header: #fff;
-    /*-----------------------------------*/
-
-    /*----------- logo-link ------------*/
-    --margin-right-logo-link: .3125rem;
-    /*----------------------------------*/
-
-    /*------- logo -------*/
-    --width-logo: 2.7rem;
-    /*--------------------*/
-
-    /*------------- title -----------------*/
-    --font-size-title: 1.3rem;
-    --font-family-title: 'Cinzel', serif;
-    /*-------------------------------------*/
-
-    /*------- title-link  -----------*/
-    --color-title-link:  #1c689d;
-    /*-------------------------------*/
-
-
-    // Wide 360px
-    @include from(360px) {
-        --font-size-title: 1.4rem;
-    }
-
-
-    // Wide 540px
-    @include from(540px) {
-        --font-size-title: 1.5rem;
-    }
-
-
-    // Wide 640px
-    @include from(medium) {
-        --width-logo: 3.3rem;
-    }
+    --margin-right-link-logo: .3rem;
+    /*--------------------------------------------*/
 
 
     // Wide 1024px
     @include from(large) {
-
-        /*-------------- header -------------*/
-        // z-index: var(--z-normal);
-        /*-----------------------------------*/
-
-
-        /*------- logo-link -------*/
-        --padding-logo-link: .25rem;
-        --margin-right-logo-link: 0;
-        /*-------------------------*/
-
-
-        /*------- logo -------*/
-        --width-logo: 3.7rem;
-        /*--------------------*/
-
-
-        /*--------- title ---------*/
-        --font-size-title: 1.6rem;
-        /*-------------------------*/
-
-
-        /*---------- title-link  --------------*/
-        --padding-title-link: .625rem .3125rem;
-        /*-------------------------------------*/
-
-
-        /*-------- title-link-hover  --------*/
-        --color-title-link-hover: #000080;
-        /*-----------------------------------*/
-    }
-
-
-    // Wide 1600px
-    @include from(zlarge) {
-        --width-logo: 4rem;
-        --font-size-title: 1.5rem;
+        --margin-right-link-logo: 0;
+        --padding-title-link: .1rem .2rem;
+        --padding-link-logo: .2rem .1rem .2rem 0;
+    /*-------------------------------------------*/
     }
 }
 
 .main-header {
-    // Referencia para las unidades em
-    // de main-header__title y main-menu__link
-    font-size: 1rem;
-}
-
-.main-header {
-    top: 0;
-    width: 100%;
-    position: fixed;
-    z-index: var(--z-fixed);
     height: var(--height-header);
-    border-bottom: 1px solid lightgray;
     background-color: var(--background-color-header);
 
     &__container {
@@ -104,47 +22,40 @@
         align-items: center;
     }
 
-    &__logo-link {
-        padding: var(--padding-logo-link);
-        margin-right: var(--margin-right-logo-link);
+    &__link-logo {
+        padding: var(--padding-link-logo);
+        margin-right: var(--margin-right-link-logo);
     }
 
-    &__logo-link,
+    &__link-logo,
     &__title-link {
         border: var(--border-link);
         border-radius: var(--border-radius-link);
+    }
 
-        &:focus {
-            border-color: var(--border-color-link-focus);
-        }
-
-        &:active {
-            border-color: var(--border-color-link-active);
-        }
+    &__link-logo:focus,
+    &__title-link:focus {
+        border-color: var(--border-color-link-focus);
     }
 
     &__logo {
-        height: auto;
         width: var(--width-logo);
-        cursor: var(--cursor-button);
     }
 
     &__title {
-        font-weight: 600;
+        margin-bottom: 0;
         margin-right: auto;
-        font-size: var(--font-size-title);
-        font-family: var(--font-family-title);
+        line-height: var(--line-height-site-title);
+
+        font: {
+            size: var(--font-size-site-title);
+            family: var(--font-family-site-title);
+            weight: var(--font-weight-site-title);
+        }
     }
 
     &__title-link {
-        cursor: var(--cursor-button);
-        color: var(--color-title-link);
         padding: var(--padding-title-link);
-
-        &:hover {
-            color: var(--color-title-link-hover);
-        }
+        color: var(--color-site-title);
     }
 }
-
-

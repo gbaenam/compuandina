@@ -1,8 +1,9 @@
 
 // Breakpoints
 $breakpoints: (
-    medium: 640px,
-    xmedium: 960px,
+    medium: 540px,
+    xmedium: 640px,
+    xxmedium: 960px,
     large: 1024px,
     llarge: 1160px,
     xlarge: 1280px,
@@ -26,62 +27,106 @@ $breakpoints: (
 
 // Anchos y alturas.
 :root {
-    --max-width: 1200px;
     --min-width: 320px;
-    --height-header: 3.5rem;
-
-    // Wide 540px
-    @include from(540px) {
-        --height-header: 3.8rem;
-    }
-
-    // Wide 640px
-    @include from(medium) {
-        --height-header: 4.3rem;
-    }
-
-    // Wide 1024px
-    @include from(large) {
-        --height-header: 5rem;
-    }
+    --max-width: 1430px;
 }
 
-// Familia de fuentes.
+
+// Variables y estilos para body
 :root {
-    --font-family-h: 'News Cycle', sans-serif;
-    --font-family-body: 'Open Sans', sans-serif;
+    --font-weight-body: 400;
+    --line-height-body: 140%;
+    --font-size-body: 1.25rem;
+    --color-body: rgb(30, 63, 63);
+    --font-family-body: 'Bitter', serif;
+    --background-color-body: #f5f8ff;
+    --font-family-body-alt:'Roboto', sans-serif;
+
+    @include from(medium) {
+        --font-size-body: 1.375rem;
+    }
 }
+
+// Variables y estilos para header
+:root {
+    --width-logo: 2.8rem;
+    --height-header: 3.8rem;
+    --background-color-header: #fff;
+
+    // Website title.
+    --color-site-title: #6a7477;
+    --font-weight-site-title: 400;
+    --line-height-site-title: 100%;
+    --font-size-site-title: 1.875rem;
+    --font-family-site-title: 'Amaranth', sans-serif;
+
+    @include from(412px) {
+        --font-size-site-title: 2.0625rem;
+    }
+}
+
+
+// Variables y estilos para menu
+:root {
+    --color-menu: #aab0b5;
+    --font-weight-menu: 400;
+    --line-height-menu: 140%;
+    --font-size-menu: 1.25rem;
+    --color-menu-hover: #fff;
+    --font-family-menu: 'Bitter', serif;
+
+    @include from(large) {
+        --color-menu: #6a7477;
+        --line-height-menu: 145%;
+        --font-size-menu: 1.125rem;
+        --color-menu-hover: #0098b8;
+        --font-family-menu: 'Roboto', sans-serif;
+    }
+}
+
+// Variables y estilos para burguer-button
+:root {
+    --color-togle-button: #6a7477;
+    --color-togle-button-alt: #094293;
+}
+
+// Variables y estilos para footer
+:root {
+    --font-family-footer: 'Lato', sans-serif;
+}
+
 
 // Tamaños de fuentes.
 :root {
-    --font-size-h1: 2rem;
-    --font-size-body: .9rem;
-    --font-size-small: .75rem;
-
-    @include from(xmedium) {
-        --font-size-h1: 2.5rem;
-        --font-size-body: 1rem;
-        --font-size-small: .8rem;
-    }
+    --font-size-h1: 48px;
+    --font-size-h2: 30px;
+    --font-size-body: 20px;
 }
 
+
+// Variables para cursor.
 :root {
-    // Variables para button
     --cursor-button: default;
 
     @include from(large) {
-        // Variables para button
         --cursor-button: pointer;
-
-        // Variables para los enlaces en general.
-        // logo-link, title-link, main-menu__link, help-bar__button
-        --border-radius-link: .3125rem;
-        --border-color-link-active: transparent;
-        --border-link: .125rem solid transparent;
-        --border-color-link-focus: rgba(67, 203, 161, 1);
     }
 }
 
+// Variables para los enlaces.
+:root {
 
+    @include from(large) {
+        // Color de borde.
+        --border-color-link-focus: #0098b8;
+        // --border-color-link-focus: #2e5dd8;
+        // --border-color-link-focus: #41c66e;
+        --border-color-link-focus-alt: #62e884;
+
+        // Tipo de borde
+        --border-radius-link: .3125rem;
+        --border-link: .125rem solid transparent;
+    }
+}
 
 
