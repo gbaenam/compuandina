@@ -91,29 +91,3 @@ moveSocialBar()
 // Evento 'change'
 mql.addEventListener('change', moveSocialBar)
 
-
-
-const alturaMain = () => {
-    const vh = innerHeight
-    const heightFooter = footer.getBoundingClientRect().height
-
-    if(mql.matches) {
-        const mainHeight = `height: calc(${vh/16}rem - ${heightHeader} - ${heightFooter/16}rem)`
-        main.setAttribute('style', mainHeight)
-    } else {
-        const mainHeight = `height: calc(${vh/16}rem - ${heightHeader} - ${heightFooter/16}rem)`
-        main.setAttribute('style', mainHeight)
-    }
-}
-
-alturaMain()
-addEventListener('resize', alturaMain)
-
-
-
-// const styles = `
-//     height: calc(${hRem}rem - ${hdr});
-//     color: red;
-//     border-radius: ${br};
-//     font-size: ${hdr};
-// `

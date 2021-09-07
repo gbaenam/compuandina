@@ -410,8 +410,16 @@ ul {
   .social-bar a:focus {
     border-color: var(--border-color-link-focus-alt); }
 
+.main-banner {
+  color: #fff;
+  min-height: 20vh;
+  line-height: 20vh;
+  text-align: center;
+  background-color: aqua; }
+
 .main {
   display: flex;
+  min-height: 50vh;
   align-items: center;
   justify-content: center; }
 
