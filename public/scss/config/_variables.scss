@@ -25,7 +25,7 @@ $breakpoints: (
 }
 
 
-// Anchos y alturas.
+// Anchos.
 :root {
     --min-width: 320px;
     --max-width: 1430px;
@@ -128,5 +128,24 @@ $breakpoints: (
         --border-link: .125rem solid transparent;
     }
 }
+
+
+// Variables para button.
+:root {
+    --font-size-button: 1.2em;
+
+    @include from(360px) {
+        --font-size-button: 1.3em;
+    }
+
+    // @include from(medium) {
+    //     --font-size-button: 1.4em;
+    // }
+
+    @include from(zlarge) {
+        --font-size-button: 1.5em;
+    }
+}
+
 
 

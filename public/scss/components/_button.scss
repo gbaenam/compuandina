@@ -1,0 +1,17 @@
+.button {
+    color: #fff;
+    padding: .3em 2.5em;
+    position: relative;
+    border-radius: 2em;
+    text-transform: uppercase;
+    background-color: #20cf0f;
+    font-family: 'Oswald', sans-serif;
+    border: .144230769em solid transparent;
+    // transition: color .5s, background .5s, border .5s;
+
+    display: inline-block;
+    text-align: center;
+
+    font-size: var(--font-size-button);
+}
+

@@ -3,6 +3,7 @@
     // background-color: #626262;
     background-color: #2e5dd8;
     font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
 
     &__hero-image {
         position: absolute;
@@ -44,6 +45,8 @@
         grid-template-columns: repeat(4,1fr);
         grid-column-gap: 10px;
         grid-row-gap: 12px;
+
+        margin-bottom: 1.5rem;
 
     }
 
