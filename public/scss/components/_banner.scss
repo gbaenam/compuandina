@@ -43,8 +43,8 @@
     &__products {
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 12px;
+        grid-column-gap: 22px;
+        grid-row-gap: 14px;
 
         margin-bottom: 1.5rem;
 
@@ -60,6 +60,10 @@
     &__icon {
         width: 50px;
         margin-bottom: 5px;
+
+        @include from(412px) {
+            width: 60px;
+        }
     }
 
     &__icon-text {
