@@ -132,7 +132,11 @@ $breakpoints: (
 
 // Variables para button.
 :root {
+    --color-button: #fff;
     --font-size-button: 1.2em;
+    --font-weight-button: 400;
+    --background-color-button: #ff9b29;
+    --font-family-button: 'Open Sans', sans-serif;
 
     @include from(360px) {
         --font-size-button: 1.3em;

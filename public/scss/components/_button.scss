@@ -1,17 +1,16 @@
 .button {
-    color: #fff;
-    padding: .3em 2.5em;
     position: relative;
     border-radius: 2em;
-    text-transform: uppercase;
-    background-color: #20cf0f;
-    font-family: 'Oswald', sans-serif;
-    border: .144230769em solid transparent;
-    // transition: color .5s, background .5s, border .5s;
-
-    display: inline-block;
     text-align: center;
-
+    padding: .3em 2.5em;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--color-button);
     font-size: var(--font-size-button);
+    border: .144230769em solid transparent;
+    font-family: var(--font-family-button);
+    font-weight: var(--font-weight-button);
+    background-color: var(--background-color-button);
+    // transition: color .5s, background .5s, border .5s;
 }
 

@@ -75,7 +75,11 @@
     --border-link: .125rem solid transparent; } }
 
 :root {
-  --font-size-button: 1.2em; }
+  --color-button: #fff;
+  --font-size-button: 1.2em;
+  --font-weight-button: 400;
+  --background-color-button: #ff9b29;
+  --font-family-button: 'Open Sans', sans-serif; }
   @media screen and (min-width: 360px) {
     :root {
       --font-size-button: 1.3em; } }
@@ -188,17 +192,18 @@ ul {
   max-width: var(--max-width); }
 
 .button {
-  color: #fff;
-  padding: .3em 2.5em;
   position: relative;
   border-radius: 2em;
-  text-transform: uppercase;
-  background-color: #20cf0f;
-  font-family: 'Oswald', sans-serif;
-  border: .144230769em solid transparent;
-  display: inline-block;
   text-align: center;
-  font-size: var(--font-size-button); }
+  padding: .3em 2.5em;
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--color-button);
+  font-size: var(--font-size-button);
+  border: .144230769em solid transparent;
+  font-family: var(--font-family-button);
+  font-weight: var(--font-weight-button);
+  background-color: var(--background-color-button); }
 
 /* ------------------ HEADER ---------------------- */
 .main-header {
