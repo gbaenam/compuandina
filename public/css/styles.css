@@ -466,15 +466,20 @@ ul {
     margin-bottom: 2rem;
     text-align: center;
     font-family: 'Amaranth', sans-serif; }
+    @media screen and (min-width: 412px) {
+      .main-banner__title {
+        font-size: 3.9rem; } }
   .main-banner__products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 18px;
-    grid-row-gap: 14px;
-    margin-bottom: 1.5rem; }
+    grid-column-gap: 10px;
+    grid-row-gap: 12px;
+    margin-bottom: 2rem; }
     @media screen and (min-width: 412px) {
       .main-banner__products {
-        margin-bottom: 2.5rem; } }
+        margin-bottom: 2.5rem;
+        grid-column-gap: 18px;
+        grid-row-gap: 14px; } }
   .main-banner__item {
     display: flex;
     flex-direction: column;
@@ -488,8 +493,11 @@ ul {
         margin-bottom: 8px; } }
   .main-banner__icon-text {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400; }
+    @media screen and (min-width: 412px) {
+      .main-banner__icon-text {
+        font-size: 16px; } }
 
 .main {
   display: flex;

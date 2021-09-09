@@ -31,6 +31,10 @@
         text-align: center;
 
         font-family: 'Amaranth', sans-serif;
+
+        @include from (412px) {
+            font-size: 3.9rem;
+        }
     }
 
     // &__subtitle {
@@ -43,13 +47,15 @@
     &__products {
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-column-gap: 18px;
-        grid-row-gap: 14px;
+        grid-column-gap: 10px;
+        grid-row-gap: 12px;
 
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
 
         @include from(412px) {
             margin-bottom: 2.5rem;
+            grid-column-gap: 18px;
+            grid-row-gap: 14px;
         }
 
     }
@@ -73,12 +79,13 @@
 
     &__icon-text {
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
+
+        @include from(412px) {
+            font-size: 16px;
+        }
     }
-
-
-
 
 }
 
