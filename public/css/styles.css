@@ -469,9 +469,12 @@ ul {
   .main-banner__products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 22px;
+    grid-column-gap: 18px;
     grid-row-gap: 14px;
     margin-bottom: 1.5rem; }
+    @media screen and (min-width: 412px) {
+      .main-banner__products {
+        margin-bottom: 2.5rem; } }
   .main-banner__item {
     display: flex;
     flex-direction: column;
@@ -481,10 +484,11 @@ ul {
     margin-bottom: 5px; }
     @media screen and (min-width: 412px) {
       .main-banner__icon {
-        width: 60px; } }
+        width: 60px;
+        margin-bottom: 8px; } }
   .main-banner__icon-text {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400; }
 
 .main {
