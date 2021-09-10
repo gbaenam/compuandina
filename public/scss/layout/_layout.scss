@@ -35,7 +35,8 @@
 }
 
 .main-banner-layout {
-    padding: 2.5rem .5rem 2rem;
+    padding: 2.5rem .5rem 3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 }
 
 .social-bar-layout,
@@ -45,3 +46,28 @@
     max-width: var(--max-width);
 }
 
+
+
+// .main-banner__layout {
+//     --padding-banner: 2rem 1rem 3rem;
+//     --polygon-banner: 0 0, 100% 0, 100% 100%, 0 98%;
+
+//     @include from(xmedium) {
+//         --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
+//     }
+
+//     @include from(large) {
+//         --padding-banner: 2.5rem 2rem 4rem;
+//     }
+
+//     @include from(xlarge) {
+//         --padding-banner: 2.5rem 2rem 4.8rem;
+//     }
+// }
+
+// .main-banner__layout {
+//     min-width: var(--min-width);
+//     padding: var(--padding-banner);
+//     margin-top: var(--height-header);
+//     clip-path: polygon(var(--polygon-banner));
+// }
