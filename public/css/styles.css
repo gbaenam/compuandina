@@ -54,6 +54,11 @@
   --color-togle-button-alt: #094293; }
 
 :root {
+  --background-color-banner: #2e5dd8;
+  --font-family-banner-icons: 'Roboto', sans-serif;
+  --font-family-banner-title: 'Amaranth', sans-serif; }
+
+:root {
   --font-family-footer: 'Lato', sans-serif; }
 
 :root {
@@ -470,10 +475,10 @@ ul {
     border-color: var(--border-color-link-focus-alt); }
 
 .main-banner {
+  font-size: 1rem;
   position: relative;
-  background-color: #2e5dd8;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem; }
+  font-family: var(--font-family-banner-icons);
+  background-color: var(--background-color-banner); }
   .main-banner__hero-image {
     position: absolute;
     top: 0;
@@ -499,11 +504,11 @@ ul {
     align-items: center;
     flex-direction: column; }
   .main-banner__title {
-    font-size: 3.3rem;
     line-height: 107%;
-    margin-bottom: 2rem;
+    font-size: 3.3rem;
     text-align: center;
-    font-family: 'Amaranth', sans-serif; }
+    margin-bottom: 2rem;
+    font-family: var(--font-family-banner-title); }
     @media screen and (min-width: 412px) {
       .main-banner__title {
         font-size: 3.9rem; } }

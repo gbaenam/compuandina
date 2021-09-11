@@ -1,9 +1,8 @@
 .main-banner {
-    position: relative;
-    // background-color: #626262;
-    background-color: #2e5dd8;
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    position: relative;
+    font-family: var(--font-family-banner-icons);
+    background-color: var(--background-color-banner);
 
     &__hero-image {
         position: absolute;
@@ -37,12 +36,11 @@
     }
 
     &__title {
-        font-size: 3.3rem;
         line-height: 107%;
-        margin-bottom: 2rem;
+        font-size: 3.3rem;
         text-align: center;
-
-        font-family: 'Amaranth', sans-serif;
+        margin-bottom: 2rem;
+        font-family: var(--font-family-banner-title);
 
         @include from(412px) {
             font-size: 3.9rem;
