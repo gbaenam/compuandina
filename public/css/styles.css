@@ -475,7 +475,9 @@ ul {
     border-color: var(--border-color-link-focus-alt); }
 
 .main-banner {
-  --objet-position-hero-image: center; }
+  --objet-position-hero-image: center;
+  --font-size-banner-title: 3.3rem;
+  --margin-bottom-banner-title: 2rem; }
   @media screen and (min-width: 1024px) {
     .main-banner {
       --objet-position-hero-image: right; } }
@@ -503,15 +505,15 @@ ul {
   .main-banner__content {
     display: flex;
     color: #fff;
-    position: relative;
     align-items: center;
+    position: relative;
     flex-direction: column; }
   .main-banner__title {
     line-height: 107%;
-    font-size: 3.3rem;
     text-align: center;
-    margin-bottom: 2rem;
-    font-family: var(--font-family-banner-title); }
+    font-size: var(--font-size-banner-title);
+    font-family: var(--font-family-banner-title);
+    margin-bottom: var(--margin-bottom-banner-title); }
     @media screen and (min-width: 412px) {
       .main-banner__title {
         font-size: 3.9rem; } }

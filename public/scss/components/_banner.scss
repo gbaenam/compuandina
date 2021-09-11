@@ -1,6 +1,9 @@
 .main-banner {
     // hero-image
     --objet-position-hero-image: center;
+    // title
+    --font-size-banner-title: 3.3rem;
+    --margin-bottom-banner-title: 2rem;
 
     // Wide 1024px
     @include from(large) {
@@ -41,17 +44,17 @@
     &__content {
         display: flex;
         color: #fff;
-        position: relative;
         align-items: center;
+        position: relative;
         flex-direction: column;
     }
 
     &__title {
         line-height: 107%;
-        font-size: 3.3rem;
         text-align: center;
-        margin-bottom: 2rem;
+        font-size: var(--font-size-banner-title);
         font-family: var(--font-family-banner-title);
+        margin-bottom: var(--margin-bottom-banner-title);
 
         @include from(412px) {
             font-size: 3.9rem;
