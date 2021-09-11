@@ -478,6 +478,15 @@ ul {
   --objet-position-hero-image: center;
   --font-size-banner-title: 3.3rem;
   --margin-bottom-banner-title: 2rem; }
+  @media screen and (min-width: 412px) {
+    .main-banner {
+      --font-size-banner-title: 3.9rem; } }
+  @media screen and (min-width: 540px) {
+    .main-banner {
+      --margin-bottom-banner-title: 2.5rem; } }
+  @media screen and (min-width: 960px) {
+    .main-banner {
+      --font-size-banner-title: 3.8rem; } }
   @media screen and (min-width: 1024px) {
     .main-banner {
       --objet-position-hero-image: right; } }
@@ -514,25 +523,16 @@ ul {
     font-size: var(--font-size-banner-title);
     font-family: var(--font-family-banner-title);
     margin-bottom: var(--margin-bottom-banner-title); }
-    @media screen and (min-width: 412px) {
-      .main-banner__title {
-        font-size: 3.9rem; } }
-    @media screen and (min-width: 540px) {
-      .main-banner__title {
-        margin-bottom: 2.5rem; } }
-    @media screen and (min-width: 960px) {
-      .main-banner__title {
-        font-size: 3.8rem; } }
     @media screen and (min-width: 1280px) {
       .main-banner__title {
-        font-size: 4.1rem; } }
+        --font-size-banner-title: 4.1rem; } }
     @media screen and (min-width: 1440px) {
       .main-banner__title {
-        font-size: 4.5rem; } }
+        --font-size-banner-title: 4.5rem; } }
     @media screen and (min-width: 2100px) {
       .main-banner__title {
-        margin-bottom: 4rem;
-        font-size: 5.1rem; } }
+        --margin-bottom-banner-title: 4rem;
+        --font-size-banner-title: 5.1rem; } }
   .main-banner__products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
