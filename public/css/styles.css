@@ -481,6 +481,9 @@ ul {
     @media screen and (min-width: 1024px) {
       .main-banner__hero-image {
         object-position: right; } }
+    @media screen and (min-width: 1280px) {
+      .main-banner__hero-image {
+        object-position: 65% 50%; } }
     @media screen and (min-width: 2100px) {
       .main-banner__hero-image {
         object-position: center; } }

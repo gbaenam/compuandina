@@ -19,6 +19,10 @@
             object-position: right;
         }
 
+        @include from(xlarge) {
+            object-position: 65% 50%;
+        }
+
         @include from(maximum) {
             object-position: center;
         }
@@ -30,8 +34,6 @@
         position: relative;
         align-items: center;
         flex-direction: column;
-
-        // background-color: pink;
     }
 
     &__title {
@@ -76,8 +78,6 @@
         grid-row-gap: 12px;
 
         margin-bottom: 2rem;
-
-        // background-color: pink;
 
         @include from(412px) {
             margin-bottom: 2.5rem;
