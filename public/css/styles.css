@@ -189,6 +189,7 @@ ul {
 
 .main-banner-layout {
   padding: 2.5rem .5rem 3rem;
+  margin-top: var(--height-header);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%); }
   @media screen and (min-width: 640px) {
     .main-banner-layout {
@@ -241,6 +242,10 @@ ul {
       /*-------------------------------------------*/ } }
 
 .main-header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: var(--z-fixed);
   height: var(--height-header);
   background-color: var(--background-color-header); }
   .main-header__container {
