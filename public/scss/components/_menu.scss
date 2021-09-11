@@ -131,8 +131,10 @@
     overflow-y: var(--overflow-y-main-nav);
     transition: var(--transition-main-nav);
     align-items: var(--align-items-main-nav);
+    height: calc(100vh - #{var(--height-header)});
     flex-direction: var(--flex-direction-main-nav);
     background-color: var(--background-color-main-nav);
+
 
     &__move {
         left: 0;
