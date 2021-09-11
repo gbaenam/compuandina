@@ -11,15 +11,20 @@
         --font-size-banner-title: 3.9rem;
     }
 
+
+    // Wide 640px
     @include from(medium) {
         // title
         --margin-bottom-banner-title: 2.5rem;
     }
 
+
+    // Wide 960px
     @include from(xxmedium) {
         // title
         --font-size-banner-title: 3.8rem;
     }
+
 
     // Wide 1024px
     @include from(large) {
@@ -27,16 +32,30 @@
         --objet-position-hero-image: right;
     }
 
+
     // Wide 1280px
     @include from(xlarge) {
         // hero-image
         --objet-position-hero-image:  65% 50%;
+        // title
+        --font-size-banner-title: 4.1rem;
     }
+
+
+    // Wide 1440px
+    @include from(xxlarge) {
+        // title
+        --font-size-banner-title: 4.5rem;
+    }
+
 
     // Wide 2100px
     @include from(maximum) {
         // hero-image
         --objet-position-hero-image: center;
+        // title
+        --font-size-banner-title: 5.1rem;
+        --margin-bottom-banner-title: 4rem;
     }
 }
 
@@ -71,20 +90,6 @@
         font-size: var(--font-size-banner-title);
         font-family: var(--font-family-banner-title);
         margin-bottom: var(--margin-bottom-banner-title);
-
-
-        @include from(xlarge) {
-            --font-size-banner-title: 4.1rem;
-        }
-
-        @include from(xxlarge) {
-            --font-size-banner-title: 4.5rem;
-        }
-
-        @include from(maximum) {
-            --margin-bottom-banner-title: 4rem;
-            --font-size-banner-title: 5.1rem;
-        }
     }
 
     &__products {
