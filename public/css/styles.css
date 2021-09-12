@@ -495,7 +495,8 @@ ul {
       --margin-bottom-products: 2.8rem; } }
   @media screen and (min-width: 540px) {
     .main-banner {
-      --margin-bottom-title: 2.5rem; } }
+      --margin-bottom-title: 2.5rem;
+      --grid-column-gap-products: 2.8125rem; } }
   @media screen and (min-width: 960px) {
     .main-banner {
       --font-size-title: 3.8rem; } }
@@ -547,9 +548,6 @@ ul {
     grid-row-gap: var(--grid-row-gap-products);
     margin-bottom: var(--margin-bottom-products);
     grid-column-gap: var(--grid-column-gap-products); }
-    @media screen and (min-width: 640px) {
-      .main-banner__products {
-        grid-column-gap: 2.8125rem; } }
     @media screen and (min-width: 840px) {
       .main-banner__products {
         display: flex;
