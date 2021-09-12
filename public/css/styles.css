@@ -55,8 +55,8 @@
 
 :root {
   --background-color-banner: #2e5dd8;
-  --font-family-banner-icons: 'Roboto', sans-serif;
-  --font-family-banner-title: 'Amaranth', sans-serif; }
+  --font-family-icons: 'Roboto', sans-serif;
+  --font-family-title: 'Amaranth', sans-serif; }
 
 :root {
   --font-family-footer: 'Lato', sans-serif; }
@@ -506,7 +506,7 @@ ul {
 .main-banner {
   font-size: 1rem;
   position: relative;
-  font-family: var(--font-family-banner-icons);
+  font-family: var(--font-family-icons);
   background-color: var(--background-color-banner); }
   .main-banner__hero-image {
     top: 0;
@@ -527,7 +527,7 @@ ul {
     line-height: 107%;
     text-align: center;
     font-size: var(--font-size-banner-title);
-    font-family: var(--font-family-banner-title);
+    font-family: var(--font-family-title);
     margin-bottom: var(--margin-bottom-banner-title); }
   .main-banner__products {
     --display-products: grid;
