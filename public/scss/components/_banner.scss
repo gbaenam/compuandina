@@ -93,9 +93,12 @@
     }
 
     &__products {
-        display: grid;
-        grid-row-gap: .75rem;
-        grid-column-gap: .625rem;
+        --display-products: grid;
+        display: var(--display-products);
+        --grid-row-gap-products: .75rem;
+        grid-row-gap: var(--grid-row-gap-products);
+        --grid-column-gap-products: .625rem;
+        grid-column-gap: var(--grid-column-gap-products);
         grid-template-columns: repeat(4,1fr);
 
         margin-bottom: 2rem;
