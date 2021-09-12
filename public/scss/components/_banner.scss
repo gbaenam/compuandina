@@ -9,6 +9,9 @@
     --margin-bottom-products: 2rem;
     --grid-row-gap-products: .75rem;
     --grid-column-gap-products: .625rem;
+    // icon
+    --width-icon: 3.125rem;
+    --margin-bottom-icon: .3125rem;
 
 
     @include from(412px) {
@@ -18,6 +21,9 @@
         --margin-bottom-products: 2.5rem;
         --grid-row-gap-products: .875rem;
         --grid-column-gap-products: 1.125rem;
+        // icon
+        --width-icon: 3.75rem;
+        --margin-bottom-icon: .5rem;
     }
 
 
@@ -49,6 +55,8 @@
         --margin-right-item: 1.875rem;
         // item-last-child
         --margin-right-item-last-child: 0;
+        // icon
+        --width-icon: 3.125rem;
     }
 
 
@@ -58,6 +66,8 @@
         --font-size-title: 3.8rem;
         // item
         --margin-right-item: 2.25rem;
+        // icon
+        --width-icon: 3.75rem;
     }
 
 
@@ -97,6 +107,8 @@
         --margin-bottom-title: 4rem;
         // item
         --margin-right-item: 4.375rem;
+        // icon
+        --width-icon: 4.375rem;
     }
 }
 
@@ -153,25 +165,8 @@
     }
 
     &__icon {
-        width: 3.125rem;
-        margin-bottom: .3125rem;
-
-        @include from(412px) {
-            width: 3.75rem;
-            margin-bottom: .5rem;
-        }
-
-        @include from(840px) {
-            width: 3.125rem;
-        }
-
-        @include from(xxmedium) {
-            width: 3.75rem;
-        }
-
-        @include from(maximum) {
-            width: 4.375rem;
-        }
+        width: var(--width-icon);
+        margin-bottom: var(--margin-bottom-icon);
     }
 
     &__icon-text {
