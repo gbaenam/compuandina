@@ -153,24 +153,24 @@
     }
 
     &__icon {
-        width: 50px;
-        margin-bottom: 5px;
+        width: 3.125rem;
+        margin-bottom: .3125rem;
 
         @include from(412px) {
-            width: 60px;
-            margin-bottom: 8px;
+            width: 3.75rem;
+            margin-bottom: .5rem;
         }
 
         @include from(840px) {
-            width: 50px;
+            width: 3.125rem;
         }
 
         @include from(xxmedium) {
-            width: 60px;
+            width: 3.75rem;
         }
 
         @include from(maximum) {
-            width: 70px;
+            width: 4.375rem;
         }
     }
 
