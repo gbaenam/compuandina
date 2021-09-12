@@ -2,27 +2,27 @@
     // hero-image
     --objet-position-hero-image: center;
     // title
-    --font-size-banner-title: 3.3rem;
-    --margin-bottom-banner-title: 2rem;
+    --font-size-title: 3.3rem;
+    --margin-bottom-title: 2rem;
 
 
     @include from(412px) {
         // title
-        --font-size-banner-title: 3.9rem;
+        --font-size-title: 3.9rem;
     }
 
 
     // Wide 640px
     @include from(medium) {
         // title
-        --margin-bottom-banner-title: 2.5rem;
+        --margin-bottom-title: 2.5rem;
     }
 
 
     // Wide 960px
     @include from(xxmedium) {
         // title
-        --font-size-banner-title: 3.8rem;
+        --font-size-title: 3.8rem;
     }
 
 
@@ -38,14 +38,14 @@
         // hero-image
         --objet-position-hero-image:  65% 50%;
         // title
-        --font-size-banner-title: 4.1rem;
+        --font-size-title: 4.1rem;
     }
 
 
     // Wide 1440px
     @include from(xxlarge) {
         // title
-        --font-size-banner-title: 4.5rem;
+        --font-size-title: 4.5rem;
     }
 
 
@@ -54,8 +54,8 @@
         // hero-image
         --objet-position-hero-image: center;
         // title
-        --font-size-banner-title: 5.1rem;
-        --margin-bottom-banner-title: 4rem;
+        --font-size-title: 5.1rem;
+        --margin-bottom-title: 4rem;
     }
 }
 
@@ -87,9 +87,9 @@
     &__title {
         line-height: 107%;
         text-align: center;
-        font-size: var(--font-size-banner-title);
+        font-size: var(--font-size-title);
         font-family: var(--font-family-title-banner);
-        margin-bottom: var(--margin-bottom-banner-title);
+        margin-bottom: var(--margin-bottom-title);
     }
 
     &__products {
