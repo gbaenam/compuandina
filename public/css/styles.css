@@ -507,7 +507,8 @@ ul {
       --font-size-title: 3.8rem; } }
   @media screen and (min-width: 1024px) {
     .main-banner {
-      --objet-position-hero-image: right; } }
+      --objet-position-hero-image: right;
+      --margin-bottom-products: 3.5rem; } }
   @media screen and (min-width: 1280px) {
     .main-banner {
       --objet-position-hero-image:  65% 50%;
@@ -553,9 +554,6 @@ ul {
     grid-row-gap: var(--grid-row-gap-products);
     margin-bottom: var(--margin-bottom-products);
     grid-column-gap: var(--grid-column-gap-products); }
-    @media screen and (min-width: 1024px) {
-      .main-banner__products {
-        margin-bottom: 3.5rem; } }
   .main-banner__item {
     display: flex;
     flex-direction: column;

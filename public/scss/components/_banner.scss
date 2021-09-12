@@ -59,6 +59,8 @@
     @include from(large) {
         // hero-image
         --objet-position-hero-image: right;
+        // products
+        --margin-bottom-products: 3.5rem;
     }
 
 
@@ -127,11 +129,6 @@
         grid-row-gap: var(--grid-row-gap-products);
         margin-bottom: var(--margin-bottom-products);
         grid-column-gap: var(--grid-column-gap-products);
-
-
-        @include from(large) {
-            margin-bottom: 3.5rem;
-        }
     }
 
     &__item {
