@@ -39,6 +39,15 @@
     }
 
 
+    // Wide 840px
+    @include from(840px) {
+        // products
+        --display-products: flex;
+        --grid-row-gap-products: normal;
+        --grid-column-gap-products: normal;
+    }
+
+
     // Wide 960px
     @include from(xxmedium) {
         // title
@@ -119,12 +128,6 @@
         margin-bottom: var(--margin-bottom-products);
         grid-column-gap: var(--grid-column-gap-products);
 
-
-        @include from(840px) {
-            display: flex;
-            grid-row-gap: normal;
-            grid-column-gap: normal;
-        }
 
         @include from(large) {
             margin-bottom: 3.5rem;
