@@ -34,9 +34,9 @@
     // Wide 512px
     @include from(512px) {
         // products
-        --grid-column-gap-products: 2.25rem;
         --grid-row-gap-products: 1.25rem;
         --margin-bottom-products: 2.8rem;
+        --grid-column-gap-products: 2.25rem;
     }
 
 

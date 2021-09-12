@@ -496,9 +496,9 @@ ul {
       --font-size-icon-text: 1rem; } }
   @media screen and (min-width: 512px) {
     .main-banner {
-      --grid-column-gap-products: 2.25rem;
       --grid-row-gap-products: 1.25rem;
-      --margin-bottom-products: 2.8rem; } }
+      --margin-bottom-products: 2.8rem;
+      --grid-column-gap-products: 2.25rem; } }
   @media screen and (min-width: 540px) {
     .main-banner {
       --margin-bottom-title: 2.5rem;
