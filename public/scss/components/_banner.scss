@@ -12,6 +12,8 @@
     // icon
     --width-icon: 3.125rem;
     --margin-bottom-icon: .3125rem;
+    // icon-text
+    --font-size-icon-text: .875rem;
 
 
     @include from(412px) {
@@ -24,6 +26,8 @@
         // icon
         --width-icon: 3.75rem;
         --margin-bottom-icon: .5rem;
+        // icon-text
+        --font-size-icon-text: 1rem;
     }
 
 
@@ -170,13 +174,9 @@
     }
 
     &__icon-text {
-        text-transform: uppercase;
-        font-size: 14px;
         font-weight: 400;
-
-        @include from(412px) {
-            font-size: 16px;
-        }
+        text-transform: uppercase;
+        font-size: var(--font-size-icon-text);
     }
 }
 
