@@ -94,27 +94,27 @@
 
     &__products {
         display: grid;
+        grid-row-gap: .75rem;
+        grid-column-gap: .625rem;
         grid-template-columns: repeat(4,1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 12px;
 
         margin-bottom: 2rem;
 
         @include from(412px) {
             margin-bottom: 2.5rem;
-            grid-column-gap: 18px;
-            grid-row-gap: 14px;
+            grid-row-gap: .875rem;
+            grid-column-gap: 1.125rem;
         }
 
         @include from(512px) {
-            grid-column-gap: 36px;
-            grid-row-gap: 20px;
+            grid-column-gap: 2.25rem;
+            grid-row-gap: 1.25rem;
             margin-bottom: 2.8rem;
         }
 
         // Wide 640px
         @include from(xmedium) {
-            grid-column-gap: 45px;
+            grid-column-gap: 2.8125rem;
         }
 
         @include from(840px) {

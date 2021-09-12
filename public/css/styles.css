@@ -531,23 +531,23 @@ ul {
     margin-bottom: var(--margin-bottom-banner-title); }
   .main-banner__products {
     display: grid;
+    grid-row-gap: .75rem;
+    grid-column-gap: .625rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 12px;
     margin-bottom: 2rem; }
     @media screen and (min-width: 412px) {
       .main-banner__products {
         margin-bottom: 2.5rem;
-        grid-column-gap: 18px;
-        grid-row-gap: 14px; } }
+        grid-row-gap: .875rem;
+        grid-column-gap: 1.125rem; } }
     @media screen and (min-width: 512px) {
       .main-banner__products {
-        grid-column-gap: 36px;
-        grid-row-gap: 20px;
+        grid-column-gap: 2.25rem;
+        grid-row-gap: 1.25rem;
         margin-bottom: 2.8rem; } }
     @media screen and (min-width: 640px) {
       .main-banner__products {
-        grid-column-gap: 45px; } }
+        grid-column-gap: 2.8125rem; } }
     @media screen and (min-width: 840px) {
       .main-banner__products {
         display: flex;
