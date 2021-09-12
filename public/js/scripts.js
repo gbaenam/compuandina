@@ -49,6 +49,27 @@ changeIcons()
 mql.addEventListener('change', changeIcons)
 
 
+
+// Función Altura Elemento.
+elementHeight = () => {
+    // Altura interna del viewport.
+    const vh = innerHeight
+
+    // Calculando la altura del NAV
+    if (mql.matches) {
+        nav.style.height = 'auto'
+    } else {
+        const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
+        nav.setAttribute('style', navHeight)
+    }
+}
+// Ejecución de la función Altura Elemento.
+elementHeight()
+// Evento 'resize' función Altura Elemento.
+addEventListener('resize', elementHeight)
+
+
+
 // Creación elemento 'h3' de socialBar.
 const h3 = document.createElement('h3')
 h3.textContent = '¡Síguenos en redes sociales!'
