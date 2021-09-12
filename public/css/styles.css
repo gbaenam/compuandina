@@ -484,7 +484,10 @@ ul {
   --grid-column-gap-products: .625rem; }
   @media screen and (min-width: 412px) {
     .main-banner {
-      --font-size-title: 3.9rem; } }
+      --font-size-title: 3.9rem;
+      --margin-bottom-products: 2.5rem;
+      --grid-row-gap-products: .875rem;
+      --grid-column-gap-products: 1.125rem; } }
   @media screen and (min-width: 540px) {
     .main-banner {
       --margin-bottom-title: 2.5rem; } }
@@ -539,11 +542,6 @@ ul {
     grid-row-gap: var(--grid-row-gap-products);
     margin-bottom: var(--margin-bottom-products);
     grid-column-gap: var(--grid-column-gap-products); }
-    @media screen and (min-width: 412px) {
-      .main-banner__products {
-        margin-bottom: 2.5rem;
-        grid-row-gap: .875rem;
-        grid-column-gap: 1.125rem; } }
     @media screen and (min-width: 512px) {
       .main-banner__products {
         grid-column-gap: 2.25rem;
