@@ -501,10 +501,13 @@ ul {
     .main-banner {
       --display-products: flex;
       --grid-row-gap-products: normal;
-      --grid-column-gap-products: normal; } }
+      --grid-column-gap-products: normal;
+      --margin-right-item: 1.875rem;
+      --margin-right-item-last-child: 0; } }
   @media screen and (min-width: 960px) {
     .main-banner {
-      --font-size-title: 3.8rem; } }
+      --font-size-title: 3.8rem;
+      --margin-right-item: 2.25rem; } }
   @media screen and (min-width: 1024px) {
     .main-banner {
       --objet-position-hero-image: right;
@@ -512,7 +515,8 @@ ul {
   @media screen and (min-width: 1280px) {
     .main-banner {
       --objet-position-hero-image:  65% 50%;
-      --font-size-title: 4.1rem; } }
+      --font-size-title: 4.1rem;
+      --margin-right-item: 3.125rem; } }
   @media screen and (min-width: 1440px) {
     .main-banner {
       --font-size-title: 4.5rem; } }
@@ -520,7 +524,8 @@ ul {
     .main-banner {
       --objet-position-hero-image: center;
       --font-size-title: 5.1rem;
-      --margin-bottom-title: 4rem; } }
+      --margin-bottom-title: 4rem;
+      --margin-right-item: 4.375rem; } }
 
 .main-banner {
   font-size: 1rem;
@@ -546,8 +551,8 @@ ul {
     line-height: 107%;
     text-align: center;
     font-size: var(--font-size-title);
-    font-family: var(--font-family-title-banner);
-    margin-bottom: var(--margin-bottom-title); }
+    margin-bottom: var(--margin-bottom-title);
+    font-family: var(--font-family-title-banner); }
   .main-banner__products {
     display: var(--display-products);
     grid-template-columns: repeat(4, 1fr);
@@ -556,23 +561,11 @@ ul {
     grid-column-gap: var(--grid-column-gap-products); }
   .main-banner__item {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    align-items: center; }
-    @media screen and (min-width: 840px) {
-      .main-banner__item {
-        margin-right: 30px; } }
-    @media screen and (min-width: 960px) {
-      .main-banner__item {
-        margin-right: 36px; } }
-    @media screen and (min-width: 1280px) {
-      .main-banner__item {
-        margin-right: 50px; } }
-    @media screen and (min-width: 2100px) {
-      .main-banner__item {
-        margin-right: 70px; } }
-  @media screen and (min-width: 840px) {
-    .main-banner__item:last-child {
-      margin-right: 0; } }
+    margin-right: var(--margin-right-item); }
+  .main-banner__item:last-child {
+    margin-right: var(--margin-right-item-last-child); }
   .main-banner__icon {
     width: 50px;
     margin-bottom: 5px; }
