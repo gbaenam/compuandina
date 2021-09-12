@@ -158,11 +158,11 @@
     }
 
     &__item {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin-right: var(--margin-right-item);
-        }
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: var(--margin-right-item);
+    }
 
     &__item:last-child {
         margin-right: var(--margin-right-item-last-child);
