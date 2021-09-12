@@ -21,6 +21,14 @@
     }
 
 
+    // Wide 512px
+    @include from(512px) {
+        --grid-column-gap-products: 2.25rem;
+        --grid-row-gap-products: 1.25rem;
+        --margin-bottom-products: 2.8rem;
+    }
+
+
     // Wide 640px
     @include from(medium) {
         // title
@@ -108,12 +116,6 @@
         margin-bottom: var(--margin-bottom-products);
         grid-column-gap: var(--grid-column-gap-products);
 
-
-        @include from(512px) {
-            grid-column-gap: 2.25rem;
-            grid-row-gap: 1.25rem;
-            margin-bottom: 2.8rem;
-        }
 
         // Wide 640px
         @include from(xmedium) {
