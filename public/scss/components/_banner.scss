@@ -4,6 +4,11 @@
     // title
     --font-size-title: 3.3rem;
     --margin-bottom-title: 2rem;
+    // products
+    --display-products: grid;
+    --margin-bottom-products: 2rem;
+    --grid-row-gap-products: .75rem;
+    --grid-column-gap-products: .625rem;
 
 
     @include from(412px) {
@@ -93,15 +98,11 @@
     }
 
     &__products {
-        --display-products: grid;
         display: var(--display-products);
-        --grid-row-gap-products: .75rem;
-        grid-row-gap: var(--grid-row-gap-products);
-        --grid-column-gap-products: .625rem;
-        grid-column-gap: var(--grid-column-gap-products);
         grid-template-columns: repeat(4,1fr);
-
-        margin-bottom: 2rem;
+        grid-row-gap: var(--grid-row-gap-products);
+        margin-bottom: var(--margin-bottom-products);
+        grid-column-gap: var(--grid-column-gap-products);
 
         @include from(412px) {
             margin-bottom: 2.5rem;
