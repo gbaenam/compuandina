@@ -8,7 +8,7 @@ const   header = document.getElementById('main-header'),
 // Captura de elementos secundarios.
 const   burguerButton = document.querySelector('.burguer-button'),
         burguerLine = document.querySelector('.burguer-button__line'),
-        iconCheckin = document.getElementById('checkin'),
+        // iconCheckin = document.getElementById('checkin'),
         iconContact = document.getElementById('contact'),
         socialBar = document.getElementById('social-bar'),
         socialBarWrapper = document.getElementById('social-bar-wrapper')
@@ -36,11 +36,11 @@ burguerButton.addEventListener('click', buttonAnimation)
 // Función change icons del Header.
 const changeIcons = () => {
     if (mql.matches) {
-        iconCheckin.src = "img/icons/checkin-desk.svg"
-        iconContact.src = "img/icons/contact-desk.svg"
+        // iconCheckin.src = "img/icons/checkin-desk.svg"
+        iconContact.src = "img/icons/mail-desk.svg"
     } else {
-        iconCheckin.src = "img/icons/checkin-mobl.svg"
-        iconContact.src = "img/icons/contact-mobl.svg"
+        // iconCheckin.src = "img/icons/checkin-mobl.svg"
+        iconContact.src = "img/icons/mail-mobl.png"
     }
     }
 // Ejecución de la función change icons.

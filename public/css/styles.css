@@ -83,7 +83,7 @@
   --color-button: #fff;
   --font-size-button: 1.2em;
   --font-weight-button: 400;
-  --background-color-button: #ff9b29;
+  --background-color-button: #ffc36e;
   --font-family-button: 'Open Sans', sans-serif; }
   @media screen and (min-width: 360px) {
     :root {
@@ -362,21 +362,19 @@ ul {
       --border-top-item: none;
       --border-bottom-item: none;
       --margin-right-item: .625rem;
-      --margin-right-item-last-child: 2.5rem;
+      --margin-right-item-last-child: 1.5rem;
       --padding-link: .1rem .5rem; } }
 
 .help-bar {
   --order-help-bar: -1;
-  --padding-help-bar: 1.2rem 1rem;
-  --justify-content-help-bar: flex-end;
-  --margin-right-help-bar-button: .8rem; }
+  --padding-help-bar: 1rem 1rem;
+  --justify-content-help-bar: flex-end; }
   @media screen and (min-width: 1024px) {
     .help-bar {
       --padding-help-bar: 0;
       --order-help-bar: unset;
       --justify-content-help-bar: unset;
-      --padding-help-bar-button: .2rem;
-      --margin-right-help-bar-button: .6rem; } }
+      --padding-help-bar-button: .2rem; } }
 
 .social-bar {
   --margin-top-social-bar: auto;
@@ -463,10 +461,8 @@ ul {
     border-radius: var(--border-radius-link); }
   .help-bar__button:focus {
     border-color: var(--border-color-link-focus); }
-  .help-bar__button:first-child {
-    margin-right: var(--margin-right-help-bar-button); }
   .help-bar__icon {
-    width: 2.8rem; }
+    width: 2.2rem; }
 
 .social-bar {
   margin-top: var(--margin-top-social-bar);
