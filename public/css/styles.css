@@ -222,10 +222,10 @@ ul {
   max-width: var(--max-width); }
 
 .btn-whatsapp {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   right: 10px;
-  bottom: 47px;
+  bottom: 60px;
   display: flex;
   font-size: 60px;
   position: fixed;
