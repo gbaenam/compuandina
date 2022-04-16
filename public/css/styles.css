@@ -336,7 +336,7 @@ ul {
 
 /*------------------ MAIN NAV ----------------------*/
 .main-nav {
-  --width-main-nav: 80vw;
+  --width-main-nav: 100vw;
   --position-main-nav: fixed;
   --overflow-y-main-nav: scroll;
   --transition-main-nav: left .6s;
@@ -408,7 +408,7 @@ ul {
       --padding-wrapper: 2rem 20rem; } }
 
 .main-nav {
-  left: -80vw;
+  left: -100vw;
   display: flex;
   top: var(--height-header);
   width: var(--width-main-nav);
