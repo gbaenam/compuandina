@@ -224,7 +224,7 @@ ul {
 
 .form__layout {
   width: 90%;
-  height: 80vh; }
+  height: 100%; }
 
 .btn-whatsapp {
   width: 60px;
@@ -625,7 +625,8 @@ ul {
   .form__container {
     display: flex;
     border-radius: 10px;
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: center; }
   .form__fielset {
     padding: 0;
     border: none; }
