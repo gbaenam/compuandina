@@ -625,8 +625,7 @@ ul {
   .form__container {
     display: flex;
     border-radius: 10px;
-    flex-direction: column;
-    justify-content: center; }
+    flex-direction: column; }
   .form__fielset {
     padding: 0;
     border: none; }
