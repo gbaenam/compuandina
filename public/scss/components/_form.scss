@@ -1,6 +1,6 @@
 .form {
     background-color: #fff;
-    position:fixed;
+    // position:fixed;
     font-size: 14px;
 
     overflow-y: scroll;
@@ -27,6 +27,11 @@
 
         // padding-top: 30px;
 
+    }
+
+    &__title,
+    &__description {
+        text-align: center;
     }
 
     &__fielset {
