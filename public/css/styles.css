@@ -223,7 +223,7 @@ ul {
   max-width: var(--max-width); }
 
 .form__layout {
-  width: 90%;
+  width: 100%;
   height: 100%; }
 
 .btn-whatsapp {
@@ -614,6 +614,8 @@ ul {
   position: fixed;
   font-size: 14px;
   overflow-y: scroll;
+  padding-left: 6px;
+  padding-right: 6px;
   top: 0;
   left: 0;
   width: 100%;
@@ -624,16 +626,19 @@ ul {
   justify-content: center; }
   .form__container {
     display: flex;
-    border-radius: 10px;
     flex-direction: column; }
   .form__fielset {
-    padding: 0;
-    border: none; }
+    margin: 0;
+    padding: 0 6px 10px;
+    border: none;
+    background-color: aquamarine;
+    margin-bottom: 30px;
+    border-radius: 10px; }
   .form__box {
     margin-bottom: 16px; }
   .form__box:last-child {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     align-items: center; }
   .form__label {
     display: inline-block;
