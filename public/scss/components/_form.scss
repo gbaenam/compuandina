@@ -34,4 +34,57 @@
         width: 100%;
     }
 
+    &__modal {
+        // Estilos de la ventana modal
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: var(--z-modal-max);
+        position: fixed;
+        visibility: hidden;
+        background-color: rgba(0,0,0,.8);
+
+        // Centrado de modal__content
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__modal-content {
+        width: 90%;
+        height: 250px;
+        border-radius: 20px;
+        background-color: #fff;
+
+        // Centrado del contenido
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        // Animación de modal__content
+        transition: transform 1s;
+        transform: translateY(-100vh);
+    }
+
+    &__modal-confirmation {
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #00a135;
+
+        margin-bottom: 15px;
+    }
+
+    &__modal-message {
+        margin-bottom: 3rem;
+    }
+
+    &__modal-close {
+        color: white;
+        padding: 7px 60px;
+        background-color: #0a0a0a;
+    }
+
 }
