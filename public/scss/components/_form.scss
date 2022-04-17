@@ -1,3 +1,37 @@
 .form {
     background-color: pink;
+    position:fixed;
+    font-size: 16px;
+
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: var(--z-modal);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        border-radius: 10px;
+    }
+
+    &__fielset {
+        padding: 0;
+        border: none;
+
+        background-color: aquamarine;
+    }
+
+    &__label {
+        display: inline-block;
+    }
+
+    &__input,
+    &__textarea {
+        width: 100%;
+    }
+
 }

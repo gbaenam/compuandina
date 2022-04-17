@@ -221,6 +221,10 @@ ul {
   margin-right: auto;
   max-width: var(--max-width); }
 
+.form__layout {
+  width: 95%;
+  background-color: orange; }
+
 .btn-whatsapp {
   width: 60px;
   height: 60px;
@@ -605,7 +609,27 @@ ul {
   justify-content: center; }
 
 .form {
-  background-color: pink; }
+  background-color: pink;
+  position: fixed;
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .form__container {
+    border-radius: 10px; }
+  .form__fielset {
+    padding: 0;
+    border: none;
+    background-color: aquamarine; }
+  .form__label {
+    display: inline-block; }
+  .form__input, .form__textarea {
+    width: 100%; }
 
 .main-footer {
   text-align: center;
