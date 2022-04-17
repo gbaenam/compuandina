@@ -1,4 +1,4 @@
-.main-header__layout {
+.main-header-layout {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -6,7 +6,7 @@
     max-width: var(--max-width);
 }
 
-.main-header__layout {
+.main-header-layout {
     padding: 0 .5rem 0 .3rem;
 
     @include from(412px) {
