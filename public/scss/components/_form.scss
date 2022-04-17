@@ -1,7 +1,7 @@
 .form {
-    background-color: pink;
+    background-color: #fff;
     position:fixed;
-    font-size: 16px;
+    font-size: 14px;
 
 
     top: 0;
@@ -16,23 +16,32 @@
 
     &__container {
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     &__fielset {
         padding: 0;
         border: none;
+        // margin-bottom: 40px;
 
-        background-color: aquamarine;
+                        background-color: aquamarine;
     }
 
     &__label {
         display: inline-block;
+        text-transform: uppercase;
     }
 
     &__input,
     &__textarea {
         width: 100%;
     }
+
+    // &__button {
+
+    // }
 
     &__modal {
         // Estilos de la ventana modal
