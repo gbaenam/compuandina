@@ -58,8 +58,7 @@
   --color-togle-button-alt: #094293; }
 
 :root {
-  --background-color-banner: #2e5dd8;
-  --font-family-icons-banner: 'Roboto', sans-serif; }
+  --background-color-banner: #2e5dd8; }
 
 :root {
   --font-family-footer: 'Lato', sans-serif; }
@@ -499,8 +498,10 @@ ul {
 
 .banner {
   --objet-position-hero-image: center;
-  --font-size-title: 3.3rem;
+  --font-weight-title: 400;
+  --line-height-title: 120%;
   --margin-bottom-title: 2rem;
+  --font-size-title: 2.5625rem;
   --display-products: grid;
   --margin-bottom-products: 2rem;
   --grid-row-gap-products: .75rem;
@@ -510,7 +511,7 @@ ul {
   --font-size-icon-text: .875rem; }
   @media screen and (min-width: 412px) {
     .banner {
-      --font-size-title: 3.9rem;
+      --font-size-title: 3.125rem;
       --margin-bottom-products: 2.5rem;
       --grid-row-gap-products: .875rem;
       --grid-column-gap-products: 1.125rem;
@@ -519,15 +520,20 @@ ul {
       --font-size-icon-text: 1rem; } }
   @media screen and (min-width: 512px) {
     .banner {
+      --font-size-title: 3.5rem;
+      --line-height-title: 107%;
       --grid-row-gap-products: 1.25rem;
       --margin-bottom-products: 2.8rem;
       --grid-column-gap-products: 2.25rem; } }
   @media screen and (min-width: 540px) {
     .banner {
+      --font-size-title: 4.125rem;
       --margin-bottom-title: 2.5rem;
       --grid-column-gap-products: 2.8125rem; } }
   @media screen and (min-width: 840px) {
     .banner {
+      --font-size-title: 3.5rem;
+      --line-height-title: 71px;
       --display-products: flex;
       --grid-row-gap-products: normal;
       --grid-column-gap-products: normal;
@@ -548,9 +554,6 @@ ul {
       --objet-position-hero-image:  65% 50%;
       --font-size-title: 4.1rem;
       --margin-right-item: 3.125rem; } }
-  @media screen and (min-width: 1440px) {
-    .banner {
-      --font-size-title: 4.5rem; } }
   @media screen and (min-width: 2100px) {
     .banner {
       --objet-position-hero-image: center;
@@ -562,7 +565,6 @@ ul {
 .banner {
   font-size: 1rem;
   position: relative;
-  font-family: var(--font-family-icons-banner);
   background-color: var(--background-color-banner); }
   .banner__hero-image {
     top: 0;
@@ -580,12 +582,13 @@ ul {
     position: relative;
     flex-direction: column; }
   .banner__title {
-    line-height: 107%;
     text-align: center;
     text-transform: uppercase;
+    font-family: var(--font-family-h);
     font-size: var(--font-size-title);
-    margin-bottom: var(--margin-bottom-title);
-    font-family: var(--font-family-h); }
+    line-height: var(--line-height-title);
+    font-weight: var(--font-weight-title);
+    margin-bottom: var(--margin-bottom-title); }
   .banner__products {
     display: var(--display-products);
     grid-template-columns: repeat(4, 1fr);

@@ -2,8 +2,10 @@
     // hero-image
     --objet-position-hero-image: center;
     // title
-    --font-size-title: 3.3rem;
+    --font-weight-title: 400;
+    --line-height-title: 120%;
     --margin-bottom-title: 2rem;
+    --font-size-title: 2.5625rem;
     // products
     --display-products: grid;
     --margin-bottom-products: 2rem;
@@ -18,7 +20,7 @@
 
     @include from(412px) {
         // title
-        --font-size-title: 3.9rem;
+        --font-size-title: 3.125rem;
         // products
         --margin-bottom-products: 2.5rem;
         --grid-row-gap-products: .875rem;
@@ -33,6 +35,9 @@
 
     // Wide 512px
     @include from(512px) {
+        // title
+        --font-size-title: 3.5rem;
+        --line-height-title: 107%;
         // products
         --grid-row-gap-products: 1.25rem;
         --margin-bottom-products: 2.8rem;
@@ -43,6 +48,7 @@
     // Wide 640px
     @include from(medium) {
         // title
+        --font-size-title: 4.125rem;
         --margin-bottom-title: 2.5rem;
         // products
         --grid-column-gap-products: 2.8125rem;
@@ -51,6 +57,9 @@
 
     // Wide 840px
     @include from(840px) {
+        // title
+        --font-size-title: 3.5rem;
+        --line-height-title: 71px;
         // products
         --display-products: flex;
         --grid-row-gap-products: normal;
@@ -98,7 +107,7 @@
     // Wide 1440px
     @include from(xxlarge) {
         // title
-        --font-size-title: 4.5rem;
+        // --font-size-title: 4.5rem;
     }
 
 
@@ -119,7 +128,6 @@
 .banner {
     font-size: 1rem;
     position: relative;
-    font-family: var(--font-family-icons-banner);
     background-color: var(--background-color-banner);
 
     &__hero-image {
@@ -142,13 +150,13 @@
     }
 
     &__title {
-        line-height: 107%;
         text-align: center;
         text-transform: uppercase;
-        font-size: var(--font-size-title);
-        margin-bottom: var(--margin-bottom-title);
         font-family: var(--font-family-h);
-
+        font-size: var(--font-size-title);
+        line-height: var(--line-height-title);
+        font-weight: var(--font-weight-title);
+        margin-bottom: var(--margin-bottom-title);
     }
 
     &__products {
