@@ -59,8 +59,7 @@
 
 :root {
   --background-color-banner: #2e5dd8;
-  --font-family-icons-banner: 'Roboto', sans-serif;
-  --font-family-title-banner: 'Amaranth', sans-serif; }
+  --font-family-icons-banner: 'Roboto', sans-serif; }
 
 :root {
   --font-family-footer: 'Lato', sans-serif; }
@@ -583,9 +582,10 @@ ul {
   .banner__title {
     line-height: 107%;
     text-align: center;
+    text-transform: uppercase;
     font-size: var(--font-size-title);
     margin-bottom: var(--margin-bottom-title);
-    font-family: var(--font-family-title-banner); }
+    font-family: var(--font-family-h); }
   .banner__products {
     display: var(--display-products);
     grid-template-columns: repeat(4, 1fr);

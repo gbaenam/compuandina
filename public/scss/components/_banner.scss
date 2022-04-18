@@ -144,9 +144,11 @@
     &__title {
         line-height: 107%;
         text-align: center;
+        text-transform: uppercase;
         font-size: var(--font-size-title);
         margin-bottom: var(--margin-bottom-title);
-        font-family: var(--font-family-title-banner);
+        font-family: var(--font-family-h);
+
     }
 
     &__products {
