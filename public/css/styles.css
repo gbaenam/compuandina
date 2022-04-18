@@ -560,7 +560,8 @@ ul {
       --font-size-title: 5.1rem;
       --margin-bottom-title: 4rem;
       --margin-right-item: 4.375rem;
-      --width-icon: 4.375rem; } }
+      --width-icon: 4.375rem;
+      --font-size-icon-text: 1.0625rem; } }
 
 .banner {
   font-size: 1rem;

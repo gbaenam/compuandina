@@ -108,6 +108,8 @@
     @include from(xxlarge) {
         // title
         // --font-size-title: 4.5rem;
+        // icon-text
+        // --font-size-icon-text: .875rem;
     }
 
 
@@ -122,6 +124,8 @@
         --margin-right-item: 4.375rem;
         // icon
         --width-icon: 4.375rem;
+        // icon-text
+        --font-size-icon-text: 1.0625rem;
     }
 }
 
