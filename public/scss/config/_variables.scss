@@ -75,19 +75,21 @@ $breakpoints: (
 
 // Variables y estilos para menu
 :root {
-    --color-menu: #aab0b5;
-    --font-weight-menu: 400;
+    --color-menu: #fff;
+    --color-menu-alt: #aab0b5;
+    --font-weight-menu: 300;
     --line-height-menu: 140%;
     --font-size-menu: 1.25rem;
     --color-menu-hover: #fff;
-    --font-family-menu: 'Bitter', serif;
+    --font-family-menu: 'Roboto', sans-serif;
 
     @include from(large) {
         --color-menu: #6a7477;
+        --color-menu-alt:#6a7477;
         --line-height-menu: 145%;
+        --font-weight-menu: 400;
         --font-size-menu: 1.125rem;
         --color-menu-hover: #0098b8;
-        --font-family-menu: 'Roboto', sans-serif;
     }
 }
 
