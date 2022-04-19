@@ -83,10 +83,13 @@
 
 :root {
   --color-button: #fff;
-  --font-size-button: 1.25em;
   --font-weight-button: 400;
+  --font-size-button: 1.25em;
   --background-color-button: #f59622;
-  --font-family-button: 'Roboto', sans-serif; }
+  --background-color-button-alt: #ffc36e;
+  --background-color-button-other: #0098b8;
+  --font-family-button: 'Roboto', sans-serif;
+  --font-family-button-alt: 'Open Sans', sans-serif; }
   @media screen and (min-width: 360px) {
     :root {
       --font-size-button: 1.3em; } }
