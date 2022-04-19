@@ -7,6 +7,7 @@
     --transition-main-nav: left .6s;
     --flex-direction-main-nav: column;
     --background-color-main-nav: #2a3b47;
+    --background-color-main-nav-alt: #1e3a85;
     // menu
     --border-top-menu: .0625rem solid #11191e;
     --border-bottom-menu: .125rem solid #485761;
@@ -132,7 +133,7 @@
     transition: var(--transition-main-nav);
     align-items: var(--align-items-main-nav);
     flex-direction: var(--flex-direction-main-nav);
-    background-color: var(--background-color-main-nav);
+    background-color: var(--background-color-main-nav-alt);
 
 
     &__move {
