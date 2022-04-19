@@ -151,7 +151,6 @@ $breakpoints: (
     --background-color-button-alt: #ffc36e;
     --background-color-button-other: #0098b8;
     --font-family-button: 'Roboto', sans-serif;
-    --font-family-button-alt: 'Open Sans', sans-serif;
 
     @include from(360px) {
         --font-size-button: 1.3em;
