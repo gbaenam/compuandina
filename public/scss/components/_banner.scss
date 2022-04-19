@@ -130,6 +130,8 @@
 }
 
 .banner {
+    // TODO: font-size de 1rem , es la referencia para --font-size-button
+    // TODO: ...en _button.scss
     font-size: 1rem;
     position: relative;
     background-color: var(--background-color-banner);

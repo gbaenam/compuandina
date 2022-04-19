@@ -83,10 +83,10 @@
 
 :root {
   --color-button: #fff;
-  --font-size-button: 1.2em;
+  --font-size-button: 1.25em;
   --font-weight-button: 400;
-  --background-color-button: #ffc36e;
-  --font-family-button: 'Open Sans', sans-serif; }
+  --background-color-button: #f59622;
+  --font-family-button: 'Roboto', sans-serif; }
   @media screen and (min-width: 360px) {
     :root {
       --font-size-button: 1.3em; } }
@@ -248,10 +248,9 @@ ul {
     background-color: #fff; }
 
 .button {
-  position: relative;
-  border-radius: .3em;
   text-align: center;
-  padding: .3em 2.5em;
+  border-radius: .125em;
+  padding: .3em 2.2em;
   display: inline-block;
   text-transform: uppercase;
   color: var(--color-button);
