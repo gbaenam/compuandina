@@ -47,7 +47,7 @@
     --padding-help-bar: 1.5rem 1.5rem;
     --justify-content-help-bar: flex-end;
     // button
-    // --margin-right-help-bar-button: .8rem;
+    --color-help-bar-button: #fff;
 
 
     @include from(large) {
@@ -56,8 +56,10 @@
         --order-help-bar: unset;
         --justify-content-help-bar: unset;
         // button
-        --padding-help-bar-button: .2rem;
-        // --margin-right-help-bar-button: .6rem;
+        --color-help-bar-button: #9b9b9b;
+        --padding-help-bar-button: 0 .3125rem;
+        // button:hover
+        --color-help-bar-button-hover: #3399ff;
     }
 }
 
@@ -206,37 +208,20 @@
     justify-content: var(--justify-content-help-bar);
 
     &__button {
+        font-size: 40px;
         border: var(--border-link);
+        color: var(--color-help-bar-button);
         padding: var(--padding-help-bar-button);
         border-radius: var(--border-radius-link);
-
-        color: #fff;
-        font-size: 40px;
-
-        @include from(large) {
-            font-size: 40px;
-            color: #9b9b9b;
-        }
     }
 
     &__button:hover {
-        @include from(large) {
-            // color: #0098b8;
-            color: #3399ff;
-        }
+        color: var(--color-help-bar-button-hover)
     }
 
     &__button:focus {
         border-color: var(--border-color-link-focus);
     }
-
-    // &__button:first-child {
-    //     margin-right: var(--margin-right-help-bar-button);
-    // }
-
-    // &__icon {
-    //     width: 2.2rem;
-    // }
 }
 
 
