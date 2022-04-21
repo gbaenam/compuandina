@@ -89,7 +89,8 @@ $breakpoints: (
         --line-height-menu: 145%;
         --font-weight-menu: 400;
         --font-size-menu: 1.125rem;
-        --color-menu-hover: #0098b8;
+        // --color-menu-hover: #0098b8;
+        --color-menu-hover: #3399ff;
     }
 }
 
@@ -132,7 +133,8 @@ $breakpoints: (
 
     @include from(large) {
         // Color de borde.
-        --border-color-link-focus: #0098b8;
+        // --border-color-link-focus: #0098b8;
+        --border-color-link-focus: #3399ff;
         // --border-color-link-focus: #2e5dd8;
         // --border-color-link-focus: #41c66e;
         --border-color-link-focus-alt: #62e884;

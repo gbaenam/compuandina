@@ -37,10 +37,10 @@ burguerButton.addEventListener('click', buttonAnimation)
 const changeIcons = () => {
     if (mql.matches) {
         // iconCheckin.src = "img/icons/checkin-desk.svg"
-        iconContact.src = "img/icons/mail-desk.svg"
+        // iconContact.src = "img/icons/mail-desk.svg"
     } else {
         // iconCheckin.src = "img/icons/checkin-mobl.svg"
-        iconContact.src = "img/icons/mail-mobl.png"
+        // iconContact.src = "img/icons/mail-mobl.svg"
     }
     }
 // Ejecución de la función change icons.

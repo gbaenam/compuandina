@@ -44,7 +44,7 @@
 .help-bar {
     // help-bar
     --order-help-bar: -1;
-    --padding-help-bar: 1rem 1rem;
+    --padding-help-bar: 1.5rem 1.5rem;
     --justify-content-help-bar: flex-end;
     // button
     // --margin-right-help-bar-button: .8rem;
@@ -209,6 +209,21 @@
         border: var(--border-link);
         padding: var(--padding-help-bar-button);
         border-radius: var(--border-radius-link);
+
+        color: #fff;
+        font-size: 40px;
+
+        @include from(large) {
+            font-size: 40px;
+            color: #9b9b9b;
+        }
+    }
+
+    &__button:hover {
+        @include from(large) {
+            // color: #0098b8;
+            color: #3399ff;
+        }
     }
 
     &__button:focus {
@@ -219,9 +234,9 @@
     //     margin-right: var(--margin-right-help-bar-button);
     // }
 
-    &__icon {
-        width: 2.2rem;
-    }
+    // &__icon {
+    //     width: 2.2rem;
+    // }
 }
 
 

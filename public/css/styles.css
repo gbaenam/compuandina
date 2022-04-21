@@ -53,7 +53,7 @@
       --line-height-menu: 145%;
       --font-weight-menu: 400;
       --font-size-menu: 1.125rem;
-      --color-menu-hover: #0098b8; } }
+      --color-menu-hover: #3399ff; } }
 
 :root {
   --color-togle-button: #6a7477;
@@ -78,7 +78,7 @@
 
 @media screen and (min-width: 1024px) {
   :root {
-    --border-color-link-focus: #0098b8;
+    --border-color-link-focus: #3399ff;
     --border-color-link-focus-alt: #62e884;
     --border-radius-link: .3125rem;
     --border-link: .125rem solid transparent; } }
@@ -377,7 +377,7 @@ ul {
 
 .help-bar {
   --order-help-bar: -1;
-  --padding-help-bar: 1rem 1rem;
+  --padding-help-bar: 1.5rem 1.5rem;
   --justify-content-help-bar: flex-end; }
   @media screen and (min-width: 1024px) {
     .help-bar {
@@ -468,11 +468,18 @@ ul {
   .help-bar__button {
     border: var(--border-link);
     padding: var(--padding-help-bar-button);
-    border-radius: var(--border-radius-link); }
+    border-radius: var(--border-radius-link);
+    color: #fff;
+    font-size: 40px; }
+    @media screen and (min-width: 1024px) {
+      .help-bar__button {
+        font-size: 40px;
+        color: #9b9b9b; } }
+  @media screen and (min-width: 1024px) {
+    .help-bar__button:hover {
+      color: #3399ff; } }
   .help-bar__button:focus {
     border-color: var(--border-color-link-focus); }
-  .help-bar__icon {
-    width: 2.2rem; }
 
 .social-bar {
   margin-top: var(--margin-top-social-bar);
