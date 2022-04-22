@@ -380,7 +380,8 @@ ul {
   --order-help-bar: -1;
   --padding-help-bar: 1.5rem 1.5rem;
   --justify-content-help-bar: flex-end;
-  --color-help-bar-button: #fff; }
+  --color-help-bar-button: #fff;
+  --color-help-bar-button-hover: #fff; }
   @media screen and (min-width: 1024px) {
     .help-bar {
       --padding-help-bar: 0;

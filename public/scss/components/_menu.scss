@@ -48,6 +48,8 @@
     --justify-content-help-bar: flex-end;
     // button
     --color-help-bar-button: #fff;
+    // button:hover
+    --color-help-bar-button-hover: #fff;
 
 
     @include from(large) {
@@ -216,7 +218,7 @@
     }
 
     &__button:hover {
-        color: var(--color-help-bar-button-hover)
+        color: var(--color-help-bar-button-hover);
     }
 
     &__button:focus {
