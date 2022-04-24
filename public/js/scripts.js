@@ -8,8 +8,7 @@ const   header = document.getElementById('main-header'),
 // Captura de elementos secundarios.
 const   burguerButton = document.querySelector('.burguer-button'),
         burguerLine = document.querySelector('.burguer-button__line'),
-        // iconCheckin = document.getElementById('checkin'),
-        iconContact = document.getElementById('contact'),
+        iconMail = document.getElementById('contact-bar-mail'),
         socialBar = document.getElementById('social-bar'),
         socialBarWrapper = document.getElementById('social-bar-wrapper')
 
