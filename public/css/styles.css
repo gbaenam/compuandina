@@ -394,16 +394,16 @@ textarea:focus {
   --order-contact-bar: -1;
   --padding-contact-bar: 1.5rem 1.5rem;
   --justify-content-contact-bar: flex-end;
-  --color-contact-bar-button: #fff;
-  --color-contact-bar-button-hover: #fff; }
+  --color-contact-bar-mail: #fff;
+  --color-contact-bar-mail-hover: #fff; }
   @media screen and (min-width: 1024px) {
     .contact-bar {
       --padding-contact-bar: 0;
       --order-contact-bar: unset;
       --justify-content-contact-bar: unset;
-      --color-contact-bar-button: #9b9b9b;
-      --padding-contact-bar-button: 0 .3125rem;
-      --color-contact-bar-button-hover: #3399ff; } }
+      --color-contact-bar-mail: #9b9b9b;
+      --padding-contact-bar-mail: 0 .3125rem;
+      --color-contact-bar-mail-hover: #3399ff; } }
 
 .social-bar {
   --margin-top-social-bar: auto;
@@ -484,15 +484,15 @@ textarea:focus {
   order: var(--order-contact-bar);
   padding: var(--padding-contact-bar);
   justify-content: var(--justify-content-contact-bar); }
-  .contact-bar__button {
+  .contact-bar__mail {
     font-size: 40px;
     border: var(--border-link);
-    color: var(--color-contact-bar-button);
-    padding: var(--padding-contact-bar-button);
+    color: var(--color-contact-bar-mail);
+    padding: var(--padding-contact-bar-mail);
     border-radius: var(--border-radius-link); }
-  .contact-bar__button:hover {
-    color: var(--color-contact-bar-button-hover); }
-  .contact-bar__button:focus {
+  .contact-bar__mail:hover {
+    color: var(--color-contact-bar-mail-hover); }
+  .contact-bar__mail:focus {
     border-color: var(--border-color-link-focus); }
 
 .social-bar {

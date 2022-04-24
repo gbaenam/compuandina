@@ -46,10 +46,10 @@
     --order-contact-bar: -1;
     --padding-contact-bar: 1.5rem 1.5rem;
     --justify-content-contact-bar: flex-end;
-    // button
-    --color-contact-bar-button: #fff;
-    // button:hover
-    --color-contact-bar-button-hover: #fff;
+    // mail
+    --color-contact-bar-mail: #fff;
+    // mail:hover
+    --color-contact-bar-mail-hover: #fff;
 
 
     @include from(large) {
@@ -57,11 +57,11 @@
         --padding-contact-bar: 0;
         --order-contact-bar: unset;
         --justify-content-contact-bar: unset;
-        // button
-        --color-contact-bar-button: #9b9b9b;
-        --padding-contact-bar-button: 0 .3125rem;
-        // button:hover
-        --color-contact-bar-button-hover: #3399ff;
+        // mail
+        --color-contact-bar-mail: #9b9b9b;
+        --padding-contact-bar-mail: 0 .3125rem;
+        // mail:hover
+        --color-contact-bar-mail-hover: #3399ff;
     }
 }
 
@@ -209,19 +209,19 @@
     padding: var(--padding-contact-bar);
     justify-content: var(--justify-content-contact-bar);
 
-    &__button {
+    &__mail {
         font-size: 40px;
         border: var(--border-link);
-        color: var(--color-contact-bar-button);
-        padding: var(--padding-contact-bar-button);
+        color: var(--color-contact-bar-mail);
+        padding: var(--padding-contact-bar-mail);
         border-radius: var(--border-radius-link);
     }
 
-    &__button:hover {
-        color: var(--color-contact-bar-button-hover);
+    &__mail:hover {
+        color: var(--color-contact-bar-mail-hover);
     }
 
-    &__button:focus {
+    &__mail:focus {
         border-color: var(--border-color-link-focus);
     }
 }
