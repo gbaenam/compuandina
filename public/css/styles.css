@@ -390,20 +390,20 @@ textarea:focus {
       --margin-right-item-last-child: 1.5rem;
       --padding-link: .1rem .5rem; } }
 
-.help-bar {
-  --order-help-bar: -1;
-  --padding-help-bar: 1.5rem 1.5rem;
-  --justify-content-help-bar: flex-end;
-  --color-help-bar-button: #fff;
-  --color-help-bar-button-hover: #fff; }
+.contact-bar {
+  --order-contact-bar: -1;
+  --padding-contact-bar: 1.5rem 1.5rem;
+  --justify-content-contact-bar: flex-end;
+  --color-contact-bar-button: #fff;
+  --color-contact-bar-button-hover: #fff; }
   @media screen and (min-width: 1024px) {
-    .help-bar {
-      --padding-help-bar: 0;
-      --order-help-bar: unset;
-      --justify-content-help-bar: unset;
-      --color-help-bar-button: #9b9b9b;
-      --padding-help-bar-button: 0 .3125rem;
-      --color-help-bar-button-hover: #3399ff; } }
+    .contact-bar {
+      --padding-contact-bar: 0;
+      --order-contact-bar: unset;
+      --justify-content-contact-bar: unset;
+      --color-contact-bar-button: #9b9b9b;
+      --padding-contact-bar-button: 0 .3125rem;
+      --color-contact-bar-button-hover: #3399ff; } }
 
 .social-bar {
   --margin-top-social-bar: auto;
@@ -479,20 +479,20 @@ textarea:focus {
   .main-nav__link:focus {
     border-color: var(--border-color-link-focus); }
 
-.help-bar {
+.contact-bar {
   display: flex;
-  order: var(--order-help-bar);
-  padding: var(--padding-help-bar);
-  justify-content: var(--justify-content-help-bar); }
-  .help-bar__button {
+  order: var(--order-contact-bar);
+  padding: var(--padding-contact-bar);
+  justify-content: var(--justify-content-contact-bar); }
+  .contact-bar__button {
     font-size: 40px;
     border: var(--border-link);
-    color: var(--color-help-bar-button);
-    padding: var(--padding-help-bar-button);
+    color: var(--color-contact-bar-button);
+    padding: var(--padding-contact-bar-button);
     border-radius: var(--border-radius-link); }
-  .help-bar__button:hover {
-    color: var(--color-help-bar-button-hover); }
-  .help-bar__button:focus {
+  .contact-bar__button:hover {
+    color: var(--color-contact-bar-button-hover); }
+  .contact-bar__button:focus {
     border-color: var(--border-color-link-focus); }
 
 .social-bar {
