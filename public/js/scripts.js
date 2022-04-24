@@ -2,6 +2,7 @@
 const   header = document.getElementById('main-header'),
         nav = document.getElementById('main-nav'),
         main = document.getElementById('main'),
+        form = document.getElementById('form'),
         footer = document.getElementById('main-footer')
 
 
