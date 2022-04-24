@@ -33,7 +33,7 @@ burguerButton.addEventListener('click', buttonAnimation)
 
 
 // Función Altura Elemento.
-elementHeight = () => {
+const elementHeight = () => {
     // Altura interna del viewport.
     const vh = innerHeight
 
@@ -49,6 +49,15 @@ elementHeight = () => {
 elementHeight()
 // Evento 'resize' función Altura Elemento.
 addEventListener('resize', elementHeight)
+
+
+
+// Funcion launchForm()
+const launchForm = () => {
+    console.log('Soy la función launchForm()')
+}
+// Evento 'click' lanzar formulario
+iconMail.addEventListener('click', launchForm)
 
 
 
