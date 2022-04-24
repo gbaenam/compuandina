@@ -33,23 +33,6 @@ burguerButton.addEventListener('click', buttonAnimation)
 
 
 
-// Función change icons del Header.
-// const changeIcons = () => {
-//     if (mql.matches) {
-//         iconCheckin.src = "img/icons/checkin-desk.svg"
-//         iconContact.src = "img/icons/mail-desk.svg"
-//     } else {
-//         iconCheckin.src = "img/icons/checkin-mobl.svg"
-//         iconContact.src = "img/icons/mail-mobl.svg"
-//     }
-//     }
-// Ejecución de la función change icons.
-// changeIcons()
-// Evento 'change' consulta de medios.
-// mql.addEventListener('change', changeIcons)
-
-
-
 // Función Altura Elemento.
 elementHeight = () => {
     // Altura interna del viewport.
