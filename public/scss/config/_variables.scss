@@ -33,9 +33,16 @@ $breakpoints: (
     --max-width: 1430px;
 }
 
-// Variables para los elementos "h"
+// Tamaños de fuentes
 :root {
-    --font-family-h: 'Lato', sans-serif;
+    --font-size-body: 20px;
+    --font-size-small: 16px;
+}
+
+// Variables para titulares y subtítulos
+:root {
+    --font-family-headlines: 'Lato', sans-serif;
+    --font-family-caption: 'Open Sans', sans-serif;
 }
 
 
@@ -43,15 +50,15 @@ $breakpoints: (
 :root {
     --font-weight-body: 400;
     --line-height-body: 140%;
-    --font-size-body: 1.25rem;
+    // --font-size-body: 1.25rem;
     --color-body: rgb(30, 63, 63);
     --font-family-body: 'Bitter', serif;
     --background-color-body: #f5f8ff;
     --font-family-body-alt:'Roboto', sans-serif;
 
-    @include from(medium) {
-        --font-size-body: 1.375rem;
-    }
+    // @include from(medium) {
+    //     --font-size-body: 1.375rem;
+    // }
 }
 
 // Variables y estilos para header
@@ -109,14 +116,10 @@ $breakpoints: (
     --font-family-footer: 'Lato', sans-serif;
 }
 
-
-// Tamaños de fuentes.
+// Variables y estilos para form
 :root {
-    --font-size-h1: 48px;
-    --font-size-h2: 30px;
-    --font-size-body: 20px;
+    --font-family-form: 'Lato', sans-serif;
 }
-
 
 // Variables para cursor.
 :root {

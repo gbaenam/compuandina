@@ -29,7 +29,8 @@ img {
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: var(--font-family-h);
+    font-weight: 300;
+    font-family: var(--font-family-headlines);
 }
 
 
@@ -73,6 +74,7 @@ button {
 // Reset small
 small {
     font-size: var(--font-size-small);
+    font-family: 'Lato', sans-serif;
 }
 
 // Reset <ul>
@@ -81,5 +83,30 @@ ul {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+}
+
+// Reset <label>, <input>, <texarea>
+label,
+input,
+textarea {
+    font-family: var(--font-family-form);
+}
+
+input,
+textarea {
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+// Clases predefinidas
+
+// Subtítulos
+.caption {
+    font-weight: 400;
+    line-height: normal;
+    font-family: var(--font-family-caption);
 }
 

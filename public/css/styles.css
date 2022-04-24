@@ -11,19 +11,20 @@
   --max-width: 1430px; }
 
 :root {
-  --font-family-h: 'Lato', sans-serif; }
+  --font-size-body: 20px;
+  --font-size-small: 16px; }
+
+:root {
+  --font-family-headlines: 'Lato', sans-serif;
+  --font-family-caption: 'Open Sans', sans-serif; }
 
 :root {
   --font-weight-body: 400;
   --line-height-body: 140%;
-  --font-size-body: 1.25rem;
   --color-body: rgb(30, 63, 63);
   --font-family-body: 'Bitter', serif;
   --background-color-body: #f5f8ff;
   --font-family-body-alt:'Roboto', sans-serif; }
-  @media screen and (min-width: 540px) {
-    :root {
-      --font-size-body: 1.375rem; } }
 
 :root {
   --width-logo: 2.8rem;
@@ -66,9 +67,7 @@
   --font-family-footer: 'Lato', sans-serif; }
 
 :root {
-  --font-size-h1: 48px;
-  --font-size-h2: 30px;
-  --font-size-body: 20px; }
+  --font-family-form: 'Lato', sans-serif; }
 
 :root {
   --cursor-button: default; }
@@ -121,7 +120,8 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: var(--font-family-h); }
+  font-weight: 300;
+  font-family: var(--font-family-headlines); }
 
 p {
   margin-top: 0;
@@ -149,13 +149,28 @@ button {
     border: 0; }
 
 small {
-  font-size: var(--font-size-small); }
+  font-size: var(--font-size-small);
+  font-family: 'Lato', sans-serif; }
 
 ul {
   margin-top: 0;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
+
+label,
+input,
+textarea {
+  font-family: var(--font-family-form); }
+
+input:focus,
+textarea:focus {
+  outline: none; }
+
+.caption {
+  font-weight: 400;
+  line-height: normal;
+  font-family: var(--font-family-caption); }
 
 .line-break412::before,
 .line-break960::before,
@@ -230,8 +245,7 @@ ul {
   max-width: var(--max-width); }
 
 .form-layout {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 .btn-whatsapp {
   width: 60px;
@@ -622,33 +636,45 @@ ul {
     font-size: var(--font-size-icon-text); }
 
 .form {
-  background-color: #fff;
-  font-size: 14px;
-  overflow-y: scroll;
-  padding-left: 6px;
-  padding-right: 6px;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   z-index: var(--z-modal);
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  position: fixed;
+  font-size: 14px;
+  overflow-y: scroll;
+  padding: 10px 6px 10px;
+  background-color: #e7e7e7; }
   .form__container {
     display: flex;
-    flex-direction: column; }
-  .form__title, .form__description {
-    text-align: center; }
+    margin-bottom: 5px;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #fff; }
+  .form__close {
+    font-size: 40px;
+    color: #3399ff;
+    text-align: right;
+    align-self: flex-end;
+    padding: 15px 20px 5px; }
+  .form__title {
+    font-size: 51px;
+    line-height: 48px; }
+  .form__subtitle {
+    font-size: 23px; }
+  .form__title, .form__subtitle {
+    text-align: center;
+    background-color: #fff; }
   .form__fielset {
     margin: 0;
-    padding: 0 6px 10px;
     border: none;
-    background-color: aquamarine;
-    margin-bottom: 30px;
-    border-radius: 10px; }
+    margin-bottom: 15px;
+    padding: 20px 6px 10px; }
   .form__box {
     margin-bottom: 16px; }
+  .form__box:nth-child(4) {
+    margin-bottom: 5px; }
   .form__box:last-child {
     display: flex;
     margin-bottom: 0;
@@ -658,16 +684,19 @@ ul {
     text-transform: uppercase; }
   .form__input, .form__textarea {
     width: 100%;
-    padding: 10px;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 10px 6px; }
   .form__textarea {
     resize: none;
-    min-height: 100px; }
+    min-height: 120px; }
   .form__input-terminos {
     width: 20px;
     height: 20px;
     margin-right: 8px; }
   .form__button {
+    width: 90%;
+    align-self: center;
+    margin-bottom: 18px;
     background-color: #e60023; }
   .form__modal {
     top: 0;
@@ -695,19 +724,23 @@ ul {
   .form__modal-confirmation {
     color: #fff;
     padding: 10px 20px;
+    margin-bottom: 15px;
     border-radius: 10px;
-    background-color: #00a135;
-    margin-bottom: 15px; }
+    background-color: #00a135; }
   .form__modal-message {
     margin-bottom: 3rem; }
   .form__modal-close {
     color: white;
     padding: 7px 60px;
     background-color: #0a0a0a; }
+  .form__copyright {
+    text-align: center;
+    margin-bottom: 5px; }
+  .form__copyright small {
+    font-size: 18px; }
 
 .main-footer {
-  text-align: center;
-  font-family: var(--font-family-footer); }
+  text-align: center; }
   .main-footer__development {
     color: #fff;
     font-size: 1rem;
