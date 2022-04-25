@@ -666,8 +666,7 @@ textarea:focus {
   .form__subtitle {
     font-size: 23px; }
   .form__title, .form__subtitle {
-    text-align: center;
-    background-color: #fff; }
+    text-align: center; }
   .form__fielset {
     margin: 0;
     border: none;
