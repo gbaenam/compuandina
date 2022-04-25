@@ -27,16 +27,33 @@ $breakpoints: (
 }
 
 
-// Anchos.
+// Width contenedores
 :root {
     --min-width: 320px;
     --max-width: 1430px;
+}
+
+// Width button
+:root {
+    --width-button: 90%;
+    // @include from(360px) {
+    //     --width-button: 80%;
+    // }
+    @include from(540px) {
+        --width-button: 70%;
+    }
 }
 
 // Tamaños de fuentes
 :root {
     --font-size-body: 20px;
     --font-size-small: 16px;
+}
+
+// Colores
+:root {
+    --color-one: #646464;
+    --color-two: #094293;
 }
 
 // Variables para titulares y subtítulos
@@ -150,7 +167,7 @@ $breakpoints: (
 :root {
     --color-button: #fff;
     --font-weight-button: 400;
-    --font-size-button: 1.25em;
+    --font-size-button: 1.125em;
     --background-color-button: #f59622;
     --background-color-button-alt: #ffc36e;
     --background-color-button-other: #0098b8;

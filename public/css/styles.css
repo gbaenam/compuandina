@@ -11,8 +11,18 @@
   --max-width: 1430px; }
 
 :root {
+  --width-button: 90%; }
+  @media screen and (min-width: 540px) {
+    :root {
+      --width-button: 70%; } }
+
+:root {
   --font-size-body: 20px;
   --font-size-small: 16px; }
+
+:root {
+  --color-one: #646464;
+  --color-two: #094293; }
 
 :root {
   --font-family-headlines: 'Lato', sans-serif;
@@ -86,7 +96,7 @@
 :root {
   --color-button: #fff;
   --font-weight-button: 400;
-  --font-size-button: 1.25em;
+  --font-size-button: 1.125em;
   --background-color-button: #f59622;
   --background-color-button-alt: #ffc36e;
   --background-color-button-other: #0098b8;
@@ -142,7 +152,8 @@ button {
   background: transparent;
   font-size: inherit;
   font-family: inherit;
-  line-height: inherit; }
+  line-height: inherit;
+  width: var(--width-button); }
   button:focus {
     outline: none; }
   button::-moz-focus-inner {
@@ -277,7 +288,7 @@ textarea:focus {
   border: .144230769em solid transparent;
   font-family: var(--font-family-button);
   font-weight: var(--font-weight-button);
-  background-color: var(--background-color-button); }
+  background-color: #fc7f6f; }
 
 /* ------------------ HEADER ---------------------- */
 .main-header {
@@ -636,29 +647,38 @@ textarea:focus {
     font-size: var(--font-size-icon-text); }
 
 .form {
+  --font-size-label-last: 14px; }
+  @media screen and (min-width: 360px) {
+    .form {
+      --font-size-label-last: 15px; } }
+
+.form {
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   position: fixed;
+  font-size: 16px;
   visibility: hidden;
   overflow-y: scroll;
-  padding: 10px 6px 10px;
+  padding: 12px 12px 10px;
   z-index: var(--z-modal);
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-color: rgba(0, 0, 0, 0.9);
+  max-width: 540px; }
   .form__container {
     display: flex;
     border-radius: 10px;
     flex-direction: column;
     background-color: #fff;
     transition: transform .5s;
-    transform: translateY(-100vh); }
+    transform: translateY(-100vh);
+    color: var(--color-one); }
   .form__close {
     font-size: 40px;
-    color: #3399ff;
     text-align: right;
     align-self: flex-end;
-    padding: 15px 20px 5px; }
+    padding: 15px 20px 5px;
+    color: var(--color-two); }
   .form__title {
     font-size: 51px;
     line-height: 48px; }
@@ -669,9 +689,8 @@ textarea:focus {
   .form__fielset {
     margin: 0;
     border: none;
-    font-size: 16px;
     margin-bottom: 15px;
-    padding: 20px 6px 10px; }
+    padding: 20px 10px 10px; }
   .form__box {
     margin-bottom: 16px; }
   .form__box:nth-child(4) {
@@ -680,9 +699,12 @@ textarea:focus {
     display: flex;
     margin-bottom: 0;
     align-items: center; }
+  .form__box:last-child label {
+    font-size: var(--font-size-label-last); }
   .form__label {
     display: inline-block;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 15px; }
   .form__input, .form__textarea {
     width: 100%;
     font-size: 16px;
@@ -693,12 +715,13 @@ textarea:focus {
   .form__input-terminos {
     width: 20px;
     height: 20px;
-    margin-right: 8px; }
+    margin-right: 5px; }
+    @media screen and (min-width: 360px) {
+      .form__input-terminos {
+        margin-right: 8px; } }
   .form__button {
-    width: 90%;
     align-self: center;
-    margin-bottom: 18px;
-    background-color: #e60023; }
+    margin-bottom: 18px; }
   .form__modal {
     top: 0;
     left: 0;
@@ -738,7 +761,10 @@ textarea:focus {
     text-align: center;
     margin-bottom: 5px; }
   .form__copyright small {
-    font-size: 18px; }
+    font-size: 16px; }
+    @media screen and (min-width: 360px) {
+      .form__copyright small {
+        font-size: 18px; } }
   .form--show {
     transform: translateY(0); }
 
