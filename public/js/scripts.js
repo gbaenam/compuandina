@@ -69,6 +69,8 @@ iconMail.addEventListener('click', launchForm)
 const closeForm = e => {
     e.preventDefault()
     form.classList.remove('form--show')
+    nav.classList.toggle('main-nav__move')
+    burguerLine.classList.toggle('cruz')
 }
 // Evento "click" de closeForm
 iconExit.addEventListener('click', closeForm)

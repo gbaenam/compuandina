@@ -646,7 +646,6 @@ textarea:focus {
   transform: scale(0);
   padding: 10px 6px 10px;
   z-index: var(--z-modal);
-  transition: transform .6s;
   background-color: #e7e7e7; }
   .form__container {
     display: flex;
