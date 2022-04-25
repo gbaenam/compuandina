@@ -3,6 +3,7 @@ const   header = document.getElementById('main-header'),
         nav = document.getElementById('main-nav'),
         main = document.getElementById('main'),
         form = document.getElementById('form'),
+        formContainer = document.getElementById('form-container'),
         footer = document.getElementById('main-footer')
 
 
@@ -56,21 +57,22 @@ addEventListener('resize', elementHeight)
 
 
 // Funcion abrir formulario
-const launchForm = e => {
+const openForm = e => {
     e.preventDefault()
-    form.classList.add('form--show')
+    form.style.visibility = 'visible'
+    setTimeout(() => formContainer.classList.add('form--show'),500)
 }
 // Evento "click" de launchForm()
-iconMail.addEventListener('click', launchForm)
-
+iconMail.addEventListener('click', openForm)
 
 
 // Función cerrar formulario
 const closeForm = e => {
     e.preventDefault()
-    form.classList.remove('form--show')
     burguerLine.classList.toggle('cruz')
     nav.classList.toggle('main-nav__move')
+    formContainer.classList.remove('form--show')
+    setTimeout(() => form.style.visibility = 'hidden',1000)
 }
 // Evento "click" de closeForm
 iconExit.addEventListener('click', closeForm)
@@ -97,4 +99,31 @@ const moveSocialBar = () => {
 moveSocialBar()
 // Evento 'change'
 mql.addEventListener('change', moveSocialBar)
+
+
+
+
+// Función cerrar modal
+// const close = e => {
+//     e.stopPropagation()
+//     modalContent.classList.remove('modal--open')
+//     setTimeout(() => modal.style.visibility = 'hidden',1000)
+// }
+
+
+// Abriendo el modal
+// openModal.addEventListener('click', () => {
+//     modal.style.visibility = 'visible'
+//     modalContent.classList.add('modal--open')
+// })
+
+// Cerrando el modal 1
+// closeModal.addEventListener('click', e => {
+//     close(e)
+// })
+
+// Cerrando el modal 2
+// modal.addEventListener('click', e => {
+//     if (e.target.classList.contains('modal')) close(e)
+// })
 

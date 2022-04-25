@@ -641,18 +641,20 @@ textarea:focus {
   width: 100%;
   height: 100vh;
   position: fixed;
+  visibility: hidden;
   font-size: 14px;
   overflow-y: scroll;
-  transform: scale(0);
   padding: 10px 6px 10px;
   z-index: var(--z-modal);
-  background-color: #e7e7e7; }
+  background-color: rgba(0, 0, 0, 0.9); }
   .form__container {
     display: flex;
     margin-bottom: 5px;
     border-radius: 10px;
     flex-direction: column;
-    background-color: #fff; }
+    background-color: #fff;
+    transition: transform .5s;
+    transform: translateY(-100vh); }
   .form__close {
     font-size: 40px;
     color: #3399ff;
@@ -740,7 +742,7 @@ textarea:focus {
   .form__copyright small {
     font-size: 18px; }
   .form--show {
-    transform: scale(1); }
+    transform: translateY(0); }
 
 .main-footer {
   text-align: center; }
