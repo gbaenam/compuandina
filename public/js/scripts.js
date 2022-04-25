@@ -11,7 +11,9 @@ const   burguerButton = document.querySelector('.burguer-button'),
         burguerLine = document.querySelector('.burguer-button__line'),
         iconMail = document.getElementById('contact-bar-mail'),
         socialBar = document.getElementById('social-bar'),
-        socialBarWrapper = document.getElementById('social-bar-wrapper')
+        socialBarWrapper = document.getElementById('social-bar-wrapper'),
+        iconExit = document.getElementById('form-close')
+
 
 
 // Consulta de medios.
@@ -60,6 +62,10 @@ const launchForm = e => {
 }
 // Evento "click" de launchForm()
 iconMail.addEventListener('click', launchForm)
+
+
+iconExit.addEventListener('click', closeForm)
+
 
 
 
