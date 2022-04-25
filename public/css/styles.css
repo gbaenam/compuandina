@@ -649,7 +649,6 @@ textarea:focus {
   background-color: rgba(0, 0, 0, 0.9); }
   .form__container {
     display: flex;
-    margin-bottom: 5px;
     border-radius: 10px;
     flex-direction: column;
     background-color: #fff;
