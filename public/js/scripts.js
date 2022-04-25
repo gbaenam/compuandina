@@ -55,7 +55,7 @@ addEventListener('resize', elementHeight)
 
 
 
-// Funcion launchForm()
+// Funcion abrir formulario
 const launchForm = e => {
     e.preventDefault()
     form.classList.add('form--show')
@@ -64,8 +64,14 @@ const launchForm = e => {
 iconMail.addEventListener('click', launchForm)
 
 
-iconExit.addEventListener('click', closeForm)
 
+// Función cerrar formulario
+const closeForm = e => {
+    e.preventDefault()
+    form.classList.remove('form--show')
+}
+// Evento "click" de closeForm
+iconExit.addEventListener('click', closeForm)
 
 
 
