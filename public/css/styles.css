@@ -640,10 +640,13 @@ textarea:focus {
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: var(--z-modal);
+  position: fixed;
   font-size: 14px;
   overflow-y: scroll;
+  transform: scale(0);
   padding: 10px 6px 10px;
+  z-index: var(--z-modal);
+  transition: transform .6s;
   background-color: #e7e7e7; }
   .form__container {
     display: flex;
@@ -737,6 +740,8 @@ textarea:focus {
     margin-bottom: 5px; }
   .form__copyright small {
     font-size: 18px; }
+  .form--show {
+    transform: scale(1); }
 
 .main-footer {
   text-align: center; }

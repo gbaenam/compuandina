@@ -54,10 +54,11 @@ addEventListener('resize', elementHeight)
 
 
 // Funcion launchForm()
-const launchForm = () => {
-    console.log('Soy la función launchForm()')
+const launchForm = e => {
+    e.preventDefault()
+    form.classList.add('form--show')
 }
-// Evento 'click' lanzar formulario
+// Evento "click" de launchForm()
 iconMail.addEventListener('click', launchForm)
 
 
