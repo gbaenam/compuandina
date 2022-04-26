@@ -60,7 +60,6 @@ addEventListener('resize', elementHeight)
 // Funcion abrir formulario
 const openForm = e => {
     e.preventDefault()
-    console.log(e.target)
     form.style.visibility = 'visible'
     setTimeout(() => formContainer.classList.add('form--show'),500)
 }
@@ -71,10 +70,12 @@ iconMail.addEventListener('click', openForm)
 // Función cerrar formulario
 const closeForm = e => {
     e.preventDefault()
+
     if (nav.classList.contains('main-nav__move')) {
         burguerLine.classList.toggle('cruz')
         nav.classList.toggle('main-nav__move')
     }
+
     formContainer.classList.remove('form--show')
     setTimeout(() => form.style.visibility = 'hidden',1000)
 }
