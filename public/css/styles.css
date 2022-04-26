@@ -710,7 +710,7 @@ textarea:focus {
     padding: 10px 6px; }
   .form__textarea {
     resize: none;
-    min-height: 120px; }
+    min-height: 100px; }
   .form__input-terminos {
     width: 20px;
     height: 20px;
