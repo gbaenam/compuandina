@@ -13,7 +13,8 @@ const   burguerButton = document.querySelector('.burguer-button'),
         iconMail = document.getElementById('contact-bar-mail'),
         socialBar = document.getElementById('social-bar'),
         socialBarWrapper = document.getElementById('social-bar-wrapper'),
-        iconExit = document.getElementById('form-close')
+        iconExit = document.getElementById('form-close'),
+        buttonBanner = document.getElementById('banner-button')
 
 
 
@@ -62,7 +63,7 @@ const openForm = e => {
     form.style.visibility = 'visible'
     setTimeout(() => formContainer.classList.add('form--show'),500)
 }
-// Evento "click" de launchForm()
+// Evento "click" dek ícono de correo de contact-bar
 iconMail.addEventListener('click', openForm)
 
 
@@ -74,8 +75,11 @@ const closeForm = e => {
     formContainer.classList.remove('form--show')
     setTimeout(() => form.style.visibility = 'hidden',1000)
 }
-// Evento "click" de closeForm
+// Evento "click" del ícono de salida de form
 iconExit.addEventListener('click', closeForm)
+
+// Evento "click" del botón del banner
+buttonBanner.addEventListener('click', openForm)
 
 
 
