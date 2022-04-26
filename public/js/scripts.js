@@ -60,6 +60,7 @@ addEventListener('resize', elementHeight)
 // Funcion abrir formulario
 const openForm = e => {
     e.preventDefault()
+    console.log(e.target)
     form.style.visibility = 'visible'
     setTimeout(() => formContainer.classList.add('form--show'),500)
 }

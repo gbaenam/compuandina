@@ -43,6 +43,7 @@ $breakpoints: (
 :root {
     --color-one: #646464;
     --color-two: #094293;
+    --color-houm: #ff452b;
 }
 
 // Variables para titulares y subtítulos
@@ -158,8 +159,9 @@ $breakpoints: (
     --color-button: #fff;
     --font-weight-button: 400;
     --font-size-button: 1.125em;
-    --background-color-button: #f59622;
-    --background-color-button-form: #fc7f6f;
+    // --background-color-button: #f59622;
+    --background-color-button: var(--color-houm);
+    // --background-color-button-form: #fc7f6f;
     --font-family-button: 'Roboto', sans-serif;
 
     @include from(360px) {

@@ -16,7 +16,8 @@
 
 :root {
   --color-one: #646464;
-  --color-two: #094293; }
+  --color-two: #094293;
+  --color-houm: #ff452b; }
 
 :root {
   --font-family-headlines: 'Lato', sans-serif;
@@ -92,8 +93,7 @@
   --color-button: #fff;
   --font-weight-button: 400;
   --font-size-button: 1.125em;
-  --background-color-button: #f59622;
-  --background-color-button-form: #fc7f6f;
+  --background-color-button: var(--color-houm);
   --font-family-button: 'Roboto', sans-serif; }
   @media screen and (min-width: 360px) {
     :root {
@@ -677,7 +677,7 @@ textarea:focus {
     font-size: 40px;
     align-self: flex-end;
     padding: 15px 20px 5px;
-    color: #f59622; }
+    color: var(--color-houm); }
   .form__title {
     font-size: 51px;
     line-height: 48px; }
