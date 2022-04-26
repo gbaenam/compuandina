@@ -93,7 +93,8 @@
   --color-button: #fff;
   --font-weight-button: 400;
   --font-size-button: 1.125em;
-  --background-color-button: var(--color-houm);
+  --background-color-button: #f59622;
+  --background-color-button-alt: var(--color-houm);
   --font-family-button: 'Roboto', sans-serif; }
   @media screen and (min-width: 360px) {
     :root {
@@ -277,10 +278,10 @@ textarea:focus {
     background-color: #fff; }
 
 .button {
+  padding: .4em 4em;
   text-align: center;
-  border-radius: .125em;
-  padding: .5em 4em;
   display: inline-block;
+  border-radius: .125em;
   text-transform: uppercase;
   width: var(--width-button);
   color: var(--color-button);
@@ -720,7 +721,8 @@ textarea:focus {
         margin-right: 8px; } }
   .form__button {
     align-self: center;
-    margin-bottom: 18px; }
+    margin-bottom: 18px;
+    background-color: var(--color-houm); }
   .form__modal {
     top: 0;
     left: 0;

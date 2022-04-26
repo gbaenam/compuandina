@@ -159,9 +159,8 @@ $breakpoints: (
     --color-button: #fff;
     --font-weight-button: 400;
     --font-size-button: 1.125em;
-    // --background-color-button: #f59622;
-    --background-color-button: var(--color-houm);
-    // --background-color-button-form: #fc7f6f;
+    --background-color-button: #f59622;
+    --background-color-button-alt: var(--color-houm);
     --font-family-button: 'Roboto', sans-serif;
 
     @include from(360px) {
