@@ -40,10 +40,9 @@
 
     &__close {
         font-size: 40px;
-        text-align: right;
         align-self: flex-end;
         padding: 15px 20px 5px;
-        color: var(--color-two);
+        color: #f59622;
     }
 
     &__title {
@@ -116,7 +115,7 @@
     &__button {
         align-self: center;
         margin-bottom: 18px;
-        // background-color: #e60023;
+        // width: 90%;
     }
 
     &__modal {

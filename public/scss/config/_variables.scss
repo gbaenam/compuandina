@@ -27,21 +27,10 @@ $breakpoints: (
 }
 
 
-// Width contenedores
+// Width
 :root {
     --min-width: 320px;
     --max-width: 1430px;
-}
-
-// Width button
-:root {
-    --width-button: 90%;
-    // @include from(360px) {
-    //     --width-button: 80%;
-    // }
-    @include from(540px) {
-        --width-button: 70%;
-    }
 }
 
 // Tamaños de fuentes
@@ -165,21 +154,25 @@ $breakpoints: (
 
 // Variables para button.
 :root {
+    --width-button: 90%;
     --color-button: #fff;
     --font-weight-button: 400;
     --font-size-button: 1.125em;
     --background-color-button: #f59622;
-    --background-color-button-alt: #ffc36e;
-    --background-color-button-other: #0098b8;
+    --background-color-button-form: #fc7f6f;
     --font-family-button: 'Roboto', sans-serif;
 
     @include from(360px) {
         --font-size-button: 1.3em;
     }
 
-    // @include from(medium) {
-    //     --font-size-button: 1.4em;
-    // }
+    @include from(412px) {
+        --font-size-button: 1.4em;
+    }
+
+    @include from(medium) {
+        --width-button: auto;
+    }
 
     @include from(zlarge) {
         --font-size-button: 1.5em;

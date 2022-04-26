@@ -1,17 +1,16 @@
 .button {
     text-align: center;
     border-radius: .125em;
-    padding: .3em 2.2em;
+    padding: .5em 4em;
     display: inline-block;
     text-transform: uppercase;
+    width: var(--width-button);
     color: var(--color-button);
     font-size: var(--font-size-button);
     border: .144230769em solid transparent;
     font-family: var(--font-family-button);
     font-weight: var(--font-weight-button);
-    // background-color: var(--background-color-button);
+    background-color: var(--background-color-button);
     // transition: color .5s, background .5s, border .5s;
-
-    background-color: #fc7f6f;
 }
 
