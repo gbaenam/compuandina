@@ -71,8 +71,10 @@ iconMail.addEventListener('click', openForm)
 // Función cerrar formulario
 const closeForm = e => {
     e.preventDefault()
-    burguerLine.classList.toggle('cruz')
-    nav.classList.toggle('main-nav__move')
+    if (nav.classList.contains('main-nav__move')) {
+        burguerLine.classList.toggle('cruz')
+        nav.classList.toggle('main-nav__move')
+    }
     formContainer.classList.remove('form--show')
     setTimeout(() => form.style.visibility = 'hidden',1000)
 }
