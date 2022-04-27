@@ -124,6 +124,24 @@
         background-color: var(--color-houm);
     }
 
+
+    &__copyright {
+        text-align: center;
+    }
+
+    &__copyright small {
+        font-size: 16px;
+
+        @include from(360px) {
+            font-size: 18px;
+        }
+    }
+
+
+
+
+    // VENTA MODAL CONFIRMACIÓN
+
     &__modal {
         // Estilos de la ventana modal
         top: 0;
@@ -177,17 +195,7 @@
         background-color: #0a0a0a;
     }
 
-    &__copyright {
-        text-align: center;
-    }
 
-    &__copyright small {
-        font-size: 16px;
-
-        @include from(360px) {
-            font-size: 18px;
-        }
-    }
 
     &--show {
         transform: translateY(0);

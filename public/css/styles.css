@@ -717,6 +717,13 @@ textarea:focus {
     align-self: center;
     margin-bottom: 20px;
     background-color: var(--color-houm); }
+  .form__copyright {
+    text-align: center; }
+  .form__copyright small {
+    font-size: 16px; }
+    @media screen and (min-width: 360px) {
+      .form__copyright small {
+        font-size: 18px; } }
   .form__modal {
     top: 0;
     left: 0;
@@ -752,13 +759,6 @@ textarea:focus {
     color: white;
     padding: 7px 60px;
     background-color: #0a0a0a; }
-  .form__copyright {
-    text-align: center; }
-  .form__copyright small {
-    font-size: 16px; }
-    @media screen and (min-width: 360px) {
-      .form__copyright small {
-        font-size: 18px; } }
   .form--show {
     transform: translateY(0); }
 
