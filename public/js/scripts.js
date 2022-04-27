@@ -17,7 +17,6 @@ const   burguerButton = document.querySelector('.burguer-button'),
         buttonBanner = document.getElementById('banner-button')
 
 
-
 // Consulta de medios.
 const mql = matchMedia('(min-width: 1024px)')
 
@@ -39,6 +38,7 @@ burguerButton.addEventListener('click', buttonAnimation)
 
 // Función Altura Elemento.
 const elementHeight = () => {
+
     // Altura interna del viewport.
     const vh = innerHeight
 
@@ -86,6 +86,17 @@ iconExit.addEventListener('click', closeForm)
 buttonBanner.addEventListener('click', openForm)
 
 
+// const setHeight = () => {
+//     const vh = innerHeight
+//     const formContHeight = `height: calc(${vh/16}rem)`
+//     formContainer.setAttribute('style', formContHeight)
+//     console.log(formContHeight)
+// }
+
+// setHeight()
+
+// addEventListener('resize', setHeight)
+
 
 // Creación elemento 'h3' de socialBar.
 const h3 = document.createElement('h3')
@@ -108,30 +119,4 @@ moveSocialBar()
 // Evento 'change'
 mql.addEventListener('change', moveSocialBar)
 
-
-
-
-// Función cerrar modal
-// const close = e => {
-//     e.stopPropagation()
-//     modalContent.classList.remove('modal--open')
-//     setTimeout(() => modal.style.visibility = 'hidden',1000)
-// }
-
-
-// Abriendo el modal
-// openModal.addEventListener('click', () => {
-//     modal.style.visibility = 'visible'
-//     modalContent.classList.add('modal--open')
-// })
-
-// Cerrando el modal 1
-// closeModal.addEventListener('click', e => {
-//     close(e)
-// })
-
-// Cerrando el modal 2
-// modal.addEventListener('click', e => {
-//     if (e.target.classList.contains('modal')) close(e)
-// })
 
