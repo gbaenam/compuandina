@@ -758,9 +758,11 @@ textarea:focus {
   .form__copyright {
     text-align: center;
     margin-top: auto;
-    margin-bottom: 5px; }
+    margin-bottom: auto; }
   .form__copyright small {
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block; }
     @media screen and (min-width: 360px) {
       .form__copyright small {
         font-size: 18px; } }
