@@ -662,18 +662,16 @@ textarea:focus {
   overflow-y: scroll;
   z-index: var(--z-modal);
   background-color: rgba(0, 0, 0, 0.9); }
-  .form__container, .form__wrapper {
-    display: flex;
-    flex-direction: column; }
   .form__container {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     transition: transform .5s;
     transform: translateY(-200vh);
     color: var(--color-one);
     max-width: 540px;
     margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between; }
+    margin-right: auto; }
   .form__close {
     font-size: 40px;
     align-self: flex-end;
@@ -720,7 +718,7 @@ textarea:focus {
     margin-right: 8px; }
   .form__button {
     align-self: center;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     background-color: var(--color-houm); }
   .form__modal {
     top: 0;
@@ -759,6 +757,7 @@ textarea:focus {
     background-color: #0a0a0a; }
   .form__copyright {
     text-align: center;
+    margin-top: auto;
     margin-bottom: 5px; }
   .form__copyright small {
     font-size: 16px; }
