@@ -662,9 +662,10 @@ textarea:focus {
   overflow-y: scroll;
   z-index: var(--z-modal);
   background-color: rgba(0, 0, 0, 0.9); }
-  .form__container {
+  .form__container, .form__wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; }
+  .form__container {
     background-color: #fff;
     transition: transform .5s;
     transform: translateY(-200vh);
@@ -673,9 +674,6 @@ textarea:focus {
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between; }
-  .form__wrapper {
-    display: flex;
-    flex-direction: column; }
   .form__close {
     font-size: 40px;
     align-self: flex-end;

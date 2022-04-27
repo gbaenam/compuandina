@@ -24,11 +24,14 @@
     background-color: rgba(0,0,0,.9);
 
 
+    &__container,
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     &__container {
-        display: flex;
-        // border-radius: 10px;
-        flex-direction: column;
         background-color: #fff;
         transition: transform .5s;
         transform: translateY(-200vh);
@@ -43,10 +46,6 @@
         justify-content: space-between;
     }
 
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-    }
 
     &__close {
         font-size: 40px;
