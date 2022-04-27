@@ -679,14 +679,13 @@ textarea:focus {
     font-size: 51px;
     line-height: 48px; }
   .form__subtitle {
-    font-size: 23px;
-    margin-bottom: 20px; }
+    font-size: 23px; }
   .form__title, .form__subtitle {
     text-align: center; }
   .form__fielset {
     margin: 0;
     border: none;
-    padding: 0 20px 30px;
+    padding: 20px 20px 30px;
     background-color: #fff; }
   .form__box {
     margin-bottom: 16px; }
@@ -714,10 +713,6 @@ textarea:focus {
     width: 20px;
     height: 20px;
     margin-right: 8px; }
-  .form__footer {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column; }
   .form__button {
     align-self: center;
     margin-bottom: 20px;
@@ -760,9 +755,7 @@ textarea:focus {
   .form__copyright {
     text-align: center; }
   .form__copyright small {
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: inline-block; }
+    font-size: 16px; }
     @media screen and (min-width: 360px) {
       .form__copyright small {
         font-size: 18px; } }
