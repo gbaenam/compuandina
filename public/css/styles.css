@@ -257,7 +257,7 @@ textarea:focus {
 
 .form-layout {
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
 
 .btn-whatsapp {
   width: 60px;
@@ -279,10 +279,10 @@ textarea:focus {
     background-color: #fff; }
 
 .button {
-  padding: .4em 4em;
+  padding: .3em 4em;
   text-align: center;
   display: inline-block;
-  border-radius: .125em;
+  border-radius: .1875em;
   text-transform: uppercase;
   width: var(--width-button);
   color: var(--color-button);
@@ -650,9 +650,6 @@ textarea:focus {
 
 .form {
   --font-size-label-last: 14px; }
-  @media screen and (min-width: 360px) {
-    .form {
-      --font-size-label-last: 15px; } }
 
 .form {
   top: 0;
@@ -674,7 +671,11 @@ textarea:focus {
     color: var(--color-one);
     max-width: 540px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    justify-content: space-between; }
+  .form__wrapper {
+    display: flex;
+    flex-direction: column; }
   .form__close {
     font-size: 40px;
     align-self: flex-end;
@@ -691,22 +692,20 @@ textarea:focus {
   .form__fielset {
     margin: 0;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 0 20px 0; }
   .form__box {
     margin-bottom: 16px; }
-  .form__box:nth-child(4) {
-    margin-bottom: 5px; }
   .form__box:last-child {
     display: flex;
     margin-bottom: 0;
     align-items: center; }
-  .form__box:last-child label {
-    font-size: var(--font-size-label-last); }
   .form__label {
     display: inline-block;
-    text-transform: uppercase;
-    font-size: 15px; }
+    font-size: 15px;
+    color: #33475b; }
+  .form__input {
+    height: 40px; }
   .form__input, .form__textarea {
     width: 100%;
     font-size: 16px;
@@ -720,10 +719,7 @@ textarea:focus {
   .form__input-terminos {
     width: 20px;
     height: 20px;
-    margin-right: 5px; }
-    @media screen and (min-width: 360px) {
-      .form__input-terminos {
-        margin-right: 8px; } }
+    margin-right: 8px; }
   .form__button {
     align-self: center;
     margin-bottom: 18px;

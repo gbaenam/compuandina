@@ -3,9 +3,9 @@
     // --font-size-input: 16px;
     --font-size-label-last: 14px;
 
-    @include from(360px) {
-        --font-size-label-last: 15px;
-    }
+    // @include from(360px) {
+    //     --font-size-label-last: 15px;
+    // }
 }
 
 
@@ -40,7 +40,12 @@
         margin-left: auto;
         margin-right: auto;
 
-        // justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
     }
 
     &__close {
@@ -68,7 +73,7 @@
     &__fielset {
         margin: 0;
         border: none;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         padding: 0 20px 0;
 
         // background-color: pink;
@@ -78,9 +83,9 @@
         margin-bottom: 16px;
     }
 
-    &__box:nth-child(4) {
-        margin-bottom: 5px;
-    }
+    // &__box:nth-child(4) {
+    //     margin-bottom: 5px;
+    // }
 
     &__box:last-child {
         display: flex;
@@ -88,14 +93,19 @@
         align-items: center;
     }
 
-    &__box:last-child label {
-        font-size: var(--font-size-label-last);
-    }
+    // &__box:last-child label {
+    //     font-size: var(--font-size-label-last);
+    // }
 
     &__label {
         display: inline-block;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-size: 15px;
+        color: #33475b;
+    }
+
+    &__input {
+        height: 40px;
     }
 
     &__input,
@@ -117,11 +127,12 @@
     &__input-terminos {
         width: 20px;
         height: 20px;
-        margin-right: 5px;
+        margin-right: 8px;
+        // border-color: #cbd6e2;
 
-        @include from(360px) {
-            margin-right: 8px;
-        }
+        // @include from(360px) {
+        //     margin-right: 8px;
+        // }
     }
 
     &__button {
