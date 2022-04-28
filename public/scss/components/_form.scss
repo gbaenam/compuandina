@@ -22,7 +22,6 @@
     z-index: var(--z-modal);
     background-color: rgba(0,0,0,.9);
 
-
     &__container {
         display: flex;
         flex-direction: column;
@@ -41,7 +40,6 @@
         height: 100%;
 
     }
-
 
     &__close {
         font-size: 45px;
@@ -76,17 +74,14 @@
         margin-bottom: 16px;
     }
 
-
     &__box:last-child {
         display: flex;
         margin-bottom: 0;
         align-items: center;
     }
 
-
     &__label {
         display: inline-block;
-        // text-transform: uppercase;
         font-size: 16px;
         color: #33475b;
     }
@@ -117,16 +112,23 @@
         margin-right: 8px;
     }
 
+    &__wrapper-button {
+        background-color: #fff;
+        text-align: center;
+        padding-bottom: 20px;
+    }
 
     &__button {
-        align-self: center;
-        margin-bottom: 20px;
         background-color: var(--color-houm);
     }
 
-
     &__copyright {
         text-align: center;
+
+        margin-top: auto;
+        margin-bottom: auto;
+
+        background-color: #fff;
     }
 
     &__copyright small {
@@ -196,6 +198,7 @@
     }
 
 
+    // CLASE PARA JS
 
     &--show {
         transform: translateY(0);

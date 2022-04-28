@@ -713,12 +713,17 @@ textarea:focus {
     width: 20px;
     height: 20px;
     margin-right: 8px; }
+  .form__wrapper-button {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 20px; }
   .form__button {
-    align-self: center;
-    margin-bottom: 20px;
     background-color: var(--color-houm); }
   .form__copyright {
-    text-align: center; }
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #fff; }
   .form__copyright small {
     font-size: 16px; }
     @media screen and (min-width: 360px) {
