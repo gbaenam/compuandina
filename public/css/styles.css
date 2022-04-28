@@ -643,9 +643,6 @@ textarea:focus {
     font-size: var(--font-size-icon-text); }
 
 .form {
-  --font-size-label-last: 14px; }
-
-.form {
   top: 0;
   left: 0;
   width: 100%;

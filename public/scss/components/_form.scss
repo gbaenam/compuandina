@@ -1,12 +1,11 @@
-.form {
-    // --font-size-label: 15px;
-    // --font-size-input: 16px;
-    --font-size-label-last: 14px;
+// .form {
+//     --font-size-label: 15px;
+//     --font-size-input: 16px;
 
-    // @include from(360px) {
-    //     --font-size-label-last: 15px;
-    // }
-}
+//     @include from(360px) {
+//         --font-size-label-last: 15px;
+//     }
+// }
 
 
 .form {
@@ -23,6 +22,8 @@
     background-color: rgba(0,0,0,.9);
 
     &__container {
+        // TODO: Container, aunque contiene todo el formulario,
+        // TODO: ... el color de background presenta problemas.
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -141,8 +142,8 @@
 
 
 
-
-    // VENTA MODAL CONFIRMACIÓN
+    // Ventana Modal para confirmación
+    // ... de envío de email de contacto.
 
     &__modal {
         // Estilos de la ventana modal
@@ -198,7 +199,7 @@
     }
 
 
-    // CLASE PARA JS
+    // Clase "form-show" para JS.
 
     &--show {
         transform: translateY(0);
