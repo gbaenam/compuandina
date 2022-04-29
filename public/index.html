@@ -129,40 +129,41 @@
         </main>
         <form action="" class="form" id="form">
             <div class="form__container form-layout" id="form-container">
-                <span class="form__close" id="form-close"><i class="fa-solid fa-circle-chevron-right"></i></span>
                 <h2 class="form__title">Cont&aacute;ctanos</h2>
                 <p class="form__subtitle caption">Queremos saber de ti</p>
-                <fieldset class="form__fielset">
-                    <!-- Nombre -->
-                    <div class="form__box">
-                        <label for="name" class="form__label">Nombre completo</label>
-                        <p></p>
-                        <input type="text" name="name" autocapitalize="words" class="form__input input" id="name">
-                    </div>
-                    <!-- Correo electrónico. -->
-                    <div class="form__box">
-                        <label for="email" class="form__label">Correo Electr&oacute;nico</label>
-                        <p></p>
-                        <input type="email" name="email" class="form__input input" id="email">
-                    </div>
-                    <!-- Correo electrónico confirmar. -->
-                    <div class="form__box">
-                        <label for="checkmail" class="form__label">Confirmar Correo Electr&oacute;nico</label>
-                        <p></p>
-                        <input type="email" name="checkmail" class="form__input input" id="checkmail">
-                    </div>
-                    <!-- Mensaje. -->
-                    <div class="form__box">
-                        <label for="textarea" class="form__label">D&eacute;janos tu mensaje</label>
-                        <p></p>
-                        <textarea name="textarea" class="form__textarea input" id="textarea"></textarea>
-                    </div>
-                    <!-- Términos y condiciones. -->
-                    <div class="form__box">
-                        <input type="checkbox" name="checkbox" class="form__input-terminos" id="terminos">
-                        <label for="terminos" class="form__label">Acepto <a href="">T&eacute;rminos y Condiciones</a></label>
-                    </div>
-                </fieldset>
+                <div class="form__icon-close" id="icon-close">
+                    <fieldset class="form__fielset">
+                        <!-- Nombre -->
+                        <div class="form__box">
+                            <label for="name" class="form__label">Nombre completo</label>
+                            <p></p>
+                            <input type="text" name="name" autocapitalize="words" class="form__input input" id="name">
+                        </div>
+                        <!-- Correo electrónico. -->
+                        <div class="form__box">
+                            <label for="email" class="form__label">Correo Electr&oacute;nico</label>
+                            <p></p>
+                            <input type="email" name="email" class="form__input input" id="email">
+                        </div>
+                        <!-- Correo electrónico confirmar. -->
+                        <div class="form__box">
+                            <label for="checkmail" class="form__label">Confirmar Correo Electr&oacute;nico</label>
+                            <p></p>
+                            <input type="email" name="checkmail" class="form__input input" id="checkmail">
+                        </div>
+                        <!-- Mensaje. -->
+                        <div class="form__box">
+                            <label for="textarea" class="form__label">D&eacute;janos tu mensaje</label>
+                            <p></p>
+                            <textarea name="textarea" class="form__textarea input" id="textarea"></textarea>
+                        </div>
+                        <!-- Términos y condiciones. -->
+                        <div class="form__box">
+                            <input type="checkbox" name="checkbox" class="form__input-terminos" id="terminos">
+                            <label for="terminos" class="form__label">Acepto <a href="">T&eacute;rminos y Condiciones</a></label>
+                        </div>
+                    </fieldset>
+                </div>
                 <!-- Wrapper botón enviar -->
                 <div class="form__wrapper-button">
                     <!-- Botón enviar formulario -->

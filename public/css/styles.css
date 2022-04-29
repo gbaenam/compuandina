@@ -660,28 +660,43 @@ textarea:focus {
     transition: transform .5s;
     transform: translateY(-200vh);
     color: var(--color-one);
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    height: 100%; }
-  .form__close {
-    font-size: 45px;
-    align-self: flex-end;
-    padding: 15px 20px 5px;
-    color: var(--color-houm); }
+    height: 100%;
+    padding: 60px 0; }
   .form__title {
     font-size: 51px;
     line-height: 48px; }
   .form__subtitle {
     font-size: 23px; }
   .form__title, .form__subtitle {
-    text-align: center; }
+    text-align: center;
+    background-color: lightblue; }
+  .form__icon-close {
+    width: 100%;
+    max-width: 465px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto; }
+    .form__icon-close::before {
+      font-weight: 900;
+      content: "\f138";
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      font-family: "Font Awesome 5 Free";
+      -webkit-font-smoothing: antialiased;
+      top: -124px;
+      right: 10px;
+      cursor: pointer;
+      position: absolute;
+      font-size: 3.125rem;
+      color: var(--color-houm); }
   .form__fielset {
     margin: 0;
     border: none;
     padding: 20px 20px 30px;
-    background-color: #fff; }
+    background-color: pink; }
   .form__box {
     margin-bottom: 16px; }
   .form__box:last-child {
@@ -709,16 +724,16 @@ textarea:focus {
     height: 20px;
     margin-right: 8px; }
   .form__wrapper-button {
-    background-color: #fff;
     text-align: center;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    background-color: lightblue; }
   .form__button {
     background-color: var(--color-houm); }
   .form__copyright {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: #fff; }
+    background-color: lightgray; }
   .form__copyright small {
     font-size: 16px; }
     @media screen and (min-width: 360px) {

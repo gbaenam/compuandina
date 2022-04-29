@@ -13,12 +13,13 @@ const   burguerButton = document.querySelector('.burguer-button'),
         iconMail = document.getElementById('contact-bar-mail'),
         socialBar = document.getElementById('social-bar'),
         socialBarWrapper = document.getElementById('social-bar-wrapper'),
-        iconExit = document.getElementById('form-close'),
+        iconCloseForm = document.getElementById('icon-close'),
         buttonBanner = document.getElementById('banner-button')
 
 
 // Consulta de medios.
 const mql = matchMedia('(min-width: 1024px)')
+const mqlForm = matchMedia('min-width: 465px')
 
 
 // Leyendo y asignando la variable CSS '--height-header' con JavaScript.
@@ -63,9 +64,6 @@ const openForm = e => {
     form.style.visibility = 'visible'
     setTimeout(() => formContainer.classList.add('form--show'),500)
 }
-// Evento "click" dek ícono de correo de contact-bar
-iconMail.addEventListener('click', openForm)
-
 
 // Función cerrar formulario
 const closeForm = e => {
@@ -79,12 +77,19 @@ const closeForm = e => {
     formContainer.classList.remove('form--show')
     setTimeout(() => form.style.visibility = 'hidden',1000)
 }
-// Evento "click" del ícono de salida de form
-iconExit.addEventListener('click', closeForm)
 
-// Evento "click" del botón del banner
+// Evento abrir formulario
+iconMail.addEventListener('click', openForm)
+
+// Evento abrir formulario
 buttonBanner.addEventListener('click', openForm)
 
+// Evento cerrar formulario
+iconCloseForm.addEventListener('click', e => {
+    if (e.target.classList.contains('form__icon-close')) {
+        closeForm(e)
+    }
+})
 
 // const setHeight = () => {
 //     const vh = innerHeight
