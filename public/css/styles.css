@@ -653,8 +653,6 @@ textarea:focus {
   z-index: var(--z-modal);
   background-color: rgba(0, 0, 0, 0.9); }
   .form__container {
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
     transition: transform .5s;
     transform: translateY(-200%);
@@ -665,10 +663,17 @@ textarea:focus {
     overflow-y: scroll; }
     @media screen and (min-width: 540px) {
       .form__container {
-        padding: 20px 0 0; } }
+        padding: 30px 0 0; } }
     @media screen and (min-width: 1024px) {
       .form__container {
-        padding: 150px 0 0; } }
+        padding: 0; } }
+  .form__container-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    @media screen and (min-width: 1024px) {
+      .form__container-height {
+        height: auto; } }
   .form__title {
     font-size: 51px;
     line-height: 42px; }

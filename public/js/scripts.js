@@ -19,7 +19,6 @@ const   burguerButton = document.querySelector('.burguer-button'),
 
 // Consulta de medios.
 const mql = matchMedia('(min-width: 1024px)')
-const mqlForm = matchMedia('min-width: 465px')
 
 
 // Leyendo y asignando la variable CSS '--height-header' con JavaScript.
@@ -28,10 +27,10 @@ const heightHeader = getComputedStyle(header).getPropertyValue('--height-header'
 
 
 // Función hamburger button animation
-const buttonAnimation = () => {
+function buttonAnimation() {
     burguerLine.classList.toggle('cruz')
     nav.classList.toggle('main-nav__move')
-    }
+}
 // Evento 'click' hamburger button animation.
 burguerButton.addEventListener('click', buttonAnimation)
 
@@ -42,10 +41,14 @@ const elementHeight = () => {
 
     // Altura interna del viewport.
     const vh = innerHeight
+    const formHeight = document.querySelector('.form__container-height').clientHeight
+    const formHeightAverage = `calc(${(vh-formHeight)/2}px)`
 
-    // Calculando la altura del NAV
     if (mql.matches) {
+        // Altura del NAV
         nav.style.height = 'auto'
+        // padding-top formContainer
+        formContainer.style.paddingTop = formHeightAverage
     } else {
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
         nav.setAttribute('style', navHeight)
