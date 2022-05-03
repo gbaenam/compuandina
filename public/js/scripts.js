@@ -39,19 +39,29 @@ burguerButton.addEventListener('click', buttonAnimation)
 // Función Altura Elemento.
 const elementHeight = () => {
 
-    // Altura interna del viewport.
-    const vh = innerHeight
-    const formHeight = document.querySelector('.form__container-height').clientHeight
-    const formHeightAverage = `calc(${(vh-formHeight)/2}px)`
+        // Altura interna del viewport.
+    const vh = innerHeight,
+
+        // Altura de 'form__container-height'
+        formContHeight = document.querySelector('.form__container-height').clientHeight,
+
+        // Obteniendo la variable CSS '--padding-top-form-container' con JavaScript.
+        paddTopFormCont = getComputedStyle(formContainer).getPropertyValue('--padding-top-form-container')
 
     if (mql.matches) {
         // Altura del NAV
         nav.style.height = 'auto'
-        // padding-top formContainer
-        formContainer.style.paddingTop = formHeightAverage
+
+        // Calculando padding-top formContainer
+        const formContHeightAverage = `calc(${(vh-formContHeight)/2}px)`
+        formContainer.style.paddingTop = formContHeightAverage
     } else {
+        // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
         nav.setAttribute('style', navHeight)
+
+        // Calculando padding-top formContainer
+        formContainer.style.paddingTop = paddTopFormCont
     }
 }
 // Ejecución de la función Altura Elemento.

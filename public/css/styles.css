@@ -643,6 +643,36 @@ textarea:focus {
     font-size: var(--font-size-icon-text); }
 
 .form {
+  --padding-top-form-container: 50px;
+  --height-form-container-height: 100%;
+  --font-size-form-title: 51px;
+  --line-height-form-title: 42px;
+  --top-form-icon-close-before: -105px;
+  --right-form-icon-close-before: 23px;
+  --font-size-form-icon-close-before: 2.5rem;
+  --margin-form-copyright: auto 0;
+  --font-size-form-copyright-small: 16px; }
+  @media screen and (min-width: 360px) {
+    .form {
+      --font-size-form-title: 55px;
+      --font-size-form-copyright-small: 18px; } }
+  @media screen and (min-width: 412px) {
+    .form {
+      --font-size-form-title: 61px;
+      --line-height-form-title: 52px;
+      --top-form-icon-close-before: -113px;
+      --font-size-form-icon-close-before: 3rem; } }
+  @media screen and (min-width: 540px) {
+    .form {
+      --padding-top-form-container: 30px;
+      --top-form-icon-close-before: -50px;
+      --right-form-icon-close-before: -10px; } }
+  @media screen and (min-width: 1024px) {
+    .form {
+      --height-form-container-height: auto;
+      --margin-form-copyright: 0; } }
+
+.form {
   top: 0;
   left: 0;
   width: 100%;
@@ -653,37 +683,23 @@ textarea:focus {
   z-index: var(--z-modal);
   background-color: rgba(0, 0, 0, 0.9); }
   .form__container {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    overflow-y: scroll;
+    color: var(--color-one);
     background-color: #fff;
     transition: transform .5s;
     transform: translateY(-200%);
-    color: var(--color-one);
-    width: 100%;
-    height: 100%;
-    padding: 50px 0 0;
-    overflow-y: scroll; }
-    @media screen and (min-width: 540px) {
-      .form__container {
-        padding: 30px 0 0; } }
-    @media screen and (min-width: 1024px) {
-      .form__container {
-        padding: 0; } }
+    padding-top: var(--padding-top-form-container); }
   .form__container-height {
     display: flex;
     flex-direction: column;
-    height: 100%; }
-    @media screen and (min-width: 1024px) {
-      .form__container-height {
-        height: auto; } }
+    height: var(--height-form-container-height); }
   .form__title {
-    font-size: 51px;
-    line-height: 42px; }
-    @media screen and (min-width: 360px) {
-      .form__title {
-        font-size: 55px; } }
-    @media screen and (min-width: 412px) {
-      .form__title {
-        font-size: 61px;
-        line-height: 52px; } }
+    font-size: var(--font-size-form-title);
+    line-height: var(--line-height-form-title); }
   .form__subtitle {
     font-size: 23px; }
   .form__title, .form__subtitle {
@@ -703,20 +719,12 @@ textarea:focus {
       display: inline-block;
       font-family: "Font Awesome 5 Free";
       -webkit-font-smoothing: antialiased;
-      top: -105px;
-      right: 23px;
       cursor: pointer;
       position: absolute;
-      font-size: 2.5rem;
-      color: var(--color-houm); }
-      @media screen and (min-width: 412px) {
-        .form__icon-close::before {
-          font-size: 3rem;
-          top: -113px; } }
-      @media screen and (min-width: 540px) {
-        .form__icon-close::before {
-          top: -50px;
-          right: -10px; } }
+      color: var(--color-houm);
+      top: var(--top-form-icon-close-before);
+      right: var(--right-form-icon-close-before);
+      font-size: var(--font-size-form-icon-close-before); }
   .form__fielset {
     margin: 0;
     border: none;
@@ -728,17 +736,17 @@ textarea:focus {
     margin-bottom: 0;
     align-items: center; }
   .form__label {
-    display: inline-block;
     font-size: 16px;
-    color: #33475b; }
+    color: #33475b;
+    display: inline-block; }
   .form__input {
     height: 40px; }
   .form__input, .form__textarea {
     width: 100%;
     font-size: 16px;
     padding: 10px 6px;
-    border: 1px solid #cbd6e2;
     border-radius: 3px;
+    border: 1px solid #cbd6e2;
     background-color: #f5f8fa; }
   .form__textarea {
     resize: none;
@@ -754,16 +762,9 @@ textarea:focus {
     background-color: var(--color-houm); }
   .form__copyright {
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto; }
-    @media screen and (min-width: 1024px) {
-      .form__copyright {
-        margin: 0; } }
+    margin: var(--margin-form-copyright); }
   .form__copyright small {
-    font-size: 16px; }
-    @media screen and (min-width: 360px) {
-      .form__copyright small {
-        font-size: 18px; } }
+    font-size: var(--font-size-form-copyright-small); }
   .form__modal {
     top: 0;
     left: 0;
