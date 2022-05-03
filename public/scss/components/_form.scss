@@ -112,13 +112,18 @@
             -webkit-font-smoothing: antialiased;
 
             // Ajustes de la página
-            cursor: pointer;
             position: absolute;
             color: var(--color-houm);
             top: var(--top-form-icon-close-before);
             right: var(--right-form-icon-close-before);
             font-size: var(--font-size-form-icon-close-before);
         }
+    }
+
+    &__label,
+    &__input-terminos,
+    &__icon-close::before {
+        cursor: var(--cursor-button);
     }
 
     &__fielset {

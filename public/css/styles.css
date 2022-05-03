@@ -719,12 +719,13 @@ textarea:focus {
       display: inline-block;
       font-family: "Font Awesome 5 Free";
       -webkit-font-smoothing: antialiased;
-      cursor: pointer;
       position: absolute;
       color: var(--color-houm);
       top: var(--top-form-icon-close-before);
       right: var(--right-form-icon-close-before);
       font-size: var(--font-size-form-icon-close-before); }
+  .form__label, .form__input-terminos, .form__icon-close::before {
+    cursor: var(--cursor-button); }
   .form__fielset {
     margin: 0;
     border: none;
