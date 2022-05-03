@@ -4,6 +4,7 @@ const   header = document.getElementById('main-header'),
         main = document.getElementById('main'),
         form = document.getElementById('form'),
         formContainer = document.getElementById('form-container'),
+        formContHeight = document.querySelector('.form__container-height'),
         footer = document.getElementById('main-footer')
 
 
@@ -21,39 +22,25 @@ const   burguerButton = document.querySelector('.burguer-button'),
 const mql = matchMedia('(min-width: 1024px)')
 
 
-// Leyendo y asignando la variable CSS '--height-header' con JavaScript.
-const heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
-
-
-
-// Función hamburger button animation
-function buttonAnimation() {
-    burguerLine.classList.toggle('cruz')
-    nav.classList.toggle('main-nav__move')
-}
-// Evento 'click' hamburger button animation.
-burguerButton.addEventListener('click', buttonAnimation)
-
-
 
 // Función Altura Elemento.
 const elementHeight = () => {
 
-        // Altura interna del viewport.
+    // Altura interna del viewport.
     const vh = innerHeight,
 
-        // Altura de 'form__container-height'
-        formContHeight = document.querySelector('.form__container-height').clientHeight,
+    // Leyendo y asignando la variable CSS '--height-header' con JavaScript.
+    heightHeader = getComputedStyle(header).getPropertyValue('--height-header'),
 
-        // Obteniendo la variable CSS '--padding-top-form-container' con JavaScript.
-        paddTopFormCont = getComputedStyle(formContainer).getPropertyValue('--padding-top-form-container')
+    // Obteniendo la variable CSS '--padding-top-form-container' con JavaScript.
+    paddTopFormCont = getComputedStyle(formContainer).getPropertyValue('--padding-top-form-container')
 
     if (mql.matches) {
         // Altura del NAV
         nav.style.height = 'auto'
 
         // Calculando padding-top formContainer
-        const formContHeightAverage = `calc(${(vh-formContHeight)/2}px)`
+        const formContHeightAverage = `calc(${(vh-formContHeight.clientHeight)/2}px)`
         formContainer.style.paddingTop = formContHeightAverage
     } else {
         // Altura del NAV
@@ -104,16 +91,23 @@ iconCloseForm.addEventListener('click', e => {
     }
 })
 
-// const setHeight = () => {
-//     const vh = innerHeight
-//     const formContHeight = `height: calc(${vh/16}rem)`
-//     formContainer.setAttribute('style', formContHeight)
-//     console.log(formContHeight)
-// }
+// Evento cerrar formulario
+formContHeight.addEventListener('click', e => {
+    if (e.target.classList.contains('form__icon-close')) {
+        closeForm(e)
+    }
+})
 
-// setHeight()
 
-// addEventListener('resize', setHeight)
+
+// Función hamburger button animation
+function buttonAnimation() {
+    burguerLine.classList.toggle('cruz')
+    nav.classList.toggle('main-nav__move')
+}
+// Evento 'click' hamburger button animation.
+burguerButton.addEventListener('click', buttonAnimation)
+
 
 
 // Creación elemento 'h3' de socialBar.
