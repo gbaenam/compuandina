@@ -60,22 +60,25 @@ addEventListener('resize', elementHeight)
 
 // Funcion abrir formulario
 const openForm = e => {
-    e.preventDefault()
+    e.stopPropagation()
     form.style.visibility = 'visible'
     setTimeout(() => formContainer.classList.add('form--show'),500)
 }
 
 // Función cerrar formulario
 const closeForm = e => {
-    e.preventDefault()
+    e.stopPropagation()
 
-    if (nav.classList.contains('main-nav__move')) {
-        burguerLine.classList.toggle('cruz')
-        nav.classList.toggle('main-nav__move')
+    if (e.target.classList.contains('form__container') || (e.target.classList.contains('form__container-height')) || (e.target.classList.contains('form__icon-close')) )  {
+
+        if (nav.classList.contains('main-nav__move')) {
+            burguerLine.classList.toggle('cruz')
+            nav.classList.toggle('main-nav__move')
+        }
+
+        formContainer.classList.remove('form--show')
+        setTimeout(() => form.style.visibility = 'hidden',1000)
     }
-
-    formContainer.classList.remove('form--show')
-    setTimeout(() => form.style.visibility = 'hidden',1000)
 }
 
 // Evento abrir formulario
@@ -85,18 +88,7 @@ iconMail.addEventListener('click', openForm)
 buttonBanner.addEventListener('click', openForm)
 
 // Evento cerrar formulario
-iconCloseForm.addEventListener('click', e => {
-    if (e.target.classList.contains('form__icon-close')) {
-        closeForm(e)
-    }
-})
-
-// Evento cerrar formulario
-formContHeight.addEventListener('click', e => {
-    if (e.target.classList.contains('form__icon-close')) {
-        closeForm(e)
-    }
-})
+formContainer.addEventListener('click', closeForm)
 
 
 
