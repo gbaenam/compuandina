@@ -143,16 +143,16 @@
     }
 
     &__label {
-        font-size: 16px;
         color: #33475b;
         display: inline-block;
     }
 
     &__error-message {
-        color: #cc0000;
-        // font-weight: bold;
-        // margin-bottom: 5px;
-        // font-family: 'Ubuntu', sans-serif;
+        color: var(--color-error);
+        margin-bottom: 5px;
+        font-family: 'Ubuntu', sans-serif;
+        line-height: 18px;
+        font-size: 17px;
     }
 
     &__input {
@@ -162,7 +162,6 @@
     &__input,
     &__textarea {
         width: 100%;
-        font-size: 16px;
         padding: 10px 6px;
         border-radius: 3px;
         border: 1px solid #cbd6e2;
@@ -276,7 +275,7 @@
 }
 
 .incorrecto .form__input {
-    border-color: #cc0000;
+    border-color: var(--color-error);
 }
 
 .correcto .form__textarea {
@@ -284,7 +283,7 @@
 }
 
 .incorrecto .form__textarea {
-    border-color: #cc0000;
+    border-color: var(--color-error);
 }
 
 }
