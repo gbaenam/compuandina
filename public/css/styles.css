@@ -740,6 +740,8 @@ textarea:focus {
     font-size: 16px;
     color: #33475b;
     display: inline-block; }
+  .form__error-message {
+    color: #cc0000; }
   .form__input {
     height: 40px; }
   .form__input, .form__textarea {
@@ -761,6 +763,9 @@ textarea:focus {
     padding-bottom: 20px; }
   .form__button {
     background-color: var(--color-houm); }
+    .form__button:disabled {
+      color: lightgrey;
+      background-color: #eeeeee; }
   .form__copyright {
     text-align: center;
     margin: var(--margin-form-copyright); }
@@ -803,6 +808,14 @@ textarea:focus {
     background-color: #0a0a0a; }
   .form--show {
     transform: translateY(0); }
+  .form .correcto .form__input {
+    border-color: #1ed12d; }
+  .form .incorrecto .form__input {
+    border-color: #cc0000; }
+  .form .correcto .form__textarea {
+    border-color: #1ed12d; }
+  .form .incorrecto .form__textarea {
+    border-color: #cc0000; }
 
 .main-footer {
   text-align: center; }
