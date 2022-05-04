@@ -205,11 +205,13 @@ const changeState = (condicion, elemento) => {
 
 	if (condicion) {
 		message.innerText = ''
+		message.style.marginBottom = 0
 		checkInput[elemento.name] = true
 		formBox.classList.remove('incorrecto')
 		formBox.classList.add('correcto')
 	} else {
 		showError(elemento, message)
+		message.style.marginBottom = '5px'
 		checkInput[elemento.name] = false
 		formBox.classList.add('incorrecto')
 		formBox.classList.remove('correcto')

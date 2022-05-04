@@ -754,15 +754,18 @@ textarea {
     font-size: 17px; }
   .form__input {
     height: 40px; }
+  .form__textarea {
+    resize: none;
+    min-height: 90px; }
   .form__input, .form__textarea {
     width: 100%;
     padding: 10px 6px;
     border-radius: 3px;
+    transition: .2s ease all;
     border: 1px solid #cbd6e2;
     background-color: #f5f8fa; }
-  .form__textarea {
-    resize: none;
-    min-height: 90px; }
+    .form__input:focus, .form__textarea:focus {
+      border-width: 2px; }
   .form__input-terminos {
     width: 20px;
     height: 20px;
