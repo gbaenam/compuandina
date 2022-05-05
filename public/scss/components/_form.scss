@@ -136,15 +136,32 @@
         margin-bottom: 16px;
     }
 
-    // &__box:last-child {
-    //     display: flex;
-    //     margin-bottom: 0;
-    //     align-items: center;
-    // }
+    &__box:nth-child(3) input {
+        padding-left: 43px;
+    }
+
+    &__box:last-child {
+        display: flex;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    &__box:last-child label::before {
+        content: "";
+    }
 
     &__label {
         color: #33475b;
+        position: relative;
         display: inline-block;
+
+        &::before {
+            content: "*";
+            right: -10px;
+            font-size: 20px;
+            position: absolute;
+            color: var(--color-error);
+        }
     }
 
     &__error-message {
@@ -173,8 +190,6 @@
             left: 8px;
             font-size: 23px;
             position: absolute;
-
-            // color: var(--color-error);
         }
 
         &-name::before {
@@ -199,10 +214,6 @@
     &__input {
         height: 40px;
         padding: 10px 6px 10px 38px;
-    }
-
-    &__input-checkmail {
-        padding-left: 43px;
     }
 
     &__textarea {
