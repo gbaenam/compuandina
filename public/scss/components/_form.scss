@@ -93,32 +93,32 @@
         text-align: center;
     }
 
-    &__icon-close {
-        width: 100%;
-        max-width: 465px;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
+    // &__icon-close {
+    //     width: 100%;
+    //     max-width: 465px;
+    //     position: relative;
+    //     margin-left: auto;
+    //     margin-right: auto;
 
-        &::before {
-            // Ajustes de Font Awesome
-            content: "\f101";
-            font-weight: 900;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
-            display: inline-block;
-            font-family: "Font Awesome 5 Free";
-            -webkit-font-smoothing: antialiased;
+    //     &::before {
+    //         // Ajustes de Font Awesome
+    //         content: "\f101";
+    //         font-weight: 900;
+    //         font-style: normal;
+    //         font-variant: normal;
+    //         text-rendering: auto;
+    //         display: inline-block;
+    //         font-family: "Font Awesome 5 Free";
+    //         -webkit-font-smoothing: antialiased;
 
-            // Ajustes de la página
-            position: absolute;
-            color: var(--color-houm);
-            top: var(--top-form-icon-close-before);
-            right: var(--right-form-icon-close-before);
-            font-size: var(--font-size-form-icon-close-before);
-        }
-    }
+    //         // Ajustes de la página
+    //         position: absolute;
+    //         color: var(--color-houm);
+    //         top: var(--top-form-icon-close-before);
+    //         right: var(--right-form-icon-close-before);
+    //         font-size: var(--font-size-form-icon-close-before);
+    //     }
+    // }
 
     &__label,
     &__input-terminos,
@@ -136,11 +136,11 @@
         margin-bottom: 16px;
     }
 
-    &__box:last-child {
-        display: flex;
-        margin-bottom: 0;
-        align-items: center;
-    }
+    // &__box:last-child {
+    //     display: flex;
+    //     margin-bottom: 0;
+    //     align-items: center;
+    // }
 
     &__label {
         color: #33475b;
@@ -190,7 +190,9 @@
         }
 
         &-textarea::before {
-            content: "\f5a1";
+            content: "\f15c";
+            top: 9px;
+            font-size: 25px;
         }
     }
 
@@ -206,13 +208,13 @@
     &__textarea {
         resize: none;
         min-height: 90px;
+        height: 90px;
         padding: 9px 6px 10px 34px;
     }
 
     &__input,
     &__textarea {
         width: 100%;
-        // padding: 10px 6px;
         border-radius: 3px;
         transition: .2s ease all;
         border: 1px solid #cbd6e2;

@@ -711,26 +711,6 @@ textarea {
     font-size: 23px; }
   .form__title, .form__subtitle {
     text-align: center; }
-  .form__icon-close {
-    width: 100%;
-    max-width: 465px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto; }
-    .form__icon-close::before {
-      content: "\f101";
-      font-weight: 900;
-      font-style: normal;
-      font-variant: normal;
-      text-rendering: auto;
-      display: inline-block;
-      font-family: "Font Awesome 5 Free";
-      -webkit-font-smoothing: antialiased;
-      position: absolute;
-      color: var(--color-houm);
-      top: var(--top-form-icon-close-before);
-      right: var(--right-form-icon-close-before);
-      font-size: var(--font-size-form-icon-close-before); }
   .form__label, .form__input-terminos, .form__icon-close::before {
     cursor: var(--cursor-button); }
   .form__fielset {
@@ -739,10 +719,6 @@ textarea {
     padding: 20px 20px 30px; }
   .form__box {
     margin-bottom: 16px; }
-  .form__box:last-child {
-    display: flex;
-    margin-bottom: 0;
-    align-items: center; }
   .form__label {
     color: #33475b;
     display: inline-block; }
@@ -773,7 +749,9 @@ textarea {
     .form__wrapper-input-checkmail::before {
       content: "\e4e8"; }
     .form__wrapper-input-textarea::before {
-      content: "\f5a1"; }
+      content: "\f15c";
+      top: 9px;
+      font-size: 25px; }
   .form__input {
     height: 40px;
     padding: 10px 6px 10px 38px; }
@@ -782,6 +760,7 @@ textarea {
   .form__textarea {
     resize: none;
     min-height: 90px;
+    height: 90px;
     padding: 9px 6px 10px 34px; }
   .form__input, .form__textarea {
     width: 100%;
