@@ -752,14 +752,37 @@ textarea {
     font-family: 'Ubuntu', sans-serif;
     line-height: 18px;
     font-size: 17px; }
+  .form__wrapper-input {
+    position: relative; }
+    .form__wrapper-input::before {
+      font-weight: 900;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      display: inline-block;
+      font-family: "Font Awesome 5 Free";
+      -webkit-font-smoothing: antialiased;
+      top: 7px;
+      left: 8px;
+      font-size: 23px;
+      position: absolute; }
+    .form__wrapper-input-name::before {
+      content: "\f118"; }
+    .form__wrapper-input-email::before {
+      content: "\f0e0"; }
+    .form__wrapper-input-checkmail::before {
+      content: "\e4e8"; }
+    .form__wrapper-input-textarea::before {
+      content: "\f5a1"; }
   .form__input {
-    height: 40px; }
+    height: 40px;
+    padding: 10px 6px 10px 38px; }
   .form__textarea {
     resize: none;
-    min-height: 90px; }
+    min-height: 90px;
+    padding: 9px 6px 10px 34px; }
   .form__input, .form__textarea {
     width: 100%;
-    padding: 10px 6px;
     border-radius: 3px;
     transition: .2s ease all;
     border: 1px solid #cbd6e2;
@@ -820,14 +843,6 @@ textarea {
     background-color: #0a0a0a; }
   .form--show {
     transform: translateY(0); }
-  .form .correcto .form__input {
-    border-color: #1ed12d; }
-  .form .incorrecto .form__input {
-    border-color: var(--color-error); }
-  .form .correcto .form__textarea {
-    border-color: #1ed12d; }
-  .form .incorrecto .form__textarea {
-    border-color: var(--color-error); }
 
 .main-footer {
   text-align: center; }

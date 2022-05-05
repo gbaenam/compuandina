@@ -155,19 +155,60 @@
         font-size: 17px;
     }
 
+    &__wrapper-input {
+        position: relative;
+
+        &::before {
+            // Ajustes de Font Awesome
+            font-weight: 900;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            -webkit-font-smoothing: antialiased;
+
+            // Ajustes de la página
+            top: 7px;
+            left: 8px;
+            font-size: 23px;
+            position: absolute;
+
+            // color: var(--color-error);
+        }
+
+        &-name::before {
+            content: "\f118";
+        }
+
+        &-email::before {
+            content: "\f0e0";
+        }
+
+        &-checkmail::before {
+            content: "\e4e8";
+        }
+
+        &-textarea::before {
+            content: "\f5a1";
+        }
+    }
+
     &__input {
         height: 40px;
+        padding: 10px 6px 10px 38px;
     }
 
     &__textarea {
         resize: none;
         min-height: 90px;
+        padding: 9px 6px 10px 34px;
     }
 
     &__input,
     &__textarea {
         width: 100%;
-        padding: 10px 6px;
+        // padding: 10px 6px;
         border-radius: 3px;
         transition: .2s ease all;
         border: 1px solid #cbd6e2;
@@ -271,25 +312,24 @@
     &--show {
         transform: translateY(0);
     }
-
+}
 
 
 // Estilos para validación del formulario.
 
-.correcto .form__input {
-    border-color: #1ed12d;
-}
+// .correcto .form__input {
+//     border-color: #1ed12d;
+// }
 
-.incorrecto .form__input {
-    border-color: var(--color-error);
-}
+// .incorrecto .form__input {
+//     border-color: var(--color-error);
+// }
 
-.correcto .form__textarea {
-    border-color: #1ed12d;
-}
+// .correcto .form__textarea {
+//     border-color: #1ed12d;
+// }
 
-.incorrecto .form__textarea {
-    border-color: var(--color-error);
-}
+// .incorrecto .form__textarea {
+//     border-color: var(--color-error);
+// }
 
-}

@@ -199,7 +199,7 @@ const validarMail2 = () => {
 
 // Función cambiar de estado.
 const changeState = (condicion, elemento) => {
-	const formBox = elemento.parentElement,
+	const formBox = elemento.parentElement.parentElement,
 		message = formBox.querySelector('p')
 		message.classList.add('form__error-message')
 
@@ -207,14 +207,14 @@ const changeState = (condicion, elemento) => {
 		message.innerText = ''
 		message.style.marginBottom = 0
 		checkInput[elemento.name] = true
-		formBox.classList.remove('incorrecto')
-		formBox.classList.add('correcto')
+		// formBox.classList.remove('incorrecto')
+		// formBox.classList.add('correcto')
 	} else {
 		showError(elemento, message)
 		message.style.marginBottom = '5px'
 		checkInput[elemento.name] = false
-		formBox.classList.add('incorrecto')
-		formBox.classList.remove('correcto')
+		// formBox.classList.add('incorrecto')
+		// formBox.classList.remove('correcto')
 	}
 	submitController()
 }
