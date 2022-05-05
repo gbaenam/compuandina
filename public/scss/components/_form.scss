@@ -1,6 +1,6 @@
 .form {
     // form__container
-    --padding-top-form-container: 50px;
+    --padding-top-form-container: 0;
     // form__container-height
     --height-form-container-height: 100%;
     // form__title
@@ -34,7 +34,7 @@
 
     @include from(medium) {
         // form__container
-        --padding-top-form-container: 30px;
+        --padding-top-form-container: 0;
         // form__icon-close::before
         --top-form-icon-close-before: -50px;
         --right-form-icon-close-before: -10px;
@@ -70,7 +70,7 @@
         background-color: #fff;
         transition: transform .5s;
         transform: translateY(-200%);
-        // padding-top: var(--padding-top-form-container);
+        padding-top: var(--padding-top-form-container);
     }
 
     &__container-height {
