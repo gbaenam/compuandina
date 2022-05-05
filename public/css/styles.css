@@ -777,6 +777,8 @@ textarea {
   .form__input {
     height: 40px;
     padding: 10px 6px 10px 38px; }
+  .form__input-checkmail {
+    padding-left: 43px; }
   .form__textarea {
     resize: none;
     min-height: 90px;
