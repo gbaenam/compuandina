@@ -711,7 +711,12 @@ textarea {
     font-size: 23px; }
   .form__title, .form__subtitle {
     text-align: center; }
-  .form__label, .form__input-terminos, .form__icon-close::before {
+  .form__icon-close {
+    width: 100%;
+    max-width: 465px;
+    margin-left: auto;
+    margin-right: auto; }
+  .form__label, .form__label-checkbox, .form__icon-close::before {
     cursor: var(--cursor-button); }
   .form__fielset {
     margin: 0;
@@ -719,30 +724,33 @@ textarea {
     padding: 20px 20px 30px; }
   .form__box {
     margin-bottom: 16px; }
-  .form__box:nth-child(3) input {
-    padding-left: 43px; }
-  .form__box:last-child {
-    display: flex;
-    margin-bottom: 0;
-    align-items: center; }
-  .form__box:last-child label::before {
-    content: ""; }
-  .form__label {
+  .form__label, .form__label-checkbox {
     color: #33475b;
     position: relative;
     display: inline-block; }
-    .form__label::before {
-      content: "*";
-      right: -10px;
-      font-size: 20px;
-      position: absolute;
-      color: var(--color-error); }
+  .form__label::before, .form__label-checkbox::before {
+    position: absolute; }
+  .form__label::before {
+    content: "*";
+    right: -10px;
+    font-size: 20px;
+    color: var(--color-error); }
+  .form__label-checkbox {
+    padding-left: 30px; }
+    .form__label-checkbox::before {
+      top: 5px;
+      left: 3px;
+      content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 3px;
+      border: 2px solid #9e9e9e; }
   .form__error-message {
-    color: var(--color-error);
-    margin-bottom: 5px;
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
     line-height: 18px;
-    font-size: 17px; }
+    margin-bottom: 5px;
+    color: var(--color-error);
+    font-family: 'Ubuntu', sans-serif; }
   .form__wrapper-input {
     position: relative; }
     .form__wrapper-input::before {
@@ -783,10 +791,10 @@ textarea {
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
       border-width: 2px; }
-  .form__input-terminos {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px; }
+  .form__input-checkmail {
+    padding-left: 43px; }
+  .form__input-terminos[type="checkbox"] {
+    display: none; }
   .form__wrapper-button {
     text-align: center;
     padding-bottom: 20px; }
