@@ -115,3 +115,19 @@ textarea {
     font-family: var(--font-family-caption);
 }
 
+// Font Awesome Icons
+.icon {
+    position: relative;
+
+    &::before {
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    font-variant: normal;
+    text-rendering: auto;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased;
+    }
+}
+

@@ -188,6 +188,18 @@ textarea {
   line-height: normal;
   font-family: var(--font-family-caption); }
 
+.icon {
+  position: relative; }
+  .icon::before {
+    font-weight: 900;
+    font-style: normal;
+    position: absolute;
+    font-variant: normal;
+    text-rendering: auto;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    -webkit-font-smoothing: antialiased; }
+
 .line-break412::before,
 .line-break960::before,
 .line-break1200::before {
@@ -724,57 +736,39 @@ textarea {
     padding: 20px 20px 30px; }
   .form__box {
     margin-bottom: 16px; }
-  .form__label, .form__label-checkbox {
+  .form__box:last-child {
+    display: flex;
+    align-items: center; }
+  .form__label {
     color: #33475b;
     position: relative;
     display: inline-block; }
-  .form__label::before, .form__label-checkbox::before {
-    position: absolute; }
-  .form__label::before {
-    content: "*";
-    right: -10px;
-    font-size: 20px;
-    color: var(--color-error); }
-  .form__label-checkbox {
-    padding-left: 30px; }
-    .form__label-checkbox::before {
-      top: 4px;
-      left: 3px;
-      content: "";
-      width: 18px;
-      height: 18px;
-      border-radius: 3px;
-      border: 2px solid #9e9e9e; }
+    .form__label::before {
+      content: "*";
+      right: -10px;
+      font-size: 20px;
+      position: absolute;
+      color: var(--color-error); }
   .form__error-message {
     font-size: 17px;
     line-height: 18px;
     margin-bottom: 5px;
     color: var(--color-error);
     font-family: 'Ubuntu', sans-serif; }
-  .form__wrapper-input {
-    position: relative; }
-    .form__wrapper-input::before {
-      font-weight: 900;
-      font-style: normal;
-      font-variant: normal;
-      text-rendering: auto;
-      display: inline-block;
-      font-family: "Font Awesome 5 Free";
-      -webkit-font-smoothing: antialiased;
-      top: 7px;
-      left: 8px;
-      font-size: 23px;
-      position: absolute; }
-    .form__wrapper-input-name::before {
-      content: "\f118"; }
-    .form__wrapper-input-email::before {
-      content: "\f0e0"; }
-    .form__wrapper-input-checkmail::before {
-      content: "\e4e8"; }
-    .form__wrapper-input-textarea::before {
-      content: "\f15c";
-      top: 9px;
-      font-size: 25px; }
+  .form__wrapper-input::before {
+    top: 7px;
+    left: 8px;
+    font-size: 23px; }
+  .form__wrapper-input-name::before {
+    content: "\f118"; }
+  .form__wrapper-input-email::before {
+    content: "\f0e0"; }
+  .form__wrapper-input-checkmail::before {
+    content: "\e4e8"; }
+  .form__wrapper-input-textarea::before {
+    content: "\f15c";
+    top: 9px;
+    font-size: 25px; }
   .form__input {
     height: 40px;
     padding: 10px 6px 10px 38px; }
@@ -791,10 +785,12 @@ textarea {
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
       border-width: 2px; }
-  .form__input-checkmail {
-    padding-left: 43px; }
-  .form__input-terminos[type="checkbox"] {
-    display: none; }
+  .form__input-terminos {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 2px;
+    margin-right: 10px; }
   .form__wrapper-button {
     text-align: center;
     padding-bottom: 20px; }

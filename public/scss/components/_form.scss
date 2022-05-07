@@ -137,36 +137,22 @@
         margin-bottom: 16px;
     }
 
-    &__label,
-    &__label-checkbox {
+    &__box:last-child {
+        display: flex;
+        align-items: center;
+    }
+
+    &__label {
         color: #33475b;
         position: relative;
         display: inline-block;
-    }
-
-    &__label::before,
-    &__label-checkbox::before {
-        position: absolute;
-    }
-
-    &__label::before {
-        content: "*";
-        right: -10px;
-        font-size: 20px;
-        color: var(--color-error);
-    }
-
-    &__label-checkbox {
-        padding-left: 30px;
 
         &::before {
-            top: 4px;
-            left: 3px;
-            content: "";
-            width: 18px;
-            height: 18px;
-            border-radius: 3px;
-            border: 2px solid #9e9e9e;
+            content: "*";
+            right: -10px;
+            font-size: 20px;
+            position: absolute;
+            color: var(--color-error);
         }
     }
 
@@ -179,23 +165,11 @@
     }
 
     &__wrapper-input {
-        position: relative;
 
         &::before {
-            // Ajustes de Font Awesome
-            font-weight: 900;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
-            display: inline-block;
-            font-family: "Font Awesome 5 Free";
-            -webkit-font-smoothing: antialiased;
-
-            // Ajustes de la página
             top: 7px;
             left: 8px;
             font-size: 23px;
-            position: absolute;
         }
 
         &-name::before {
@@ -243,17 +217,13 @@
         }
     }
 
-    &__input-checkmail {
-        padding-left: 43px;
+    &__input-terminos {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        left: 2px;
+        margin-right: 10px;
     }
-
-    &__input-terminos[type="checkbox"] {
-        display: none;
-    }
-
-    // &__input-terminos::before {
-
-    // }
 
     &__wrapper-button {
         text-align: center;
