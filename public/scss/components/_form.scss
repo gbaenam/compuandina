@@ -161,7 +161,11 @@
     }
 
     &__label-checkbox {
-        font-size: 19px;
+        font-size: 18px;
+
+        @include from(360px) {
+            font-size: 19px;
+        }
     }
 
     &__error-message {
@@ -235,7 +239,7 @@
 
     &__wrapper-button {
         text-align: center;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     &__button {

@@ -751,7 +751,10 @@ textarea {
   .form__label, .form__label-checkbox {
     color: #33475b; }
   .form__label-checkbox {
-    font-size: 19px; }
+    font-size: 18px; }
+    @media screen and (min-width: 360px) {
+      .form__label-checkbox {
+        font-size: 19px; } }
   .form__error-message {
     font-size: 17px;
     line-height: 18px;
@@ -796,7 +799,7 @@ textarea {
     margin-right: 10px; }
   .form__wrapper-button {
     text-align: center;
-    padding-bottom: 20px; }
+    margin-bottom: 20px; }
   .form__button {
     background-color: var(--color-houm); }
     .form__button:disabled {
