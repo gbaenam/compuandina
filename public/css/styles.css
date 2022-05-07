@@ -809,6 +809,8 @@ textarea {
     text-align: center;
     margin: var(--margin-form-copyright); }
   .form__copyright small {
+    margin-bottom: 5px;
+    display: inline-block;
     font-size: var(--font-size-form-copyright-small); }
   .form__modal {
     top: 0;
