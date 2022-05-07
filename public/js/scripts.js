@@ -30,6 +30,17 @@ const   form = document.getElementById('form'),
 const mql = matchMedia('(min-width: 1024px)')
 
 
+// window.addEventListener('scroll', () => {
+// 	const info = formContainer.getBoundingClientRect()
+// 	console.log(info)
+// })
+
+// window.addEventListener('scroll', () => {
+// 	const scrolled = window.scrollY
+// 	console.log(scrolled)
+// })
+
+
 // Función hamburger button animation
 function buttonAnimation() {
     burguerLine.classList.toggle('cruz')

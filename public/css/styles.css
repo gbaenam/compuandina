@@ -662,7 +662,7 @@ textarea {
     font-size: var(--font-size-icon-text); }
 
 .form {
-  --padding-top-form-container: 0;
+  --padding-top-form-container: 50px;
   --height-form-container-height: 100%;
   --font-size-form-title: 51px;
   --line-height-form-title: 42px;
@@ -683,7 +683,7 @@ textarea {
       --font-size-form-icon-close-before: 3rem; } }
   @media screen and (min-width: 540px) {
     .form {
-      --padding-top-form-container: 0;
+      --padding-top-form-container: 30px;
       --top-form-icon-close-before: -50px;
       --right-form-icon-close-before: -10px; } }
   @media screen and (min-width: 1024px) {
@@ -728,6 +728,12 @@ textarea {
     max-width: 465px;
     margin-left: auto;
     margin-right: auto; }
+    .form__icon-close::before {
+      content: "\f101";
+      color: var(--color-houm);
+      top: var(--top-form-icon-close-before);
+      right: var(--right-form-icon-close-before);
+      font-size: var(--font-size-form-icon-close-before); }
   .form__fielset {
     margin: 0;
     border: none;

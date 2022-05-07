@@ -1,6 +1,6 @@
 .form {
     // form__container
-    --padding-top-form-container: 0;
+    --padding-top-form-container: 50px;
     // form__container-height
     --height-form-container-height: 100%;
     // form__title
@@ -34,7 +34,7 @@
 
     @include from(medium) {
         // form__container
-        --padding-top-form-container: 0;
+        --padding-top-form-container: 30px;
         // form__icon-close::before
         --top-form-icon-close-before: -50px;
         --right-form-icon-close-before: -10px;
@@ -96,28 +96,16 @@
     &__icon-close {
         width: 100%;
         max-width: 465px;
-        // position: relative;
         margin-left: auto;
         margin-right: auto;
 
-        // &::before {
-        //     // Ajustes de Font Awesome
-        //     content: "\f101";
-        //     font-weight: 900;
-        //     font-style: normal;
-        //     font-variant: normal;
-        //     text-rendering: auto;
-        //     display: inline-block;
-        //     font-family: "Font Awesome 5 Free";
-        //     -webkit-font-smoothing: antialiased;
-
-        //     // Ajustes de la página
-        //     position: absolute;
-        //     color: var(--color-houm);
-        //     top: var(--top-form-icon-close-before);
-        //     right: var(--right-form-icon-close-before);
-        //     font-size: var(--font-size-form-icon-close-before);
-        // }
+        &::before {
+            content: "\f101";
+            color: var(--color-houm);
+            top: var(--top-form-icon-close-before);
+            right: var(--right-form-icon-close-before);
+            font-size: var(--font-size-form-icon-close-before);
+        }
     }
 
     &__fielset {
