@@ -736,6 +736,7 @@ textarea {
     margin-bottom: 16px; }
   .form__box:last-child {
     display: flex;
+    margin-bottom: 0;
     align-items: center; }
   .form__label, .form__label-checkbox, .form__icon-close::before {
     cursor: var(--cursor-button); }
