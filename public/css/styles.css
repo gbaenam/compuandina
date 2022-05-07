@@ -728,8 +728,6 @@ textarea {
     max-width: 465px;
     margin-left: auto;
     margin-right: auto; }
-  .form__label, .form__label-checkbox, .form__icon-close::before {
-    cursor: var(--cursor-button); }
   .form__fielset {
     margin: 0;
     border: none;
@@ -739,8 +737,9 @@ textarea {
   .form__box:last-child {
     display: flex;
     align-items: center; }
+  .form__label, .form__label-checkbox, .form__icon-close::before {
+    cursor: var(--cursor-button); }
   .form__label {
-    color: #33475b;
     position: relative;
     display: inline-block; }
     .form__label::before {
@@ -749,6 +748,10 @@ textarea {
       font-size: 20px;
       position: absolute;
       color: var(--color-error); }
+  .form__label, .form__label-checkbox {
+    color: #33475b; }
+  .form__label-checkbox {
+    font-size: 19px; }
   .form__error-message {
     font-size: 17px;
     line-height: 18px;
@@ -786,10 +789,10 @@ textarea {
     .form__input:focus, .form__textarea:focus {
       border-width: 2px; }
   .form__input-terminos {
-    width: 15px;
-    height: 15px;
-    position: relative;
     left: 2px;
+    width: 20px;
+    height: 20px;
+    position: relative;
     margin-right: 10px; }
   .form__wrapper-button {
     text-align: center;
