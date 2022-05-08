@@ -134,6 +134,7 @@
     &__label {
         position: relative;
         display: inline-block;
+        margin-bottom: 10px;
 
         &::before {
             content: "*";

@@ -752,7 +752,8 @@ textarea {
     cursor: var(--cursor-button); }
   .form__label {
     position: relative;
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 10px; }
     .form__label::before {
       content: "*";
       right: -10px;
