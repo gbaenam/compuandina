@@ -5,7 +5,7 @@
     --height-form-container-height: 100%;
     // form__title
     --font-size-form-title: 43px;
-    --line-height-form-title: 42px;
+    --line-height-form-title: 41px;
     // form__icon-close::before
     --top-form-icon-close-before: -105px;
     --right-form-icon-close-before: 23px;
@@ -18,14 +18,14 @@
 
     @include from(360px) {
         // form__title
-        --font-size-form-title: 55px;
+        --font-size-form-title: 49px;
         // form__copyright-small
         --font-size-form-copyright-small: 18px;
     }
 
     @include from(412px) {
         // form__title
-        --font-size-form-title: 61px;
+        --font-size-form-title: 52px;
         --line-height-form-title: 52px;
         // form__icon-close::before
         --top-form-icon-close-before: -113px;
@@ -81,8 +81,7 @@
 
     &__title {
         font-size: var(--font-size-form-title);
-        // line-height: var(--line-height-form-title);
-        // line-height: 41px;
+        line-height: var(--line-height-form-title);
     }
 
     &__subtitle {

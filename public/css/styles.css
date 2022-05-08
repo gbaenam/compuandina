@@ -669,7 +669,7 @@ textarea {
   --padding-top-form-container: 50px;
   --height-form-container-height: 100%;
   --font-size-form-title: 43px;
-  --line-height-form-title: 42px;
+  --line-height-form-title: 41px;
   --top-form-icon-close-before: -105px;
   --right-form-icon-close-before: 23px;
   --font-size-form-icon-close-before: 2.5rem;
@@ -677,11 +677,11 @@ textarea {
   --font-size-form-copyright-small: 16px; }
   @media screen and (min-width: 360px) {
     .form {
-      --font-size-form-title: 55px;
+      --font-size-form-title: 49px;
       --font-size-form-copyright-small: 18px; } }
   @media screen and (min-width: 412px) {
     .form {
-      --font-size-form-title: 61px;
+      --font-size-form-title: 52px;
       --line-height-form-title: 52px;
       --top-form-icon-close-before: -113px;
       --font-size-form-icon-close-before: 3rem; } }
@@ -721,7 +721,8 @@ textarea {
     flex-direction: column;
     height: var(--height-form-container-height); }
   .form__title {
-    font-size: var(--font-size-form-title); }
+    font-size: var(--font-size-form-title);
+    line-height: var(--line-height-form-title); }
   .form__subtitle {
     font-size: 23px; }
   .form__title, .form__subtitle {
