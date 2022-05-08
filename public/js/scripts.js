@@ -110,12 +110,39 @@ addEventListener('resize', elementHeight)
 
 /* ================= BEGIN FORMULARIO =====================*/
 
+// Objeto Expresiones Regulares.
+const er = {
+	erName: /^(([A-ZÁÉÍÓÚa-zñáéíóú])[\s]?)+$/,
+	erEmail: /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/,
+	erTextArea: /^([\w]\s?)([\w\,\.\$\&\#\%\"\¡\!\¿\?\(\)\@\ñ\á\é\í\ó\ú]\s?)+$/
+}
+
+
+// Objeto validar campos
+const checkInput = {
+	name: false,
+	email: false,
+	checkmail: false,
+	textarea: false
+}
+
+
+// Objeto mensajes de error.
+const errorMessage = {
+	nameError: 'Ingrese únicamente letras',
+	emailError: 'Formato de correo inválido',
+	email2Error: 'Los correos no son iguales',
+	txareaError: 'Máximo 300 caracteres; algunos caracteres especiales están restringidos'
+}
+
+
 // Funcion abrir formulario
 const openForm = e => {
     e.stopPropagation()
     form.style.visibility = 'visible'
     setTimeout(() => formContainer.classList.add('form--show'),500)
 }
+
 
 // Función cerrar formulario
 const closeForm = e => {
@@ -141,32 +168,6 @@ buttonBanner.addEventListener('click', openForm)
 
 // Evento cerrar formulario
 formContainer.addEventListener('click', closeForm)
-
-
-// Objeto Expresiones Regulares.
-const er = {
-	erName: /^(([A-ZÁÉÍÓÚa-zñáéíóú])[\s]?)+$/,
-	erEmail: /^[a-z0-9_.+-]+@[a-z0-9-]+\.[a-z0-9-.]+$/,
-	erTextArea: /^([\w]\s?)([\w\,\.\$\&\#\%\"\¡\!\¿\?\(\)\@\ñ\á\é\í\ó\ú]\s?)+$/
-}
-
-
-// Objeto validar campos
-const checkInput = {
-	name: false,
-	email: false,
-	checkmail: false,
-	textarea: false
-}
-
-
-// Objeto mensajes de error.
-const errorMessage = {
-	nameError: 'Ingrese únicamente letras',
-	emailError: 'Formato de correo inválido',
-	email2Error: 'Los correos no son iguales',
-	txareaError: 'Máximo 300 caracteres; algunos caracteres especiales están restringidos'
-}
 
 
 // Función validar formulario.
