@@ -690,9 +690,7 @@ textarea {
       --font-size-form-icon-close-before: 2.5rem; } }
   @media screen and (min-width: 540px) {
     .form {
-      --padding-top-form-container: 30px;
-      --top-form-icon-close-before: -50px;
-      --right-form-icon-close-before: -10px; } }
+      --padding-top-form-container: 30px; } }
   @media screen and (min-width: 1024px) {
     .form {
       --height-form-container-height: auto;

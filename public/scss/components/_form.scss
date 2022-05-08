@@ -36,8 +36,8 @@
         // form__container
         --padding-top-form-container: 30px;
         // form__icon-close::before
-        --top-form-icon-close-before: -50px;
-        --right-form-icon-close-before: -10px;
+        // --top-form-icon-close-before: 5px;
+        // --right-form-icon-close-before: 23px;
     }
 
     @include from(large) {
