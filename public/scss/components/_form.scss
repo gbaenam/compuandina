@@ -165,33 +165,6 @@
         font-family: 'Ubuntu', sans-serif;
     }
 
-    &__wrapper-input {
-
-        &::before {
-            top: 7px;
-            left: 8px;
-            font-size: 23px;
-        }
-
-        &-name::before {
-            content: "\f118";
-        }
-
-        &-email::before {
-            content: "\f0e0";
-        }
-
-        &-checkmail::before {
-            content: "\e4e8";
-        }
-
-        &-textarea::before {
-            content: "\f15c";
-            top: 9px;
-            font-size: 25px;
-        }
-    }
-
     &__input {
         height: 40px;
         padding: 10px 6px 10px 38px;

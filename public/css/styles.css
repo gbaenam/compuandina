@@ -773,20 +773,6 @@ textarea {
     line-height: 18px;
     color: var(--color-error);
     font-family: 'Ubuntu', sans-serif; }
-  .form__wrapper-input::before {
-    top: 7px;
-    left: 8px;
-    font-size: 23px; }
-  .form__wrapper-input-name::before {
-    content: "\f118"; }
-  .form__wrapper-input-email::before {
-    content: "\f0e0"; }
-  .form__wrapper-input-checkmail::before {
-    content: "\e4e8"; }
-  .form__wrapper-input-textarea::before {
-    content: "\f15c";
-    top: 9px;
-    font-size: 25px; }
   .form__input {
     height: 40px;
     padding: 10px 6px 10px 38px; }
