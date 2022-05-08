@@ -21,6 +21,8 @@
     height: var(--height-header);
     background-color: var(--background-color-header);
 
+    line-height: normal;
+
     &__container {
         display: flex;
         align-items: center;
@@ -49,6 +51,7 @@
     &__title {
         margin-bottom: 0;
         margin-right: auto;
+        // TODO: Revisar esta declaración.
         line-height: var(--line-height-site-title);
 
         font: {

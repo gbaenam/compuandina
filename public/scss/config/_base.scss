@@ -8,6 +8,7 @@
 body {
     margin: 0;
     color: var(--color-body);
+    // TODO: Revisar la asignación de esta variable.
     line-height: var(--line-height-body);
     background-color: var(--background-color-body);
 
@@ -31,6 +32,11 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
     font-weight: 300;
     font-family: var(--font-family-headlines);
+}
+
+h1,
+h2 {
+    font-weight: 700;
 }
 
 
@@ -111,7 +117,8 @@ textarea {
 // Subtítulos
 .caption {
     font-weight: 400;
-    line-height: normal;
+    // TODO: Revisar la asignación de esta varible deshabilitada.
+    // line-height: normal;
     font-family: var(--font-family-caption);
 }
 
