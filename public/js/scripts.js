@@ -118,6 +118,7 @@ const er = {
 }
 
 
+
 // Objeto validar campos
 const checkInput = {
 	name: false,
@@ -125,6 +126,7 @@ const checkInput = {
 	checkmail: false,
 	textarea: false
 }
+
 
 
 // Objeto mensajes de error.
@@ -136,12 +138,14 @@ const errorMessage = {
 }
 
 
+
 // Funcion abrir formulario
 const openForm = e => {
     e.stopPropagation()
     form.style.visibility = 'visible'
     setTimeout(() => formContainer.classList.add('form--show'),500)
 }
+
 
 
 // Función cerrar formulario
@@ -170,6 +174,7 @@ buttonBanner.addEventListener('click', openForm)
 formContainer.addEventListener('click', closeForm)
 
 
+
 // Función validar formulario.
 const validarFormulario = e => {
 
@@ -193,11 +198,13 @@ const validarFormulario = e => {
 }
 
 
+
 // Función validar datos.
 const validarDatos = (expresion, valor, elemento) => {
 	if (expresion.test(valor)) changeState(true, elemento)
 	else changeState(false, elemento)
 }
+
 
 
 // Función confirmar correo.
@@ -207,6 +214,7 @@ const validarMail2 = () => {
 		else changeState(false, emailDos)
 	} else changeState(false, emailDos)
 }
+
 
 
 // Función cambiar de estado.
@@ -232,6 +240,7 @@ const changeState = (condicion, elemento) => {
 }
 
 
+
 // Función mostrar error.
 const showError = (elemento, message) => {
 	if (elemento.name === 'name') message.innerText = errorMessage.nameError
@@ -242,6 +251,7 @@ const showError = (elemento, message) => {
 		if (emailUno.value !== '') message.innerText = errorMessage.email2Error
 	} else if (elemento.name === 'textarea') message.innerText = errorMessage.txareaError
 }
+
 
 
 // Función controlar botón de envío.
