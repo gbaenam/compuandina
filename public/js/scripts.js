@@ -220,19 +220,23 @@ const validarMail2 = () => {
 // Función cambiar de estado.
 const changeState = (condicion, elemento) => {
 	const formBox = elemento.parentElement.parentElement,
-		message = formBox.querySelector('p')
-		message.classList.add('form__error-message')
+	message = formBox.querySelector('p'),
+	label = formBox.querySelector('.form__label')
+
+	message.classList.add('form__error-message')
 
 	if (condicion) {
 		message.innerText = ''
 		message.style.marginBottom = 0
 		checkInput[elemento.name] = true
+		label.style.marginBottom = '10px'
 		// formBox.classList.remove('incorrecto')
 		// formBox.classList.add('correcto')
 	} else {
 		showError(elemento, message)
 		message.style.marginBottom = '5px'
 		checkInput[elemento.name] = false
+		label.style.marginBottom = '2px';
 		// formBox.classList.add('incorrecto')
 		// formBox.classList.remove('correcto')
 	}
@@ -258,10 +262,10 @@ const showError = (elemento, message) => {
 const submitController = () => {
 	if (checkInput.name && checkInput.email && checkInput.checkmail && checkInput.textarea && terminos.checked) {
 		submitButton.toggleAttribute('disabled', false)
-		console.log(checkInput)
+		// console.log(checkInput)
 	} else {
 		submitButton.toggleAttribute('disabled', true)
-		console.log(checkInput)
+		// console.log(checkInput)
 	}
 }
 
