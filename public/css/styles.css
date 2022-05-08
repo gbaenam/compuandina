@@ -17,7 +17,10 @@
   --color-one: #646464;
   --color-two: #094293;
   --color-houm: #ff452b;
-  --color-error: #cc0000; }
+  --color-error: #cc0000;
+  --color-light-gray: #c2c2c2;
+  --color-pearl-light-gray: #9c9c9c;
+  --color-depsky-blue: #00bfff; }
 
 :root {
   --font-family-headlines: 'Montserrat', sans-serif;
@@ -670,9 +673,9 @@ textarea {
   --height-form-container-height: 100%;
   --font-size-form-title: 43px;
   --line-height-form-title: 41px;
-  --top-form-icon-close-before: -105px;
+  --top-form-icon-close-before: 10px;
   --right-form-icon-close-before: 23px;
-  --font-size-form-icon-close-before: 2.5rem;
+  --font-size-form-icon-close-before: 2rem;
   --margin-form-copyright: auto 0;
   --font-size-form-copyright-small: 16px; }
   @media screen and (min-width: 360px) {
@@ -683,8 +686,8 @@ textarea {
     .form {
       --font-size-form-title: 52px;
       --line-height-form-title: 52px;
-      --top-form-icon-close-before: -113px;
-      --font-size-form-icon-close-before: 3rem; } }
+      --top-form-icon-close-before: 5px;
+      --font-size-form-icon-close-before: 2.5rem; } }
   @media screen and (min-width: 540px) {
     .form {
       --padding-top-form-container: 30px;
@@ -733,8 +736,8 @@ textarea {
     margin-left: auto;
     margin-right: auto; }
     .form__icon-close::before {
-      content: "\f101";
-      color: var(--color-houm);
+      content: "\f00d";
+      color: var(--color-depsky-blue);
       top: var(--top-form-icon-close-before);
       right: var(--right-form-icon-close-before);
       font-size: var(--font-size-form-icon-close-before); }

@@ -7,9 +7,9 @@
     --font-size-form-title: 43px;
     --line-height-form-title: 41px;
     // form__icon-close::before
-    --top-form-icon-close-before: -105px;
+    --top-form-icon-close-before: 10px;
     --right-form-icon-close-before: 23px;
-    --font-size-form-icon-close-before: 2.5rem;
+    --font-size-form-icon-close-before: 2rem;
     // form__copyright
     --margin-form-copyright: auto 0;
     // form__copyright-small
@@ -28,8 +28,8 @@
         --font-size-form-title: 52px;
         --line-height-form-title: 52px;
         // form__icon-close::before
-        --top-form-icon-close-before: -113px;
-        --font-size-form-icon-close-before: 3rem;
+        --top-form-icon-close-before: 5px;
+        --font-size-form-icon-close-before: 2.5rem;
     }
 
     @include from(medium) {
@@ -100,8 +100,8 @@
         margin-right: auto;
 
         &::before {
-            content: "\f101";
-            color: var(--color-houm);
+            content: "\f00d";
+            color: var(--color-depsky-blue);
             top: var(--top-form-icon-close-before);
             right: var(--right-form-icon-close-before);
             font-size: var(--font-size-form-icon-close-before);
