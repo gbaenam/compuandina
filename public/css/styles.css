@@ -726,7 +726,8 @@ textarea {
     font-size: var(--font-size-form-title);
     line-height: var(--line-height-form-title); }
   .form__subtitle {
-    font-size: 23px; }
+    font-size: 23px;
+    font-weight: 500; }
   .form__title, .form__subtitle {
     text-align: center; }
   .form__icon-close {
@@ -736,7 +737,7 @@ textarea {
     margin-right: auto; }
     .form__icon-close::before {
       content: "\f00d";
-      color: var(--color-depsky-blue);
+      color: #646464;
       top: var(--top-form-icon-close-before);
       right: var(--right-form-icon-close-before);
       font-size: var(--font-size-form-icon-close-before); }
@@ -790,16 +791,18 @@ textarea {
   .form__textarea {
     resize: none;
     min-height: 90px;
-    height: 90px;
     padding: 9px 6px 10px 34px; }
   .form__input, .form__textarea {
     width: 100%;
+    border-width: 1px;
     border-radius: 3px;
+    border-style: solid;
+    border-color: #cbd6e2;
     transition: .2s ease all;
-    border: 1px solid #cbd6e2;
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
-      border-width: 2px; }
+      border-width: 1px;
+      border-color: var(--color-pearl-light-gray); }
   .form__input-checkmail {
     padding-left: 43px; }
   .form__input-terminos {
