@@ -91,6 +91,7 @@ const elementHeight = () => {
         // Calculando padding-top formContainer
         const formContHeightAverage = `calc(${(vh-formContHeight.clientHeight)/2}px)`
         formContainer.style.paddingTop = formContHeightAverage
+		console.log(formContHeightAverage)
     } else {
         // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
@@ -240,6 +241,7 @@ const changeState = (condicion, elemento) => {
 		checkInput[elemento.name] = false
 		message.style.marginBottom = '5px'
 	}
+	elementHeight()
 	submitController()
 }
 
