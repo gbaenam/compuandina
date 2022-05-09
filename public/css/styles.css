@@ -823,6 +823,9 @@ textarea {
     margin-bottom: 5px;
     display: inline-block;
     font-size: var(--font-size-form-copyright-small); }
+    @media screen and (min-width: 1024px) {
+      .form__copyright small {
+        margin-bottom: 0; } }
   .form__modal {
     top: 0;
     left: 0;

@@ -45,6 +45,8 @@
         --height-form-container-height: auto;
         // form__copyright
         --margin-form-copyright: 0;
+        // form__copyright-small
+        
     }
 }
 
@@ -242,6 +244,10 @@
         margin-bottom: 5px;
         display: inline-block;
         font-size: var(--font-size-form-copyright-small);
+
+        @include from(large) {
+            margin-bottom: 0;
+        }
     }
 
 
