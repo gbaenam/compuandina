@@ -20,7 +20,8 @@
   --color-error: #cc0000;
   --color-light-gray: #c2c2c2;
   --color-pearl-light-gray: #9c9c9c;
-  --color-depsky-blue: #00bfff; }
+  --color-depsky-blue: #00bfff;
+  --color-pass: #5aaa9a; }
 
 :root {
   --font-family-headlines: 'Montserrat', sans-serif;
@@ -780,6 +781,9 @@ textarea {
     left: 7px;
     font-size: 20px;
     position: absolute; }
+  .form__wrapper-input-email i,
+  .form__wrapper-input-checkmail i {
+    top: 12px; }
   .form__input {
     height: 40px;
     padding: 10px 6px 10px 38px; }

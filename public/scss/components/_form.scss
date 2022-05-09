@@ -176,6 +176,11 @@
         position: absolute;
     }
 
+    &__wrapper-input-email i,
+    &__wrapper-input-checkmail i {
+        top: 12px;
+    }
+
     &__input {
         height: 40px;
         padding: 10px 6px 10px 38px;
