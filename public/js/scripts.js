@@ -219,26 +219,26 @@ const validarMail2 = () => {
 
 // Función cambiar de estado.
 const changeState = (condicion, elemento) => {
+
 	const formBox = elemento.parentElement.parentElement,
-	message = formBox.querySelector('p'),
-	label = formBox.querySelector('.form__label')
+		icon = elemento.parentElement.querySelector('i'),
+		label = formBox.querySelector('label'),
+		message = formBox.querySelector('p')
 
 	message.classList.add('form__error-message')
 
 	if (condicion) {
 		message.innerText = ''
+		icon.style.color = '#5aaa9a'
 		message.style.marginBottom = 0
 		checkInput[elemento.name] = true
 		label.style.marginBottom = '10px'
-		// formBox.classList.remove('incorrecto')
-		// formBox.classList.add('correcto')
 	} else {
+		icon.style.color = '#cc0000'
 		showError(elemento, message)
-		message.style.marginBottom = '5px'
-		checkInput[elemento.name] = false
 		label.style.marginBottom = '2px';
-		// formBox.classList.add('incorrecto')
-		// formBox.classList.remove('correcto')
+		checkInput[elemento.name] = false
+		message.style.marginBottom = '5px'
 	}
 	submitController()
 }
