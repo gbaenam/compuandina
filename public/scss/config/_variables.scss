@@ -40,19 +40,24 @@ $breakpoints: (
 
 // Colores
 :root {
-    --color-one: #646464;
+    --color-light-gray: #c2c2c2;
+    --color-dark-gray: #646464;
+    --color-more-dark-gray: #333333;
+    --color-pearl-light-gray: #9c9c9c;
+
+
     --color-two: #094293;
     --color-houm: #ff452b;
     --color-error: #cc0000;
-    --color-light-gray: #c2c2c2;
-    --color-pearl-light-gray: #9c9c9c;
     --color-depsky-blue: #00bfff;
     --color-pass: #5aaa9a;
 }
 
 // Variables para titulares y subtítulos
 :root {
-    --font-family-headlines: 'Montserrat', sans-serif;
+    --font-family-major: 'Montserrat', sans-serif;
+    --font-family-second: 'Lato', sans-serif;
+    // TODO: Revisar esta asignación de esta variable.
     --font-family-caption: 'Montserrat', sans-serif;
 }
 
@@ -132,9 +137,9 @@ $breakpoints: (
 }
 
 // Variables y estilos para form
-:root {
-    --font-family-form: 'Lato', sans-serif;
-}
+// :root {
+//     --font-family-form: 'Lato', sans-serif;
+// }
 
 // Variables para cursor.
 :root {

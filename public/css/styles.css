@@ -14,17 +14,19 @@
   --font-size-body: 20px; }
 
 :root {
-  --color-one: #646464;
+  --color-light-gray: #c2c2c2;
+  --color-dark-gray: #646464;
+  --color-more-dark-gray: #333333;
+  --color-pearl-light-gray: #9c9c9c;
   --color-two: #094293;
   --color-houm: #ff452b;
   --color-error: #cc0000;
-  --color-light-gray: #c2c2c2;
-  --color-pearl-light-gray: #9c9c9c;
   --color-depsky-blue: #00bfff;
   --color-pass: #5aaa9a; }
 
 :root {
-  --font-family-headlines: 'Montserrat', sans-serif;
+  --font-family-major: 'Montserrat', sans-serif;
+  --font-family-second: 'Lato', sans-serif;
   --font-family-caption: 'Montserrat', sans-serif; }
 
 :root {
@@ -73,9 +75,6 @@
 
 :root {
   --font-family-footer: 'Lato', sans-serif; }
-
-:root {
-  --font-family-form: 'Lato', sans-serif; }
 
 :root {
   --cursor-button: default; }
@@ -135,7 +134,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 300;
-  font-family: var(--font-family-headlines); }
+  color: var(--color-dark-gray);
+  font-family: var(--font-family-major); }
 
 h1,
 h2 {
@@ -181,7 +181,7 @@ label {
 label,
 input,
 textarea {
-  font-family: var(--font-family-form); }
+  font-family: var(--font-family-second); }
 
 input,
 textarea {
@@ -191,7 +191,8 @@ textarea {
     outline: none; }
 
 .caption {
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--color-dark-gray);
   font-family: var(--font-family-caption); }
 
 .icon {
@@ -641,6 +642,7 @@ textarea {
     position: relative;
     flex-direction: column; }
   .banner__title {
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-family: var(--font-family-h);
@@ -665,6 +667,7 @@ textarea {
     width: var(--width-icon);
     margin-bottom: var(--margin-bottom-icon); }
   .banner__icon-text {
+    color: #fff;
     font-weight: 400;
     text-transform: uppercase;
     font-size: var(--font-size-icon-text); }
@@ -714,7 +717,6 @@ textarea {
     padding-left: 0;
     padding-right: 0;
     overflow-y: scroll;
-    color: var(--color-one);
     background-color: #fff;
     transition: transform .5s;
     transform: translateY(-200%); }
@@ -726,8 +728,7 @@ textarea {
     font-size: var(--font-size-form-title);
     line-height: var(--line-height-form-title); }
   .form__subtitle {
-    font-size: 23px;
-    font-weight: 500; }
+    font-size: 23px; }
   .form__title, .form__subtitle {
     text-align: center; }
   .form__icon-close {
@@ -737,7 +738,7 @@ textarea {
     margin-right: auto; }
     .form__icon-close::before {
       content: "\f00d";
-      color: #646464;
+      color: var(--color-dark-gray);
       top: var(--top-form-icon-close-before);
       right: var(--right-form-icon-close-before);
       font-size: var(--font-size-form-icon-close-before); }
@@ -764,7 +765,7 @@ textarea {
       position: absolute;
       color: var(--color-error); }
   .form__label, .form__label-checkbox {
-    color: #33475b; }
+    color: var(--color-more-dark-gray); }
   .form__label-checkbox {
     font-size: 18px; }
     @media screen and (min-width: 360px) {
@@ -781,7 +782,8 @@ textarea {
     top: 10px;
     left: 7px;
     font-size: 20px;
-    position: absolute; }
+    position: absolute;
+    color: var(--color-dark-gray); }
   .form__wrapper-input-email i,
   .form__wrapper-input-checkmail i {
     top: 12px; }
@@ -802,7 +804,7 @@ textarea {
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
       border-width: 2px;
-      border-color: var(--color-pearl-light-gray); }
+      border-color: var(--color-dark-gray); }
   .form__input-checkmail {
     padding-left: 38px; }
   .form__input-terminos {

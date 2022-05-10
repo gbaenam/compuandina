@@ -68,10 +68,10 @@
         padding-left: 0;
         padding-right: 0;
         overflow-y: scroll;
-        color: var(--color-one);
         background-color: #fff;
         transition: transform .5s;
         transform: translateY(-200%);
+        // color: var(--color-dark-gray);
     }
 
     &__container-height {
@@ -87,7 +87,6 @@
 
     &__subtitle {
         font-size: 23px;
-        font-weight: 500;
     }
 
     &__title,
@@ -103,8 +102,7 @@
 
         &::before {
             content: "\f00d";
-            color: #646464;
-            // color: var(--color-depsky-blue);
+            color: var(--color-dark-gray);
             top: var(--top-form-icon-close-before);
             right: var(--right-form-icon-close-before);
             font-size: var(--font-size-form-icon-close-before);
@@ -150,7 +148,7 @@
 
     &__label,
     &__label-checkbox {
-        color: #33475b;
+        color: var(--color-more-dark-gray);
     }
 
     &__label-checkbox {
@@ -177,6 +175,7 @@
         left: 7px;
         font-size: 20px;
         position: absolute;
+        color: var(--color-dark-gray);
     }
 
     &__wrapper-input-email i,
@@ -207,7 +206,7 @@
 
         &:focus {
             border-width: 2px;
-            border-color: var(--color-pearl-light-gray);
+            border-color: var(--color-dark-gray);
             // box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
         }
     }

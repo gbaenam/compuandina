@@ -159,6 +159,7 @@
     // TODO: Revisar todas las propiedades de este selector,
     // TODO: .... incluyendo la variable "font-family-h"
     &__title {
+        color: #fff;
         text-align: center;
         text-transform: uppercase;
         font-family: var(--font-family-h);
@@ -193,6 +194,7 @@
     }
 
     &__icon-text {
+        color: #fff;
         font-weight: 400;
         text-transform: uppercase;
         font-size: var(--font-size-icon-text);
