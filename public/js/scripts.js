@@ -230,7 +230,7 @@ const changeState = (condicion, elemento) => {
 
 	if (condicion) {
 		message.innerText = ''
-		icon.style.color = '#5aaa9a'
+		icon.style.color = '#1E90FF'
 		message.style.marginBottom = 0
 		checkInput[elemento.name] = true
 		label.style.marginBottom = '10px'

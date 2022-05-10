@@ -787,11 +787,11 @@ textarea {
     top: 12px; }
   .form__input {
     height: 40px;
-    padding: 10px 6px 10px 38px; }
+    padding: 10px 6px 10px 34px; }
   .form__textarea {
     resize: none;
     min-height: 90px;
-    padding: 9px 6px 10px 34px; }
+    padding: 9px 6px 10px 30px; }
   .form__input, .form__textarea {
     width: 100%;
     border-width: 1px;
@@ -801,10 +801,10 @@ textarea {
     transition: .2s ease all;
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
-      border-width: 1px;
+      border-width: 2px;
       border-color: var(--color-pearl-light-gray); }
   .form__input-checkmail {
-    padding-left: 43px; }
+    padding-left: 38px; }
   .form__input-terminos {
     left: 3px;
     width: 20px;

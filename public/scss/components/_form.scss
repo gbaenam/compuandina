@@ -186,13 +186,13 @@
 
     &__input {
         height: 40px;
-        padding: 10px 6px 10px 38px;
+        padding: 10px 6px 10px 34px;
     }
 
     &__textarea {
         resize: none;
         min-height: 90px;
-        padding: 9px 6px 10px 34px;
+        padding: 9px 6px 10px 30px;
     }
 
     &__input,
@@ -206,14 +206,14 @@
         background-color: #f5f8fa;
 
         &:focus {
-            border-width: 1px;
+            border-width: 2px;
             border-color: var(--color-pearl-light-gray);
             // box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
         }
     }
 
     &__input-checkmail {
-        padding-left: 43px;
+        padding-left: 38px;
     }
 
     &__input-terminos {
