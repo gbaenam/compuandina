@@ -21,6 +21,7 @@
   --color-two: #094293;
   --color-houm: #ff452b;
   --color-error: #cc0000;
+  --color-text: #495057;
   --color-gvs-blue: #80bdff;
   --color-depsky-blue: #00bfff;
   --color-dodger-blue: #1E90FF;
@@ -802,10 +803,11 @@ textarea {
     border-radius: 3px;
     border-style: solid;
     border-color: #cbd6e2;
+    color: var(--color-text);
     transition: .2s ease all;
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
-      border-color: #1E90FF;
+      border-color: var(--color-gvs-blue);
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .form__input-checkmail {
     padding-left: 38px; }

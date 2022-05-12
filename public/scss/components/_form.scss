@@ -201,11 +201,12 @@
         border-radius: 3px;
         border-style: solid;
         border-color: #cbd6e2;
+        color: var(--color-text);
         transition: .2s ease all;
         background-color: #f5f8fa;
 
         &:focus {
-            border-color: #1E90FF;
+            border-color: var(--color-gvs-blue);
             box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
         }
     }
