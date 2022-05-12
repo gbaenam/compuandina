@@ -205,9 +205,8 @@
         background-color: #f5f8fa;
 
         &:focus {
-            border-width: 2px;
-            border-color: var(--color-dark-gray);
-            // box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+            border-color: #1E90FF;
+            box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
         }
     }
 

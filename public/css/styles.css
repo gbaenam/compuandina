@@ -803,8 +803,8 @@ textarea {
     transition: .2s ease all;
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
-      border-width: 2px;
-      border-color: var(--color-dark-gray); }
+      border-color: #1E90FF;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .form__input-checkmail {
     padding-left: 38px; }
   .form__input-terminos {

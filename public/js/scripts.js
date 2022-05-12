@@ -31,14 +31,15 @@ const mql = matchMedia('(min-width: 1024px)')
 
 
 // window.addEventListener('scroll', () => {
-// 	const info = formContainer.getBoundingClientRect()
-// 	console.log(info)
+// 	const x = formContainer.getBoundingClientRect().x
+// 	const y = formContainer.getBoundingClientRect().y
+// 	console.log(x,y)
 // })
 
-// window.addEventListener('scroll', () => {
-// 	const scrolled = window.scrollY
-// 	console.log(scrolled)
-// })
+window.addEventListener('scroll', () => {
+	const scrolled = window.scrollY
+	console.log(scrolled)
+})
 
 
 // Función hamburger button animation
@@ -239,7 +240,7 @@ const changeState = (condicion, elemento) => {
 		showError(elemento, message)
 		label.style.marginBottom = '2px';
 		checkInput[elemento.name] = false
-		message.style.marginBottom = '5px'
+		message.style.marginBottom = '8px'
 	}
 	elementHeight()
 	submitController()
