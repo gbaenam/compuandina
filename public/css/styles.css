@@ -807,8 +807,11 @@ textarea {
     transition: .2s ease all;
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
-      border-color: var(--color-gvs-blue);
+      border-color: var(--color-dodger-blue);
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+    @media screen and (min-width: 1024px) {
+      .form__input:focus, .form__textarea:focus {
+        border-color: var(--color-gvs-blue); } }
   .form__input-checkmail {
     padding-left: 38px; }
   .form__input-terminos {

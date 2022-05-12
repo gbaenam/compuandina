@@ -206,8 +206,14 @@
         background-color: #f5f8fa;
 
         &:focus {
-            border-color: var(--color-gvs-blue);
+            border-color: var(--color-depsky-blue);
             box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+        }
+
+        @include from(large) {
+            &:focus {
+                border-color: var(--color-gvs-blue);
+            }
         }
     }
 
