@@ -759,7 +759,7 @@ textarea {
     cursor: var(--cursor-button); }
   .form__label {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     display: inline-block; }
     .form__label::before {
       content: "*";
@@ -807,7 +807,7 @@ textarea {
     transition: .2s ease all;
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
-      border-color: var(--color-dodger-blue);
+      border-color: var(--color-depsky-blue);
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     @media screen and (min-width: 1024px) {
       .form__input:focus, .form__textarea:focus {
