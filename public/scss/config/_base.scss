@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
     font-weight: 300;
     color: var(--color-dark-gray);
-    font-family: var(--font-family-major);
+    font-family: var(--font-family-primary);
 }
 
 h1,
@@ -80,7 +80,7 @@ button {
 
 // Reset small
 small {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-family-secondary);
 }
 
 // Reset <ul>
@@ -95,17 +95,19 @@ ul {
 
 label {
     font-size: 17px;
+    color: var(--color-more-dark-gray);
 }
 
 label,
 input,
 textarea {
-    font-family: var(--font-family-second);
+    font-family: var(--font-family-secondary);
 }
 
 input,
 textarea {
     font-size: 16px;
+    color: var(--color-text);
 
     &:focus {
         outline: none;
@@ -121,7 +123,7 @@ textarea {
     // TODO: Revisar la asignación de esta varible deshabilitada.
     // line-height: normal;
     color: var(--color-dark-gray);
-    font-family: var(--font-family-caption);
+    font-family: var(--font-family-primary);
 }
 
 // Font Awesome Icons
@@ -129,14 +131,15 @@ textarea {
     position: relative;
 
     &::before {
-    font-weight: 900;
-    font-style: normal;
-    position: absolute;
-    font-variant: normal;
-    text-rendering: auto;
-    display: inline-block;
-    font-family: "Font Awesome 5 Free";
-    -webkit-font-smoothing: antialiased;
+        font-weight: 900;
+        font-style: normal;
+        position: absolute;
+        font-variant: normal;
+        text-rendering: auto;
+        display: inline-block;
+        color: var(--color-dark-gray);
+        font-family: "Font Awesome 5 Free";
+        -webkit-font-smoothing: antialiased;
     }
 }
 

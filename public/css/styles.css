@@ -14,8 +14,8 @@
   --font-size-body: 20px; }
 
 :root {
-  --color-light-gray: #c2c2c2;
   --color-dark-gray: #646464;
+  --color-light-gray: #c2c2c2;
   --color-more-dark-gray: #333333;
   --color-pearl-light-gray: #9c9c9c;
   --color-two: #094293;
@@ -28,9 +28,9 @@
   --color-pass: #5aaa9a; }
 
 :root {
-  --font-family-major: 'Montserrat', sans-serif;
-  --font-family-second: 'Lato', sans-serif;
-  --font-family-caption: 'Montserrat', sans-serif; }
+  --font-family-primary: 'Montserrat', sans-serif;
+  --font-family-secondary: 'Lato', sans-serif;
+  --font-family-tertiary: 'Ubuntu', sans-serif; }
 
 :root {
   --font-weight-body: 400;
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   font-weight: 300;
   color: var(--color-dark-gray);
-  font-family: var(--font-family-major); }
+  font-family: var(--font-family-primary); }
 
 h1,
 h2 {
@@ -170,7 +170,7 @@ button {
     border: 0; }
 
 small {
-  font-family: 'Lato', sans-serif; }
+  font-family: var(--font-family-secondary); }
 
 ul {
   margin-top: 0;
@@ -179,16 +179,18 @@ ul {
   list-style: none; }
 
 label {
-  font-size: 17px; }
+  font-size: 17px;
+  color: var(--color-more-dark-gray); }
 
 label,
 input,
 textarea {
-  font-family: var(--font-family-second); }
+  font-family: var(--font-family-secondary); }
 
 input,
 textarea {
-  font-size: 16px; }
+  font-size: 16px;
+  color: var(--color-text); }
   input:focus,
   textarea:focus {
     outline: none; }
@@ -196,7 +198,7 @@ textarea {
 .caption {
   font-weight: 500;
   color: var(--color-dark-gray);
-  font-family: var(--font-family-caption); }
+  font-family: var(--font-family-primary); }
 
 .icon {
   position: relative; }
@@ -207,6 +209,7 @@ textarea {
     font-variant: normal;
     text-rendering: auto;
     display: inline-block;
+    color: var(--color-dark-gray);
     font-family: "Font Awesome 5 Free";
     -webkit-font-smoothing: antialiased; }
 
@@ -741,7 +744,6 @@ textarea {
     margin-right: auto; }
     .form__icon-close::before {
       content: "\f00d";
-      color: var(--color-dark-gray);
       top: var(--top-form-icon-close-before);
       right: var(--right-form-icon-close-before);
       font-size: var(--font-size-form-icon-close-before); }
@@ -758,8 +760,8 @@ textarea {
   .form__label, .form__label-checkbox, .form__icon-close::before {
     cursor: var(--cursor-button); }
   .form__label {
-    position: relative;
     margin-bottom: 8px;
+    position: relative;
     display: inline-block; }
     .form__label::before {
       content: "*";
@@ -767,8 +769,6 @@ textarea {
       font-size: 20px;
       position: absolute;
       color: var(--color-error); }
-  .form__label, .form__label-checkbox {
-    color: var(--color-more-dark-gray); }
   .form__label-checkbox {
     font-size: 18px; }
     @media screen and (min-width: 360px) {
@@ -778,7 +778,7 @@ textarea {
     font-size: 17px;
     line-height: 18px;
     color: var(--color-error);
-    font-family: 'Ubuntu', sans-serif; }
+    font-family: var(--font-family-tertiary); }
   .form__wrapper-input {
     position: relative; }
   .form__wrapper-input i {
@@ -803,7 +803,6 @@ textarea {
     border-radius: 3px;
     border-style: solid;
     border-color: #cbd6e2;
-    color: var(--color-text);
     transition: .2s ease all;
     background-color: #f5f8fa; }
     .form__input:focus, .form__textarea:focus {
@@ -834,6 +833,7 @@ textarea {
   .form__copyright small {
     margin-bottom: 5px;
     display: inline-block;
+    color: var(--color-more-dark-gray);
     font-size: var(--font-size-form-copyright-small); }
     @media screen and (min-width: 1024px) {
       .form__copyright small {

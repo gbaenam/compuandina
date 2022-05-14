@@ -36,10 +36,10 @@ const mql = matchMedia('(min-width: 1024px)')
 // 	console.log(x,y)
 // })
 
-window.addEventListener('scroll', () => {
-	const scrolled = window.scrollY
-	console.log(scrolled)
-})
+// window.addEventListener('scroll', () => {
+// 	const scrolled = window.scrollY
+// 	console.log(scrolled)
+// })
 
 
 // Función hamburger button animation
@@ -92,7 +92,9 @@ const elementHeight = () => {
         // Calculando padding-top formContainer
         const formContHeightAverage = `calc(${(vh-formContHeight.clientHeight)/2}px)`
         formContainer.style.paddingTop = formContHeightAverage
-		console.log(formContHeightAverage)
+		// console.log('Altura formulario es ', formContHeight.clientHeight)
+		// console.log('innerHeight es, ', innerHeight)
+		console.log('padding-top es ', formContHeightAverage)
     } else {
         // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
