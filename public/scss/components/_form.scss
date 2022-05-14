@@ -140,14 +140,6 @@
         }
     }
 
-    &__label-checkbox {
-        font-size: 18px;
-
-        @include from(360px) {
-            font-size: 19px;
-        }
-    }
-
     &__error-message {
         font-size: 17px;
         line-height: 18px;

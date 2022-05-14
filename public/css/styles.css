@@ -769,11 +769,6 @@ textarea {
       font-size: 20px;
       position: absolute;
       color: var(--color-error); }
-  .form__label-checkbox {
-    font-size: 18px; }
-    @media screen and (min-width: 360px) {
-      .form__label-checkbox {
-        font-size: 19px; } }
   .form__error-message {
     font-size: 17px;
     line-height: 18px;
