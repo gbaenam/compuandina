@@ -310,3 +310,55 @@ async function handleSubmit(event) {
 /*============================================================================*/
 
 
+
+// // Evento submit del formulaio.
+// form.addEventListener('submit', handleSubmit)
+
+// async function handleSubmit(event) {
+// 	event.preventDefault()
+// 	const $form = new FormData(this)
+// 	const response = await fetch(this.action, {
+// 		method: this.method,
+// 		body: $form,
+// 		headers: {
+// 			'Accept': 'application/json'
+// 		}
+// 	})
+
+// 	if (response.ok) {
+// 		modal.style.visibility = 'visible'
+// 		modalContent.classList.add('modal--open')
+// 	}
+// }
+
+
+// // VENTANA MODAL
+
+// const   modal = document.getElementById('modal'),
+//         closeModal = document.getElementById('modal-close'),
+//         modalContent = document.getElementById('modal-content')
+
+// // Función cerrar ventana modal.
+// const close = e => {
+//     e.stopPropagation()
+//     modalContent.classList.remove('modal--open')
+//     setTimeout(() => modal.style.visibility = 'hidden',1000)
+// }
+
+// // Cerrando la ventana modal.
+// closeModal.addEventListener('click', e => {
+//     close(e)
+// 	form.reset()
+// 	submitButton.toggleAttribute('disabled', true)
+
+// 	// Capturando todos los contenedores "form__box" con la clase "correcto"
+// 	const classCorrecto = document.querySelectorAll('.correcto')
+
+// 	// Limpiando la clase correcto.
+// 	classCorrecto.forEach((element) => {
+// 		element.classList.remove('correcto')
+// 	})
+// })
+
+
+
