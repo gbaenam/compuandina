@@ -147,8 +147,9 @@ const cleanForm = () => {
 	messages.forEach(message => {
 		message.innerText = ''
 	})
-
-
+	for (let checkInput in checkInputs) {
+		checkInputs[checkInput] = false
+	}
 }
 cleanForm()
 
