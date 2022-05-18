@@ -305,11 +305,18 @@ form.addEventListener('submit', handleSubmit)
 
 
 
-const closeModal = () => {
-	formModal.style.visibility = 'hidden'
-	formModalContent.classList.remove('form--modal-open')
-	form.reset()
+const closeModal = e => {
+	if (e.target === formModal || e.target === formModalButton) {
+		formModal.style.visibility = 'hidden'
+		formModalContent.classList.remove('form--modal-open')
+		form.reset()
+	}
 }
 
-formModalButton.addEventListener('click', closeModal)
+formModal.addEventListener('click', closeModal)
+
+
+
+
+
 
