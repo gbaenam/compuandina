@@ -294,8 +294,8 @@ async function handleSubmit(event) {
 	})
 
 	if (response.ok) {
-		modal.style.visibility = 'visible'
-		modalContent.classList.add('modal--open')
+		formModal.style.visibility = 'visible'
+		formModalContent.classList.add('form--modal-open')
 	}
 }
 

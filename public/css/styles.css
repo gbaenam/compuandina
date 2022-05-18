@@ -870,6 +870,8 @@ textarea {
     background-color: #0a0a0a; }
   .form--show {
     transform: translateY(0); }
+  .form--modal-open {
+    transform: translateY(0); }
 
 .main-footer {
   text-align: center;
