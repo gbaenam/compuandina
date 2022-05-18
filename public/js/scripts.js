@@ -26,6 +26,12 @@ const   form = document.getElementById('form'),
         submitButton = document.getElementById('submit-button')
 
 
+// Captura elementos Modal confirmación envío mail de contacto.
+const   formModal = document.getElementById('form-modal'),
+		formModalContent = document.getElementById('form-modal-content'),
+		formModalButton = document.getElementById('form-modal-button')
+
+
 // Consulta de medios.
 const mql = matchMedia('(min-width: 1024px)')
 
@@ -303,9 +309,7 @@ form.addEventListener('submit', handleSubmit)
 
 // // VENTANA MODAL
 
-// const   modal = document.getElementById('modal'),
-//         closeModal = document.getElementById('modal-close'),
-//         modalContent = document.getElementById('modal-content')
+
 
 // // Función cerrar ventana modal.
 // const close = e => {
