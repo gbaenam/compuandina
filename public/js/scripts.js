@@ -139,10 +139,13 @@ const errorMessage = {
 const cleanForm = () => {
 	form.reset()
 	submitButton.toggleAttribute('disabled', true)
-	const iconFonts = document.querySelectorAll('.form__wrapper-input i')
-
-	iconFonts.forEach((icon) => {
+	const iconFonts = document.querySelectorAll('.form__wrapper-input i'),
+		messages = document.querySelectorAll('.form__box p')
+	iconFonts.forEach(icon => {
 		icon.style.color = '#646464'
+	})
+	messages.forEach(message => {
+		message.innerText = ''
 	})
 }
 cleanForm()
@@ -161,19 +164,14 @@ const openForm = e => {
 // Función cerrar formulario
 const closeForm = e => {
     e.stopPropagation()
-
     if (e.target === formContainer || e.target === formContHeight || e.target === formIconClose)  {
-
 		cleanForm()
-
         if (nav.classList.contains('main-nav__move')) {
             burguerLine.classList.toggle('cruz')
             nav.classList.toggle('main-nav__move')
         }
-
         formContainer.classList.remove('form--show')
         setTimeout(() => form.style.visibility = 'hidden',1000)
-
     } else if (e.target === formModal || e.target === formModalButton) {
 		cleanForm()
 		formModal.style.visibility = 'hidden'
