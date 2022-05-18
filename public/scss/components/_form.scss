@@ -57,7 +57,7 @@
     visibility: hidden;
     line-height: normal;
     z-index: var(--z-modal);
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0,0,0,.9);
 
     &__container {
         width: 100%;
@@ -253,7 +253,7 @@
         z-index: var(--z-modal-max);
         position: fixed;
         visibility: hidden;
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(0,0,0,.9);
 
         // Centrado de modal__content
         display: flex;
@@ -307,23 +307,3 @@
         transform: translateY(0);
     }
 }
-
-
-// Estilos para validación del formulario.
-
-// .correcto .form__input {
-//     border-color: #1ed12d;
-// }
-
-// .incorrecto .form__input {
-//     border-color: var(--color-error);
-// }
-
-// .correcto .form__textarea {
-//     border-color: #1ed12d;
-// }
-
-// .incorrecto .form__textarea {
-//     border-color: var(--color-error);
-// }
-

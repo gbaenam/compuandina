@@ -279,8 +279,9 @@ const showError = (elemento, message) => {
 
 // Función controlar botón de envío.
 const submitController = () => {
-	if (checkInput.name && checkInput.email && checkInput.checkmail && checkInput.textarea && terminos.checked) submitButton.toggleAttribute('disabled', false)
-		else submitButton.toggleAttribute('disabled', true)
+	if (checkInput.name && checkInput.email && checkInput.checkmail && checkInput.textarea && terminos.checked) {
+		submitButton.toggleAttribute('disabled', false)
+	} else submitButton.toggleAttribute('disabled', true)
 }
 
 
