@@ -286,9 +286,7 @@ inputs.forEach(input => {
 })
 
 
-// Evento submit del formulaio.
-form.addEventListener('submit', handleSubmit)
-
+// Función envío del formulario
 async function handleSubmit(event) {
 	event.preventDefault()
 	const $form = new FormData(this)
@@ -307,29 +305,11 @@ async function handleSubmit(event) {
 }
 
 
-/*============================================================================*/
+// Evento submit del formulaio.
+form.addEventListener('submit', handleSubmit)
 
 
 
-// // Evento submit del formulaio.
-// form.addEventListener('submit', handleSubmit)
-
-// async function handleSubmit(event) {
-// 	event.preventDefault()
-// 	const $form = new FormData(this)
-// 	const response = await fetch(this.action, {
-// 		method: this.method,
-// 		body: $form,
-// 		headers: {
-// 			'Accept': 'application/json'
-// 		}
-// 	})
-
-// 	if (response.ok) {
-// 		modal.style.visibility = 'visible'
-// 		modalContent.classList.add('modal--open')
-// 	}
-// }
 
 
 // // VENTANA MODAL
