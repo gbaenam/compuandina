@@ -18,7 +18,7 @@ const   burguerButton = document.querySelector('.burguer-button'),
 const   form = document.getElementById('form'),
         formContainer = document.getElementById('form-container'),
         formContHeight = document.querySelector('.form__container-height'),
-        iconCloseForm = document.getElementById('icon-close'),
+        formIconClose = document.getElementById('form-icon-close'),
         inputs = document.querySelectorAll('.input'),
         emailUno = document.getElementById('email'),
         emailDos = document.getElementById('checkmail'),
@@ -28,18 +28,6 @@ const   form = document.getElementById('form'),
 
 // Consulta de medios.
 const mql = matchMedia('(min-width: 1024px)')
-
-
-// window.addEventListener('scroll', () => {
-// 	const x = formContainer.getBoundingClientRect().x
-// 	const y = formContainer.getBoundingClientRect().y
-// 	console.log(x,y)
-// })
-
-// window.addEventListener('scroll', () => {
-// 	const scrolled = window.scrollY
-// 	console.log(scrolled)
-// })
 
 
 // Función hamburger button animation
@@ -56,6 +44,7 @@ const h3 = document.createElement('h3')
 h3.textContent = '¡Síguenos en redes sociales!'
 h3.classList.add('social-bar__title')
 h3.id = 'bar-text'
+
 
 // Función mover la Barra Social.
 const moveSocialBar = () => {
