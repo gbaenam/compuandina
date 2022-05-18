@@ -138,6 +138,20 @@ const errorMessage = {
 
 
 
+// Función limpiar formulario
+const cleanForm = () => {
+	form.reset()
+	submitButton.toggleAttribute('disabled', true)
+	const iconFonts = document.querySelectorAll('.form__wrapper-input i')
+
+	iconFonts.forEach((icon) => {
+		icon.style.color = '#646464'
+	})
+}
+cleanForm()
+
+
+
 // Funcion abrir formulario
 const openForm = e => {
     e.stopPropagation()
@@ -153,6 +167,8 @@ const closeForm = e => {
 
     if (e.target === formContainer || e.target === formContHeight || e.target === formIconClose)  {
 
+		cleanForm()
+
         if (nav.classList.contains('main-nav__move')) {
             burguerLine.classList.toggle('cruz')
             nav.classList.toggle('main-nav__move')
@@ -162,10 +178,10 @@ const closeForm = e => {
         setTimeout(() => form.style.visibility = 'hidden',1000)
 
     } else if (e.target === formModal || e.target === formModalButton) {
+		cleanForm()
 		formModal.style.visibility = 'hidden'
 		formModalContent.classList.remove('form--modal-open')
 	}
-	form.reset()
 }
 
 // Evento abrir formulario
@@ -176,6 +192,9 @@ buttonBanner.addEventListener('click', openForm)
 
 // Evento cerrar formulario
 formContainer.addEventListener('click', closeForm)
+
+// Evento cerral Modal de confirmación
+formModal.addEventListener('click', closeForm)
 
 
 
@@ -267,10 +286,8 @@ const showError = (elemento, message) => {
 const submitController = () => {
 	if (checkInput.name && checkInput.email && checkInput.checkmail && checkInput.textarea && terminos.checked) {
 		submitButton.toggleAttribute('disabled', false)
-		// console.log(checkInput)
 	} else {
 		submitButton.toggleAttribute('disabled', true)
-		// console.log(checkInput)
 	}
 }
 
@@ -304,13 +321,14 @@ async function handleSubmit(event) {
 	}
 }
 
-
 // Evento submit del formulaio.
 form.addEventListener('submit', handleSubmit)
 
 
 
-formModal.addEventListener('click', closeForm)
+
+
+
 
 
 
