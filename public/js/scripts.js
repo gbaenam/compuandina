@@ -87,9 +87,6 @@ const elementHeight = () => {
         // Calculando padding-top formContainer
         const formContHeightAverage = `calc(${(vh-formContHeight.clientHeight)/2}px)`
         formContainer.style.paddingTop = formContHeightAverage
-		// console.log('Altura formulario es ', formContHeight.clientHeight)
-		// console.log('innerHeight es, ', innerHeight)
-		console.log('padding-top es ', formContHeightAverage)
     } else {
         // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
@@ -320,15 +317,5 @@ async function handleSubmit(event) {
 
 // Evento submit del formulaio.
 form.addEventListener('submit', handleSubmit)
-
-
-
-
-
-
-
-
-
-
 
 
