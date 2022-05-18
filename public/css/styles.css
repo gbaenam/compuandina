@@ -864,7 +864,7 @@ textarea {
     background-color: #00a135; }
   .form__modal-message {
     margin-bottom: 3rem; }
-  .form__modal-close {
+  .form__modal-button {
     color: white;
     padding: 7px 60px;
     background-color: #0a0a0a; }

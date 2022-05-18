@@ -305,33 +305,11 @@ form.addEventListener('submit', handleSubmit)
 
 
 
+const closeModal = () => {
+	formModal.style.visibility = 'hidden'
+	formModalContent.classList.remove('form--modal-open')
+	form.reset()
+}
 
-
-// // VENTANA MODAL
-
-
-
-// // Función cerrar ventana modal.
-// const close = e => {
-//     e.stopPropagation()
-//     modalContent.classList.remove('modal--open')
-//     setTimeout(() => modal.style.visibility = 'hidden',1000)
-// }
-
-// // Cerrando la ventana modal.
-// closeModal.addEventListener('click', e => {
-//     close(e)
-// 	form.reset()
-// 	submitButton.toggleAttribute('disabled', true)
-
-// 	// Capturando todos los contenedores "form__box" con la clase "correcto"
-// 	const classCorrecto = document.querySelectorAll('.correcto')
-
-// 	// Limpiando la clase correcto.
-// 	classCorrecto.forEach((element) => {
-// 		element.classList.remove('correcto')
-// 	})
-// })
-
-
+formModalButton.addEventListener('click', closeModal)
 
