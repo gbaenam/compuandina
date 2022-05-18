@@ -145,7 +145,7 @@ const openForm = e => {
 const closeForm = e => {
     e.stopPropagation()
 
-    if (e.target.classList.contains('form__container') || (e.target.classList.contains('form__container-height')) || (e.target.classList.contains('form__icon-close')) )  {
+    if (e.target === formContainer || e.target === formContHeight || e.target === formIconClose)  {
 
         if (nav.classList.contains('main-nav__move')) {
             burguerLine.classList.toggle('cruz')
