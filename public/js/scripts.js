@@ -160,7 +160,12 @@ const closeForm = e => {
 
         formContainer.classList.remove('form--show')
         setTimeout(() => form.style.visibility = 'hidden',1000)
-    }
+
+    } else if (e.target === formModal || e.target === formModalButton) {
+		formModal.style.visibility = 'hidden'
+		formModalContent.classList.remove('form--modal-open')
+	}
+	form.reset()
 }
 
 // Evento abrir formulario
@@ -305,15 +310,7 @@ form.addEventListener('submit', handleSubmit)
 
 
 
-const closeModal = e => {
-	if (e.target === formModal || e.target === formModalButton) {
-		formModal.style.visibility = 'hidden'
-		formModalContent.classList.remove('form--modal-open')
-		form.reset()
-	}
-}
-
-formModal.addEventListener('click', closeModal)
+formModal.addEventListener('click', closeForm)
 
 
 
