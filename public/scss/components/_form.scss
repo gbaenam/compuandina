@@ -57,7 +57,7 @@
     visibility: hidden;
     line-height: normal;
     z-index: var(--z-modal);
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,.8);
 
     &__container {
         width: 100%;
@@ -275,7 +275,7 @@
 
         // Animación de modal__content
         transition: transform 1s;
-        transform: translateY(-100vh);
+        transform: translateY(-200%);
     }
 
     &__modal-confirmation {

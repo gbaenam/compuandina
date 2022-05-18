@@ -716,7 +716,7 @@ textarea {
   visibility: hidden;
   line-height: normal;
   z-index: var(--z-modal);
-  background-color: rgba(0, 0, 0, 0.9); }
+  background-color: rgba(0, 0, 0, 0.8); }
   .form__container {
     width: 100%;
     height: 100%;
@@ -855,7 +855,7 @@ textarea {
     flex-direction: column;
     justify-content: center;
     transition: transform 1s;
-    transform: translateY(-100vh); }
+    transform: translateY(-200%); }
   .form__modal-confirmation {
     color: #fff;
     padding: 10px 20px;
