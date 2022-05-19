@@ -1,35 +1,40 @@
 // Captura de elementos principales.
-const   header = document.getElementById('main-header'),
-        nav = document.getElementById('main-nav'),
-        main = document.getElementById('main'),
-        footer = document.getElementById('main-footer')
+const header = document.getElementById('main-header'),
+	nav = document.getElementById('main-nav'),
+	main = document.getElementById('main'),
+	footer = document.getElementById('main-footer')
 
 
 // Captura de elementos secundarios.
-const   burguerButton = document.querySelector('.burguer-button'),
-        burguerLine = document.querySelector('.burguer-button__line'),
-        iconMail = document.getElementById('contact-bar-mail'),
-        socialBar = document.getElementById('social-bar'),
-        socialBarWrapper = document.getElementById('social-bar-wrapper'),
-        buttonBanner = document.getElementById('banner-button')
+const burguerButton = document.querySelector('.burguer-button'),
+	burguerLine = document.querySelector('.burguer-button__line'),
+	iconMail = document.getElementById('contact-bar-mail'),
+	socialBar = document.getElementById('social-bar'),
+	socialBarWrapper = document.getElementById('social-bar-wrapper'),
+	buttonBanner = document.getElementById('banner-button')
 
 
 // Captura de elementos del formulario
-const   form = document.getElementById('form'),
-        formContainer = document.getElementById('form-container'),
-        formContHeight = document.querySelector('.form__container-height'),
-        formIconClose = document.getElementById('form-icon-close'),
-        inputs = document.querySelectorAll('.input'),
-        emailUno = document.getElementById('email'),
-        emailDos = document.getElementById('checkmail'),
-        terminos = document.getElementById('terminos'),
-        submitButton = document.getElementById('submit-button')
+const form = document.getElementById('form'),
+	formContainer = document.getElementById('form-container'),
+	formContHeight = document.querySelector('.form__container-height'),
+	formIconClose = document.getElementById('form-icon-close'),
+	inputs = document.querySelectorAll('.input'),
+	emailUno = document.getElementById('email'),
+	emailDos = document.getElementById('checkmail'),
+	terminos = document.getElementById('terminos'),
+	submitButton = document.getElementById('submit-button')
+
+
+// Captura de elementos para la función clenform()
+const iconFonts = document.querySelectorAll('.form__wrapper-input i'),
+	messages = document.querySelectorAll('.form__box p')
 
 
 // Captura elementos Modal confirmación envío mail de contacto.
-const   formModal = document.getElementById('form-modal'),
-		formModalContent = document.getElementById('form-modal-content'),
-		formModalButton = document.getElementById('form-modal-button')
+const formModal = document.getElementById('form-modal'),
+	formModalContent = document.getElementById('form-modal-content'),
+	formModalButton = document.getElementById('form-modal-button')
 
 
 // Consulta de medios.
@@ -139,14 +144,15 @@ const errorMessage = {
 const cleanForm = () => {
 	form.reset()
 	submitButton.toggleAttribute('disabled', true)
-	const iconFonts = document.querySelectorAll('.form__wrapper-input i'),
-		messages = document.querySelectorAll('.form__box p')
+
 	iconFonts.forEach(icon => {
 		icon.style.color = '#646464'
 	})
+
 	messages.forEach(message => {
 		message.innerText = ''
 	})
+
 	for (let checkInput in checkInputs) {
 		checkInputs[checkInput] = false
 	}
