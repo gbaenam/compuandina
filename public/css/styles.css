@@ -845,11 +845,14 @@ textarea {
     align-items: center;
     justify-content: center; }
   .form__modal-content {
-    width: 90%;
-    height: 20vh;
+    width: 280px;
+    height: 10vh;
     position: relative;
     transition: transform 1s;
     transform: translateY(-100vh); }
+    @media screen and (min-width: 412px) {
+      .form__modal-content {
+        width: 320px; } }
     .form__modal-content i {
       left: 50%;
       top: -100px;
@@ -862,7 +865,7 @@ textarea {
     padding: 10px 0;
     font-size: 34px;
     font-weight: 600;
-    line-height: 20vh;
+    line-height: 10vh;
     border-radius: 5px;
     text-align: center;
     background-color: #fff;

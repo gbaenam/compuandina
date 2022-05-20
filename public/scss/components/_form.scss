@@ -262,9 +262,13 @@
     }
 
     &__modal-content {
-        width: 90%;
-        height: 20vh;
+        width: 280px;
+        height: 10vh;
         position: relative;
+
+        @include from(412px) {
+            width: 320px;
+        }
 
         // Animación de modal__content
         transition: transform 1s;
@@ -286,7 +290,7 @@
         padding: 10px 0;
         font-size: 34px;
         font-weight: 600;
-        line-height: 20vh;
+        line-height: 10vh;
         border-radius: 5px;
         text-align: center;
         background-color: #fff;

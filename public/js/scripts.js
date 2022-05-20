@@ -168,7 +168,7 @@ const closeForm = () => {
 		nav.classList.toggle('main-nav__move')
 	}
 	formContainer.classList.remove('form--show')
-	setTimeout(() => form.style.visibility = 'hidden',1000)
+	setTimeout(() => form.style.visibility = 'hidden',1500)
 }
 
 
