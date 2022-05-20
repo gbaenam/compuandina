@@ -26,7 +26,7 @@ const form = document.getElementById('form'),
 	submitButton = document.getElementById('submit-button')
 
 
-// Captura de elementos para la función clenform()
+// Captura de elementos para la función cleanform()
 const iconFonts = document.querySelectorAll('.form__wrapper-input i'),
 	messages = document.querySelectorAll('.form__box p')
 
