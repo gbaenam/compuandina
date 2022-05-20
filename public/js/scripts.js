@@ -334,7 +334,6 @@ async function handleSubmit(event) {
 	if (response.ok) {
 		formModal.style.visibility = 'visible'
 		formModalContent.classList.add('form--modal-open')
-		// console.log('Respuesta ok del formulario')
 	}
 }
 
