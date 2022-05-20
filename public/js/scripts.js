@@ -175,8 +175,9 @@ const closeForm = () => {
 
 // Función cerrar modal de confirmación
 const closeModal = () => {
-	formModal.style.visibility = 'hidden'
+	// formModal.style.visibility = 'hidden'
 	formModalContent.classList.remove('form--modal-open')
+	setTimeout(() => form.style.visibility = 'hidden',1000)
 }
 
 
@@ -197,8 +198,8 @@ const close = e => {
         closeForm()
     } else if (e.target === formModal || e.target === iconFormModal) {
 		cleanForm()
-		closeForm()
 		closeModal()
+		closeForm()
 	}
 }
 
