@@ -845,17 +845,12 @@ textarea {
     align-items: center;
     justify-content: center; }
   .form__modal-content {
-    position: relative;
+    background-color: orange;
     transition: transform 1s;
     transform: translateY(-200%); }
     .form__modal-content i {
-      left: 50%;
-      top: -100px;
       color: #fff;
-      font-size: 60px;
-      position: absolute;
-      cursor: var(--cursor-button);
-      transform: translateX(-30px); }
+      font-size: 60px; }
   .form__modal-confirmation {
     font-size: 34px;
     font-weight: 600;
