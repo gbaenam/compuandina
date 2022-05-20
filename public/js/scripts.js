@@ -18,7 +18,7 @@ const burguerButton = document.querySelector('.burguer-button'),
 const form = document.getElementById('form'),
 	formContainer = document.getElementById('form-container'),
 	formContHeight = document.querySelector('.form__container-height'),
-	formIconClose = document.getElementById('form-icon-close'),
+	iconFormClose = document.getElementById('form-icon-close'),
 	inputs = document.querySelectorAll('.input'),
 	emailUno = document.getElementById('email'),
 	emailDos = document.getElementById('checkmail'),
@@ -192,7 +192,7 @@ const openForm = e => {
 // Función cerrar
 const close = e => {
     e.stopPropagation()
-    if (e.target === formIconClose)  {
+    if (e.target === iconFormClose)  {
 		cleanForm()
         closeForm()
     } else if (e.target === formModal || e.target === iconFormModal) {
