@@ -177,7 +177,7 @@ const closeForm = () => {
 const closeModal = () => {
 	// formModal.style.visibility = 'hidden'
 	formModalContent.classList.remove('form--modal-open')
-	setTimeout(() => form.style.visibility = 'hidden',1000)
+	setTimeout(() => formModal.style.visibility = 'hidden',1000)
 }
 
 
