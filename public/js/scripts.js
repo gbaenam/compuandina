@@ -177,7 +177,7 @@ const closeForm = () => {
 const closeModal = () => {
 	// formModal.style.visibility = 'hidden'
 	formModalContent.classList.remove('form--modal-open')
-	setTimeout(() => formModal.style.visibility = 'hidden',1000)
+	// setTimeout(() => formModal.style.visibility = 'hidden',1000)
 }
 
 
@@ -197,9 +197,9 @@ const close = e => {
 		cleanForm()
         closeForm()
     } else if (e.target === formModal || e.target === iconFormModal) {
-		cleanForm()
+		// cleanForm()
 		closeModal()
-		closeForm()
+		// closeForm()
 	}
 }
 
