@@ -160,6 +160,16 @@ const cleanForm = () => {
 cleanForm()
 
 
+const closeForm = () => {
+	if (nav.classList.contains('main-nav__move')) {
+		burguerLine.classList.toggle('cruz')
+		nav.classList.toggle('main-nav__move')
+	}
+	formContainer.classList.remove('form--show')
+	setTimeout(() => form.style.visibility = 'hidden',1000)
+}
+
+
 
 // Funcion abrir formulario
 const openForm = e => {
@@ -170,19 +180,15 @@ const openForm = e => {
 
 
 
-// Función cerrar formulario
-const closeForm = e => {
+// Función cerrar
+const close = e => {
     e.stopPropagation()
     if (e.target === formIconClose)  {
 		cleanForm()
-        if (nav.classList.contains('main-nav__move')) {
-            burguerLine.classList.toggle('cruz')
-            nav.classList.toggle('main-nav__move')
-        }
-        formContainer.classList.remove('form--show')
-        setTimeout(() => form.style.visibility = 'hidden',1000)
+        closeForm()
     } else if (e.target === formModal || e.target === iconFormModal) {
 		cleanForm()
+		closeForm()
 		formModal.style.visibility = 'hidden'
 		formModalContent.classList.remove('form--modal-open')
 	}
@@ -195,10 +201,10 @@ iconMail.addEventListener('click', openForm)
 buttonBanner.addEventListener('click', openForm)
 
 // Evento cerrar formulario
-formContainer.addEventListener('click', closeForm)
+formContainer.addEventListener('click', close)
 
 // Evento cerrar Modal de confirmación
-formModal.addEventListener('click', closeForm)
+formModal.addEventListener('click', close)
 
 
 
