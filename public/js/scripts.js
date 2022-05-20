@@ -177,7 +177,7 @@ const closeForm = () => {
 const closeModal = () => {
 	// formModal.style.visibility = 'hidden'
 	formModalContent.classList.remove('form--modal-open')
-	// setTimeout(() => formModal.style.visibility = 'hidden',1000)
+	setTimeout(() => formModal.style.visibility = 'hidden',1000)
 }
 
 
@@ -186,7 +186,8 @@ const closeModal = () => {
 const openForm = e => {
     e.stopPropagation()
     form.style.visibility = 'visible'
-    setTimeout(() => formContainer.classList.add('form--show'),500)
+    // setTimeout(() => formContainer.classList.add('form--show'),1000)
+	formContainer.classList.add('form--show')
 }
 
 
@@ -197,9 +198,9 @@ const close = e => {
 		cleanForm()
         closeForm()
     } else if (e.target === formModal || e.target === iconFormModal) {
-		// cleanForm()
+		cleanForm()
 		closeModal()
-		// closeForm()
+		closeForm()
 	}
 }
 
@@ -335,6 +336,7 @@ async function handleSubmit(event) {
 	if (response.ok) {
 		formModal.style.visibility = 'visible'
 		formModalContent.classList.add('form--modal-open')
+		// console.log('Respuesta ok del formulario')
 	}
 }
 
