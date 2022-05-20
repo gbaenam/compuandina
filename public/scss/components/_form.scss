@@ -262,13 +262,11 @@
     }
 
     &__modal-content {
+        position: relative;
+
         // Animación de modal__content
         transition: transform .5s;
         transform: translateY(-200%);
-
-        position: relative;
-
-        // background-color: orange;
 
         & i {
             left: 50%;
