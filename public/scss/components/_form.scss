@@ -265,6 +265,20 @@
         // Animación de modal__content
         transition: transform .5s;
         transform: translateY(-200%);
+
+        position: relative;
+
+        // background-color: orange;
+
+        & i {
+            left: 50%;
+            top: -100px;
+            color: #fff;
+            font-size: 60px;
+            position: absolute;
+            cursor: var(--cursor-button);
+            transform: translateX(-30px);
+        }
     }
 
 

@@ -33,7 +33,8 @@ const iconFonts = document.querySelectorAll('.form__wrapper-input i'),
 
 // Captura elementos Modal confirmación envío mail de contacto.
 const formModal = document.getElementById('form-modal'),
-	formModalContent = document.getElementById('form-modal-content')
+	formModalContent = document.getElementById('form-modal-content'),
+	iconFormModal = document.querySelector('.form__modal-content i')
 
 
 // Consulta de medios.
@@ -180,10 +181,10 @@ const closeForm = e => {
         }
         formContainer.classList.remove('form--show')
         setTimeout(() => form.style.visibility = 'hidden',1000)
-    } else if (e.target === formModal) {
-		// cleanForm()
-		// formModal.style.visibility = 'hidden'
-		// formModalContent.classList.remove('form--modal-open')
+    } else if (e.target === formModal || e.target === iconFormModal) {
+		cleanForm()
+		formModal.style.visibility = 'hidden'
+		formModalContent.classList.remove('form--modal-open')
 	}
 }
 

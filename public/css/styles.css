@@ -846,7 +846,16 @@ textarea {
     justify-content: center; }
   .form__modal-content {
     transition: transform .5s;
-    transform: translateY(-200%); }
+    transform: translateY(-200%);
+    position: relative; }
+    .form__modal-content i {
+      left: 50%;
+      top: -100px;
+      color: #fff;
+      font-size: 60px;
+      position: absolute;
+      cursor: var(--cursor-button);
+      transform: translateX(-30px); }
   .form__modal-confirmation {
     font-size: 34px;
     font-weight: 600;
