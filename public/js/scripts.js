@@ -173,7 +173,7 @@ const openForm = e => {
 // Función cerrar formulario
 const closeForm = e => {
     e.stopPropagation()
-    if (e.target === formContainer || e.target === formContHeight || e.target === formIconClose)  {
+    if (e.target === formIconClose)  {
 		cleanForm()
         if (nav.classList.contains('main-nav__move')) {
             burguerLine.classList.toggle('cruz')
