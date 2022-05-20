@@ -175,7 +175,6 @@ const closeForm = () => {
 
 // Función cerrar modal de confirmación
 const closeModal = () => {
-	// formModal.style.visibility = 'hidden'
 	formModalContent.classList.remove('form--modal-open')
 	setTimeout(() => formModal.style.visibility = 'hidden',1000)
 }
@@ -186,7 +185,6 @@ const closeModal = () => {
 const openForm = e => {
     e.stopPropagation()
     form.style.visibility = 'visible'
-    // setTimeout(() => formContainer.classList.add('form--show'),1000)
 	formContainer.classList.add('form--show')
 }
 
