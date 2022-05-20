@@ -160,6 +160,8 @@ const cleanForm = () => {
 cleanForm()
 
 
+
+// Función cerrar formulario
 const closeForm = () => {
 	if (nav.classList.contains('main-nav__move')) {
 		burguerLine.classList.toggle('cruz')
@@ -167,6 +169,14 @@ const closeForm = () => {
 	}
 	formContainer.classList.remove('form--show')
 	setTimeout(() => form.style.visibility = 'hidden',1000)
+}
+
+
+
+// Función cerrar modal de confirmación
+const closeModal = () => {
+	formModal.style.visibility = 'hidden'
+	formModalContent.classList.remove('form--modal-open')
 }
 
 
@@ -179,7 +189,6 @@ const openForm = e => {
 }
 
 
-
 // Función cerrar
 const close = e => {
     e.stopPropagation()
@@ -189,8 +198,7 @@ const close = e => {
     } else if (e.target === formModal || e.target === iconFormModal) {
 		cleanForm()
 		closeForm()
-		formModal.style.visibility = 'hidden'
-		formModalContent.classList.remove('form--modal-open')
+		closeModal()
 	}
 }
 
