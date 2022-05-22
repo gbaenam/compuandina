@@ -57,9 +57,11 @@ $breakpoints: (
     --color-dodger-blue: #1E90FF;
 
     --color-pass: #5aaa9a;
+
+    --color-button-green: #0df053;
 }
 
-// Variables para titulares y subtítulos
+// Fonts
 :root {
     --font-family-primary: 'Montserrat', sans-serif;
     --font-family-secondary: 'Lato', sans-serif;
@@ -172,31 +174,31 @@ $breakpoints: (
 
 
 // Variables para button.
-:root {
-    --width-button: 90%;
-    --color-button: #fff;
-    --font-weight-button: 400;
-    --font-size-button: 1.125em;
-    --background-color-button: #f59622;
-    --background-color-button-alt: var(--color-houm);
-    --font-family-button: 'Roboto', sans-serif;
+// :root {
+//     --width-button: 100%;
+//     --color-button: #fff;
+//     --font-weight-button: 400;
+//     --font-size-button: 1.125em;
+//     --background-color-button: #f59622;
+//     --background-color-button-alt: var(--color-houm);
+//     --font-family-button: 'Roboto', sans-serif;
 
-    @include from(360px) {
-        --font-size-button: 1.3em;
-    }
+//     @include from(360px) {
+//         --font-size-button: 1.3em;
+//     }
 
-    @include from(412px) {
-        --font-size-button: 1.4em;
-    }
+//     @include from(412px) {
+//         --font-size-button: 1.4em;
+//     }
 
-    @include from(medium) {
-        --width-button: auto;
-    }
+//     // @include from(medium) {
+//     //     --width-button: auto;
+//     // }
 
-    @include from(zlarge) {
-        --font-size-button: 1.5em;
-    }
-}
+//     @include from(zlarge) {
+//         --font-size-button: 1.5em;
+//     }
+// }
 
 
 

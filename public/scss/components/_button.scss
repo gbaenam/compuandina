@@ -1,16 +1,45 @@
+
 .button {
-    padding: .3em 4em;
-    text-align: center;
-    display: inline-block;
-    border-radius: .1875em;
-    text-transform: uppercase;
-    width: var(--width-button);
-    color: var(--color-button);
-    font-size: var(--font-size-button);
-    border: .144230769em solid transparent;
-    font-family: var(--font-family-button);
-    font-weight: var(--font-weight-button);
-    background-color: var(--background-color-button);
-    // transition: color .5s, background .5s, border .5s;
+	font-weight: 600;
+	font-size: 1.2em;
+	border-radius: 2em;
+	border: .1875em solid;
+	text-transform: uppercase;
+	color: var(--color-button-green);
+	transition: color .5s, background .5s;
+    font-family: var(--font-family-primary);
+
+	@include from(360px) {
+		font-size: 1.3em;
+	}
+
+	@include from(412px) {
+		font-size: 1.35em;
+	}
+
+	@include from(maximum) {
+		font-size: 1.5em;
+	}
 }
 
+.contacto {
+	padding: .4em 3.2em;
+}
+
+.enviar {
+	padding: .4em 5.2em;
+}
+
+
+
+.button-ghost:first-child,
+.button-ghost:nth-child(2):hover {
+	color: var(--black);
+	border-color: var(--white);
+	background-color: var(--white);
+}
+
+.button-ghost:nth-child(2),
+.button-ghost:first-child:hover {
+	color: var(--white);
+}
