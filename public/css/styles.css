@@ -26,7 +26,8 @@
   --color-depsky-blue: #00bfff;
   --color-dodger-blue: #1E90FF;
   --color-pass: #5aaa9a;
-  --color-button-green: #0df053; }
+  --color-button-green: #0df053;
+  --color-button-blue: #0075ff; }
 
 :root {
   --font-family-primary: 'Montserrat', sans-serif;
@@ -307,16 +308,6 @@ textarea {
 
 .enviar {
   padding: .4em 5.2em; }
-
-.button-ghost:first-child,
-.button-ghost:nth-child(2):hover {
-  color: var(--black);
-  border-color: var(--white);
-  background-color: var(--white); }
-
-.button-ghost:nth-child(2),
-.button-ghost:first-child:hover {
-  color: var(--white); }
 
 /* ------------------ HEADER ---------------------- */
 .main-header {
@@ -807,11 +798,11 @@ textarea {
   .form__input-checkmail {
     padding-left: 38px; }
   .form__input-terminos {
-    left: 3px;
+    left: 7px;
     width: 18px;
     height: 18px;
     position: relative;
-    margin-right: 10px; }
+    margin-right: 14px; }
   .form__wrapper {
     display: flex;
     margin-left: auto;
@@ -819,8 +810,8 @@ textarea {
     align-items: center;
     flex-direction: column; }
   .form__button {
-    color: #0075ff;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: var(--color-button-blue); }
     .form__button:disabled {
       color: lightgrey;
       background-color: #eeeeee; }

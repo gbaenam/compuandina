@@ -197,11 +197,11 @@
     }
 
     &__input-terminos {
-        left: 3px;
+        left: 7px;
         width: 18px;
         height: 18px;
         position: relative;
-        margin-right: 10px;
+        margin-right: 14px;
     }
 
     &__wrapper {
@@ -213,8 +213,8 @@
     }
 
     &__button {
-        color: #0075ff;
         margin-bottom: 30px;
+        color: var(--color-button-blue);
 
         &:disabled {
             color: lightgrey;
