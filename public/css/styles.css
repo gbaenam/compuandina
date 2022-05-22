@@ -288,7 +288,7 @@ textarea {
   font-weight: 600;
   font-size: 1.2em;
   border-radius: 2em;
-  border: .1875em solid;
+  border: .125em solid;
   text-transform: uppercase;
   color: var(--color-button-green);
   transition: color .5s, background .5s;
@@ -302,6 +302,10 @@ textarea {
   @media screen and (min-width: 2100px) {
     .button {
       font-size: 1.5em; } }
+  .button:hover {
+    border-color: var(--color-houm);
+    background-color: var(--color-houm);
+    color: #fff; }
 
 .contacto {
   padding: .4em 3.2em; }
