@@ -3,7 +3,7 @@
 	font-weight: 600;
 	font-size: 1.2em;
 	border-radius: 2em;
-	border: .125em solid;
+	border: .1875em solid;
 	text-transform: uppercase;
 	color: var(--color-button-green);
 	transition: color .5s, background .5s;
@@ -22,9 +22,9 @@
 	}
 
 	&:hover {
-		border-color: var(--color-houm);
-		background-color: var(--color-houm);
 		color: #fff;
+		border-color: var(--color-button-green-alt);
+		background-color: var(--color-button-green-alt);
 	}
 }
 
@@ -36,16 +36,3 @@
 	padding: .4em 5.2em;
 }
 
-
-
-// .button-ghost:first-child,
-// .button-ghost:nth-child(2):hover {
-// 	color: var(--black);
-// 	border-color: var(--white);
-// 	background-color: var(--white);
-// }
-
-// .button-ghost:nth-child(2),
-// .button-ghost:first-child:hover {
-// 	color: var(--white);
-// }

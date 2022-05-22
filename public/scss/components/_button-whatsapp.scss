@@ -6,16 +6,16 @@
     display: flex;
     font-size: 60px;
     position: fixed;
-    color: #0df053;
     border-radius: 5px;
     align-items: center;
     z-index: var(--z-fixed);
     justify-content: center;
     background-color: transparent;
+    color: var(--color-button-green);
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
 
     &:hover {
-        color: #0df053;
         background-color: #fff;
+        color: var(--color-button-green-alt);
     }
 }

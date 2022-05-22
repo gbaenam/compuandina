@@ -26,8 +26,10 @@
   --color-depsky-blue: #00bfff;
   --color-dodger-blue: #1E90FF;
   --color-pass: #5aaa9a;
-  --color-button-green: #0df053;
-  --color-button-blue: #0075ff; }
+  --color-button-green: #00ff00;
+  --color-button-green-alt: #00aa00;
+  --color-button-blue: #0075ff;
+  --color-button-orange: #f59622; }
 
 :root {
   --font-family-primary: 'Montserrat', sans-serif;
@@ -273,22 +275,22 @@ textarea {
   display: flex;
   font-size: 60px;
   position: fixed;
-  color: #0df053;
   border-radius: 5px;
   align-items: center;
   z-index: var(--z-fixed);
   justify-content: center;
   background-color: transparent;
+  color: var(--color-button-green);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
   .btn-whatsapp:hover {
-    color: #0df053;
-    background-color: #fff; }
+    background-color: #fff;
+    color: var(--color-button-green-alt); }
 
 .button {
   font-weight: 600;
   font-size: 1.2em;
   border-radius: 2em;
-  border: .125em solid;
+  border: .1875em solid;
   text-transform: uppercase;
   color: var(--color-button-green);
   transition: color .5s, background .5s;
@@ -303,9 +305,9 @@ textarea {
     .button {
       font-size: 1.5em; } }
   .button:hover {
-    border-color: var(--color-houm);
-    background-color: var(--color-houm);
-    color: #fff; }
+    color: #fff;
+    border-color: var(--color-button-green-alt);
+    background-color: var(--color-button-green-alt); }
 
 .contacto {
   padding: .4em 3.2em; }

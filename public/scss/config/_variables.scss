@@ -58,8 +58,10 @@ $breakpoints: (
 
     --color-pass: #5aaa9a;
 
-    --color-button-green: #0df053;
+    --color-button-green: #00ff00;
+    --color-button-green-alt: #00aa00;
     --color-button-blue: #0075ff;
+    --color-button-orange: #f59622;
 }
 
 // Fonts
@@ -174,32 +176,6 @@ $breakpoints: (
 }
 
 
-// Variables para button.
-// :root {
-//     --width-button: 100%;
-//     --color-button: #fff;
-//     --font-weight-button: 400;
-//     --font-size-button: 1.125em;
-//     --background-color-button: #f59622;
-//     --background-color-button-alt: var(--color-houm);
-//     --font-family-button: 'Roboto', sans-serif;
-
-//     @include from(360px) {
-//         --font-size-button: 1.3em;
-//     }
-
-//     @include from(412px) {
-//         --font-size-button: 1.4em;
-//     }
-
-//     // @include from(medium) {
-//     //     --width-button: auto;
-//     // }
-
-//     @include from(zlarge) {
-//         --font-size-button: 1.5em;
-//     }
-// }
 
 
 
