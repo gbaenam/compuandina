@@ -290,7 +290,7 @@ textarea {
   font-weight: 600;
   font-size: 1.2em;
   border-radius: 2em;
-  border: .1875em solid;
+  border: .125em solid;
   text-transform: uppercase;
   color: var(--color-button-green);
   transition: color .5s, background .5s;
@@ -304,10 +304,11 @@ textarea {
   @media screen and (min-width: 2100px) {
     .button {
       font-size: 1.5em; } }
-  .button:hover {
-    color: #fff;
-    border-color: var(--color-button-green-alt);
-    background-color: var(--color-button-green-alt); }
+  @media screen and (min-width: 1024px) {
+    .button:hover {
+      color: #fff;
+      border-color: var(--color-button-green-alt);
+      background-color: var(--color-button-green-alt); } }
 
 .contacto {
   padding: .4em 3.2em; }

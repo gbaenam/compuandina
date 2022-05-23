@@ -3,7 +3,7 @@
 	font-weight: 600;
 	font-size: 1.2em;
 	border-radius: 2em;
-	border: .1875em solid;
+	border: .125em solid;
 	text-transform: uppercase;
 	color: var(--color-button-green);
 	transition: color .5s, background .5s;
@@ -21,10 +21,12 @@
 		font-size: 1.5em;
 	}
 
-	&:hover {
-		color: #fff;
-		border-color: var(--color-button-green-alt);
-		background-color: var(--color-button-green-alt);
+	@include from(large) {
+		&:hover {
+			color: #fff;
+			border-color: var(--color-button-green-alt);
+			background-color: var(--color-button-green-alt);
+		}
 	}
 }
 
