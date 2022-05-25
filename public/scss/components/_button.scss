@@ -1,33 +1,52 @@
-
 .button {
-	font-weight: 600;
-	font-size: 1.2em;
-	border-radius: 2em;
-	border: .125em solid;
-	text-transform: uppercase;
-	color: var(--color-button-green);
-	transition: color .5s, background .5s;
-    font-family: var(--font-family-primary);
+	--font-size-button: 1.2em;
+	--color-green-dark: unset;
+	--color-green-light: #00ff00;
+	--color-green-darker: #00aa00;
+	--color-button-hover: #00ff00;
 
 	@include from(360px) {
-		font-size: 1.3em;
+		--font-size-button: 1.3em;
 	}
 
 	@include from(412px) {
-		font-size: 1.35em;
-	}
-
-	@include from(maximum) {
-		font-size: 1.5em;
+		--font-size-button: 1.35em;
 	}
 
 	@include from(large) {
-		&:hover {
-			color: #fff;
-			border-color: var(--color-button-green-alt);
-			background-color: var(--color-button-green-alt);
-		}
+		--color-button-hover: #fff;
+		--color-green-dark: #00c600;
 	}
+
+	@include from(maximum) {
+		--font-size-button: 1.5em;
+	}
+}
+
+
+.button {
+	font-weight: 600;
+	border-radius: 2em;
+	border: .125em solid;
+	text-transform: uppercase;
+	color: var(--color-green-light);
+	font-size: var(--font-size-button);
+    font-family: var(--font-family-primary);
+
+	&:hover {
+		color: var(--color-button-hover);
+		border-color: var(--color-green-dark);
+		background-color: var(--color-green-dark);
+	}
+}
+
+.button:active {
+	top: 1px;
+	left: 1px;
+	color: #fff;
+	position: relative;
+	border-color: var(--color-green-darker);
+	background-color: var(--color-green-darker);
 }
 
 .contacto {
@@ -37,4 +56,6 @@
 .enviar {
 	padding: .4em 5.2em;
 }
+
+
 
