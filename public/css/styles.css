@@ -862,8 +862,6 @@ textarea {
       border-color: transparent;
       background-color: #eeeeee; }
   .form__copyright small {
-    margin-bottom: 5px;
-    display: inline-block;
     color: var(--color-more-dark-gray);
     font-size: var(--font-size-form-copyright-small); }
   .form__modal {
