@@ -211,13 +211,7 @@
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-        padding-bottom: 30px;
         flex-direction: column;
-
-        @include from(large) {
-            padding-bottom: 0;
-        }
-
     }
 
     &__button {
