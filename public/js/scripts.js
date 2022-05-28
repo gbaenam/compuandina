@@ -86,13 +86,19 @@ const elementHeight = () => {
 		// Altura del NAV
         nav.style.height = 'auto'
 
-		// Calculando "padding-top" para "formContainer"
-		formContainer.style.paddingTop =  `calc(${(vh-formContHeight.clientHeight)/2}px)`
+		if (vh <= formContHeight.clientHeight) {
+			formContainer.style.paddingTop = '50px'
+		} else {
+			// Calculando "padding-top" para "formContainer"
+			formContainer.style.paddingTop =  `calc(${(vh-formContHeight.clientHeight)/2}px)`
+		}
+
     } else {
         // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
         nav.setAttribute('style', navHeight)
 
+		// Asignando "padding-top" para "formContainer"
 		formContainer.style.paddingTop = '50px'
     }
 }
