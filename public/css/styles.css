@@ -25,10 +25,7 @@
   --color-gvs-blue: #80bdff;
   --color-depsky-blue: #00bfff;
   --color-dodger-blue: #1E90FF;
-  --color-pass: #5aaa9a;
-  --color-button-blue-light: #0066ff;
-  --color-button-blue-dark: #0033ff;
-  --color-button-blue-darker: #0000ff; }
+  --color-pass: #5aaa9a; }
 
 :root {
   --font-family-primary: 'Montserrat', sans-serif;
@@ -287,21 +284,21 @@ textarea {
 
 .button {
   --color-hover: #00ff00;
-  --color-button-green-dark: unset;
-  --color-button-green-light: #00ff00;
-  --color-button-green-darker: #00aa00; }
+  --color-button-dark: unset;
+  --color-button-light: #00ff00;
+  --color-button-darker: #00aa00; }
   @media screen and (min-width: 1024px) {
     .button {
       --color-hover: #fff;
-      --color-button-green-dark: #00c600; } }
+      --color-button-dark: #00c600; } }
 
 .button-solid {
-  --color-hover: #eee;
-  --color-button-gray-light: #eee;
-  --color-button-gray-darker: #ccc; }
+  --color-hover: #0066ff;
+  --color-button-light:#0066ff;
+  --color-button-darker: #0000ff; }
   @media screen and (min-width: 1024px) {
     .button-solid {
-      --color-hover: #ddd; } }
+      --color-hover: #0033ff; } }
 
 .button,
 .button-solid {
@@ -329,25 +326,25 @@ textarea {
   font-family: var(--font-family-primary); }
 
 .button {
-  color: var(--color-button-green-light); }
+  color: var(--color-button-light); }
   .button:hover {
     color: var(--color-hover);
-    border-color: var(--color-button-green-dark);
-    background-color: var(--color-button-green-dark); }
+    border-color: var(--color-button-dark);
+    background-color: var(--color-button-dark); }
   .button:active {
-    border-color: var(--color-button-green-darker);
-    background-color: var(--color-button-green-darker); }
+    border-color: var(--color-button-darker);
+    background-color: var(--color-button-darker); }
 
 .button-solid {
   color: #fff;
-  border-color: var(--color-button-gray-light);
-  background-color: var(--color-button-gray-light); }
+  border-color: var(--color-button-light);
+  background-color: var(--color-button-light); }
   .button-solid:hover {
     border-color: var(--color-hover);
     background-color: var(--color-hover); }
   .button-solid:active {
-    border-color: var(--color-button-gray-darker);
-    background-color: var(--color-button-gray-darker); }
+    border-color: var(--color-button-darker);
+    background-color: var(--color-button-darker); }
 
 .button:active,
 .button-solid:active {

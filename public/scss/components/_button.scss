@@ -1,22 +1,22 @@
 .button {
 	--color-hover: #00ff00;
-	--color-button-green-dark: unset;
-	--color-button-green-light: #00ff00;
-	--color-button-green-darker: #00aa00;
+	--color-button-dark: unset;
+	--color-button-light: #00ff00;
+	--color-button-darker: #00aa00;
 
 	@include from(large) {
 		--color-hover: #fff;
-		--color-button-green-dark: #00c600;
+		--color-button-dark: #00c600;
 	}
 }
 
 .button-solid {
-	--color-hover: #eee;
-	--color-button-gray-light: #eee;
-	--color-button-gray-darker: #ccc;
+	--color-hover: #0066ff;
+	--color-button-light:#0066ff;
+	--color-button-darker: #0000ff;
 
 	@include from(large) {
-		--color-hover: #ddd;
+		--color-hover: #0033ff;
 	}
 }
 
@@ -49,24 +49,24 @@
 }
 
 .button {
-	color: var(--color-button-green-light);
+	color: var(--color-button-light);
 
 	&:hover {
 		color: var(--color-hover);
-		border-color: var(--color-button-green-dark);
-		background-color: var(--color-button-green-dark);
+		border-color: var(--color-button-dark);
+		background-color: var(--color-button-dark);
 	}
 
 	&:active {
-		border-color: var(--color-button-green-darker);
-		background-color: var(--color-button-green-darker);
+		border-color: var(--color-button-darker);
+		background-color: var(--color-button-darker);
 	}
 }
 
 .button-solid {
 	color: #fff;
-	border-color: var(--color-button-gray-light);
-	background-color: var(--color-button-gray-light);
+	border-color: var(--color-button-light);
+	background-color: var(--color-button-light);
 
 	&:hover {
 		border-color: var(--color-hover);
@@ -74,8 +74,8 @@
 	}
 
 	&:active {
-		border-color: var(--color-button-gray-darker);
-		background-color: var(--color-button-gray-darker);
+		border-color: var(--color-button-darker);
+		background-color: var(--color-button-darker);
 	}
 }
 
