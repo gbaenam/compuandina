@@ -214,13 +214,7 @@
 
     &__button {
         margin-bottom: 30px;
-        color: var(--color-button-blue);
-
-        &:hover {
-            color: #fff;
-            border-color: var(--color-button-blue-alt);
-            background-color: var(--color-button-blue-alt);
-        }
+         
 
         &:disabled {
             color: lightgrey;

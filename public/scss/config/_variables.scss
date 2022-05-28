@@ -59,9 +59,10 @@ $breakpoints: (
     --color-pass: #5aaa9a;
 
 
-    --color-button-blue: #0099ff;
-    --color-button-blue-alt: #0066ff;
-
+    // --color-button-blue: #0099ff;
+    --color-button-blue-light: #0066ff;
+    --color-button-blue-dark: #0033ff;
+    --color-button-blue-darker: #0000ff;
 }
 
 // Fonts
