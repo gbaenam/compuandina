@@ -80,25 +80,18 @@ const elementHeight = () => {
     const vh = innerHeight,
 
     // Leyendo y asignando la variable CSS '--height-header' con JavaScript.
-    heightHeader = getComputedStyle(header).getPropertyValue('--height-header'),
+    heightHeader = getComputedStyle(header).getPropertyValue('--height-header')
 
-    // Obteniendo la variable CSS '--padding-top-form-container' con JavaScript.
-    paddTopFormCont = getComputedStyle(formContainer).getPropertyValue('--padding-top-form-container')
+	// Calculando "padding-top" para "formContainer"
+	formContainer.style.paddingTop =  `calc(${(vh-formContHeight.clientHeight)/2}px)`
 
     if (mql.matches) {
         // Altura del NAV
         nav.style.height = 'auto'
-
-        // Calculando padding-top formContainer
-        const formContHeightAverage = `calc(${(vh-formContHeight.clientHeight)/2}px)`
-        formContainer.style.paddingTop = formContHeightAverage
     } else {
         // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
         nav.setAttribute('style', navHeight)
-
-        // Calculando padding-top formContainer
-        formContainer.style.paddingTop = paddTopFormCont
     }
 }
 // Ejecución de la función Altura Elemento.

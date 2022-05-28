@@ -1,6 +1,6 @@
 .form {
     // form__container
-    --padding-top-form-container: 50px;
+    // --padding-top-form-container: 50px;
     // form__container-height
     --height-form-container-height: 100%;
     // form__title
@@ -32,7 +32,7 @@
 
     @include from(medium) {
         // form__container
-        --padding-top-form-container: 30px;
+        // --padding-top-form-container: 30px;
     }
 
     @include from(large) {
@@ -68,7 +68,9 @@
     &__container-height {
         display: flex;
         flex-direction: column;
-        height: var(--height-form-container-height);
+        // height: var(--height-form-container-height);
+
+        background-color: orange;
     }
 
     &__title {
