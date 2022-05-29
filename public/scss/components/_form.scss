@@ -8,6 +8,8 @@
     --top-form-icon-close-before: 10px;
     --right-form-icon-close-before: 23px;
     --font-size-form-icon-close-before: 2rem;
+    // form__fielset
+    --padding-form-fielset: 40px 20px 60px;
     // form__copyright-small
     --font-size-form-copyright-small: 16px;
 
@@ -31,6 +33,8 @@
     @include from(large) {
         // form__container-height
         --height-form-container-height: auto;
+        // form__fielset
+        --padding-form-fielset: 40px 20px 50px;
     }
 }
 
@@ -97,7 +101,7 @@
     &__fielset {
         margin: 0;
         border: none;
-        padding: 40px 20px 60px;
+        padding: var(--padding-form-fielset);
     }
 
     &__box {

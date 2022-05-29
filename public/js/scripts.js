@@ -87,11 +87,11 @@ const elementHeight = () => {
 		// Altura del NAV
         nav.style.height = 'auto'
 		// padding-top formContainer
-		formContHeight.style.paddingTop = '15px'
+		formContHeight.style.paddingTop = '20px'
 
 		if (vh <= formContHeight.clientHeight) {
 			// padding-top formContainer
-			formContainer.style.paddingTop = '15px'
+			formContainer.style.paddingTop = '20px'
 			// padding-top formContainerHeight
 			formContHeight.style.paddingTop = 0
 		} else {
@@ -103,7 +103,6 @@ const elementHeight = () => {
         // Altura del NAV
         const navHeight = `height: calc(${vh/16}rem - ${heightHeader})`
         nav.setAttribute('style', navHeight)
-
 		// padding-top formContainer
 		formContainer.style.paddingTop = '50px'
 		// padding-top formContainerHeight
