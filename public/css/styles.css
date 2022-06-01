@@ -608,20 +608,21 @@ textarea {
   --margin-bottom-title: 2rem;
   --font-size-title: 2.5625rem;
   --display-products: grid;
+  --row-gap-products: 1.875rem;
+  --column-gap-products: 2.5rem;
   --margin-bottom-products: 2rem;
-  --grid-row-gap-products: 1.875rem;
-  --grid-column-gap-products: 2.5rem;
+  --grid-template-columns-products: repeat(2,1fr);
   --width-icon: 4.5rem;
   --margin-bottom-icon: .625rem;
   --font-size-icon-text: 1rem; }
   @media screen and (min-width: 360px) {
     .banner {
-      --grid-column-gap-products: 3rem; } }
+      --column-gap-products: 3rem; } }
   @media screen and (min-width: 412px) {
     .banner {
       --font-size-title: 3.125rem;
+      --column-gap-products: 3.8rem;
       --margin-bottom-products: 2.5rem;
-      --grid-column-gap-products: 3.8rem;
       --width-icon: 5rem;
       --margin-bottom-icon: .75rem;
       --font-size-icon-text: 1.2rem; } }
@@ -629,22 +630,22 @@ textarea {
     .banner {
       --font-size-title: 3.5rem;
       --line-height-title: 107%;
-      --grid-row-gap-products: 2rem;
+      --row-gap-products: 2rem;
       --margin-bottom-products: 2.8rem; } }
   @media screen and (min-width: 540px) {
     .banner {
       --font-size-title: 4.125rem;
       --margin-bottom-title: 2.5rem;
       --display-products: flex;
-      --grid-column-gap-products: 2.8125rem;
+      --row-gap-products: unset;
+      --column-gap-products: unset;
+      --grid-template-columns-products: unset;
       --margin-right-item: 2.5rem;
       --margin-right-item-last-child: 0; } }
   @media screen and (min-width: 840px) {
     .banner {
       --font-size-title: 3.5rem;
       --line-height-title: 71px;
-      --grid-row-gap-products: normal;
-      --grid-column-gap-products: normal;
       --width-icon: 3.125rem; } }
   @media screen and (min-width: 960px) {
     .banner {
@@ -700,15 +701,10 @@ textarea {
     margin-bottom: var(--margin-bottom-title); }
   .banner__products {
     display: var(--display-products);
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: var(--grid-row-gap-products);
+    row-gap: var(--row-gap-products);
+    column-gap: var(--column-gap-products);
     margin-bottom: var(--margin-bottom-products);
-    grid-column-gap: var(--grid-column-gap-products); }
-    @media screen and (min-width: 640px) {
-      .banner__products {
-        column-gap: unset;
-        row-gap: unset;
-        grid-template-columns: unset; } }
+    grid-template-columns: var(--grid-template-columns-products); }
   .banner__item {
     display: flex;
     align-items: center;
