@@ -635,16 +635,16 @@ textarea {
     .banner {
       --font-size-title: 4.125rem;
       --margin-bottom-title: 2.5rem;
-      --grid-column-gap-products: 2.8125rem; } }
+      --display-products: flex;
+      --grid-column-gap-products: 2.8125rem;
+      --margin-right-item: 2.5rem;
+      --margin-right-item-last-child: 0; } }
   @media screen and (min-width: 840px) {
     .banner {
       --font-size-title: 3.5rem;
       --line-height-title: 71px;
-      --display-products: flex;
       --grid-row-gap-products: normal;
       --grid-column-gap-products: normal;
-      --margin-right-item: 1.875rem;
-      --margin-right-item-last-child: 0;
       --width-icon: 3.125rem; } }
   @media screen and (min-width: 960px) {
     .banner {
@@ -706,7 +706,7 @@ textarea {
     grid-column-gap: var(--grid-column-gap-products); }
     @media screen and (min-width: 640px) {
       .banner__products {
-        display: flex;
+        column-gap: unset;
         row-gap: unset;
         grid-template-columns: unset; } }
   .banner__item {
