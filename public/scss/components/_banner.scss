@@ -103,7 +103,7 @@
         --margin-right-item: 3.125rem;
     }
 
-
+    // TODO: Pendiente por revisar
     // Wide 1440px
     @include from(xxlarge) {
         // title
@@ -171,7 +171,7 @@
 
     &__products {
         display: var(--display-products);
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-row-gap: var(--grid-row-gap-products);
         margin-bottom: var(--margin-bottom-products);
         grid-column-gap: var(--grid-column-gap-products);
