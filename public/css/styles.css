@@ -632,7 +632,7 @@ textarea {
       --line-height-title: 107%;
       --row-gap-products: 2rem;
       --margin-bottom-products: 2.8rem; } }
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 640px) {
     .banner {
       --font-size-title: 4.125rem;
       --margin-bottom-title: 2.5rem;
@@ -646,7 +646,7 @@ textarea {
     .banner {
       --font-size-title: 3.5rem;
       --line-height-title: 71px;
-      --width-icon: 3.125rem; } }
+      --width-icon: 4rem; } }
   @media screen and (min-width: 960px) {
     .banner {
       --font-size-title: 3.8rem;
@@ -678,7 +678,7 @@ textarea {
   .banner__hero-image {
     top: 0;
     left: 0;
-    opacity: .4;
+    opacity: .5;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -717,7 +717,7 @@ textarea {
     margin-bottom: var(--margin-bottom-icon); }
   .banner__icon-text {
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: var(--font-size-icon-text); }
 
