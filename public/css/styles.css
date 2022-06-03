@@ -607,39 +607,24 @@ textarea {
   --line-height-title: 120%;
   --margin-bottom-title: 2rem;
   --font-size-title: 2.5625rem;
-  --display-products: grid;
-  --row-gap-products: 1.875rem;
-  --column-gap-products: 2.5rem;
   --margin-bottom-products: 2rem;
-  --grid-template-columns-products: repeat(2,1fr);
-  --width-icon: 4.5rem;
+  --width-icon: 3.2rem;
   --margin-bottom-icon: .625rem;
-  --font-size-icon-text: 1rem; }
-  @media screen and (min-width: 360px) {
-    .banner {
-      --column-gap-products: 3rem; } }
+  --font-size-icon-text: .9rem; }
   @media screen and (min-width: 412px) {
     .banner {
       --font-size-title: 3.125rem;
-      --column-gap-products: 3.8rem;
-      --margin-bottom-products: 2.5rem;
       --width-icon: 5rem;
       --margin-bottom-icon: .75rem;
       --font-size-icon-text: 1.2rem; } }
   @media screen and (min-width: 512px) {
     .banner {
       --font-size-title: 3.5rem;
-      --line-height-title: 107%;
-      --row-gap-products: 2rem;
-      --margin-bottom-products: 2.8rem; } }
+      --line-height-title: 107%; } }
   @media screen and (min-width: 640px) {
     .banner {
       --font-size-title: 4.125rem;
       --margin-bottom-title: 2.5rem;
-      --display-products: flex;
-      --row-gap-products: unset;
-      --column-gap-products: unset;
-      --grid-template-columns-products: unset;
       --margin-right-item: 2.5rem;
       --margin-right-item-last-child: 0; } }
   @media screen and (min-width: 840px) {
@@ -654,8 +639,7 @@ textarea {
       --width-icon: 3.75rem; } }
   @media screen and (min-width: 1024px) {
     .banner {
-      --objet-position-hero-image: right;
-      --margin-bottom-products: 3.5rem; } }
+      --objet-position-hero-image: right; } }
   @media screen and (min-width: 1280px) {
     .banner {
       --objet-position-hero-image:  65% 50%;
@@ -700,11 +684,8 @@ textarea {
     font-weight: var(--font-weight-title);
     margin-bottom: var(--margin-bottom-title); }
   .banner__products {
-    display: var(--display-products);
-    row-gap: var(--row-gap-products);
-    column-gap: var(--column-gap-products);
-    margin-bottom: var(--margin-bottom-products);
-    grid-template-columns: var(--grid-template-columns-products); }
+    display: flex;
+    margin-bottom: var(--margin-bottom-products); }
   .banner__item {
     display: flex;
     align-items: center;
