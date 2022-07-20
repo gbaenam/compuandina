@@ -646,8 +646,7 @@ textarea {
   @media screen and (min-width: 960px) {
     .banner {
       --font-size-title: 3.8rem;
-      --margin-right-item: 2.25rem;
-      --width-icon: 3.75rem; } }
+      --margin-right-item: 3rem; } }
   @media screen and (min-width: 1024px) {
     .banner {
       --objet-position-hero-image: right; } }
