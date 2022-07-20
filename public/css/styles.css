@@ -615,7 +615,6 @@ textarea {
   @media screen and (min-width: 360px) {
     .banner {
       --margin-right-item: .8rem;
-      --width-icon: 3.8rem;
       --font-size-icon-text: .9rem; } }
   @media screen and (min-width: 412px) {
     .banner {
@@ -654,14 +653,13 @@ textarea {
     .banner {
       --objet-position-hero-image:  65% 50%;
       --font-size-title: 4.1rem; } }
-  @media screen and (min-width: 2100px) {
+  @media screen and (min-width: 1920px) {
     .banner {
       --objet-position-hero-image: center;
-      --font-size-title: 5.1rem;
       --margin-bottom-title: 4rem;
-      --margin-right-item: 4.375rem;
-      --width-icon: 4.375rem;
-      --font-size-icon-text: 1.0625rem; } }
+      --margin-bottom-products: 4rem;
+      --margin-right-item: 4rem;
+      --width-icon: 4.375rem; } }
 
 .banner {
   font-size: 1rem;

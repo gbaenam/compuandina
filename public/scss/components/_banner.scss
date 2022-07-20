@@ -19,8 +19,6 @@
     @include from(360px) {
         // item
         --margin-right-item: .8rem;
-        // icon
-        --width-icon: 3.8rem;
         // icon-text
         --font-size-icon-text: .9rem;
     }
@@ -102,19 +100,18 @@
     }
 
 
-    // Wide 2100px
-    @include from(maximum) {
+    // Wide 1920px
+    @include from(zzlarge) {
         // hero-image
         --objet-position-hero-image: center;
         // title
-        --font-size-title: 5.1rem;
         --margin-bottom-title: 4rem;
+        // products
+        --margin-bottom-products: 4rem;
         // item
-        --margin-right-item: 4.375rem;
+        --margin-right-item: 4rem;
         // icon
         --width-icon: 4.375rem;
-        // icon-text
-        --font-size-icon-text: 1.0625rem;
     }
 }
 
