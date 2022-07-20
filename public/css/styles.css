@@ -635,8 +635,9 @@ textarea {
     .banner {
       --font-size-title: 4.125rem;
       --margin-bottom-title: 2.5rem;
-      --margin-right-item: 2.5rem;
-      --margin-right-item-last-child: 0; } }
+      --margin-bottom-products: 3rem;
+      --margin-right-item: 1.6rem;
+      --margin-bottom-icon: 1.1rem; } }
   @media screen and (min-width: 840px) {
     .banner {
       --font-size-title: 3.5rem;
