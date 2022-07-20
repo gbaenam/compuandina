@@ -612,6 +612,11 @@ textarea {
   --width-icon: 3.8rem;
   --margin-bottom-icon: .625rem;
   --font-size-icon-text: .875rem; }
+  @media screen and (min-width: 360px) {
+    .banner {
+      --margin-right-item: .8rem;
+      --width-icon: 3.8rem;
+      --font-size-icon-text: .9rem; } }
   @media screen and (min-width: 412px) {
     .banner {
       --font-size-title: 3.125rem;

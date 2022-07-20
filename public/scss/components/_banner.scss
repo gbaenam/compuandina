@@ -7,11 +7,7 @@
     --margin-bottom-title: 2rem;
     --font-size-title: 2.5625rem;
     // products
-                    //--display-products: grid;
-                    // --row-gap-products: 1.875rem;
-                    // --column-gap-products: 2.5rem;
-                    --margin-bottom-products: 2rem;
-                    // --grid-template-columns-products: repeat(2,1fr);
+    --margin-bottom-products: 2rem;
     // item
     --margin-right-item: .3rem;
     // icon
@@ -21,7 +17,12 @@
     --font-size-icon-text: .875rem;
 
     @include from(360px) {
-                    // --column-gap-products: 3rem;
+        // item
+        --margin-right-item: .8rem;
+        // icon
+        --width-icon: 3.8rem;
+        // icon-text
+        --font-size-icon-text: .9rem;
     }
 
 
