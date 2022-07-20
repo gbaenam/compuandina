@@ -653,8 +653,7 @@ textarea {
   @media screen and (min-width: 1280px) {
     .banner {
       --objet-position-hero-image:  65% 50%;
-      --font-size-title: 4.1rem;
-      --margin-right-item: 3.125rem; } }
+      --font-size-title: 4.1rem; } }
   @media screen and (min-width: 2100px) {
     .banner {
       --objet-position-hero-image: center;

@@ -99,17 +99,6 @@
         --objet-position-hero-image:  65% 50%;
         // title
         --font-size-title: 4.1rem;
-        // item
-        --margin-right-item: 3.125rem;
-    }
-
-    // TODO: Pendiente por revisar
-    // Wide 1440px
-    @include from(xxlarge) {
-        // title
-        // --font-size-title: 4.5rem;
-        // icon-text
-        // --font-size-icon-text: .875rem;
     }
 
 
