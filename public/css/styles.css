@@ -626,7 +626,11 @@ textarea {
   @media screen and (min-width: 512px) {
     .banner {
       --font-size-title: 3.5rem;
-      --line-height-title: 107%; } }
+      --line-height-title: 107%;
+      --margin-right-item: .9rem;
+      --width-icon: 4rem;
+      --margin-bottom-icon: .95rem;
+      --font-size-icon-text: 1.1rem; } }
   @media screen and (min-width: 640px) {
     .banner {
       --font-size-title: 4.125rem;
