@@ -12,11 +12,13 @@
                     // --column-gap-products: 2.5rem;
                     --margin-bottom-products: 2rem;
                     // --grid-template-columns-products: repeat(2,1fr);
+    // item
+    --margin-right-item: .3rem;
     // icon
-    --width-icon: 3.2rem;
+    --width-icon: 3.8rem;
     --margin-bottom-icon: .625rem;
     // icon-text
-    --font-size-icon-text: .9rem;
+    --font-size-icon-text: .875rem;
 
     @include from(360px) {
                     // --column-gap-products: 3rem;
@@ -172,13 +174,6 @@
     }
 
     &__products {
-        // display: var(--display-products);
-        // row-gap: var(--row-gap-products);
-        // column-gap: var(--column-gap-products);
-        // grid-template-columns: var(--grid-template-columns-products);
-    }
-
-    &__products {
         display: flex;
         margin-bottom: var(--margin-bottom-products);
     }
@@ -191,7 +186,7 @@
     }
 
     &__item:last-child {
-        margin-right: var(--margin-right-item-last-child);
+        margin-right: 0;
     }
 
     &__icon {

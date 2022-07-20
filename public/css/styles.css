@@ -608,9 +608,10 @@ textarea {
   --margin-bottom-title: 2rem;
   --font-size-title: 2.5625rem;
   --margin-bottom-products: 2rem;
-  --width-icon: 3.2rem;
+  --margin-right-item: .3rem;
+  --width-icon: 3.8rem;
   --margin-bottom-icon: .625rem;
-  --font-size-icon-text: .9rem; }
+  --font-size-icon-text: .875rem; }
   @media screen and (min-width: 412px) {
     .banner {
       --font-size-title: 3.125rem;
@@ -692,7 +693,7 @@ textarea {
     flex-direction: column;
     margin-right: var(--margin-right-item); }
   .banner__item:last-child {
-    margin-right: var(--margin-right-item-last-child); }
+    margin-right: 0; }
   .banner__icon {
     width: var(--width-icon);
     margin-bottom: var(--margin-bottom-icon); }
