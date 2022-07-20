@@ -113,6 +113,17 @@
         // icon
         --width-icon: 4.375rem;
     }
+
+
+    // Wide 2100px
+    @include from(maximum) {
+        // title
+        --font-size-title: 4.5rem;
+        // icon
+        --width-icon: 4.6rem;
+        // icon-text
+        --font-size-icon-text: 1.2rem;
+    }
 }
 
 .banner {

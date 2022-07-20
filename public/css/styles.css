@@ -660,6 +660,11 @@ textarea {
       --margin-bottom-products: 4rem;
       --margin-right-item: 4rem;
       --width-icon: 4.375rem; } }
+  @media screen and (min-width: 2100px) {
+    .banner {
+      --font-size-title: 4.5rem;
+      --width-icon: 4.6rem;
+      --font-size-icon-text: 1.2rem; } }
 
 .banner {
   font-size: 1rem;
