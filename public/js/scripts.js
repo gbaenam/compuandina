@@ -189,7 +189,7 @@ const closeModal = () => {
 
 
 
-// Funcion abrir formulario
+// Función abrir formulario
 const openForm = e => {
     e.stopPropagation()
     form.style.visibility = 'visible'
@@ -345,10 +345,7 @@ async function handleSubmit(event) {
 	}
 }
 
-// Evento submit del formulaio.
+// Evento submit del formulario.
 form.addEventListener('submit', handleSubmit)
-
-
-
 
 
