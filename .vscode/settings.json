@@ -27,10 +27,17 @@
         "ctanos",
         "Electr",
         "janos",
+        "llarge",
         "nico",
         "rminos",
         "tecnolog",
         "tica",
-        "whatsapp"
+        "whatsapp",
+        "xlarge",
+        "xmedium",
+        "xxlarge",
+        "xxmedium",
+        "zlarge",
+        "zzlarge",
     ]
 }
