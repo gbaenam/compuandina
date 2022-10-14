@@ -90,8 +90,7 @@ ul {
     list-style: none;
 }
 
-// Reset <label>, <input>, <texarea>
-
+// Reset <label>, <input>, <textarea>
 label {
     font-size: 17px;
     color: var(--color-more-dark-gray);
@@ -119,7 +118,7 @@ textarea {
 // Subtítulos
 .caption {
     font-weight: 500;
-    // TODO: Revisar la asignación de esta varible deshabilitada.
+    // TODO: Revisar la asignación de esta variable deshabilitada.
     // line-height: normal;
     color: var(--color-dark-gray);
     font-family: var(--font-family-primary);
