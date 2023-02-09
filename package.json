@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gbaenam/compuandina/issues"
   },
-  "homepage": "https://github.com/gbaenam/compuandina#readme"
+  "homepage": "https://github.com/gbaenam/compuandina#readme",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
 }
