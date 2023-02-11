@@ -1,0 +1,20 @@
+{
+  "name": "compuandina",
+  "version": "1.0.0",
+  "description": "Repositorio del Sitio Web de CompuAndina S.A.S.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbaenam/compuandina.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbaenam/compuandina/issues"
+  },
+  "homepage": "https://github.com/gbaenam/compuandina#readme"
+}
