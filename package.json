@@ -4,7 +4,8 @@
   "description": "Repositorio del Sitio Web de CompuAndina S.A.S.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch public/scss:public/css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/gbaenam/compuandina/issues"
   },
-  "homepage": "https://github.com/gbaenam/compuandina#readme"
+  "homepage": "https://github.com/gbaenam/compuandina#readme",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
 }
