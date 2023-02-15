@@ -124,7 +124,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--color-dark-gray);
+  color: #646464;
   font-family: var(--font-family-primary);
 }
 
@@ -198,7 +198,7 @@ textarea:focus {
 
 .caption {
   font-weight: 500;
-  color: var(--color-dark-gray);
+  color: #646464;
   font-family: var(--font-family-primary);
 }
 
@@ -212,7 +212,7 @@ textarea:focus {
   font-variant: normal;
   text-rendering: auto;
   display: inline-block;
-  color: var(--color-dark-gray);
+  color: #646464;
   font-family: "Font Awesome 5 Free";
   -webkit-font-smoothing: antialiased;
 }
