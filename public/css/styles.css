@@ -1011,7 +1011,7 @@ textarea:focus {
   left: 7px;
   font-size: 20px;
   position: absolute;
-  color: var(--color-dark-gray);
+  color: #646464;
 }
 .form__wrapper-input-email i, .form__wrapper-input-checkmail i {
   top: 12px;
