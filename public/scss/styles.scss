@@ -1,14 +1,17 @@
-// @import "config/mixins";
-// @import "config/variables";
-// @import "config/base";
-// @import "components/line-break";
-// @import "layout/layout";
-// @import "components/button-whatsapp";
-// @import "components/button";
-// @import "components/header";
-// @import "components/burger-button";
-// @import "components/menu";
-// @import "main/main";
-// @import "main/banner";
-// @import "components/form";
-// @import "components/footer";
+
+@use 'tools/variables';
+@use 'tools/base';
+@use 'tools/line-break';
+@use 'layout/layout';
+@use 'components/button-whatsapp';
+@use 'components/button';
+@use 'components/header';
+@use 'components/burger-button';
+@use 'main/main';
+@use 'main/banner';
+@use 'components/menu';
+@use 'components/form';
+@use 'components/footer';
+
+
+
