@@ -8,7 +8,7 @@
     position: fixed;
     border-radius: 5px;
     align-items: center;
-    z-index: var(--z-fixed);
+    z-index: $z-fixed;
     justify-content: center;
     background-color: transparent;
     color: var(--color-button-green);

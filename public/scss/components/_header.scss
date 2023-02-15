@@ -19,7 +19,7 @@
     top: 0;
     width: 100%;
     position: fixed;
-    z-index: var(--z-fixed);
+    z-index: $z-fixed;
     height: var(--height-header);
     background-color: var(--background-color-header);
 
