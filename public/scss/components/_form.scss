@@ -131,14 +131,14 @@
             right: -10px;
             font-size: 20px;
             position: absolute;
-            color: var(--color-error);
+            color: $color-error;
         }
     }
 
     &__error-message {
         font-size: 17px;
         line-height: 18px;
-        color: var(--color-error);
+        color: $color-error;
         font-family: var(--font-family-tertiary);
     }
 

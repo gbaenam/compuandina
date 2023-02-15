@@ -3,7 +3,6 @@
 }
 
 :root {
-  --color-error: #cc0000;
   --color-text: #495057;
   --color-gvs-blue: #80bdff;
   --color-depsky-blue: #00bfff;
@@ -989,12 +988,12 @@ textarea:focus {
   right: -10px;
   font-size: 20px;
   position: absolute;
-  color: var(--color-error);
+  color: #cc0000;
 }
 .form__error-message {
   font-size: 17px;
   line-height: 18px;
-  color: var(--color-error);
+  color: #cc0000;
   font-family: var(--font-family-tertiary);
 }
 .form__wrapper-input {
