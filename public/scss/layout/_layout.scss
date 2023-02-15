@@ -5,8 +5,8 @@
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-    min-width: var(--min-width);
-    max-width: var(--max-width);
+    min-width: $min-width;
+    max-width: $max-width;
 }
 
 .main-header-layout {
@@ -71,7 +71,7 @@
 .main-footer-layout {
     margin-left: auto;
     margin-right: auto;
-    max-width: var(--max-width);
+    max-width: $max-width;
 }
 
 // .form-layout {
