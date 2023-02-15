@@ -1115,7 +1115,7 @@ textarea:focus {
   border-radius: 5px;
   text-align: center;
   background-color: #fff;
-  color: var(--color-dark-gray);
+  color: #646464;
   font-family: var(--font-family-primary);
 }
 .form--show {
