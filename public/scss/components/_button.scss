@@ -1,4 +1,5 @@
 @use '../tools-sass/mixins' as *;
+@use '../tools-sass/variables-sass' as *;
 
 .button {
 	--color-hover: #00ff00;

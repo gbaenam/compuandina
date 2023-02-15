@@ -1,4 +1,5 @@
 @use '../tools-sass/mixins' as *;
+@use '../tools-sass/variables-sass' as *;
 
 .form {
     // form__container-height
@@ -50,7 +51,7 @@
     font-size: 16px;
     visibility: hidden;
     line-height: normal;
-    z-index: var(--z-modal);
+    z-index: $z-modal;
     background-color: rgba(0,0,0,.9);
 
     &__container {
@@ -241,7 +242,7 @@
         height: 100vh;
         position: fixed;
         visibility: hidden;
-        z-index: var(--z-modal-alt);
+        z-index: $z-modal-alt;
         background-color: rgba(0,0,0,.9);
 
         // Centrado de modal__content
