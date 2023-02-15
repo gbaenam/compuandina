@@ -1,4 +1,19 @@
 
+// Breakpoints
+$breakpoints: (
+    medium: 540px,
+    xmedium: 640px,
+    xxmedium: 960px,
+    large: 1024px,
+    llarge: 1160px,
+    xlarge: 1280px,
+    xxlarge: 1440px,
+    zlarge: 1600px,
+    zzlarge: 1920px,
+    maximum: 2100px
+);
+
+
 // Mixin para los breakpoints.
 @mixin from($breakpoint) {
     @if map-has-key($map: $breakpoints, $key: $breakpoint) {

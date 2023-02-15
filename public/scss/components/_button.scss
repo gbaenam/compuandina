@@ -1,3 +1,5 @@
+@use '../tools-sass/mixins' as *;
+
 .button {
 	--color-hover: #00ff00;
 	--color-button-dark: unset;
