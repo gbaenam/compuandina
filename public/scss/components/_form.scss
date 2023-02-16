@@ -181,14 +181,14 @@
         background-color: #f5f8fa;
 
         &:focus {
-            border-color: var(--color-depsky-blue);
+            border-color: $color-bright-sky-blue;
             box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
         }
 
         // TODO: Arreglar este código
         @include from(large) {
             &:focus {
-                border-color: var(--color-gvs-blue);
+                border-color: $color-sky-blue;
             }
         }
     }
