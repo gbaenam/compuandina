@@ -3,10 +3,6 @@
 }
 
 :root {
-  --font-family-tertiary: "Ubuntu", sans-serif;
-}
-
-:root {
   --font-weight-body: 400;
   --color-body: rgb(30, 63, 63);
   --font-family-body: "Bitter", serif;
@@ -984,7 +980,7 @@ textarea:focus {
   font-size: 17px;
   line-height: 18px;
   color: #cc0000;
-  font-family: var(--font-family-tertiary);
+  font-family: "Ubuntu", sans-serif;
 }
 .form__wrapper-input {
   position: relative;

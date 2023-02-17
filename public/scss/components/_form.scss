@@ -139,7 +139,7 @@
         font-size: 17px;
         line-height: 18px;
         color: $color-error;
-        font-family: var(--font-family-tertiary);
+        font-family: $font-family-tertiary;
     }
 
     &__wrapper-input {
