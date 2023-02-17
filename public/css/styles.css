@@ -498,7 +498,7 @@ textarea:focus {
   height: 0.25rem;
   position: absolute;
   border-radius: 1.25rem;
-  background-color: var(--color-togle-button);
+  background-color: #040505;
 }
 .burguer-button__line {
   top: 50%;
