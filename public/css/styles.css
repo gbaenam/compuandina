@@ -3,7 +3,6 @@
 }
 
 :root {
-  --font-family-primary: "Montserrat", sans-serif;
   --font-family-secondary: "Lato", sans-serif;
   --font-family-tertiary: "Ubuntu", sans-serif;
 }
@@ -110,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
   color: #646464;
-  font-family: var(--font-family-primary);
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -184,7 +183,7 @@ textarea:focus {
 .caption {
   font-weight: 500;
   color: #646464;
-  font-family: var(--font-family-primary);
+  font-family: "Montserrat", sans-serif;
 }
 
 .icon {
@@ -382,7 +381,7 @@ textarea:focus {
   border: 0.125em solid;
   text-transform: uppercase;
   font-size: var(--font-size-button);
-  font-family: var(--font-family-primary);
+  font-family: "Montserrat", sans-serif;
 }
 
 .button {
@@ -1101,7 +1100,7 @@ textarea:focus {
   text-align: center;
   background-color: #fff;
   color: #646464;
-  font-family: var(--font-family-primary);
+  font-family: "Montserrat", sans-serif;
 }
 .form--show {
   transform: translateY(0);

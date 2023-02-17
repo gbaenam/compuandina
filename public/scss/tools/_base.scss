@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: 0;
     color: $color-dark-gray;
-    font-family: var(--font-family-primary);
+    font-family: $font-family-primary;
 }
 
 h1,
@@ -124,7 +124,7 @@ textarea {
     // TODO: Revisar la asignación de esta variable deshabilitada.
     // line-height: normal;
     color: $color-dark-gray;
-    font-family: var(--font-family-primary);
+    font-family: $font-family-primary;
 }
 
 // Font Awesome Icons
