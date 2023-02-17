@@ -82,7 +82,7 @@ button {
 
 // Reset small
 small {
-    font-family: var(--font-family-secondary);
+    font-family: $font-family-secondary;
 }
 
 // Reset <ul>
@@ -102,7 +102,7 @@ label {
 label,
 input,
 textarea {
-    font-family: var(--font-family-secondary);
+    font-family: $font-family-secondary;
 }
 
 input,
