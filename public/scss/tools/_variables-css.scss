@@ -3,9 +3,13 @@
 
 // VARIABLES GLOBALES.
 
-// Tamaños de fuentes
 :root {
+    // Body font
     --font-size-body: 20px;
+    // Logo Width
+    --width-logo: 2.8rem;
+    // Header height
+    --height-header: 3.8rem;
 }
 
 
@@ -16,8 +20,6 @@
 
 // Variables y estilos para header
 :root {
-    --width-logo: 2.8rem;
-    --height-header: 3.8rem;
 
     // Website title.
     --font-weight-site-title: 400;

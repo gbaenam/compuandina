@@ -1,5 +1,7 @@
 :root {
   --font-size-body: 20px;
+  --width-logo: 2.8rem;
+  --height-header: 3.8rem;
 }
 
 :root {
@@ -7,8 +9,6 @@
 }
 
 :root {
-  --width-logo: 2.8rem;
-  --height-header: 3.8rem;
   --font-weight-site-title: 400;
   --line-height-site-title: 100%;
   --font-size-site-title: 1.875rem;
