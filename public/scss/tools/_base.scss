@@ -16,7 +16,7 @@ body {
     font: {
         size: var(--font-size-body);
         weight: var(--font-weight-body);
-        family: var(--font-family-body);
+        family: $font-family-body;
     }
 }
 

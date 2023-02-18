@@ -4,8 +4,6 @@
 
 :root {
   --font-weight-body: 400;
-  --font-family-body: "Bitter", serif;
-  --font-family-body-alt:"Roboto", sans-serif;
 }
 
 :root {
@@ -83,7 +81,7 @@ body {
   background-color: #f5f8ff;
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-body);
-  font-family: var(--font-family-body);
+  font-family: "Bitter", serif;
 }
 
 img {
