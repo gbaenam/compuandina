@@ -39,10 +39,6 @@
 }
 
 :root {
-  --font-family-footer: "Lato", sans-serif;
-}
-
-:root {
   --cursor-button: default;
 }
 @media screen and (min-width: 1024px) {
