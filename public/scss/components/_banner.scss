@@ -135,7 +135,7 @@
     font-size: 1rem;
     position: relative;
     line-height: normal;
-    background-color: var(--background-color-banner);
+    background-color: $background-color-banner;
 
     &__hero-image {
         top: 0;

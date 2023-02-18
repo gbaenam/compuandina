@@ -39,10 +39,6 @@
 }
 
 :root {
-  --background-color-banner: #2e5dd8;
-}
-
-:root {
   --font-family-footer: "Lato", sans-serif;
 }
 
@@ -801,7 +797,7 @@ textarea:focus {
   font-size: 1rem;
   position: relative;
   line-height: normal;
-  background-color: var(--background-color-banner);
+  background-color: #2e5dd8;
 }
 .banner__hero-image {
   top: 0;
