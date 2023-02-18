@@ -9,21 +9,11 @@
 }
 
 
-
 // Variables y estilos para body
 :root {
     --font-weight-body: 400;
-    // TODO: Revisar la declaración de estas variables.
-    // --line-height-body: 140%;
-    // --font-size-body: 1.25rem;
-    // --color-body: rgb(30, 63, 63);
     --font-family-body: 'Bitter', serif;
-    --background-color-body: #f5f8ff;
     --font-family-body-alt:'Roboto', sans-serif;
-
-    // @include from(medium) {
-    //     --font-size-body: 1.375rem;
-    // }
 }
 
 // Variables y estilos para header
