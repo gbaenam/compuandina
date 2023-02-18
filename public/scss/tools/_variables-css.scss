@@ -15,21 +15,6 @@
 }
 
 
-// Variables y estilos para header
-:root {
-
-    // Website title.
-    --font-weight-site-title: 400;
-    // TODO: Revisar la declaración de esta variable.
-    --line-height-site-title: 100%;
-    --font-size-site-title: 1.875rem;
-
-    @include from(412px) {
-        --font-size-site-title: 2.0625rem;
-    }
-}
-
-
 // Variables y estilos para menu
 :root {
     --color-menu: #fff;

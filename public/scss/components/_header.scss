@@ -3,16 +3,25 @@
 
 /* ------------------ HEADER ---------------------- */
 .main-header {
+    // link-logo
     --margin-right-link-logo: .3rem;
-    /*--------------------------------------------*/
+    // title
+    --font-weight-title: 400;
+    --line-height-title: 100%; // TODO: Revisar la declaración de esta variable.
+    --font-size-title: 1.875rem;
 
+    @include from(412px) {
+        // title
+        --font-size-title: 2.0625rem;
+    }
 
     // Wide 1024px
     @include from(large) {
+        // link-logo
         --margin-right-link-logo: 0;
-        --padding-title-link: .1rem .2rem;
         --padding-link-logo: .2rem .1rem .2rem 0;
-    /*-------------------------------------------*/
+        // title-link
+        --padding-title-link: .1rem .2rem;
     }
 }
 
@@ -54,13 +63,12 @@
     &__title {
         margin-bottom: 0;
         margin-right: auto;
-        // TODO: Revisar esta declaración.
-        line-height: var(--line-height-site-title);
+        line-height: var(--line-height-title); // TODO: Revisar la asignación de esta variable.
 
         font: {
-            size: var(--font-size-site-title);
+            size: var(--font-size-title);
             family: $font-family-site-title;
-            weight: var(--font-weight-site-title);
+            weight: var(--font-weight-title);
         }
     }
 
