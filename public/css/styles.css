@@ -4,7 +4,6 @@
 
 :root {
   --font-weight-body: 400;
-  --color-body: rgb(30, 63, 63);
   --font-family-body: "Bitter", serif;
   --background-color-body: #f5f8ff;
   --font-family-body-alt:"Roboto", sans-serif;
@@ -81,7 +80,7 @@
 
 body {
   margin: 0;
-  color: var(--color-body);
+  color: rgb(30, 63, 63);
   line-height: var(--line-height-body);
   background-color: var(--background-color-body);
   font-size: var(--font-size-body);
