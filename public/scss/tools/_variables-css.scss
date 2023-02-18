@@ -18,15 +18,12 @@
 :root {
     --width-logo: 2.8rem;
     --height-header: 3.8rem;
-    --background-color-header: #fff;
 
     // Website title.
-    --color-site-title: #6a7477;
     --font-weight-site-title: 400;
     // TODO: Revisar la declaración de esta variable.
     --line-height-site-title: 100%;
     --font-size-site-title: 1.875rem;
-    --font-family-site-title: 'Amaranth', sans-serif;
 
     @include from(412px) {
         --font-size-site-title: 2.0625rem;

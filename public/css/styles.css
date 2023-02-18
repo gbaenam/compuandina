@@ -9,12 +9,9 @@
 :root {
   --width-logo: 2.8rem;
   --height-header: 3.8rem;
-  --background-color-header: #fff;
-  --color-site-title: #6a7477;
   --font-weight-site-title: 400;
   --line-height-site-title: 100%;
   --font-size-site-title: 1.875rem;
-  --font-family-site-title: "Amaranth", sans-serif;
 }
 @media screen and (min-width: 412px) {
   :root {
@@ -432,7 +429,7 @@ textarea:focus {
   position: fixed;
   z-index: 100;
   height: var(--height-header);
-  background-color: var(--background-color-header);
+  background-color: #fff;
   line-height: normal;
 }
 .main-header__container {
@@ -458,12 +455,12 @@ textarea:focus {
   margin-right: auto;
   line-height: var(--line-height-site-title);
   font-size: var(--font-size-site-title);
-  font-family: var(--font-family-site-title);
+  font-family: "Amaranth", sans-serif;
   font-weight: var(--font-weight-site-title);
 }
 .main-header__title-link {
   padding: var(--padding-title-link);
-  color: var(--color-site-title);
+  color: #6a7477;
 }
 
 /*---------------- BURGUER BUTTON ------------------*/

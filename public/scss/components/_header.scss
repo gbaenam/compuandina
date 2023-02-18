@@ -22,7 +22,7 @@
     position: fixed;
     z-index: $z-fixed;
     height: var(--height-header);
-    background-color: var(--background-color-header);
+    background-color: $background-color-header;
 
     line-height: normal;
 
@@ -59,13 +59,13 @@
 
         font: {
             size: var(--font-size-site-title);
-            family: var(--font-family-site-title);
+            family: $font-family-site-title;
             weight: var(--font-weight-site-title);
         }
     }
 
     &__title-link {
         padding: var(--padding-title-link);
-        color: var(--color-site-title);
+        color: $color-site-title;
     }
 }
