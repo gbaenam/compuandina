@@ -1,11 +1,8 @@
 :root {
   --font-size-body: 20px;
+  --font-weight-body: 400;
   --width-logo: 2.8rem;
   --height-header: 3.8rem;
-}
-
-:root {
-  --font-weight-body: 400;
 }
 
 :root {
