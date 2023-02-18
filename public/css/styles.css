@@ -26,7 +26,6 @@
   --line-height-menu: 140%;
   --font-size-menu: 1.375rem;
   --color-menu-hover: #fff;
-  --font-family-menu: "Roboto", sans-serif;
 }
 @media screen and (min-width: 1024px) {
   :root {
@@ -648,7 +647,7 @@ textarea:focus {
   line-height: var(--line-height-menu);
   font-size: var(--font-size-menu);
   font-weight: var(--font-weight-menu);
-  font-family: var(--font-family-menu);
+  font-family: "Roboto", sans-serif;
 }
 .main-nav__link {
   border: var(--border-link);
