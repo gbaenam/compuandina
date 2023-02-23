@@ -6,11 +6,11 @@
 }
 
 :root {
-  --color-menu-hover: #fff;
+  --color-hover: #fff;
 }
 @media screen and (min-width: 1024px) {
   :root {
-    --color-menu-hover: #0098b8;
+    --color-hover: #0098b8;
   }
 }
 
@@ -634,7 +634,7 @@ textarea:focus {
   border-radius: var(--border-radius-link);
 }
 .main-nav__link:hover {
-  color: var(--color-menu-hover);
+  color: var(--color-hover);
 }
 .main-nav__link:focus {
   border-color: var(--border-color-link-focus);

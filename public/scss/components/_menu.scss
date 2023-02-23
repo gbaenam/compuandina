@@ -189,7 +189,6 @@
     }
 
 
-    // Variables globales.
     &__link {
         border: var(--border-link);
         border-radius: var(--border-radius-link);
@@ -199,12 +198,12 @@
     //     color: var(--color-link-visited);
     // }
 
-    // Variable global.
+
     &__link:hover {
-        color: var(--color-menu-hover);
+        color: var(--color-hover);
     }
 
-    // Variable global.
+
     &__link:focus {
         border-color: var(--border-color-link-focus);
     }

@@ -15,24 +15,12 @@
 }
 
 
-// Variables y estilos para menu
+// Colores
 :root {
-    // --color-menu: #fff;
-    // --color-menu-alt: #aab0b5;
-    // --font-weight-menu: 300;
-    // // TODO: Revisar la declaración de esta variable.
-    // --line-height-menu: 140%;
-    // --font-size-menu: 1.375rem;
-    --color-menu-hover: #fff;
+    --color-hover: #fff;
 
     @include from(large) {
-        // --color-menu: #6a7477;
-        // --color-menu-alt:#6a7477;
-        // // TODO: Revisar la declaración de esta variable.
-        // --line-height-menu: 145%;
-        // --font-weight-menu: 400;
-        // --font-size-menu: 1.125rem;
-        --color-menu-hover: #0098b8;
+        --color-hover: #0098b8;
     }
 }
 
