@@ -179,10 +179,10 @@
         display: block;
         color: var(--color-link);
         padding: var(--padding-link);
-        line-height: var(--line-height-link); // Todo: Revisar declaración.
+        line-height: var(--line-height-link); // TODO: Revisar declaración.
 
         font: {
-            family: $font-family-menu; // Todo: Revisar familia de fuentes.
+            family: $font-family-menu; // TODO: Revisar familia de fuentes.
             size: var(--font-size-link);
             weight: var(--font-weight-link);
         }
@@ -200,7 +200,7 @@
 
 
     &__link:hover {
-        color: var(--color-hover);
+        color: var(--color-hover); // TODO: Revisar familia de colores.
     }
 
 
