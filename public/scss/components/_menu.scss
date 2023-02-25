@@ -205,7 +205,7 @@
 
 
     &__link:focus {
-        border-color: var(--border-color-link-focus);
+        border-color: var(--color-focus);
     }
 }
 
@@ -228,7 +228,7 @@
     }
 
     &__mail:focus {
-        border-color: var(--border-color-link-focus);
+        border-color: var(--color-focus);
     }
 }
 
