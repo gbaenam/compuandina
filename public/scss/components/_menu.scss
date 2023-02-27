@@ -58,9 +58,7 @@
     --padding-contact-bar: 1.5rem 1.5rem;
     --justify-content-contact-bar: flex-end;
     // mail
-    --color-contact-bar-mail: #fff;
-    // mail:hover
-    --color-contact-bar-mail-hover: #fff;
+    --color-contact-bar-mail: #fff; // TODO: Actualizar variable
 
 
     @include from(large) {
@@ -69,10 +67,8 @@
         --order-contact-bar: unset;
         --justify-content-contact-bar: unset;
         // mail
-        --color-contact-bar-mail: #9b9b9b;
+        --color-contact-bar-mail: #9b9b9b; // TODO: Actualizar variable
         --padding-contact-bar-mail: 0 .3125rem;
-        // mail:hover
-        --color-contact-bar-mail-hover: #3399ff;
     }
 }
 
@@ -224,7 +220,7 @@
     }
 
     &__mail:hover {
-        color: var(--color-contact-bar-mail-hover);
+        color: var(--color-hover);
     }
 
     &__mail:focus {

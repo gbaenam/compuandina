@@ -533,7 +533,6 @@ textarea:focus {
   --padding-contact-bar: 1.5rem 1.5rem;
   --justify-content-contact-bar: flex-end;
   --color-contact-bar-mail: #fff;
-  --color-contact-bar-mail-hover: #fff;
 }
 @media screen and (min-width: 1024px) {
   .contact-bar {
@@ -542,7 +541,6 @@ textarea:focus {
     --justify-content-contact-bar: unset;
     --color-contact-bar-mail: #9b9b9b;
     --padding-contact-bar-mail: 0 .3125rem;
-    --color-contact-bar-mail-hover: #3399ff;
   }
 }
 
@@ -653,7 +651,7 @@ textarea:focus {
   border-radius: var(--border-radius-link);
 }
 .contact-bar__mail:hover {
-  color: var(--color-contact-bar-mail-hover);
+  color: var(--color-hover);
 }
 .contact-bar__mail:focus {
   border-color: var(--color-focus);
