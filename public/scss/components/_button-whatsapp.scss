@@ -13,11 +13,11 @@
     z-index: $z-fixed;
     justify-content: center;
     background-color: transparent;
-    color: var(--color-button-green);
+    color: $color-whatsapp;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
 
     &:hover {
-        background-color: #fff;
-        color: var(--color-button-green-alt);
+        background-color: #f5f8ff;
+        color: #32cd32;
     }
 }
