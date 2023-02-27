@@ -33,7 +33,7 @@
     height: var(--height-header);
     background-color: $background-color-header;
 
-    line-height: normal;
+    line-height: normal;  // TODO: Revisar esta línea.
 
     &__container {
         display: flex;
