@@ -381,7 +381,6 @@ textarea:focus {
 .main-header {
   --margin-right-link-logo: .3rem;
   --font-weight-title: 400;
-  --line-height-title: 100%;
   --font-size-title: 1.875rem;
 }
 @media screen and (min-width: 412px) {
@@ -427,7 +426,6 @@ textarea:focus {
 .main-header__title {
   margin-bottom: 0;
   margin-right: auto;
-  line-height: var(--line-height-title);
   font-size: var(--font-size-title);
   font-family: "Amaranth", sans-serif;
   font-weight: var(--font-weight-title);

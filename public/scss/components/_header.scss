@@ -7,7 +7,6 @@
     --margin-right-link-logo: .3rem;
     // title
     --font-weight-title: 400;
-    --line-height-title: 100%; // TODO: Revisar la declaración de esta variable.
     --font-size-title: 1.875rem;
 
     @include from(412px) {
@@ -63,7 +62,6 @@
     &__title {
         margin-bottom: 0;
         margin-right: auto;
-        line-height: var(--line-height-title); // TODO: Revisar la asignación de esta variable.
 
         font: {
             size: var(--font-size-title);
