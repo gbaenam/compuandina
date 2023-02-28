@@ -1,19 +1,19 @@
 @use '../tools-sass/variables-sass' as *;
 
 .btn-whatsapp {
-    width: 60px;
-    height: 60px;
-    right: 10px;
-    bottom: 70px;
+    width: 3.75rem;
+    height: 3.75rem;
+    right: .625rem;
+    bottom: 4.375rem;
     display: flex;
-    font-size: 60px;
+    font-size: 3.75rem;
     position: fixed;
     align-items: center;
     z-index: $z-fixed;
     justify-content: center;
     background-color: transparent;
     color: $color-whatsapp;
-    border-radius: var(--border-radius-link);
+    border-radius: var(--border-radius-link); //TODO: Esta línea genera error!!
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
 
     &:hover {
