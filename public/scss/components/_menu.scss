@@ -9,7 +9,7 @@
     --overflow-y-main-nav: scroll;
     --transition-main-nav: left .6s;
     --flex-direction-main-nav: column;
-    --background-color-main-nav: #2a3b47;
+    --background-color-main-nav: #2a3b47; // TODO: Actualizar con Paleta de Colores.
     // menu
     --border-top-menu: .0625rem solid #11191e;
     --border-bottom-menu: .125rem solid #485761;
@@ -17,7 +17,7 @@
     --border-top-item: .125rem solid #485761;
     --border-bottom-item: .0625rem solid #11191e;
     // link
-    --color-link: #fff;
+    --color-link: #fff; // TODO: Actualizar con Paleta de Colores.
     --padding-link: .7rem;
     --font-weight-link: 300;
     --line-height-link: 140%;  // TODO: Revisar declaración.
@@ -43,7 +43,7 @@
         --margin-right-item: .625rem;
         --margin-right-item-last-child: 1.5rem;
         // link
-        --color-link: #6a7477;
+        --color-link: #6a7477; // TODO: Actualizar con Paleta de Colores.
         --font-weight-link: 400;
         --line-height-link: 145%; // TODO: Revisar declaración.
         --font-size-link: 1.125rem;
@@ -67,7 +67,7 @@
         --order-contact-bar: unset;
         --justify-content-contact-bar: unset;
         // mail
-        --color-contact-bar-mail: #9b9b9b; // TODO: Actualizar variable
+        --color-contact-bar-mail: #9b9b9b; // TODO: Actualizar con Paleta de Colores.
         --padding-contact-bar-mail: 0 .3125rem;
     }
 }
@@ -102,11 +102,11 @@
     @include from(large) {
         // social-bar
         --margin-top-social-bar: 0;
-        --background-color-social-bar:  #5396f0;
+        --background-color-social-bar:  #5396f0; // TODO: Actualizar con Paleta de Colores.
         // wrapper
         --padding-wrapper: 2rem 10rem;
         // title
-        --color-title: #fff;
+        --color-title: #fff; // TODO: Actualizar con Paleta de Colores.
         --font-size-title: 2.625rem;
         --margin-bottom-title: 2rem;
         // wrapper a
@@ -143,7 +143,7 @@
     transition: var(--transition-main-nav);
     align-items: var(--align-items-main-nav);
     flex-direction: var(--flex-direction-main-nav);
-    background-color: var(--background-color-main-nav);
+    background-color: var(--background-color-main-nav); // TODO: Actualizar con Paleta de Colores.
 
 
     &__move {
@@ -196,7 +196,7 @@
 
 
     &__link:hover {
-        color: var(--color-hover); // TODO: Revisar familia de colores.
+        color: var(--color-hover);
     }
 
 
@@ -215,7 +215,7 @@
     &__mail {
         font-size: 2.5rem;
         border: var(--border-link);
-        color: var(--color-contact-bar-mail);
+        color: var(--color-contact-bar-mail); // TODO: Actualizar con Paleta de Colores.
         padding: var(--padding-contact-bar-mail);
         border-radius: var(--border-radius-link);
     }
@@ -232,14 +232,14 @@
 
 .social-bar {
     margin-top: var(--margin-top-social-bar);
-    background-color: var(--background-color-social-bar);
+    background-color: var(--background-color-social-bar); // TODO: Actualizar con Paleta de Colores.
 
     &__wrapper {
         padding: var(--padding-wrapper);
     }
 
     &__title {
-        color: var(--color-title);
+        color: var(--color-title); // TODO: Actualizar con Paleta de Colores.
         font-size: var(--font-size-title);
         margin-bottom: var(--margin-bottom-title);
     }
@@ -251,7 +251,7 @@
     }
 
     a {
-        color: #fff;
+        color: #fff; // TODO: Actualizar con Paleta de Colores.
         border: var(--border-link);
         width: var(--width-social-bar-a);
         height: var(--height-social-bar-a);
