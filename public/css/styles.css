@@ -403,7 +403,6 @@ textarea:focus {
   z-index: 100;
   height: var(--height-header);
   background-color: #fff;
-  line-height: normal;
 }
 .main-header__container {
   display: flex;
@@ -620,15 +619,13 @@ textarea:focus {
 .main-nav__link {
   display: block;
   color: var(--color-link);
+  border: var(--border-link);
   padding: var(--padding-link);
   line-height: var(--line-height-link);
+  border-radius: var(--border-radius-link);
   font-family: "Roboto", sans-serif;
   font-size: var(--font-size-link);
   font-weight: var(--font-weight-link);
-}
-.main-nav__link {
-  border: var(--border-link);
-  border-radius: var(--border-radius-link);
 }
 .main-nav__link:hover {
   color: var(--color-hover);
@@ -644,6 +641,7 @@ textarea:focus {
   justify-content: var(--justify-content-contact-bar);
 }
 .contact-bar__mail {
+  line-height: 0;
   font-size: 2.5rem;
   border: var(--border-link);
   color: var(--color-contact-bar-mail);

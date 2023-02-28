@@ -32,8 +32,6 @@
     height: var(--height-header);
     background-color: $background-color-header; // TODO: Actualizar con Paleta de Colores.
 
-    line-height: normal;  // TODO: Revisar esta línea.
-
     &__container {
         display: flex;
         align-items: center;
