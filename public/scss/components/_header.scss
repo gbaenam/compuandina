@@ -31,7 +31,7 @@
     position: fixed;
     z-index: $z-fixed;
     height: var(--height-header);
-    background-color: $background-color-header;
+    background-color: $background-color-header; // TODO: Actualizar con Paleta de Colores.
 
     line-height: normal;  // TODO: Revisar esta línea.
 
@@ -74,6 +74,6 @@
 
     &__title-link {
         padding: var(--padding-title-link);
-        color: $color-site-title;
+        color: $color-site-title; // TODO: Actualizar con Paleta de Colores.
     }
 }
