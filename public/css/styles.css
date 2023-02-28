@@ -25,9 +25,11 @@
   }
 }
 
+:root {
+  --border-radius-link: .3125rem;
+}
 @media screen and (min-width: 1024px) {
   :root {
-    --border-radius-link: .3125rem;
     --border-link: .125rem solid transparent;
   }
 }

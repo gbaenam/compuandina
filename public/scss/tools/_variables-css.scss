@@ -40,10 +40,9 @@
 
 // border / border-radius
 :root {
+    --border-radius-link: .3125rem;
 
     @include from(large) {
-        // Tipo de borde
-        --border-radius-link: .3125rem;
         --border-link: .125rem solid transparent;
     }
 }
