@@ -135,6 +135,13 @@
 	font-size: var(--font-size-button);
 	padding: .3em 0;
 	min-width: 250px;
+
+	&:active {
+		top: .0625rem;
+		left: .0625rem;
+		color: #fff;
+		position: relative;
+	}
 }
 
 .button-green {

@@ -396,6 +396,12 @@ textarea:focus {
   padding: 0.3em 0;
   min-width: 250px;
 }
+.button:active {
+  top: 0.0625rem;
+  left: 0.0625rem;
+  color: #fff;
+  position: relative;
+}
 
 .button-green {
   color: #fff;
