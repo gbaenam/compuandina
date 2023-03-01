@@ -143,8 +143,14 @@
 	border-color: #00c600;
 
 	&:hover {
+		background-color: unset;
+		border-color: unset;
+		color: #00ff00;
+	}
+
+	&:active {
 		background-color: #00aa00;
 		border-color: #00aa00;
-		// color: #00ff00;
+		color: #fff;
 	}
 }

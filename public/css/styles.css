@@ -403,8 +403,14 @@ textarea:focus {
   border-color: #00c600;
 }
 .button-green:hover {
+  background-color: unset;
+  border-color: unset;
+  color: #00ff00;
+}
+.button-green:active {
   background-color: #00aa00;
   border-color: #00aa00;
+  color: #fff;
 }
 
 /* ------------------ HEADER ---------------------- */
