@@ -386,16 +386,6 @@ textarea:focus {
   }
 }
 
-.button-green {
-  --color-button-green-dark: #00c600;
-}
-@media screen and (min-width: 1024px) {
-  .button-green {
-    --color-unset: unset;
-    --color-button-green-light: #00ff00;
-  }
-}
-
 .button {
   font-weight: 600;
   border-radius: 2em;
@@ -415,13 +405,15 @@ textarea:focus {
 
 .button-green {
   color: #fff;
-  background-color: var(--color-button-green-dark);
-  border-color: var(--color-button-green-dark);
+  background-color: #00c600;
+  border-color: #00c600;
 }
-.button-green:hover {
-  background-color: var(--color-unset);
-  border-color: var(--color-unset);
-  color: var(--color-button-green-light);
+@media screen and (min-width: 1024px) {
+  .button-green:hover {
+    background-color: unset;
+    border-color: unset;
+    color: #00ff00;
+  }
 }
 .button-green:active {
   background-color: #00aa00;

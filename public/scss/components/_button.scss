@@ -121,16 +121,7 @@
 	}
 }
 
-
-.button-green {
-	--color-button-green-dark: #00c600;
-
-	@include from(large) {
-		--color-unset: unset;
-		--color-button-green-light: #00ff00;
-	}
-
-}
+// Color
 
 
 
@@ -155,18 +146,22 @@
 
 .button-green {
 	color: #fff;
-	background-color: var(--color-button-green-dark);
-	border-color: var(--color-button-green-dark);
+	background-color: #00c600;
+	border-color: #00c600;
 
-	&:hover {
-		background-color: var(--color-unset);
-		border-color: var(--color-unset);
-		color: var(--color-button-green-light);
+	@include from(large) {
+		&:hover {
+			background-color: unset;
+			border-color: unset;
+			color: #00ff00;
+		}
 	}
+
 
 	&:active {
 		background-color: #00aa00;
 		border-color: #00aa00;
 		color: #fff;
 	}
+
 }
