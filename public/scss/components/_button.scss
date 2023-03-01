@@ -121,7 +121,16 @@
 	}
 }
 
-// Color
+
+.button-green {
+	--color-button-green-dark: #00c600;
+
+	@include from(large) {
+		--color-unset: unset;
+		--color-button-green-light: #00ff00;
+	}
+
+}
 
 
 
@@ -146,13 +155,13 @@
 
 .button-green {
 	color: #fff;
-	background-color: #00c600;
-	border-color: #00c600;
+	background-color: var(--color-button-green-dark);
+	border-color: var(--color-button-green-dark);
 
 	&:hover {
-		background-color: unset;
-		border-color: unset;
-		color: #00ff00;
+		background-color: var(--color-unset);
+		border-color: var(--color-unset);
+		color: var(--color-button-green-light);
 	}
 
 	&:active {
