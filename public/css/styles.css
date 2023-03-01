@@ -399,8 +399,12 @@ textarea:focus {
 
 .button-green {
   color: #fff;
-  background-color: #00ff00;
-  border-color: #00ff00;
+  background-color: #00c600;
+  border-color: #00c600;
+}
+.button-green:hover {
+  background-color: #00aa00;
+  border-color: #00aa00;
 }
 
 /* ------------------ HEADER ---------------------- */
