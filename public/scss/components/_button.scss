@@ -99,3 +99,46 @@
 }
 
 
+
+
+/*---------------------------------------------------------------------*/
+
+
+// Font Size
+.button {
+	--font-size-button: 1.2em;
+
+	@include from(360px) {
+		--font-size-button: 1.3em;
+	}
+
+	@include from(412px) {
+		--font-size-button: 1.35em;
+	}
+
+	@include from(ultrawide) {
+		--font-size-button: 1.5em;
+	}
+}
+
+// Color
+
+
+
+
+.button {
+	font-weight: 600;
+	border-radius: 2em;
+	border: .125em solid;
+	text-transform: uppercase;
+    font-family: $font-family-primary;
+	font-size: var(--font-size-button);
+	padding: .3em 0;
+	min-width: 250px;
+}
+
+.button-green {
+	color: #fff;
+	background-color: #00ff00;
+	border-color: #00ff00;
+}
