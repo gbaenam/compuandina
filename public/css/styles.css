@@ -243,11 +243,6 @@ textarea:focus {
     --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
   }
 }
-@media screen and (min-width: 2100px) {
-  .banner-layout {
-    padding: 16rem 1.5rem 5rem;
-  }
-}
 
 .social-bar-layout,
 .main-footer-layout {
@@ -315,12 +310,6 @@ textarea:focus {
   .button-ghost,
   .button-solid {
     --font-size-button: 1.35em;
-  }
-}
-@media screen and (min-width: 2100px) {
-  .button-ghost,
-  .button-solid {
-    --font-size-button: 1.5em;
   }
 }
 
@@ -762,13 +751,6 @@ textarea:focus {
     --margin-bottom-products: 4rem;
     --margin-right-item: 4rem;
     --width-icon: 4.375rem;
-  }
-}
-@media screen and (min-width: 2100px) {
-  .banner {
-    --font-size-title: 4.5rem;
-    --width-icon: 4.6rem;
-    --font-size-icon-text: 1.2rem;
   }
 }
 
