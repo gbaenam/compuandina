@@ -272,101 +272,6 @@ textarea:focus {
   background-color: #f5f8ff;
 }
 
-.button-ghost {
-  --color-hover: #00ff00;
-  --color-button-dark: unset;
-  --color-button-light: #00ff00;
-  --color-button-darker: #00aa00;
-}
-@media screen and (min-width: 1024px) {
-  .button-ghost {
-    --color-hover: #fff;
-    --color-button-dark: #00c600;
-  }
-}
-
-.button-solid {
-  --color-hover: #0066ff;
-  --color-button-light:#0066ff;
-  --color-button-darker: #0000ff;
-}
-@media screen and (min-width: 1024px) {
-  .button-solid {
-    --color-hover: #0033ff;
-  }
-}
-
-.button-ghost,
-.button-solid {
-  --font-size-button: 1.2em;
-}
-@media screen and (min-width: 360px) {
-  .button-ghost,
-  .button-solid {
-    --font-size-button: 1.3em;
-  }
-}
-@media screen and (min-width: 412px) {
-  .button-ghost,
-  .button-solid {
-    --font-size-button: 1.35em;
-  }
-}
-
-.button-ghost,
-.button-solid {
-  font-weight: 600;
-  border-radius: 2em;
-  border: 0.125em solid;
-  text-transform: uppercase;
-  font-size: var(--font-size-button);
-  font-family: "Montserrat", sans-serif;
-}
-
-.button-ghost {
-  color: var(--color-button-light);
-}
-.button-ghost:hover {
-  color: var(--color-hover);
-  border-color: var(--color-button-dark);
-  background-color: var(--color-button-dark);
-}
-.button-ghost:active {
-  border-color: var(--color-button-darker);
-  background-color: var(--color-button-darker);
-}
-
-.button-solid {
-  color: #fff;
-  border-color: var(--color-button-light);
-  background-color: var(--color-button-light);
-}
-.button-solid:hover {
-  border-color: var(--color-hover);
-  background-color: var(--color-hover);
-}
-.button-solid:active {
-  border-color: var(--color-button-darker);
-  background-color: var(--color-button-darker);
-}
-
-.button-ghost:active,
-.button-solid:active {
-  top: 1px;
-  left: 1px;
-  color: #fff;
-  position: relative;
-}
-
-.contacto {
-  padding: 0.4em 3.2em;
-}
-
-.enviar {
-  padding: 0.4em 5.2em;
-}
-
-/*---------------------------------------------------------------------*/
 .button {
   --font-size-button: 1.2em;
 }
@@ -387,38 +292,68 @@ textarea:focus {
 }
 
 .button {
+  color: #fff;
+  padding: 0.3em 0;
+  min-width: 250px;
   font-weight: 600;
   border-radius: 2em;
   border: 0.125em solid;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: var(--font-size-button);
-  padding: 0.3em 0;
-  min-width: 250px;
 }
-.button:active {
-  top: 0.0625rem;
-  left: 0.0625rem;
-  color: #fff;
-  position: relative;
+@media screen and (min-width: 2100px) {
+  .button {
+    min-width: 300px;
+  }
 }
-
 .button-green {
-  color: #fff;
   background-color: #00c600;
   border-color: #00c600;
 }
 @media screen and (min-width: 1024px) {
   .button-green:hover {
-    background-color: unset;
-    border-color: unset;
     color: #00ff00;
+    border-color: unset;
+    background-color: unset;
   }
 }
 .button-green:active {
+  color: #fff;
   background-color: #00aa00;
   border-color: #00aa00;
+}
+.button-blue {
+  border-color: #0066ff;
+  background-color: #0066ff;
+}
+@media screen and (min-width: 1024px) {
+  .button-blue:hover {
+    color: #0033ff;
+    border-color: unset;
+    background-color: unset;
+  }
+}
+.button-blue:active {
   color: #fff;
+  border-color: #0000ff;
+  background-color: #0000ff;
+}
+.button-orange-red {
+  border-color: #ff6227;
+  background-color: #ff6227;
+}
+@media screen and (min-width: 1024px) {
+  .button-orange-red:hover {
+    color: #ff4500;
+    border-color: unset;
+    background-color: unset;
+  }
+}
+.button-orange-red:active {
+  color: #fff;
+  border-color: #eb4000;
+  background-color: #eb4000;
 }
 
 /* ------------------ HEADER ---------------------- */
@@ -730,6 +665,10 @@ textarea:focus {
   border-color: var(--color-focus-alt);
 }
 
+.main {
+  font-size: 1rem;
+}
+
 .banner {
   --objet-position-hero-image: center;
   --font-weight-title: 400;
@@ -810,9 +749,7 @@ textarea:focus {
 }
 
 .banner {
-  font-size: 1rem;
   position: relative;
-  line-height: normal;
   background-color: #2e5dd8;
 }
 .banner__hero-image {
@@ -826,6 +763,7 @@ textarea:focus {
   object-position: var(--objet-position-hero-image);
 }
 .banner__content {
+  font-size: 1rem;
   display: flex;
   color: #fff;
   align-items: center;
@@ -864,6 +802,22 @@ textarea:focus {
   font-weight: 500;
   text-transform: uppercase;
   font-size: var(--font-size-icon-text);
+}
+
+.about-us {
+  display: grid;
+  place-items: center;
+  padding-bottom: 5em;
+}
+.about-us__title {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.about-us__button {
+  margin-bottom: 50px;
+}
+.about-us__button:last-child {
+  margin-bottom: 0;
 }
 
 .form {

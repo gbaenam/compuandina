@@ -1,8 +1,6 @@
-// .main {
-//     display: flex;
-//     min-height: 50vh;
-//     align-items: center;
-//     justify-content: center;
+@use '../tools-sass/mixins' as *;
+@use '../tools-sass/variables-sass' as *;
 
-// }
-
+.main {
+    font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
+}

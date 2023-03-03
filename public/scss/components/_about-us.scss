@@ -1,0 +1,25 @@
+@use '../tools-sass/mixins' as *;
+@use '../tools-sass/variables-sass' as *;
+
+.about-us {
+    // font-size: 1rem;
+
+    display: grid;
+    place-items: center;
+    padding-bottom: 5em;
+
+    &__title {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    &__button {
+        margin-bottom: 50px;
+    }
+
+    &__button:last-child {
+        margin-bottom: 0;
+    }
+}
+
+

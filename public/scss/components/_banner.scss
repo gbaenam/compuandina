@@ -130,11 +130,8 @@
 }
 
 .banner {
-    // TODO: font-size de 1rem , es la referencia para --font-size-button
-    // TODO: ...en _button.scss
-    font-size: 1rem;
     position: relative;
-    line-height: normal;
+    // line-height: normal;
     background-color: $background-color-banner;
 
     &__hero-image {
@@ -149,6 +146,7 @@
     }
 
     &__content {
+        font-size: 1rem;
         display: flex;
         color: #fff;
         align-items: center;
