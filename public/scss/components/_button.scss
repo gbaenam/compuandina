@@ -15,6 +15,11 @@
 		--font-size-button: 1.35em;
 	}
 
+	@include from(large) {
+		--border-color-button: unset;
+		--background-color-button: unset;
+	}
+
 	@include from(ultrawide) {
 		--min-width-button: 300px;
 		--font-size-button: 1.5em;
@@ -32,18 +37,38 @@
 	min-width: var(--min-width-button);
 	font-size: var(--font-size-button);
 
-	@include from(large) {
-		&-green:hover,
-		&-blue:hover,
-		&-orange-red:hover {
-			border-color: unset;
-			background-color: unset;
-		}
+	&-green {
+		border-color: #00c600;
+		background-color: #00c600;
 	}
 
+	&-blue {
+		border-color: #0066ff;
+		background-color: #0066ff;
+	}
+
+	&-orange-red {
+		border-color: #ff6227;
+		background-color: #ff6227;
+	}
+
+	&-green:hover,
+	&-blue:hover,
+	&-orange-red:hover {
+		border-color: var(--border-color-button);
+		background-color: var(--background-color-button);
+	}
+
+	// @include from(large) {
+	// 	&-green:hover,
+	// 	&-blue:hover,
+	// 	&-orange-red:hover {
+	// 		border-color: unset;
+	// 		background-color: unset;
+	// 	}
+	// }
+
 	&-green {
-		background-color: #00c600;
-		border-color: #00c600;
 
 		@include from(large) {
 			&:hover {
@@ -59,8 +84,6 @@
 	}
 
 	&-blue {
-		border-color: #0066ff;
-		background-color: #0066ff;
 
 		@include from(large) {
 			&:hover {
@@ -76,8 +99,6 @@
 	}
 
 	&-orange-red {
-		border-color: #ff6227;
-		background-color: #ff6227;
 
 		@include from(large) {
 			&:hover {
