@@ -307,6 +307,12 @@ textarea:focus {
     min-width: 300px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .button-green:hover, .button-blue:hover, .button-orange-red:hover {
+    border-color: unset;
+    background-color: unset;
+  }
+}
 .button-green {
   background-color: #00c600;
   border-color: #00c600;
@@ -314,8 +320,6 @@ textarea:focus {
 @media screen and (min-width: 1024px) {
   .button-green:hover {
     color: #00ff00;
-    border-color: unset;
-    background-color: unset;
   }
 }
 .button-green:active {
@@ -330,8 +334,6 @@ textarea:focus {
 @media screen and (min-width: 1024px) {
   .button-blue:hover {
     color: #0033ff;
-    border-color: unset;
-    background-color: unset;
   }
 }
 .button-blue:active {
@@ -346,8 +348,6 @@ textarea:focus {
 @media screen and (min-width: 1024px) {
   .button-orange-red:hover {
     color: #ff4500;
-    border-color: unset;
-    background-color: unset;
   }
 }
 .button-orange-red:active {

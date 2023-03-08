@@ -34,6 +34,15 @@
 		min-width: 300px;
 	}
 
+	@include from(large) {
+		&-green:hover,
+		&-blue:hover,
+		&-orange-red:hover {
+			border-color: unset;
+			background-color: unset;
+		}
+	}
+
 
 	&-green {
 		background-color: #00c600;
@@ -42,8 +51,8 @@
 		@include from(large) {
 			&:hover {
 				color: #00ff00;
-				border-color: unset;
-				background-color: unset;
+				// border-color: unset;
+				// background-color: unset;
 			}
 		}
 
@@ -61,8 +70,8 @@
 		@include from(large) {
 			&:hover {
 				color: #0033ff;
-				border-color: unset;
-				background-color: unset;
+				// border-color: unset;
+				// background-color: unset;
 			}
 		}
 
@@ -80,8 +89,8 @@
 		@include from(large) {
 			&:hover {
 				color: #ff4500;
-				border-color: unset;
-				background-color: unset;
+				// border-color: unset;
+				// background-color: unset;
 			}
 		}
 
