@@ -4,6 +4,7 @@
 
 // Font Size
 .button {
+	--min-width-button: 250px;
 	--font-size-button: 1.2em;
 
 	@include from(360px) {
@@ -15,6 +16,7 @@
 	}
 
 	@include from(ultrawide) {
+		--min-width-button: 300px;
 		--font-size-button: 1.5em;
 	}
 }
@@ -22,17 +24,13 @@
 .button {
 	color: #fff;
 	padding: .3em 0;
-	min-width: 250px;
 	font-weight: 600;
 	border-radius: 2em;
 	border: .125em solid;
 	text-transform: uppercase;
     font-family: $font-family-primary;
+	min-width: var(--min-width-button);
 	font-size: var(--font-size-button);
-
-	@include from(ultrawide) {
-		min-width: 300px;
-	}
 
 	@include from(large) {
 		&-green:hover,
@@ -43,7 +41,6 @@
 		}
 	}
 
-
 	&-green {
 		background-color: #00c600;
 		border-color: #00c600;
@@ -51,8 +48,6 @@
 		@include from(large) {
 			&:hover {
 				color: #00ff00;
-				// border-color: unset;
-				// background-color: unset;
 			}
 		}
 
@@ -70,8 +65,6 @@
 		@include from(large) {
 			&:hover {
 				color: #0033ff;
-				// border-color: unset;
-				// background-color: unset;
 			}
 		}
 
@@ -89,8 +82,6 @@
 		@include from(large) {
 			&:hover {
 				color: #ff4500;
-				// border-color: unset;
-				// background-color: unset;
 			}
 		}
 
