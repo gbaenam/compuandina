@@ -15,10 +15,10 @@
 		--font-size-button: 1.35em;
 	}
 
-	@include from(large) {
-		--border-color-button: unset;
-		--background-color-button: unset;
-	}
+	// @include from(large) {
+	// 	--border-color-button: unset;
+	// 	--background-color-button: unset;
+	// }
 
 	@include from(ultrawide) {
 		--min-width-button: 300px;
@@ -27,7 +27,7 @@
 }
 
 .button {
-	color: #fff;
+	// color: #fff;
 	padding: .3em 0;
 	font-weight: 600;
 	border-radius: 2em;
@@ -38,26 +38,36 @@
 	font-size: var(--font-size-button);
 
 	&-green {
+		color: #fff;
 		border-color: #00c600;
 		background-color: #00c600;
+
+		@include from(large) {
+			&:hover {
+				color: #00ff00;
+				
+			}
+		}
 	}
 
 	&-blue {
+		color: #fff;
 		border-color: #0066ff;
 		background-color: #0066ff;
 	}
 
 	&-orange-red {
+		color: #fff;
 		border-color: #ff6227;
 		background-color: #ff6227;
 	}
 
-	&-green:hover,
-	&-blue:hover,
-	&-orange-red:hover {
-		border-color: var(--border-color-button);
-		background-color: var(--background-color-button);
-	}
+	// &-green:hover,
+	// &-blue:hover,
+	// &-orange-red:hover {
+	// 	border-color: var(--border-color-button);
+	// 	background-color: var(--background-color-button);
+	// }
 
 	// @include from(large) {
 	// 	&-green:hover,
@@ -68,49 +78,49 @@
 	// 	}
 	// }
 
-	&-green {
+	// &-green {
 
-		@include from(large) {
-			&:hover {
-				color: #00ff00;
-			}
-		}
+	// 	@include from(large) {
+	// 		&:hover {
+	// 			color: #00ff00;
+	// 		}
+	// 	}
 
-		&:active {
-			color: #fff;
-			background-color: #00aa00;
-			border-color: #00aa00;
-		}
-	}
+	// 	&:active {
+	// 		color: #fff;
+	// 		background-color: #00aa00;
+	// 		border-color: #00aa00;
+	// 	}
+	// }
 
-	&-blue {
+	// &-blue {
 
-		@include from(large) {
-			&:hover {
-				color: #0033ff;
-			}
-		}
+	// 	@include from(large) {
+	// 		&:hover {
+	// 			color: #0033ff;
+	// 		}
+	// 	}
 
-		&:active {
-			color: #fff;
-			border-color: #0000ff;
-			background-color: #0000ff;
-		}
-	}
+	// 	&:active {
+	// 		color: #fff;
+	// 		border-color: #0000ff;
+	// 		background-color: #0000ff;
+	// 	}
+	// }
 
-	&-orange-red {
+	// &-orange-red {
 
-		@include from(large) {
-			&:hover {
-				color: #ff4500;
-			}
-		}
+	// 	@include from(large) {
+	// 		&:hover {
+	// 			color: #ff4500;
+	// 		}
+	// 	}
 
-		&:active {
-			color: #fff;
-			border-color: #eb4000;
-			background-color: #eb4000;
-		}
-	}
+	// 	&:active {
+	// 		color: #fff;
+	// 		border-color: #eb4000;
+	// 		background-color: #eb4000;
+	// 	}
+	// }
 }
 

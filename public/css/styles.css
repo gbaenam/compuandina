@@ -286,12 +286,6 @@ textarea:focus {
     --font-size-button: 1.35em;
   }
 }
-@media screen and (min-width: 1024px) {
-  .button {
-    --border-color-button: unset;
-    --background-color-button: unset;
-  }
-}
 @media screen and (min-width: 2100px) {
   .button {
     --min-width-button: 300px;
@@ -300,7 +294,6 @@ textarea:focus {
 }
 
 .button {
-  color: #fff;
   padding: 0.3em 0;
   font-weight: 600;
   border-radius: 2em;
@@ -311,50 +304,24 @@ textarea:focus {
   font-size: var(--font-size-button);
 }
 .button-green {
+  color: #fff;
   border-color: #00c600;
   background-color: #00c600;
-}
-.button-blue {
-  border-color: #0066ff;
-  background-color: #0066ff;
-}
-.button-orange-red {
-  border-color: #ff6227;
-  background-color: #ff6227;
-}
-.button-green:hover, .button-blue:hover, .button-orange-red:hover {
-  border-color: var(--border-color-button);
-  background-color: var(--background-color-button);
 }
 @media screen and (min-width: 1024px) {
   .button-green:hover {
     color: #00ff00;
   }
 }
-.button-green:active {
+.button-blue {
   color: #fff;
-  background-color: #00aa00;
-  border-color: #00aa00;
+  border-color: #0066ff;
+  background-color: #0066ff;
 }
-@media screen and (min-width: 1024px) {
-  .button-blue:hover {
-    color: #0033ff;
-  }
-}
-.button-blue:active {
+.button-orange-red {
   color: #fff;
-  border-color: #0000ff;
-  background-color: #0000ff;
-}
-@media screen and (min-width: 1024px) {
-  .button-orange-red:hover {
-    color: #ff4500;
-  }
-}
-.button-orange-red:active {
-  color: #fff;
-  border-color: #eb4000;
-  background-color: #eb4000;
+  border-color: #ff6227;
+  background-color: #ff6227;
 }
 
 /* ------------------ HEADER ---------------------- */
