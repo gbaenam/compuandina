@@ -109,6 +109,12 @@ label {
   color: #333333;
 }
 
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
 label,
 input,
 textarea {
@@ -119,12 +125,6 @@ input,
 textarea {
   font-size: 1rem;
   color: #495057;
-}
-
-input:focus,
-button:focus,
-textarea:focus {
-  outline: none;
 }
 
 .caption {

@@ -89,6 +89,14 @@ label {
     color: $color-more-dark-gray;
 }
 
+input,
+button,
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
 label,
 input,
 textarea {
@@ -101,13 +109,6 @@ textarea {
     color: $color-text;
 }
 
-input,
-button,
-textarea {
-    &:focus {
-        outline: none;
-    }
-}
 
 
 // Clases predefinidas
