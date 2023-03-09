@@ -7,11 +7,6 @@
 	--min-width-button: 250px;
 	--font-size-button: 1.2em;
 
-	--color-button: #fff;
-	--border-color-button: #00c600;
-	--background-color-button: #00c600;
-
-
 	@include from(360px) {
 		--font-size-button: 1.3em;
 	}
@@ -20,15 +15,22 @@
 		--font-size-button: 1.35em;
 	}
 
-	@include from(large) {
-		--color-button: #00ff00;
-		--border-color-button: #00ff00;
-		--background-color-button: transparent;
-	}
-
 	@include from(ultrawide) {
 		--min-width-button: 300px;
 		--font-size-button: 1.5em;
+	}
+}
+
+.button {
+	--color-button: #fff;
+	--border-color-button: #00c600;
+	--background-color-button: #00c600;
+
+
+	@include from(large) {
+		--color-button: #00ff00;
+		--border-color-button: unset;
+		--background-color-button: unset;
 	}
 }
 
