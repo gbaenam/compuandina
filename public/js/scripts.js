@@ -22,7 +22,7 @@ const form = document.getElementById('form'),
 	inputs = document.querySelectorAll('.input'),
 	emailUno = document.getElementById('email'),
 	emailDos = document.getElementById('checkmail'),
-	terminos = document.getElementById('terminos'),
+	terms = document.getElementById('terms'),
 	submitButton = document.getElementById('submit-button')
 
 
@@ -310,14 +310,14 @@ const showError = (elemento, message) => {
 
 // Función controlar botón de envío.
 const submitController = () => {
-	if (checkInputs.name && checkInputs.email && checkInputs.checkmail && checkInputs.textarea && terminos.checked) {
+	if (checkInputs.name && checkInputs.email && checkInputs.checkmail && checkInputs.textarea && terms.checked) {
 		submitButton.toggleAttribute('disabled', false)
 	} else submitButton.toggleAttribute('disabled', true)
 }
 
 
 // Evento click sobre Términos y Condiciones.
-terminos.addEventListener('click', submitController)
+terms.addEventListener('click', submitController)
 
 
 // Eventos keyup y blur sobre los inputs.
