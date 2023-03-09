@@ -23,17 +23,6 @@
 }
 
 .button {
-	&-green,
-	&-blue,
-	&-orange-red {
-		&:hover {
-			border-color: unset;
-			background-color: unset;
-		}
-	}
-}
-
-.button {
 	color: #fff;
 	padding: .5em 0;
 	font-weight: 600;
@@ -44,19 +33,26 @@
 	min-width: var(--min-width-button);
 	font-size: var(--font-size-button);
 
+	&-green,
+	&-blue,
+	&-orange-red {
+		&:hover {
+			border-color: unset;
+			background-color: unset;
+		}
+	}
+
 	&-green {
-		background-color: #00c600;
 		border-color: #00c600;
+		background-color: #00c600;
 
 		&:hover {
 			color: #00ff00;
 		}
 
 		&:active {
-			color: #fff;
-			background-color: #00aa00;
 			border-color: #00aa00;
-			transform: scale(.99);
+			background-color: #00aa00;
 		}
 	}
 
@@ -69,10 +65,8 @@
 		}
 
 		&:active {
-			color: #fff;
 			border-color: #0000ff;
 			background-color: #0000ff;
-			transform: scale(.99);
 		}
 	}
 
@@ -85,11 +79,14 @@
 		}
 
 		&:active {
-			color: #fff;
-			background-color: #eb4000;
 			border-color: #eb4000;
-			transform: scale(.99);
+			background-color: #eb4000;
 		}
+	}
+
+	&:active {
+		color: #fff;
+		transform: scale(.99);
 	}
 }
 

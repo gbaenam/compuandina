@@ -294,11 +294,6 @@ textarea:focus {
   }
 }
 
-.button-green:hover, .button-blue:hover, .button-orange-red:hover {
-  border-color: unset;
-  background-color: unset;
-}
-
 .button {
   color: #fff;
   padding: 0.5em 0;
@@ -310,18 +305,20 @@ textarea:focus {
   min-width: var(--min-width-button);
   font-size: var(--font-size-button);
 }
+.button-green:hover, .button-blue:hover, .button-orange-red:hover {
+  border-color: unset;
+  background-color: unset;
+}
 .button-green {
-  background-color: #00c600;
   border-color: #00c600;
+  background-color: #00c600;
 }
 .button-green:hover {
   color: #00ff00;
 }
 .button-green:active {
-  color: #fff;
-  background-color: #00aa00;
   border-color: #00aa00;
-  transform: scale(0.99);
+  background-color: #00aa00;
 }
 .button-blue {
   border-color: #0066ff;
@@ -331,10 +328,8 @@ textarea:focus {
   color: #0033ff;
 }
 .button-blue:active {
-  color: #fff;
   border-color: #0000ff;
   background-color: #0000ff;
-  transform: scale(0.99);
 }
 .button-orange-red {
   border-color: #ff6227;
@@ -344,9 +339,11 @@ textarea:focus {
   color: #ff4500;
 }
 .button-orange-red:active {
-  color: #fff;
-  background-color: #eb4000;
   border-color: #eb4000;
+  background-color: #eb4000;
+}
+.button:active {
+  color: #fff;
   transform: scale(0.99);
 }
 
