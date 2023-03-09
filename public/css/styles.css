@@ -321,15 +321,15 @@ textarea:focus {
   background-color: #00aa00;
 }
 .button-blue {
-  border-color: #0066ff;
-  background-color: #0066ff;
+  border-color: #1F51FF;
+  background-color: #1F51FF;
 }
 .button-blue:hover {
-  color: #0033ff;
+  color: #0034eb;
 }
 .button-blue:active {
-  border-color: #0000ff;
-  background-color: #0000ff;
+  border-color: #002fd2;
+  background-color: #002fd2;
 }
 .button-orange-red {
   border-color: #ff6227;
