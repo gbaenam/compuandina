@@ -47,8 +47,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    // TODO: Referencia de "font-size" para "button"
-    font-size: 16px;
+    font-size: 1rem; // TODO: Referencia de "font-size" para "button"
     visibility: hidden;
     line-height: normal;
     z-index: $z-modal;
