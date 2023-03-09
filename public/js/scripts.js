@@ -143,7 +143,7 @@ const errorMessage = {
 	nameError: 'Ingrese únicamente letras',
 	emailError: 'Formato de correo inválido',
 	email2Error: 'Los correos no son iguales',
-	txareaError: 'Máximo 300 caracteres; algunos caracteres especiales están restringidos'
+	textareaError: 'Máximo 300 caracteres; algunos caracteres especiales están restringidos'
 }
 
 
@@ -303,7 +303,7 @@ const showError = (elemento, message) => {
 
 	else if (elemento.name === 'checkmail') {
 		if (emailUno.value !== '') message.innerText = errorMessage.email2Error
-	} else if (elemento.name === 'textarea') message.innerText = errorMessage.txareaError
+	} else if (elemento.name === 'textarea') message.innerText = errorMessage.textareaError
 }
 
 
