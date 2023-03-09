@@ -275,6 +275,9 @@ textarea:focus {
 .button {
   --min-width-button: 250px;
   --font-size-button: 1.2em;
+  --color-button: #fff;
+  --border-color-button: #00c600;
+  --background-color-button: #00c600;
 }
 @media screen and (min-width: 360px) {
   .button {
@@ -284,6 +287,13 @@ textarea:focus {
 @media screen and (min-width: 412px) {
   .button {
     --font-size-button: 1.35em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    --color-button: #00ff00;
+    --border-color-button: #00ff00;
+    --background-color-button: transparent;
   }
 }
 @media screen and (min-width: 2100px) {
@@ -304,14 +314,14 @@ textarea:focus {
   font-size: var(--font-size-button);
 }
 .button-green {
-  color: #fff;
-  border-color: #00c600;
-  background-color: #00c600;
+  color: var(--color-button);
+  border-color: var(--border-color-button);
+  background-color: var(--background-color-button);
 }
-@media screen and (min-width: 1024px) {
-  .button-green:hover {
-    color: #00ff00;
-  }
+.button-green:hover {
+  color: var(--color-button);
+  border-color: var(--border-color-button);
+  background-color: var(--background-color-button);
 }
 .button-blue {
   color: #fff;
