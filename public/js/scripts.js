@@ -6,8 +6,8 @@ const header = document.getElementById('main-header'),
 
 
 // Captura de elementos secundarios.
-const burguerButton = document.querySelector('.burguer-button'),
-	burguerLine = document.querySelector('.burguer-button__line'),
+const burgerButton = document.querySelector('.burger-button'),
+	burgerLine = document.querySelector('.burger-button__line'),
 	iconMail = document.getElementById('contact-bar-mail'),
 	socialBar = document.getElementById('social-bar'),
 	socialBarWrapper = document.getElementById('social-bar-wrapper'),
@@ -43,11 +43,11 @@ const mql = matchMedia('(min-width: 1024px)')
 
 // Función hamburger button animation
 function buttonAnimation() {
-    burguerLine.classList.toggle('cruz')
+    burgerLine.classList.toggle('cruz')
     nav.classList.toggle('main-nav__move')
 }
 // Evento 'click' hamburger button animation.
-burguerButton.addEventListener('click', buttonAnimation)
+burgerButton.addEventListener('click', buttonAnimation)
 
 
 // Creación elemento 'h3' de socialBar.
@@ -172,7 +172,7 @@ cleanForm()
 // Función cerrar formulario
 const closeForm = () => {
 	if (nav.classList.contains('main-nav__move')) {
-		burguerLine.classList.toggle('cruz')
+		burgerLine.classList.toggle('cruz')
 		nav.classList.toggle('main-nav__move')
 	}
 	formContainer.classList.remove('form--show')

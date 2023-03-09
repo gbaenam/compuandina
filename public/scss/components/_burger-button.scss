@@ -1,9 +1,9 @@
 @use '../tools-sass/mixins' as *;
 @use '../tools-sass/variables-sass' as *;
 
-/*---------------- BURGUER BUTTON ------------------*/
+/*---------------- burger button ------------------*/
 // Variables locales
-.burguer-button {
+.burger-button {
     --display-button: visibility;
 
     @include from(large) {
@@ -11,7 +11,7 @@
     }
 }
 
-.burguer-button {
+.burger-button {
     width: 2rem;
     height: 2rem;
     position: relative;
