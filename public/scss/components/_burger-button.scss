@@ -2,7 +2,6 @@
 @use '../tools-sass/variables-sass' as *;
 
 /*---------------- burger button ------------------*/
-// Variables locales
 .burger-button {
     --display-button: visibility;
 
@@ -15,7 +14,6 @@
     width: 2rem;
     height: 2rem;
     position: relative;
-    // background-color: pink;
     cursor: var(--cursor-button);
     display: var(--display-button);
 
@@ -27,7 +25,6 @@
         position: absolute;
         border-radius: 1.25rem;
         background-color: $color-toggle-button;
-        // transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.45s;
     }
 
     &__line {

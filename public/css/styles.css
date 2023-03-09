@@ -406,7 +406,7 @@ textarea:focus {
 }
 
 /*---------------- burger button ------------------*/
-.burgerbutton {
+.burger-button {
   --display-button: visibility;
 }
 @media screen and (min-width: 1024px) {
