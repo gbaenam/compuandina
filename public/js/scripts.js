@@ -267,7 +267,7 @@ const validarMail2 = () => {
 
 
 // Función cambiar de estado.
-const changeState = (condicion, elemento) => {
+const changeState = (condition, elemento) => {
 
 	const formBox = elemento.parentElement.parentElement,
 		icon = elemento.parentElement.querySelector('i'),
@@ -276,7 +276,7 @@ const changeState = (condicion, elemento) => {
 
 	message.classList.add('form__error-message')
 
-	if (condicion) {
+	if (condition) {
 		message.innerText = ''
 		icon.style.color = '#0099ff'
 		message.style.marginBottom = 0
