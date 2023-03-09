@@ -249,8 +249,8 @@ const validarFormulario = e => {
 
 
 // Función validar datos.
-const validarDatos = (expresion, valor, elemento) => {
-	if (expresion.test(valor)) changeState(true, elemento)
+const validarDatos = (expression, valor, elemento) => {
+	if (expression.test(valor)) changeState(true, elemento)
 	else changeState(false, elemento)
 }
 
