@@ -294,6 +294,11 @@ textarea:focus {
   }
 }
 
+.button-green:hover, .button-blue:hover, .button-orange-red:hover {
+  border-color: unset;
+  background-color: unset;
+}
+
 .button {
   color: #fff;
   padding: 0.5em 0;
@@ -311,8 +316,6 @@ textarea:focus {
 }
 .button-green:hover {
   color: #00ff00;
-  border-color: unset;
-  background-color: unset;
 }
 .button-green:active {
   color: #fff;
@@ -326,8 +329,6 @@ textarea:focus {
 }
 .button-blue:hover {
   color: #0033ff;
-  border-color: unset;
-  background-color: unset;
 }
 .button-blue:active {
   color: #fff;
@@ -341,8 +342,6 @@ textarea:focus {
 }
 .button-orange-red:hover {
   color: #ff4500;
-  border-color: unset;
-  background-color: unset;
 }
 .button-orange-red:active {
   color: #fff;
