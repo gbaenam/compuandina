@@ -92,9 +92,6 @@ button {
   line-height: inherit;
   background: transparent;
 }
-button:focus {
-  outline: none;
-}
 
 small {
   font-family: "Lato", sans-serif;
@@ -123,7 +120,9 @@ textarea {
   font-size: 1rem;
   color: #495057;
 }
+
 input:focus,
+button:focus,
 textarea:focus {
   outline: none;
 }

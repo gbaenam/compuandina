@@ -68,10 +68,6 @@ button {
     font-family: inherit;
     line-height: inherit;
     background: transparent;
-
-    &:focus {
-        outline: none;
-    }
 }
 
 // Reset small
@@ -103,7 +99,11 @@ input,
 textarea {
     font-size: 1rem;
     color: $color-text;
+}
 
+input,
+button,
+textarea {
     &:focus {
         outline: none;
     }
