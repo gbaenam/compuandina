@@ -4,21 +4,21 @@
 
 // Variables.
 .button {
-	--min-width-button: 250px;
 	--font-size-button: 1.2em;
+	--min-width-button: 15.625rem;
 
 	@include from(360px) {
 		--font-size-button: 1.3em;
 	}
 
 	@include from(412px) {
-		--min-width-button: 300px;
 		--font-size-button: 1.35em;
+		--min-width-button: 18.75rem;
 	}
 
 	@include from(ultrawide) {
-		--min-width-button: 320px;
 		--font-size-button: 1.5em;
+		--min-width-button: 20rem;
 	}
 }
 
@@ -33,8 +33,8 @@
 	min-width: var(--min-width-button);
 	font-size: var(--font-size-button);
 
-	&-green,
 	&-blue,
+	&-green,
 	&-orange-red {
 		&:hover {
 			border-color: unset;
