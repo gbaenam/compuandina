@@ -819,7 +819,7 @@ textarea:focus {
   --top-form-icon-close-before: 10px;
   --right-form-icon-close-before: 23px;
   --font-size-form-icon-close-before: 2rem;
-  --padding-form-fielset: 40px 20px 60px;
+  --padding-form-fieldset: 40px 20px 60px;
   --font-size-form-copyright-small: 16px;
 }
 @media screen and (min-width: 360px) {
@@ -839,7 +839,7 @@ textarea:focus {
 @media screen and (min-width: 1024px) {
   .form {
     --height-form-container-height: auto;
-    --padding-form-fielset: 40px 20px 50px;
+    --padding-form-fieldset: 40px 20px 50px;
   }
 }
 
@@ -892,10 +892,10 @@ textarea:focus {
   right: var(--right-form-icon-close-before);
   font-size: var(--font-size-form-icon-close-before);
 }
-.form__fielset {
+.form__fieldset {
   margin: 0;
   border: none;
-  padding: var(--padding-form-fielset);
+  padding: var(--padding-form-fieldset);
 }
 .form__box {
   margin-bottom: 16px;

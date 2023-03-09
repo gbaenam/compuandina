@@ -11,8 +11,8 @@
     --top-form-icon-close-before: 10px;
     --right-form-icon-close-before: 23px;
     --font-size-form-icon-close-before: 2rem;
-    // form__fielset
-    --padding-form-fielset: 40px 20px 60px;
+    // form__fieldset
+    --padding-form-fieldset: 40px 20px 60px;
     // form__copyright-small
     --font-size-form-copyright-small: 16px;
 
@@ -36,8 +36,8 @@
     @include from(large) {
         // form__container-height
         --height-form-container-height: auto;
-        // form__fielset
-        --padding-form-fielset: 40px 20px 50px;
+        // form__fieldset
+        --padding-form-fieldset: 40px 20px 50px;
     }
 }
 
@@ -99,10 +99,10 @@
         }
     }
 
-    &__fielset {
+    &__fieldset {
         margin: 0;
         border: none;
-        padding: var(--padding-form-fielset);
+        padding: var(--padding-form-fieldset);
     }
 
     &__box {
