@@ -345,7 +345,7 @@ textarea:focus {
 }
 .button:active {
   color: #fff;
-  transform: scale(0.99);
+  transform: scale(0.98);
 }
 
 /* ------------------ HEADER ---------------------- */

@@ -43,50 +43,50 @@
 	}
 
 	&-green {
-		border-color: #00c600;
-		background-color: #00c600;
+		border-color: $green-dark;
+		background-color: $green-dark;
 
 		&:hover {
-			color: #00ff00;
+			color: $green-light;
 		}
 
 		&:active {
-			border-color: #00aa00;
-			background-color: #00aa00;
+			border-color: $green-darker;
+			background-color: $green-darker;
 		}
 	}
 
 	&-blue {
-		border-color: #1F51FF;
-		background-color:#1F51FF ;
+		border-color: $blue-light;
+		background-color:$blue-light;
 
 		&:hover {
-			color: #0034eb;
+			color: $blue-dark;
 		}
 
 		&:active {
-			border-color: #002fd2;
-			background-color: #002fd2;
+			border-color: $blue-darker;
+			background-color: $blue-darker;
 		}
 	}
 
 	&-orange-red {
-		border-color: #ff6227;
-		background-color: #ff6227;
+		border-color: $orange-red-light;
+		background-color: $orange-red-light;
 
 		&:hover {
-			color: #ff4500;
+			color: $orange-red-dark;
 		}
 
 		&:active {
-			border-color: #eb4000;
-			background-color: #eb4000;
+			border-color: $orange-red-darker;
+			background-color: $orange-red-darker;
 		}
 	}
 
 	&:active {
 		color: #fff;
-		transform: scale(.99);
+		transform: scale(.98);
 	}
 }
 
