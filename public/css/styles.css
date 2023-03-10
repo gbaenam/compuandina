@@ -890,7 +890,7 @@ textarea {
   padding: var(--padding-form-fieldset);
 }
 .form__box {
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 .form__box:last-child {
   display: flex;
