@@ -21,7 +21,7 @@ const form = document.getElementById('form'),
 	iconFormClose = document.getElementById('form-icon-close'),
 	inputs = document.querySelectorAll('.input'),
 	email = document.getElementById('email'),
-	emailDos = document.getElementById('checkmail'),
+	emailConfirm = document.getElementById('checkmail'),
 	terms = document.getElementById('terms'),
 	submitButton = document.getElementById('submit-button')
 
@@ -259,9 +259,9 @@ const validarDatos = (expression, valor, elemento) => {
 // Función confirmar correo.
 const validarMail2 = () => {
 	if (email.value !== '') {
-		if (email.value === emailDos.value) changeState(true, emailDos)
-		else changeState(false, emailDos)
-	} else changeState(false, emailDos)
+		if (email.value === emailConfirm.value) changeState(true, emailConfirm)
+		else changeState(false, emailConfirm)
+	} else changeState(false, emailConfirm)
 }
 
 
