@@ -928,7 +928,7 @@ textarea {
   position: absolute;
   color: #646464;
 }
-.form__wrapper-input-email i, .form__wrapper-input-checkmail i {
+.form__wrapper-input-email i, .form__wrapper-input-email-confirm i {
   top: 12px;
 }
 .form__input {
@@ -958,7 +958,7 @@ textarea {
     border-color: #80bdff;
   }
 }
-.form__input-checkmail {
+.form__input-email-confirm {
   padding-left: 38px;
 }
 .form__input-terms {
