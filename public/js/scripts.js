@@ -20,7 +20,7 @@ const form = document.getElementById('form'),
 	formContHeight = document.querySelector('.form__container-height'),
 	iconFormClose = document.getElementById('form-icon-close'),
 	inputs = document.querySelectorAll('.input'),
-	emailUno = document.getElementById('email'),
+	userEmail = document.getElementById('email'),
 	emailDos = document.getElementById('checkmail'),
 	terms = document.getElementById('terms'),
 	submitButton = document.getElementById('submit-button')
@@ -258,8 +258,8 @@ const validarDatos = (expression, valor, elemento) => {
 
 // Función confirmar correo.
 const validarMail2 = () => {
-	if (emailUno.value !== '') {
-		if (emailUno.value === emailDos.value) changeState(true, emailDos)
+	if (userEmail.value !== '') {
+		if (userEmail.value === emailDos.value) changeState(true, emailDos)
 		else changeState(false, emailDos)
 	} else changeState(false, emailDos)
 }
@@ -302,7 +302,7 @@ const showError = (elemento, message) => {
 	else if (elemento.name === 'email') message.innerText = errorMessage.emailError
 
 	else if (elemento.name === 'checkmail') {
-		if (emailUno.value !== '') message.innerText = errorMessage.email2Error
+		if (userEmail.value !== '') message.innerText = errorMessage.email2Error
 	} else if (elemento.name === 'textarea') message.innerText = errorMessage.textareaError
 }
 
