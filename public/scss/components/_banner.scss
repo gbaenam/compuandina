@@ -72,7 +72,7 @@
     @include from(840px) {
         // title
         --font-size-title: 3.5rem;
-        --line-height-title: 71px;
+        --line-height-title: 71px; // TODO: Revisar esta declaración.
         // item
         --margin-right-item: 2.5rem;
     }
