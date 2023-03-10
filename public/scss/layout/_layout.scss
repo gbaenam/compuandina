@@ -12,6 +12,7 @@
 .main-header-layout {
     padding: 0 .5rem 0 .3rem;
 
+    // Wide 412px
     @include from(412px) {
         padding: 0 .7rem 0 .5rem;
     }
@@ -42,29 +43,32 @@
     margin-top: var(--height-header);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 98%);
 
+    // Wide 640px
     @include from(xmedium) {
         padding: 5rem 1.5rem 3rem;
     }
 
+    // Wide 840px
     @include from(840px) {
         padding: 8rem 1.5rem 3rem;
     }
 
-    @include from(960px) {
+    // Wide 960px
+    @include from(xxmedium) {
         padding: 10rem 1.5rem 4rem;
+        --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
     }
 
+    // Wide 1024px
     @include from(large) {
         padding: 14rem 1.5rem 4rem;
     }
 
-    @include from(xxmedium) {
-        --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
-    }
-
-    @include from(maximum) {
-        padding: 16rem 1.5rem 5rem;
-    }
+    // TODO: Revisar esta declaración deshabilitada.
+    // TODO: El breakpoint "maximum" ya no existe en el mapa "$breakpoints" de "_mixins.scss"
+    // @include from(maximum) {
+    //     padding: 16rem 1.5rem 5rem;
+    // }
 }
 
 .social-bar-layout,
@@ -73,6 +77,3 @@
     margin-right: auto;
     max-width: $max-width;
 }
-
-
-

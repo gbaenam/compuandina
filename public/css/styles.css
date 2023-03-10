@@ -228,16 +228,12 @@ textarea {
 @media screen and (min-width: 960px) {
   .banner-layout {
     padding: 10rem 1.5rem 4rem;
+    --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
   }
 }
 @media screen and (min-width: 1024px) {
   .banner-layout {
     padding: 14rem 1.5rem 4rem;
-  }
-}
-@media screen and (min-width: 960px) {
-  .banner-layout {
-    --polygon-banner: 0 0, 100% 0, 100% 100%, 0 94%;
   }
 }
 
