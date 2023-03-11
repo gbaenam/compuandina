@@ -21,7 +21,7 @@ const form = document.getElementById('form'),
 	iconFormClose = document.getElementById('form-icon-close'),
 	inputs = document.querySelectorAll('.input'),
 	email = document.getElementById('email'),
-	emailConfirm = document.getElementById('email-confirm'),
+	emailConfirm = document.getElementById('emailconfirm'),
 	terms = document.getElementById('terms'),
 	submitButton = document.getElementById('submit-button')
 
@@ -237,9 +237,7 @@ const validarFormulario = e => {
 	}
 
 	// Confirm-Email
-	if (e.target.name === 'emailconfirm') {
-		validarMail2()
-	}
+	if (e.target.name === 'emailconfirm') validarMail2()
 
 	// Mensaje
 	if (e.target.name === 'textarea') {
