@@ -142,7 +142,7 @@ const validateInputs = {
 const errorMessage = {
 	nameError: 'Ingrese únicamente letras',
 	emailError: 'Formato de correo inválido',
-	email2Error: 'Los correos no son iguales',
+	emailConfirmError: 'Los correos no son iguales',
 	textareaError: 'Máximo 300 caracteres; algunos caracteres especiales están restringidos'
 }
 
@@ -302,7 +302,7 @@ const showError = (elemento, message) => {
 	else if (elemento.name === 'email') message.innerText = errorMessage.emailError
 
 	else if (elemento.name === 'emailconfirm') {
-		if (email.value !== '') message.innerText = errorMessage.email2Error
+		if (email.value !== '') message.innerText = errorMessage.emailConfirmError
 	} else if (elemento.name === 'textarea') message.innerText = errorMessage.textareaError
 }
 
