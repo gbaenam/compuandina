@@ -132,7 +132,7 @@ const er = {
 const checkInputs = {
 	name: false,
 	email: false,
-	checkmail: false,
+	emailconfirm: false,
 	textarea: false
 }
 
@@ -237,7 +237,9 @@ const validarFormulario = e => {
 	}
 
 	// Confirm-Email
-	if (e.target.name === 'email-confirm') validarMail2()
+	if (e.target.name === 'emailconfirm') {
+		validarMail2()
+	}
 
 	// Mensaje
 	if (e.target.name === 'textarea') {
@@ -301,7 +303,7 @@ const showError = (elemento, message) => {
 
 	else if (elemento.name === 'email') message.innerText = errorMessage.emailError
 
-	else if (elemento.name === 'email-confirm') {
+	else if (elemento.name === 'emailconfirm') {
 		if (email.value !== '') message.innerText = errorMessage.email2Error
 	} else if (elemento.name === 'textarea') message.innerText = errorMessage.textareaError
 }
@@ -310,7 +312,7 @@ const showError = (elemento, message) => {
 
 // Función controlar botón de envío.
 const submitController = () => {
-	if (checkInputs.name && checkInputs.email && checkInputs.checkmail && checkInputs.textarea && terms.checked) {
+	if (checkInputs.name && checkInputs.email && checkInputs.emailconfirm && checkInputs.textarea && terms.checked) {
 		submitButton.toggleAttribute('disabled', false)
 	} else submitButton.toggleAttribute('disabled', true)
 }
