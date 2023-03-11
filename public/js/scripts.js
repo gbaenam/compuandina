@@ -128,8 +128,8 @@ const er = {
 
 
 
-// Objeto validar campos
-const checkInputs = {
+// Objeto validar entradas
+const validateInputs = {
 	name: false,
 	email: false,
 	emailconfirm: false,
@@ -161,8 +161,8 @@ const cleanForm = () => {
 		message.innerText = ''
 	})
 
-	for (let checkInput in checkInputs) {
-		checkInputs[checkInput] = false
+	for (let validateInput in validateInputs) {
+		validateInputs[validateInput] = false
 	}
 }
 cleanForm()
@@ -280,13 +280,13 @@ const changeState = (condition, elemento) => {
 		message.innerText = ''
 		icon.style.color = '#0099ff'
 		message.style.marginBottom = 0
-		checkInputs[elemento.name] = true
+		validateInputs[elemento.name] = true
 		label.style.marginBottom = '8px'
 	} else {
 		icon.style.color = '#cc0000'
 		showError(elemento, message)
 		label.style.marginBottom = '2px';
-		checkInputs[elemento.name] = false
+		validateInputs[elemento.name] = false
 		message.style.marginBottom = '8px'
 	}
 	elementHeight()
@@ -310,7 +310,7 @@ const showError = (elemento, message) => {
 
 // Función controlar botón de envío.
 const submitController = () => {
-	if (checkInputs.name && checkInputs.email && checkInputs.emailconfirm && checkInputs.textarea && terms.checked) {
+	if (validateInputs.name && validateInputs.email && validateInputs.emailconfirm && validateInputs.textarea && terms.checked) {
 		submitButton.toggleAttribute('disabled', false)
 	} else submitButton.toggleAttribute('disabled', true)
 }
