@@ -851,6 +851,7 @@ textarea {
   height: 100%;
   position: fixed;
   font-size: 1rem;
+  visibility: hidden;
   line-height: normal;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.9);
@@ -863,6 +864,7 @@ textarea {
   overflow-y: scroll;
   background-color: #fff;
   transition: transform 1s;
+  transform: translateY(-200%);
 }
 .form__container-height {
   display: flex;
@@ -996,6 +998,7 @@ textarea {
   width: 100%;
   height: 100vh;
   position: fixed;
+  visibility: hidden;
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
@@ -1003,10 +1006,9 @@ textarea {
   justify-content: center;
 }
 .form__modal-content {
-  height: 10vh;
   position: relative;
-  width: var(--width-form-modal-content);
   transition: transform 1s;
+  transform: translateY(-100vh);
 }
 .form__modal-content i {
   left: 50%;
@@ -1015,17 +1017,16 @@ textarea {
   font-size: 60px;
   position: absolute;
   cursor: var(--cursor-button);
-  transform: translateX(-25px);
+  transform: translateX(-50%);
 }
 .form__modal-confirmation {
-  padding: 10px 0;
   font-size: 34px;
   font-weight: 600;
-  line-height: 10vh;
   border-radius: 5px;
+  padding: 30px 20px;
   text-align: center;
-  background-color: #fff;
   color: #646464;
+  background-color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 .form--show {
