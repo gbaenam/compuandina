@@ -849,7 +849,6 @@ textarea {
   height: 100%;
   position: fixed;
   font-size: 1rem;
-  visibility: hidden;
   line-height: normal;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.9);
@@ -862,7 +861,6 @@ textarea {
   overflow-y: scroll;
   background-color: #fff;
   transition: transform 1s;
-  transform: translateY(-200%);
 }
 .form__container-height {
   display: flex;
@@ -892,9 +890,18 @@ textarea {
   font-size: var(--font-size-form-icon-close-before);
 }
 .form__fieldset {
+  background-color: orange;
   margin: 0;
   border: none;
-  padding: var(--padding-form-fieldset);
+  padding-top: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 3.75rem;
+}
+@media screen and (min-width: 1024px) {
+  .form__fieldset {
+    padding-bottom: 3.125rem;
+  }
 }
 .form__box {
   margin-bottom: 1.25rem;

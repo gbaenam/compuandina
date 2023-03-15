@@ -46,7 +46,7 @@
     height: 100%;
     position: fixed;
     font-size: 1rem; // TODO: Referencia de "font-size" para "button"
-    visibility: hidden;
+    // visibility: hidden;
     line-height: normal;
     z-index: $z-modal;
     background-color: rgba(0,0,0,.9);
@@ -59,7 +59,7 @@
         overflow-y: scroll;
         background-color: #fff;
         transition: transform 1s;
-        transform: translateY(-200%);
+        // transform: translateY(-200%);
     }
 
     &__container-height {
@@ -97,9 +97,22 @@
     }
 
     &__fieldset {
+        background-color: orange;
+
+
         margin: 0;
         border: none;
-        padding: var(--padding-form-fieldset);
+        // padding: var(--padding-form-fieldset);
+
+        padding-top: 2.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-bottom: 3.75rem;
+
+        @include from(large) {
+            padding-bottom: 3.125rem;
+        }
+
     }
 
     &__box {
