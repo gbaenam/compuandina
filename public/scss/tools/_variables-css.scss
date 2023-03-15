@@ -38,6 +38,16 @@
 }
 
 
+// border color
+:root {
+    --border-color-input: #00bfff;
+
+    @include from(large) {
+        --border-color-input: #80bdff;
+    }
+}
+
+
 // border / border-radius
 :root {
     --border-radius-link: .3125rem;

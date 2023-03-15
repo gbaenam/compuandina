@@ -26,6 +26,15 @@
 }
 
 :root {
+  --border-color-input: #00bfff;
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    --border-color-input: #80bdff;
+  }
+}
+
+:root {
   --border-radius-link: .3125rem;
 }
 @media screen and (min-width: 1024px) {
