@@ -5,15 +5,15 @@
     // form__container-height
     --height-form-container-height: 100%;
     // form__title
-    --font-size-form-title: 43px;
+    --font-size-form-title: 2.6875rem;
     // form__icon-close::before
-    --top-form-icon-close-before: 10px;
-    --right-form-icon-close-before: 23px;
+    --top-form-icon-close-before: .625rem;
+    --right-form-icon-close-before: 1.4375rem;
     --font-size-form-icon-close-before: 2rem;
     // form__fieldset
-    --padding-form-fieldset: 40px 20px 60px;
+    --padding-form-fieldset: 2.5rem 1.25rem 3.75rem;
     // form__copyright-small
-    --font-size-form-copyright-small: 16px;
+    --font-size-form-copyright-small: 1rem;
 
 
     @include from(360px) {
