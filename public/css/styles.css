@@ -822,6 +822,7 @@ textarea {
   --font-size-form-icon-close-before: 2rem;
   --padding-form-fieldset: 40px 20px 60px;
   --font-size-form-copyright-small: 16px;
+  --width-form-modal-content: 280px;
 }
 @media screen and (min-width: 360px) {
   .form {
@@ -835,6 +836,7 @@ textarea {
     --line-height-form-title: 52px;
     --top-form-icon-close-before: 5px;
     --font-size-form-icon-close-before: 2.5rem;
+    --width-form-modal-content: 320px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1006,16 +1008,11 @@ textarea {
   justify-content: center;
 }
 .form__modal-content {
-  width: 280px;
   height: 10vh;
   position: relative;
+  width: var(--width-form-modal-content);
   transition: transform 1s;
   transform: translateY(-100vh);
-}
-@media screen and (min-width: 412px) {
-  .form__modal-content {
-    width: 320px;
-  }
 }
 .form__modal-content i {
   left: 50%;
