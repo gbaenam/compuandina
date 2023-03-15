@@ -816,7 +816,6 @@ textarea {
 .form {
   --height-form-container-height: 100%;
   --font-size-form-title: 43px;
-  --line-height-form-title: 41px;
   --top-form-icon-close-before: 10px;
   --right-form-icon-close-before: 23px;
   --font-size-form-icon-close-before: 2rem;
@@ -832,7 +831,6 @@ textarea {
 @media screen and (min-width: 412px) {
   .form {
     --font-size-form-title: 52px;
-    --line-height-form-title: 52px;
     --top-form-icon-close-before: 5px;
     --font-size-form-icon-close-before: 2.5rem;
   }
@@ -872,8 +870,8 @@ textarea {
   height: var(--height-form-container-height);
 }
 .form__title {
+  line-height: 1;
   font-size: var(--font-size-form-title);
-  line-height: var(--line-height-form-title);
 }
 .form__subtitle {
   font-size: 23px;

@@ -6,7 +6,6 @@
     --height-form-container-height: 100%;
     // form__title
     --font-size-form-title: 43px;
-    --line-height-form-title: 41px;
     // form__icon-close::before
     --top-form-icon-close-before: 10px;
     --right-form-icon-close-before: 23px;
@@ -27,7 +26,6 @@
     @include from(412px) {
         // form__title
         --font-size-form-title: 52px;
-        --line-height-form-title: 52px;
         // form__icon-close::before
         --top-form-icon-close-before: 5px;
         --font-size-form-icon-close-before: 2.5rem;
@@ -71,8 +69,8 @@
     }
 
     &__title {
+        line-height: 1;
         font-size: var(--font-size-form-title);
-        line-height: var(--line-height-form-title);
     }
 
     &__subtitle {
