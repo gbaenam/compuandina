@@ -824,21 +824,21 @@ textarea {
 }
 @media screen and (min-width: 360px) {
   .form {
-    --font-size-form-title: 49px;
-    --font-size-form-copyright-small: 18px;
+    --font-size-form-title: 3.0625rem;
+    --font-size-form-copyright-small: 1.125rem;
   }
 }
 @media screen and (min-width: 412px) {
   .form {
-    --font-size-form-title: 52px;
-    --top-form-icon-close-before: 5px;
+    --font-size-form-title: 3.25rem;
+    --top-form-icon-close-before: .3125rem;
     --font-size-form-icon-close-before: 2.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   .form {
     --height-form-container-height: auto;
-    --padding-form-fieldset: 40px 20px 50px;
+    --padding-form-fieldset: 2.5rem 1.25rem 3.125rem;
   }
 }
 
