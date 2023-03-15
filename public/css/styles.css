@@ -819,7 +819,7 @@ textarea {
   --top-form-icon-close-before: .625rem;
   --right-form-icon-close-before: 1.4375rem;
   --font-size-form-icon-close-before: 2rem;
-  --padding-form-fieldset: 2.5rem 1.25rem 3.75rem;
+  --padding-bottom-form-fieldset: 3.75rem;
   --font-size-form-copyright-small: 1rem;
 }
 @media screen and (min-width: 360px) {
@@ -838,7 +838,7 @@ textarea {
 @media screen and (min-width: 1024px) {
   .form {
     --height-form-container-height: auto;
-    --padding-form-fieldset: 2.5rem 1.25rem 3.125rem;
+    --padding-bottom-form-fieldset: 3.125rem;
   }
 }
 
@@ -890,18 +890,9 @@ textarea {
   font-size: var(--font-size-form-icon-close-before);
 }
 .form__fieldset {
-  background-color: orange;
   margin: 0;
   border: none;
-  padding-top: 2.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-bottom: 3.75rem;
-}
-@media screen and (min-width: 1024px) {
-  .form__fieldset {
-    padding-bottom: 3.125rem;
-  }
+  padding: 2.5rem 1.25rem var(--padding-bottom-form-fieldset);
 }
 .form__box {
   margin-bottom: 1.25rem;
