@@ -959,13 +959,8 @@ textarea {
   background-color: #f5f8fa;
 }
 .form__input:focus, .form__textarea:focus {
-  border-color: #00bfff;
+  border-color: var(--border-color-input);
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-@media screen and (min-width: 1024px) {
-  .form__input:focus, .form__textarea:focus {
-    border-color: #80bdff;
-  }
 }
 .form__input-emailconfirm {
   padding-left: 38px;

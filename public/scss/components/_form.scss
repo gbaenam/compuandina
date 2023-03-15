@@ -180,15 +180,8 @@
         background-color: #f5f8fa;
 
         &:focus {
-            border-color: $color-bright-sky-blue;
+            border-color: var(--border-color-input);
             box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
-        }
-
-        // TODO: Arreglar este código
-        @include from(large) {
-            &:focus {
-                border-color: $color-sky-blue;
-            }
         }
     }
 
