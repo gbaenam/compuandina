@@ -936,22 +936,22 @@ textarea {
   color: #646464;
 }
 .form__wrapper-input-email i, .form__wrapper-input-emailconfirm i {
-  top: 12px;
+  top: 0.75rem;
 }
 .form__input {
-  height: 40px;
-  padding: 10px 6px 10px 34px;
+  height: 2.5rem;
+  padding: 0.625rem 0.375rem 0.625rem 2.125rem;
 }
 .form__textarea {
   resize: none;
-  min-height: 90px;
-  padding: 9px 6px 10px 30px;
+  min-height: 5.625rem;
+  padding: 0.5625rem 0.375rem 0.625rem 1.875rem;
 }
 .form__input, .form__textarea {
   width: 100%;
-  border-width: 1px;
-  border-radius: 3px;
   border-style: solid;
+  border-width: 0.0625rem;
+  border-radius: 0.1875rem;
   border-color: #cbd6e2;
   transition: 0.2s ease all;
   background-color: #f5f8fa;
@@ -961,25 +961,25 @@ textarea {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 .form__input-emailconfirm {
-  padding-left: 38px;
+  padding-left: 2.375rem;
 }
 .form__input-terms {
-  left: 7px;
-  width: 18px;
-  height: 18px;
+  left: 0.4375rem;
+  width: 1.125rem;
+  height: 1.125rem;
   position: relative;
-  margin-right: 14px;
+  margin-right: 0.875rem;
 }
 .form__wrapper {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  padding-bottom: 20px;
   flex-direction: column;
+  padding-bottom: 1.25rem;
 }
 .form__button {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 .form__button:disabled {
   color: lightgrey;

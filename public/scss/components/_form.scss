@@ -153,26 +153,26 @@
 
     &__wrapper-input-email i,
     &__wrapper-input-emailconfirm i {
-        top: 12px;
+        top: .75rem;
     }
 
     &__input {
-        height: 40px;
-        padding: 10px 6px 10px 34px;
+        height: 2.5rem;
+        padding: .625rem .375rem .625rem 2.125rem;
     }
 
     &__textarea {
         resize: none;
-        min-height: 90px;
-        padding: 9px 6px 10px 30px;
+        min-height: 5.625rem;
+        padding: .5625rem .375rem .625rem 1.875rem;
     }
 
     &__input,
     &__textarea {
         width: 100%;
-        border-width: 1px;
-        border-radius: 3px;
         border-style: solid;
+        border-width: .0625rem;
+        border-radius: .1875rem;
         border-color: #cbd6e2;
         transition: .2s ease all;
         background-color: #f5f8fa;
@@ -184,15 +184,15 @@
     }
 
     &__input-emailconfirm {
-        padding-left: 38px;
+        padding-left: 2.375rem;
     }
 
     &__input-terms {
-        left: 7px;
-        width: 18px;
-        height: 18px;
+        left: .4375rem;
+        width: 1.125rem;
+        height: 1.125rem;
         position: relative;
-        margin-right: 14px;
+        margin-right: .875rem;
     }
 
     &__wrapper {
@@ -200,12 +200,12 @@
         margin-left: auto;
         margin-right: auto;
         align-items: center;
-        padding-bottom: 20px;
         flex-direction: column;
+        padding-bottom: 1.25rem;
     }
 
     &__button {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
 
         &:disabled {
             color: lightgrey;
