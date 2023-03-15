@@ -822,7 +822,6 @@ textarea {
   --font-size-form-icon-close-before: 2rem;
   --padding-form-fieldset: 40px 20px 60px;
   --font-size-form-copyright-small: 16px;
-  --width-form-modal-content: 280px;
 }
 @media screen and (min-width: 360px) {
   .form {
@@ -836,7 +835,6 @@ textarea {
     --line-height-form-title: 52px;
     --top-form-icon-close-before: 5px;
     --font-size-form-icon-close-before: 2.5rem;
-    --width-form-modal-content: 320px;
   }
 }
 @media screen and (min-width: 1024px) {

@@ -15,8 +15,6 @@
     --padding-form-fieldset: 40px 20px 60px;
     // form__copyright-small
     --font-size-form-copyright-small: 16px;
-    // form__modal-content
-    --width-form-modal-content: 280px;
 
 
     @include from(360px) {
@@ -33,8 +31,6 @@
         // form__icon-close::before
         --top-form-icon-close-before: 5px;
         --font-size-form-icon-close-before: 2.5rem;
-        // form__modal-content
-        --width-form-modal-content: 320px;
     }
 
     @include from(large) {
