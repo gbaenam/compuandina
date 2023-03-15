@@ -851,7 +851,6 @@ textarea {
   height: 100%;
   position: fixed;
   font-size: 1rem;
-  visibility: hidden;
   line-height: normal;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.9);
@@ -864,7 +863,6 @@ textarea {
   overflow-y: scroll;
   background-color: #fff;
   transition: transform 1s;
-  transform: translateY(-200%);
 }
 .form__container-height {
   display: flex;
@@ -998,7 +996,6 @@ textarea {
   width: 100%;
   height: 100vh;
   position: fixed;
-  visibility: hidden;
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
@@ -1010,7 +1007,6 @@ textarea {
   position: relative;
   width: var(--width-form-modal-content);
   transition: transform 1s;
-  transform: translateY(-100vh);
 }
 .form__modal-content i {
   left: 50%;
