@@ -16,6 +16,7 @@
     --font-size-form-copyright-small: 1rem;
 
 
+    // Wide 360px
     @include from(360px) {
         // form__title
         --font-size-form-title: 3.0625rem;
@@ -23,6 +24,7 @@
         --font-size-form-copyright-small: 1.125rem;
     }
 
+    // Wide 412px
     @include from(412px) {
         // form__title
         --font-size-form-title: 3.25rem;
@@ -31,6 +33,7 @@
         --font-size-form-icon-close-before: 2.5rem;
     }
 
+    // Wide 1024px
     @include from(large) {
         // form__container-height
         --height-form-container-height: auto;
@@ -46,7 +49,7 @@
     height: 100%;
     position: fixed;
     font-size: 1rem; // TODO: Referencia de "font-size" para "button"
-    // visibility: hidden;
+    visibility: hidden;
     line-height: normal;
     z-index: $z-modal;
     background-color: rgba(0,0,0,.9);
@@ -59,7 +62,7 @@
         overflow-y: scroll;
         background-color: #fff;
         transition: transform 1s;
-        // transform: translateY(-200%);
+        transform: translateY(-200%);
     }
 
     &__container-height {

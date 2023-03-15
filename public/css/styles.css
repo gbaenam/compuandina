@@ -849,6 +849,7 @@ textarea {
   height: 100%;
   position: fixed;
   font-size: 1rem;
+  visibility: hidden;
   line-height: normal;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.9);
@@ -861,6 +862,7 @@ textarea {
   overflow-y: scroll;
   background-color: #fff;
   transition: transform 1s;
+  transform: translateY(-200%);
 }
 .form__container-height {
   display: flex;
