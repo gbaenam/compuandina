@@ -874,16 +874,16 @@ textarea {
   font-size: var(--font-size-form-title);
 }
 .form__subtitle {
-  font-size: 23px;
+  font-size: 1.4375rem;
 }
 .form__title, .form__subtitle {
   text-align: center;
 }
 .form__icon-close {
   width: 100%;
-  max-width: 465px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 29.0625rem;
 }
 .form__icon-close::before {
   content: "\f00d";
@@ -897,7 +897,7 @@ textarea {
   padding: var(--padding-form-fieldset);
 }
 .form__box {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .form__box:last-child {
   display: flex;
@@ -908,20 +908,20 @@ textarea {
   cursor: var(--cursor-button);
 }
 .form__label {
-  margin-bottom: 8px;
   position: relative;
+  margin-bottom: 0.5rem;
   display: inline-block;
 }
 .form__label::before {
   content: "*";
-  right: -10px;
-  font-size: 20px;
+  right: -0.625rem;
+  font-size: 1.25rem;
   position: absolute;
   color: #cc0000;
 }
 .form__error-message {
-  font-size: 17px;
-  line-height: 18px;
+  font-size: 1.0625rem;
+  line-height: 1.125rem;
   color: #cc0000;
   font-family: "Ubuntu", sans-serif;
 }
@@ -929,9 +929,9 @@ textarea {
   position: relative;
 }
 .form__wrapper-input i {
-  top: 10px;
-  left: 7px;
-  font-size: 20px;
+  top: 0.625rem;
+  left: 0.4375rem;
+  font-size: 1.25rem;
   position: absolute;
   color: #646464;
 }
