@@ -1,5 +1,4 @@
-@use '../tools-sass/mixins' as *;
-@use '../tools-sass/variables-sass' as *;
+@use '../tools-sass/' as *;
 
 .main {
     font-size: 1rem; // TODO: Referencia para --font-size-button en _button.scss
