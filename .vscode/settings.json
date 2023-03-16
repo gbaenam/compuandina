@@ -17,7 +17,7 @@
         "titleBar.inactiveForeground": "#e7e7e799",
         "statusBarItem.remoteBackground": "#007fff",
         "statusBarItem.remoteForeground": "#e7e7e7",
-        "activityBar.inactiveForeground": "#15202b99",
+        "activityBar.inactiveForeground": "#15202b99"
     },
     "openInDefaultBrowser.run.openWithLocalHttpServer": false,
     "cSpell.words": [
