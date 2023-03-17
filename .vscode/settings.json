@@ -18,31 +18,5 @@
         "statusBarItem.remoteBackground": "#007fff",
         "statusBarItem.remoteForeground": "#e7e7e7",
         "activityBar.inactiveForeground": "#15202b99"
-    },
-    "openInDefaultBrowser.run.openWithLocalHttpServer": false,
-    "cSpell.words": [
-        "blica",
-        "checkmail",
-        "Compu",
-        "compuandina",
-        "ctanos",
-        "Electr",
-        "Inicialización",
-        "janos",
-        "llarge",
-        "nico",
-        "rminos",
-        "tecnolog",
-        "tica",
-        "ultrawide",
-        "whatsapp",
-        "xlarge",
-        "xmedium",
-        "xxlarge",
-        "xxmedium",
-        "ZÁÉÍÓ",
-        "zlarge",
-        "zñáéíóú",
-        "zzlarge"
-    ]
+    }
 }
